@@ -1,0 +1,298 @@
+{
+ "unit": 7,
+ "title": "My family",
+ "pages": [
+  64,
+  73
+ ],
+ "lessons": [
+  {
+   "n": 1,
+   "pages": [
+    64
+   ],
+   "kind": "vocab",
+   "labels": [
+    {
+     "w": "queen",
+     "pic": "en_queen",
+     "page": 64
+    },
+    {
+     "w": "rabbit",
+     "pic": "rabbit",
+     "page": 64
+    },
+    {
+     "w": "sun",
+     "pic": "sun",
+     "page": 64
+    }
+   ],
+   "family": [
+    {
+     "w": "dad",
+     "pic": "en_dad",
+     "page": 64
+    },
+    {
+     "w": "mum",
+     "pic": "en_mum",
+     "page": 64
+    },
+    {
+     "w": "sister",
+     "pic": "en_sister",
+     "page": 64
+    },
+    {
+     "w": "brother",
+     "pic": "en_brother",
+     "page": 64
+    },
+    {
+     "w": "grandma",
+     "pic": "en_grandma",
+     "page": 64
+    },
+    {
+     "w": "grandpa",
+     "pic": "en_grandpa",
+     "page": 64
+    }
+   ],
+   "notes": "labels queen/rabbit/sun printed under rabbit/sun/queen pictures (pupils match)"
+  },
+  {
+   "n": 2,
+   "pages": [
+    65
+   ],
+   "kind": "vocab",
+   "labels": [
+    {
+     "w": "taxi",
+     "pic": "en_taxi",
+     "page": 65
+    },
+    {
+     "w": "umbrella",
+     "pic": "en_umbrella",
+     "page": 65
+    },
+    {
+     "w": "violin",
+     "pic": "en_violin",
+     "page": 65
+    }
+   ],
+   "lines": [
+    {
+     "t": "How old are you?",
+     "page": 65
+    },
+    {
+     "t": "I'm 6.",
+     "page": 65
+    },
+    {
+     "t": "I'm 3.",
+     "page": 65
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "pages": [
+    66
+   ],
+   "kind": "vocab",
+   "labels": [
+    {
+     "w": "window",
+     "pic": "window",
+     "page": 66
+    },
+    {
+     "w": "x-ray",
+     "pic": "en_xray",
+     "page": 66
+    },
+    {
+     "w": "yo-yo",
+     "pic": "en_yoyo",
+     "page": 66
+    },
+    {
+     "w": "zebra",
+     "pic": "en_zebra",
+     "page": 66
+    }
+   ],
+   "song": "My Friend (track 80) — lyrics not reproduced"
+  },
+  {
+   "n": 4,
+   "pages": [
+    67
+   ],
+   "kind": "vocab",
+   "labels": [
+    {
+     "w": "ant",
+     "pic": "en_ant",
+     "page": 67
+    },
+    {
+     "w": "robot",
+     "pic": "en_robot",
+     "page": 67
+    },
+    {
+     "w": "cat",
+     "pic": "cat",
+     "page": 67
+    }
+   ],
+   "lines": [
+    {
+     "t": "I have a green taxi.",
+     "page": 67
+    },
+    {
+     "t": "I have a yellow car.",
+     "page": 67
+    },
+    {
+     "t": "I have a green car.",
+     "page": 67
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "pages": [
+    68
+   ],
+   "kind": "vocab",
+   "labels": [
+    {
+     "w": "desk",
+     "pic": "en_desk",
+     "page": 68
+    },
+    {
+     "w": "bin",
+     "pic": "en_bin",
+     "page": 68
+    },
+    {
+     "w": "bed",
+     "pic": "bed",
+     "page": 68
+    },
+    {
+     "w": "chair",
+     "pic": "en_chair",
+     "page": 68
+    },
+    {
+     "w": "table",
+     "pic": "en_table",
+     "page": 68
+    }
+   ],
+   "lines": [
+    {
+     "t": "What can you see?",
+     "page": 68
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "pages": [
+    69
+   ],
+   "kind": "vocab",
+   "labels": [
+    {
+     "w": "roof",
+     "pic": "en_roof",
+     "page": 69
+    },
+    {
+     "w": "window",
+     "pic": "window",
+     "page": 69
+    },
+    {
+     "w": "door",
+     "pic": "bab",
+     "page": 69
+    },
+    {
+     "w": "wall",
+     "pic": "en_wall",
+     "page": 69
+    }
+   ],
+   "colours": [
+    "yellow",
+    "red",
+    "green",
+    "blue"
+   ]
+  },
+  {
+   "n": 7,
+   "pages": [
+    70
+   ],
+   "kind": "lines",
+   "lines": [
+    {
+     "t": "I have a green key.",
+     "page": 70
+    },
+    {
+     "t": "I have a red key.",
+     "page": 70
+    },
+    {
+     "t": "I have a blue jumper.",
+     "page": 70
+    },
+    {
+     "t": "I have a yellow jumper.",
+     "page": 70
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "pages": [
+    71
+   ],
+   "kind": "song",
+   "title": "10 Little Elephants",
+   "titlePage": 92
+  },
+  {
+   "n": 0,
+   "pages": [
+    72,
+    73
+   ],
+   "kind": "project",
+   "title": "P for Project",
+   "text": "Draw your family.",
+   "steps": [
+    "Draw",
+    "Colour",
+    "Write",
+    "Stick"
+   ]
+  }
+ ]
+}

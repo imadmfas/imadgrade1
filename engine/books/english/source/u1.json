@@ -1,0 +1,327 @@
+{
+ "unit": 1,
+ "title": "Hello",
+ "pages": [
+  8,
+  17
+ ],
+ "lessons": [
+  {
+   "n": 1,
+   "pages": [
+    8
+   ],
+   "kind": "letter",
+   "letter": "a",
+   "words": [
+    {
+     "w": "apple",
+     "pic": "apple"
+    },
+    {
+     "w": "ant",
+     "pic": "en_ant"
+    }
+   ],
+   "lines": [
+    {
+     "t": "Hello.",
+     "page": 8
+    },
+    {
+     "t": "Hello.",
+     "page": 8
+    }
+   ],
+   "trace": [
+    8
+   ]
+  },
+  {
+   "n": 2,
+   "pages": [
+    9
+   ],
+   "kind": "letter",
+   "letter": "b",
+   "words": [
+    {
+     "w": "ball",
+     "pic": "ball"
+    },
+    {
+     "w": "bus",
+     "pic": "en_bus"
+    }
+   ],
+   "lines": [
+    {
+     "t": "Goodbye.",
+     "page": 9
+    },
+    {
+     "t": "Goodbye.",
+     "page": 9
+    }
+   ],
+   "trace": [
+    9
+   ]
+  },
+  {
+   "n": 3,
+   "pages": [
+    10
+   ],
+   "kind": "letter",
+   "letter": "c",
+   "words": [
+    {
+     "w": "car",
+     "pic": "car"
+    },
+    {
+     "w": "cat",
+     "pic": "cat"
+    }
+   ],
+   "lines": [
+    {
+     "t": "Thank you.",
+     "page": 10
+    },
+    {
+     "t": "Goodbye.",
+     "page": 10
+    }
+   ],
+   "trace": [
+    10
+   ]
+  },
+  {
+   "n": 4,
+   "pages": [
+    11
+   ],
+   "kind": "letter",
+   "letter": "d",
+   "words": [
+    {
+     "w": "dog",
+     "pic": "dog"
+    },
+    {
+     "w": "duck",
+     "pic": "duck"
+    }
+   ],
+   "lines": [
+    {
+     "t": "What's your name?",
+     "page": 11
+    },
+    {
+     "t": "I'm Nada.",
+     "page": 11
+    },
+    {
+     "t": "I'm Ahmed.",
+     "page": 11
+    }
+   ],
+   "trace": [
+    11
+   ]
+  },
+  {
+   "n": 5,
+   "pages": [
+    12
+   ],
+   "kind": "letter",
+   "letter": "e",
+   "words": [
+    {
+     "w": "egg",
+     "pic": "en_egg"
+    },
+    {
+     "w": "elephant",
+     "pic": "elephant"
+    }
+   ],
+   "lines": [
+    {
+     "t": "Hello. I'm Robbie.",
+     "page": 12
+    },
+    {
+     "t": "I'm Rosie.",
+     "page": 12
+    },
+    {
+     "t": "I'm Nada.",
+     "page": 12
+    },
+    {
+     "t": "I'm Ahmed.",
+     "page": 12
+    }
+   ],
+   "trace": [
+    12
+   ]
+  },
+  {
+   "n": 6,
+   "pages": [
+    13
+   ],
+   "kind": "letter",
+   "letter": "f",
+   "words": [
+    {
+     "w": "flower",
+     "pic": "flower"
+    },
+    {
+     "w": "fish",
+     "pic": "fish"
+    }
+   ],
+   "lines": [
+    {
+     "t": "Who's this?",
+     "page": 13
+    },
+    {
+     "t": "Hani.",
+     "page": 13
+    },
+    {
+     "t": "Iman.",
+     "page": 13
+    }
+   ],
+   "trace": [
+    13
+   ]
+  },
+  {
+   "n": 7,
+   "pages": [
+    14
+   ],
+   "kind": "colours",
+   "colours": [
+    "blue",
+    "red",
+    "yellow"
+   ],
+   "letterGrid": {
+    "page": 14,
+    "rows": [
+     [
+      "a",
+      "c",
+      "a"
+     ],
+     [
+      "a",
+      "a",
+      "b"
+     ],
+     [
+      "b",
+      "c",
+      "b"
+     ],
+     [
+      "c",
+      "c",
+      "a"
+     ]
+    ],
+    "colourOf": {
+     "a": "red",
+     "b": "blue",
+     "c": "yellow"
+    }
+   },
+   "notes": "letters printed in colour: a red/orange, b blue, c yellow"
+  },
+  {
+   "n": 8,
+   "pages": [
+    15
+   ],
+   "kind": "colours",
+   "colours": [
+    "orange",
+    "green",
+    "pink"
+   ],
+   "lines": [
+    {
+     "t": "Here you are.",
+     "page": 15
+    },
+    {
+     "t": "Thank you.",
+     "page": 15
+    }
+   ],
+   "picColours": [
+    [
+     "cat",
+     "orange"
+    ],
+    [
+     "ball",
+     "orange"
+    ],
+    [
+     "elephant",
+     "blue"
+    ],
+    [
+     "ant",
+     "yellow"
+    ],
+    [
+     "duck",
+     "green"
+    ],
+    [
+     "fish",
+     "pink"
+    ]
+   ],
+   "letters": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f"
+   ]
+  },
+  {
+   "n": 0,
+   "pages": [
+    16,
+    17
+   ],
+   "kind": "project",
+   "title": "P for Project",
+   "text": "Draw and colour a ball.",
+   "steps": [
+    "Draw",
+    "Colour",
+    "Cut",
+    "Stick"
+   ]
+  }
+ ]
+}

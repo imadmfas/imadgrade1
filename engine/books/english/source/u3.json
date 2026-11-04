@@ -1,0 +1,303 @@
+{
+ "unit": 3,
+ "title": "My toys",
+ "pages": [
+  28,
+  37
+ ],
+ "lessons": [
+  {
+   "n": 1,
+   "pages": [
+    28
+   ],
+   "kind": "letter",
+   "letter": "m",
+   "words": [
+    {
+     "w": "monkey",
+     "pic": "monkey"
+    },
+    {
+     "w": "moon",
+     "pic": "crescent_moon"
+    }
+   ],
+   "trace": [
+    28
+   ],
+   "labels": [
+    {
+     "w": "toys",
+     "page": 28
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "pages": [
+    29
+   ],
+   "kind": "letter",
+   "letter": "n",
+   "words": [
+    {
+     "w": "net",
+     "pic": "en_net"
+    },
+    {
+     "w": "nose",
+     "pic": "en_nose"
+    }
+   ],
+   "trace": [
+    29
+   ],
+   "notes": "toy boxes a-d"
+  },
+  {
+   "n": 3,
+   "pages": [
+    30
+   ],
+   "kind": "letter",
+   "letter": "o",
+   "words": [
+    {
+     "w": "orange",
+     "pic": "en_orange"
+    },
+    {
+     "w": "olive",
+     "pic": "olives"
+    }
+   ],
+   "numbers": {
+    "page": 30,
+    "values": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "object": "balloon"
+   },
+   "trace": [
+    30
+   ]
+  },
+  {
+   "n": 4,
+   "pages": [
+    31
+   ],
+   "kind": "letter",
+   "letter": "p",
+   "words": [
+    {
+     "w": "plane",
+     "pic": "en_plane"
+    },
+    {
+     "w": "pizza",
+     "pic": "en_pizza"
+    }
+   ],
+   "numbers": {
+    "page": 31,
+    "values": [
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   "lines": [
+    {
+     "t": "How many toys?",
+     "page": 31
+    }
+   ],
+   "trace": [
+    31
+   ]
+  },
+  {
+   "n": 5,
+   "pages": [
+    32
+   ],
+   "kind": "letter",
+   "letter": "q",
+   "words": [
+    {
+     "w": "question",
+     "pic": "en_question"
+    },
+    {
+     "w": "queen",
+     "pic": "en_queen"
+    }
+   ],
+   "lines": [
+    {
+     "t": "What is it?",
+     "page": 32
+    },
+    {
+     "t": "It's a kite.",
+     "page": 32
+    }
+   ],
+   "trace": [
+    32
+   ]
+  },
+  {
+   "n": 6,
+   "pages": [
+    33
+   ],
+   "kind": "letter",
+   "letter": "r",
+   "words": [
+    {
+     "w": "robot",
+     "pic": "en_robot"
+    },
+    {
+     "w": "rabbit",
+     "pic": "rabbit"
+    }
+   ],
+   "lines": [
+    {
+     "t": "How old are you?",
+     "page": 33
+    },
+    {
+     "t": "I'm 6.",
+     "page": 33
+    },
+    {
+     "t": "I'm 4.",
+     "page": 33
+    }
+   ],
+   "labels": [
+    {
+     "w": "cake",
+     "pic": "en_cake",
+     "page": 33
+    }
+   ],
+   "trace": [
+    33
+   ]
+  },
+  {
+   "n": 7,
+   "pages": [
+    34
+   ],
+   "kind": "letter",
+   "letter": "s",
+   "words": [
+    {
+     "w": "snake",
+     "pic": "snake"
+    },
+    {
+     "w": "sun",
+     "pic": "sun"
+    }
+   ],
+   "lines": [
+    {
+     "t": "I'm 6.",
+     "page": 34
+    }
+   ],
+   "ages": {
+    "page": 34,
+    "pics": {
+     "a": 6,
+     "b": 5,
+     "c": 8,
+     "d": 4,
+     "e": 3,
+     "f": 7
+    },
+    "source": "numbers drawn in pictures; names in transcript p86 track 48"
+   },
+   "trace": [
+    34
+   ]
+  },
+  {
+   "n": 8,
+   "pages": [
+    35
+   ],
+   "kind": "letter",
+   "letter": "t",
+   "words": [
+    {
+     "w": "taxi",
+     "pic": "en_taxi"
+    },
+    {
+     "w": "tomato",
+     "pic": "en_tomato"
+    }
+   ],
+   "grid": {
+    "page": 35,
+    "pics": [
+     "orange",
+     "apple",
+     "desk",
+     "sun",
+     "fish",
+     "monkey",
+     "taxi",
+     "kite",
+     "elephant",
+     "pizza",
+     "flower",
+     "snake",
+     "cake",
+     "duck",
+     "bag",
+     "tomato",
+     "moon",
+     "house",
+     "ant",
+     "horse"
+    ],
+    "source": "pictures unlabeled; names = words of the book"
+   },
+   "trace": [
+    35
+   ]
+  },
+  {
+   "n": 0,
+   "pages": [
+    36,
+    37
+   ],
+   "kind": "project",
+   "title": "P for Project",
+   "text": "Make a numbers poster.",
+   "steps": [
+    "Draw",
+    "Colour",
+    "Stick",
+    "Point and say"
+   ]
+  }
+ ]
+}

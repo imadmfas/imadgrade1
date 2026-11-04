@@ -1,0 +1,264 @@
+{
+ "unit": 2,
+ "title": "My school",
+ "pages": [
+  18,
+  27
+ ],
+ "lessons": [
+  {
+   "n": 1,
+   "pages": [
+    18
+   ],
+   "kind": "letter",
+   "letter": "g",
+   "words": [
+    {
+     "w": "girl",
+     "pic": "girl"
+    },
+    {
+     "w": "goat",
+     "pic": "goat"
+    }
+   ],
+   "trace": [
+    18
+   ]
+  },
+  {
+   "n": 2,
+   "pages": [
+    19
+   ],
+   "kind": "letter",
+   "letter": "h",
+   "words": [
+    {
+     "w": "horse",
+     "pic": "horse"
+    },
+    {
+     "w": "house",
+     "pic": "house"
+    }
+   ],
+   "lines": [
+    {
+     "t": "A ruler.",
+     "page": 19
+    }
+   ],
+   "labels": [
+    {
+     "w": "book",
+     "pic": "book",
+     "page": 19
+    },
+    {
+     "w": "ruler",
+     "pic": "ruler",
+     "page": 19
+    },
+    {
+     "w": "pencil case",
+     "pic": "pencil_case",
+     "page": 19
+    },
+    {
+     "w": "rubber",
+     "pic": "eraser",
+     "page": 19
+    },
+    {
+     "w": "bag",
+     "pic": "schoolbag",
+     "page": 19
+    },
+    {
+     "w": "pen",
+     "pic": "en_pen",
+     "page": 19
+    },
+    {
+     "w": "pencil",
+     "pic": "pencil",
+     "page": 19
+    }
+   ],
+   "trace": [
+    19
+   ]
+  },
+  {
+   "n": 3,
+   "pages": [
+    20
+   ],
+   "kind": "letter",
+   "letter": "i",
+   "words": [
+    {
+     "w": "ink",
+     "pic": "en_ink"
+    },
+    {
+     "w": "in",
+     "pic": "en_in"
+    }
+   ],
+   "trace": [
+    20
+   ]
+  },
+  {
+   "n": 4,
+   "pages": [
+    21
+   ],
+   "kind": "letter",
+   "letter": "j",
+   "words": [
+    {
+     "w": "juice",
+     "pic": "en_juice"
+    },
+    {
+     "w": "jumper",
+     "pic": "en_jumper"
+    }
+   ],
+   "trace": [
+    21
+   ],
+   "notes": "p21 objects (book, bin, desk, chair, CD) unlabeled on the page"
+  },
+  {
+   "n": 5,
+   "pages": [
+    22
+   ],
+   "kind": "letter",
+   "letter": "k",
+   "words": [
+    {
+     "w": "key",
+     "pic": "key"
+    },
+    {
+     "w": "kite",
+     "pic": "en_kite"
+    }
+   ],
+   "lines": [
+    {
+     "t": "What's this?",
+     "page": 22
+    },
+    {
+     "t": "Is it a pen?",
+     "page": 22
+    },
+    {
+     "t": "No.",
+     "page": 22
+    },
+    {
+     "t": "Is it a pencil?",
+     "page": 22
+    },
+    {
+     "t": "Yes.",
+     "page": 22
+    }
+   ],
+   "trace": [
+    22
+   ]
+  },
+  {
+   "n": 6,
+   "pages": [
+    23
+   ],
+   "kind": "letter",
+   "letter": "l",
+   "words": [
+    {
+     "w": "lemon",
+     "pic": "lemon"
+    },
+    {
+     "w": "lion",
+     "pic": "lion"
+    }
+   ],
+   "lines": [
+    {
+     "t": "Open.",
+     "page": 23
+    },
+    {
+     "t": "Draw.",
+     "page": 23
+    },
+    {
+     "t": "Close.",
+     "page": 23
+    }
+   ],
+   "trace": [
+    23
+   ]
+  },
+  {
+   "n": 7,
+   "pages": [
+    24
+   ],
+   "kind": "picture",
+   "notes": "spot the difference a/b: poster g goat / d dog; apple / lemon",
+   "labels": [
+    {
+     "w": "goat",
+     "pic": "goat",
+     "page": 24
+    },
+    {
+     "w": "dog",
+     "pic": "dog",
+     "page": 24
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "pages": [
+    25
+   ],
+   "kind": "picture",
+   "lines": [
+    {
+     "t": "Who's in the bus?",
+     "page": 25
+    }
+   ]
+  },
+  {
+   "n": 0,
+   "pages": [
+    26,
+    27
+   ],
+   "kind": "story",
+   "title": "What is it?",
+   "lines": [
+    {
+     "t": "Hello, children.",
+     "page": 26
+    }
+   ]
+  }
+ ]
+}
