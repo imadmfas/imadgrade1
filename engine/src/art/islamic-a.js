@@ -1,3 +1,4 @@
+import { ART } from '../art.js';
 // رسوم كتاب «التربية الإسلامية» — رسوم أصلية بأسلوب المكتبة (مربع 100×100، حدود بنية دافئة).
 // لا رسم للأنبياء ولا الصحابة ولا الملائكة؛ الناس أطفال وأهل بلباس محتشم.
 const K = '#4a3426';
@@ -121,4 +122,10 @@ export const ART_ISLAMIC = {
     <path d="M24 50Q22 32 36 30Q48 32 46 50Q40 58 32 58Q26 56 24 50Z" fill="#f783ac" ${s2}/><circle cx="38" cy="44" r="6.5" fill="${SKIN}" ${s2}/>${dot(41, 43)}
     <path d="M56 86L74 68L92 86M62 86L74 74L86 86" fill="none" stroke="#8a5a3b" stroke-width="4" stroke-linecap="round"/>
     <path d="M74 68L58 62V48L74 54Z M74 68L90 62V48L74 54Z" fill="#fffaf0" ${s2}/><path d="M46 62L60 60" stroke="${SKIN}" stroke-width="4" stroke-linecap="round"/>`,
+  // ص٧ «خلق الله تعالى الإنسان»: ولد وبنت
+  isl_boy_girl: () => `${ground(96)}<g transform="translate(-30 -54.4) scale(1.6)">${boy(32, 50, '#4dabf7', '#3b5b8a', 'smile', 1.1)}${girl(68, 54, '#e64980', '#f783ac')}</g>`,
+  // ص٧ «خلق الله تعالى الحيوانات»: مرج فيه حيوانات المزرعة
+  isl_farm_animals: () => `<rect x="4" y="4" width="92" height="92" rx="14" fill="#d0ebff" ${S}/><path d="M4 48H96V82Q96 96 82 96H18Q4 96 4 82Z" fill="#94d82d" ${S}/>
+    <g transform="translate(52 6) scale(.46)">${ART.horse ? ART.horse() : ''}</g><g transform="translate(4 30) scale(.46)">${ART.goat ? ART.goat() : ''}</g>
+    <g transform="translate(6 56) scale(.4)">${ART.sheep ? ART.sheep() : ''}</g><g transform="translate(56 54) scale(.4)">${ART.rooster ? ART.rooster() : ''}</g><g transform="translate(36 66) scale(.3)">${ART.chick ? ART.chick() : ''}</g>`,
 };

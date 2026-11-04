@@ -18,8 +18,11 @@ fail = []
 V = json.load(open(os.path.join(SRC, 'verify.json'), encoding='utf-8'))
 applied = []
 def fix(val, page):
+    # تُطبَّق التصحيحات بالتتابع (الجولة الثانية تبني على الأولى)
     for f in V['fixes']:
-        if f['old'] == val and int(f['page']) == int(page) and f['old'] != f['new']: applied.append({'page': page, 'old': f['old'], 'new': f['new']}); return f['new']
+        if f['old'] == val and int(f['page']) == int(page) and f['old'] != f['new']:
+            if not any(a['old'] == f['old'] and a['page'] == page for a in applied): applied.append({'page': page, 'old': f['old'], 'new': f['new']})
+            val = f['new']
     return val
 for SL in S['lessons']:
     for b in SL.get('blocks', []):
@@ -28,6 +31,9 @@ for SL in S['lessons']:
         if b.get('lines'): b['lines'] = [fix(x, b['page']) for x in b['lines']]
         for r in b.get('rounds', []):
             if r.get('say'): r['say'] = fix(r['say'], b['page'])
+
+for f in V['fixes']:
+    if f.get('round') == 2 and not any(a['old'] == f['old'] and int(a['page']) == int(f['page']) for a in applied): fail.append(f'تصحيح لم يُطبَّق ص{f["page"]}: {f["old"]}')
 
 # ---------- مفاتيح الرسوم الموجودة ----------
 ART_KEYS = set()
@@ -56,6 +62,7 @@ def reg_quran(fn, text, lid, page):
 
 SAY = {
     'quran': 'اِسْتَمِعْ وَرَدِّدِ الْآيَاتِ', 'lines': 'اِلْمَسِ الْجُمْلَةَ وَاسْمَعْ', 'hadith': 'اِلْمَسِ الْحَدِيثَ وَاسْمَعْ',
+    'shahada': 'اِلْمَسِ الشَّهَادَةَ وَاسْمَعْهَا', 'meanings': 'اِلْمَسِ الْمَعْنَى وَاسْمَعْ',
     'tick': 'هَلِ التَّصَرُّفُ صَحِيحٌ؟', 'choose': 'اِسْمَعْ وَاخْتَرِ الصُّورَةَ', 'order': 'رَتِّبِ الصُّوَرَ بِالدَّوْرِ',
 }
 UI = {'noAudio': 'رَدِّدْ مَعَ مُعَلِّمِكَ', 'yes': 'تَصَرُّفٌ صَحِيحٌ', 'no': 'تَصَرُّفٌ خَطَأٌ'}
@@ -89,10 +96,11 @@ quran_diffs.append({'passage': 'nashid', 'page': 15, 'type': 'غير منقول'
 
 # ---------- بناء الدروس ----------
 def chunks(lst, n):
-    out = []
-    while lst:
-        k = n if len(lst) > n + 1 else len(lst)  # لا يبقى سطر وحيد في آخر مجموعة
-        out.append(lst[:k]); lst = lst[k:]
+    # صفحات متوازنة لا تزيد على n سطراً (٥ → ٣+٢، ١٠ → ٤+٣+٣)
+    g = -(-len(lst) // n); base, extra = divmod(len(lst), g); out, i = [], 0
+    for j in range(g):
+        k = base + (1 if j < extra else 0); out.append(lst[i:i + k]); i += k
+    assert all(len(x) <= n for x in out)
     return out
 def sticker_name(t): return 'مُلْصَقُ ' + t
 NASHID_SCENE = {'items': [{'art': 'mosque', 'x': 30, 'y': 40, 'w': 130}, {'art': 'isl_girl_reading', 'x': 170, 'y': 90, 'w': 100}, {'art': 'palm_trees', 'x': 270, 'y': 40, 'w': 120}, {'art': 'crescent_moon', 'x': 300, 'y': 2, 'w': 50}, {'art': 'flowers', 'x': 20, 'y': 170, 'w': 70}], 'bg': {}}
@@ -137,12 +145,26 @@ for SL in S['lessons']:
             if len(groups) > 1: merges.append(f'{lid} ص{pg}: {len(items)} سطراً قُسِّمت إلى {len(groups)} صفحات «اسمع والمس».')
             for gi, gr in enumerate(groups):
                 data = {'lines': gr}
-                if b.get('numbered'): data['numbered'] = True
+                if b.get('numbered'):
+                    data['numbered'] = True
+                    if gi: data['start'] = sum(len(x) for x in groups[:gi])
                 if b.get('intro') and gi == 0: data['intro'] = b['intro']
                 if b.get('outro') and gi == len(groups) - 1: data['outro'] = b['outro']
                 if t == 'hadith': data['style'] = 'hadith'
-                key = 'hadith' if t == 'hadith' else 'lines'
+                key = ('shahada' if b.get('kind') == 'shahada' else 'hadith') if t == 'hadith' else 'lines'
                 L['games'].append({'template': 'lines', 'page': pg, 'data': data, 'say': SAY[key], 'audio': audio[SAY[key]]})
+        elif t == 'meanings':
+            # جدول «معاني الكلمات»: الكلمة تُكتب ولا تُنطق، والمعنى وحده يُسمَع
+            mrows = []
+            for head, mean in b['rows']:
+                if re.search('[ٱۖ-ۭ]', head + mean): fail.append(f'{lid}: رسم عثماني في معاني الكلمات')
+                it = ln(mean, pg); it['head'] = head; mrows.append(it)
+            groups = chunks(mrows, 4)
+            if len(groups) > 1: merges.append(f'{lid} ص{pg}: معاني الكلمات ({len(mrows)}) قُسِّمت إلى {len(groups)} صفحات.')
+            for gi, gr in enumerate(groups):
+                data = {'lines': gr, 'style': 'meanings'}
+                if gi == 0: data['intro'] = b['intro']
+                L['games'].append({'template': 'lines', 'page': pg, 'data': data, 'say': SAY['meanings'], 'audio': audio[SAY['meanings']]})
         elif t == 'choose':
             rounds = []
             for r in b['rounds']:
@@ -167,6 +189,8 @@ for SL in S['lessons']:
             prev = [g for g in L['games'] if g['template'] == 'lines' and g['page'] == pg and g['data'].get('style') != 'hadith']
             pool = [x for g in prev for x in g['data']['lines']]
             its = [{'art': pool[i]['art'], 'text': pool[i]['text']} for i in b['steps']]
+            if b['steps'] != sorted(b['steps']): fail.append(f'{lid}: خطوات الترتيب ليست بترتيب الكتاب')
+            if b.get('why'): notes.append(f'{lid} ص{pg}: {b["why"]}')
             L['games'].append({'template': 'order', 'page': pg, 'data': {'rounds': [{'items': its}]}, 'say': SAY['order'], 'audio': audio[SAY['order']]})
     for s in SL.get('skipped', []): skipped.append(f'{lid}: {s}')
     if SL.get('merge'): merges.append(f'{lid}: {SL["merge"]}')
@@ -183,6 +207,10 @@ for L in lessons:
             blob = json.dumps(g, ensure_ascii=False)
             if re.search('[ٱۖ-ۭ]', blob): fail.append(f'{L["id"]}: نص قرآني داخل لعبة {g["template"]}')
 qtexts = {r[1] for r in quran_rows}
+heads = {x['head'] for L in lessons for g in L['games'] for x in g['data'].get('lines', []) if x.get('head')}
+ntitles = {L['nashid']['title'] for L in lessons if L.get('nashid')}
+for t in audio:
+    if t in heads and t not in ntitles: fail.append('كلمة قرآنية من جدول المعاني في سجل الأصوات: ' + t)
 for t in audio:
     if t in qtexts: fail.append('نص قرآني في سجل الأصوات العام: ' + t)
 if fail:
@@ -204,7 +232,7 @@ report = {
     'lessons': len([L for L in lessons if L['games']]), 'nashid_pages': len([L for L in lessons if not L['games']]), 'games': games, 'templates': counts,
     'audio_clips': len(rows), 'quran_clips': len(quran_rows),
     'quran_source': 'نص المقارنة: «majma» (مصحف مجمع الملك فهد، حفص عن عاصم) من أداة المكتبة الشاملة shamela_get_aya.',
-    'quran_diffs': quran_diffs, 'merges': merges, 'skipped': skipped, 'outside': outside, 'inferred': inferred, 'notes': notes + Q.get('notes', []), 'second_reader': {'fixes_applied': applied, 'fixes_listed': len(V['fixes'])},
+    'quran_diffs': quran_diffs, 'merges': merges, 'skipped': skipped, 'outside': outside, 'inferred': inferred, 'notes': notes + Q.get('notes', []), 'print_typos': V.get('print_typos', []), 'second_reader': {'fixes_applied': applied, 'fixes_listed': len(V['fixes'])},
 }
 json.dump(report, open(os.path.join(OUT, 'report.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print(f'islamic: {report["lessons"]} lessons + {report["nashid_pages"]} nashid pages, {games} games {counts}, {len(rows)} clips + {len(quran_rows)} quran clips, quran diffs {len(quran_diffs)}')

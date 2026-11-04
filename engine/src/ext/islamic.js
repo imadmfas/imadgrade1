@@ -1,6 +1,7 @@
 // قوالب كتاب «التربية الإسلامية»:
 //  quran  — آيات للاستماع والترديد (تسجيل بشري فقط، والكلمة المتلوّة تتلوّن). لا تقطيع ولا فوز ولا خسارة.
 //  lines  — جمل الدرس أو الحديث الشريف أو الدعاء كما في الكتاب: يلمسها الطفل فيسمعها.
+//           ومعاني الكلمات (style: meanings): الكلمة القرآنية تُكتب بالخط العادي ولا تُنطق، والمعنى وحده يُسمَع.
 //  tick   — صورة تصرّف: صحيح ✓ أم خطأ ✗ (للآداب فقط).
 // حارس القرآن: لا يُنطق نص قرآني بصوت آلي أبداً (انظر guardNarrator أسفل الملف).
 import { gsap, $, $$, SFX, state, sleep, esc, Narrator, Music } from '../core.js';
@@ -81,6 +82,9 @@ const CSS = `
 .lcap{font-size:clamp(28px,4.6vmin,34px);font-weight:700;color:var(--c1);text-align:center}
 .g-lines.hadith .lrow{background:#fbe7c6;border:4px solid #d9a35b;justify-content:center;text-align:center;font-size:clamp(32px,6vmin,52px);font-weight:700}
 .g-lines.hadith .lcap{color:#1c4fa0}
+.lrow .lhead{flex:0 0 auto;max-width:42%;background:#fde7ef;color:var(--c1);border-radius:16px;padding:0 12px;font-weight:700;border:3px solid color-mix(in srgb,var(--c1) 30%,#fff)}
+.g-lines.meanings .lrow{flex-wrap:wrap;row-gap:2px}
+@media (max-width:520px){.g-lines.meanings .lrow .lhead{max-width:100%}}
 .g-tick{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}
 .g-tick .tpic{background:#fff;border-radius:26px;padding:10px;width:min(56vmin,300px);height:min(46vmin,260px);display:flex;align-items:center;justify-content:center;box-shadow:0 5px 0 rgba(0,0,0,.08);border:4px solid transparent}
 .g-tick .tpic svg{width:100%;height:100%}
@@ -142,7 +146,7 @@ const lines = (stage, game, ctx) => {
   const d = game.data, L = d.lines, heard = new Set();
   const box = h(`<div class="g-lines ${d.style || ''}">${d.intro ? `<div class="lcap">${esc(d.intro)}</div>` : ''}</div>`);
   const els = L.map((ln, i) => {
-    const el = h(`<button class="lrow tap" type="button">${ln.art && ART[ln.art] ? `<span class="lpic">${art(ln.art)}</span>` : ''}${d.numbered ? `<span class="lnum">${ctx.digits(i + 1)}.</span>` : ''}<span class="ltxt">${ln.text.split(/\s+/).map((w) => `<span>${esc(w)}</span>`).join(' ')}</span></button>`);
+    const el = h(`<button class="lrow tap" type="button">${ln.art && ART[ln.art] ? `<span class="lpic">${art(ln.art)}</span>` : ''}${d.numbered ? `<span class="lnum">${ctx.digits((d.start || 0) + i + 1)}.</span>` : ''}${ln.head ? `<span class="lhead">${esc(ln.head)}</span>` : ''}<span class="ltxt">${ln.text.split(/\s+/).map((w) => `<span>${esc(w)}</span>`).join(' ')}</span></button>`);
     box.appendChild(el); return el;
   });
   if (d.outro) box.insertAdjacentHTML('beforeend', `<div class="lcap">${esc(d.outro)}</div>`);
