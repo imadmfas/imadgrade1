@@ -6,6 +6,6 @@ export const BOOKS = [
   { id: 'science', title: 'الْعُلُومُ', color: '#2f9e44', color2: '#f5c518', icon: 'leaf', audio: 'shelf-science.mp3', ready: true },
   { id: 'islamic', title: 'التَّرْبِيَةُ الْإِسْلَامِيَّةُ', color: '#c2255c', color2: '#2f9e44', icon: 'dome', audio: 'shelf-islamic.mp3', ready: true },
   { id: 'english', title: 'اللُّغَةُ الْإِنْكِلِيزِيَّةُ', color: '#1c7ed6', color2: '#fab005', icon: 'ABC', audio: 'shelf-english.mp3', ready: true },
-  { id: 'ethics', title: 'التَّرْبِيَةُ الْأَخْلَاقِيَّةُ', color: '#37b24d', color2: '#f06595', icon: 'heart', audio: 'shelf-ethics.mp3', ready: false },
+  { id: 'ethics', title: 'التَّرْبِيَةُ الْأَخْلَاقِيَّةُ', color: '#37b24d', color2: '#f06595', icon: 'heart', audio: 'shelf-ethics.mp3', ready: true },
 ];
 export const SHELF_SAY = { soon: 'قَرِيبًا', hello: 'اِخْتَرْ كِتَابًا وَالْمِسْهُ' };
