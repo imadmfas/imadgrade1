@@ -1,0 +1,1004 @@
+{
+ "section": "التَّهْيِئَةُ",
+ "pages": [
+  7,
+  16
+ ],
+ "lessons": [
+  {
+   "kind": "intro",
+   "title": "التَّهْيِئَةُ",
+   "letter": "",
+   "pages": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "activities": [
+    {
+     "n": "١",
+     "page": 7,
+     "instruction": "أَسْتَمِعُ وَأُقَلِّدُ :",
+     "type": "repeat",
+     "content": [
+      {
+       "value": "",
+       "page": 7,
+       "picture": "teacher reading to class"
+      },
+      {
+       "value": "",
+       "page": 7,
+       "picture": "sparrow"
+      },
+      {
+       "value": "",
+       "page": 7,
+       "picture": "cat"
+      },
+      {
+       "value": "",
+       "page": 7,
+       "picture": "goat"
+      }
+     ]
+    },
+    {
+     "n": "٢",
+     "page": 7,
+     "instruction": "أَسْتَمِعُ إِلَى النَّشِيْدِ وَ أُرَدِّدُ :",
+     "type": "repeat",
+     "content": [
+      {
+       "value": "نشيد يبدأ بـ «يَا بَطْ يَا بَطْ» — ٤ أبيات (٨ أشطر)، لم يُنقل نصّه",
+       "page": 7,
+       "picture": "duck song"
+      }
+     ]
+    },
+    {
+     "n": "٣",
+     "page": 7,
+     "instruction": "أُسَمِّي الأَشْيَاءَ الَّتِي فِي الصُّوْرَةِ :",
+     "type": "other",
+     "content": [
+      {
+       "value": "",
+       "page": 7,
+       "picture": "ruler"
+      },
+      {
+       "value": "",
+       "page": 7,
+       "picture": "pencil"
+      },
+      {
+       "value": "",
+       "page": 7,
+       "picture": "spoon"
+      },
+      {
+       "value": "",
+       "page": 7,
+       "picture": "scissors"
+      },
+      {
+       "value": "",
+       "page": 7,
+       "picture": "book"
+      },
+      {
+       "value": "",
+       "page": 7,
+       "picture": "school bag"
+      },
+      {
+       "value": "",
+       "page": 7,
+       "picture": "train"
+      },
+      {
+       "value": "",
+       "page": 7,
+       "picture": "whistle"
+      },
+      {
+       "value": "",
+       "page": 7,
+       "picture": "clock"
+      }
+     ]
+    },
+    {
+     "n": "٤",
+     "page": 8,
+     "instruction": "أَتَحَدَّثُ عَنِ الصُّوَرِ مَعَ مُعَلِّمِي وَ زُمَلائِي :",
+     "type": "other",
+     "content": [
+      {
+       "value": "",
+       "page": 8,
+       "picture": "children waking up in bedroom"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "children eating breakfast"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "children walking to school"
+      }
+     ]
+    },
+    {
+     "n": "٥",
+     "page": 8,
+     "instruction": "أُمَيِّزُ الْمُتَشَابِهَ وَالْمُخْتَلِفَ :",
+     "type": "circle",
+     "content": [
+      {
+       "value": "أَرْسُمُ دَائِرَةً حَوْلَ الْمُتَشَابِهِ",
+       "page": 8
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "pencils group (example: bundle of pencils)"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "pencil"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "pencil"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "pencil"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "bundle of pencils"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "hen (example)"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "ostrich"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "ostrich"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "ostrich"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "hen"
+      },
+      {
+       "value": "أَرْسُمُ دائِرَةً حَوْلَ الْمُخْتَلِفِ",
+       "page": 8
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "football"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "tennis ball"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "football"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "blue book"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "blue book"
+      },
+      {
+       "value": "",
+       "page": 8,
+       "picture": "yellow book"
+      }
+     ]
+    },
+    {
+     "n": "٦",
+     "page": 9,
+     "instruction": "أُمَيِّزُ الأَقْصَرَ مِنَ الأَطْوَلِ :",
+     "type": "circle",
+     "content": [
+      {
+       "value": "أَضَعُ دَائِرَةً حَوْلَ الأَطْوَلِ :",
+       "page": 9
+      },
+      {
+       "value": "",
+       "page": 9,
+       "picture": "short giraffe"
+      },
+      {
+       "value": "",
+       "page": 9,
+       "picture": "tall giraffe"
+      },
+      {
+       "value": "",
+       "page": 9,
+       "picture": "short pencil"
+      },
+      {
+       "value": "",
+       "page": 9,
+       "picture": "long pencil"
+      }
+     ]
+    },
+    {
+     "n": "٧",
+     "page": 9,
+     "instruction": "أُحَدِّدُ الأَمَاكِنَ :",
+     "type": "other",
+     "content": [
+      {
+       "value": "فَوْقَ ، تَحْتَ",
+       "page": 9
+      },
+      {
+       "value": "أَمَامَ ، خَلْفَ",
+       "page": 9
+      },
+      {
+       "value": "",
+       "page": 9,
+       "picture": "book on table, cat under table"
+      },
+      {
+       "value": "",
+       "page": 9,
+       "picture": "girl, chair, boy (in front/behind)"
+      }
+     ]
+    },
+    {
+     "n": "٨",
+     "page": 9,
+     "instruction": "أَتَعَرَّفُ إِلَى الاتِجَاهَاتِ",
+     "type": "other",
+     "content": [
+      {
+       "value": "أُحَدِّدُ الاتِّجَاهَ يَمِيْن وَ يَسَار",
+       "page": 9
+      },
+      {
+       "value": "",
+       "page": 9,
+       "picture": "traffic light"
+      },
+      {
+       "value": "",
+       "page": 9,
+       "picture": "traffic policeman"
+      },
+      {
+       "value": "",
+       "page": 9,
+       "picture": "two cars turning right and left"
+      }
+     ]
+    },
+    {
+     "n": "٩",
+     "page": 10,
+     "instruction": "أُمَيِّزُ الصَّوْتَ الْقَصِيْرَ وَالطَّوِيْلَ :",
+     "type": "listen-distinguish",
+     "content": [
+      {
+       "value": "",
+       "page": 10,
+       "picture": "hen"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "house"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "doll"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "worm"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "armor"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "rooster"
+      }
+     ]
+    },
+    {
+     "n": "١٠",
+     "page": 10,
+     "instruction": "أُمَيِّزُ الصَّوْتَ الأَوَّلَ :",
+     "type": "listen-distinguish",
+     "content": [
+      {
+       "value": "",
+       "page": 10,
+       "picture": "cow"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "fish"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "fig"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "door"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "book"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "camel"
+      }
+     ]
+    },
+    {
+     "n": "١١",
+     "page": 10,
+     "instruction": "أُمَيِّزُ الصَّوْتَ الأَخِيْرَ :",
+     "type": "listen-distinguish",
+     "content": [
+      {
+       "value": "",
+       "page": 10,
+       "picture": "dog"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "drum"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "sun"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "Iraqi flag"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "rooster"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "fire"
+      }
+     ]
+    },
+    {
+     "n": "١٢",
+     "page": 10,
+     "instruction": "أُمَيِّزُ الصَّوْتَ الأَوْسَطَ :",
+     "type": "listen-distinguish",
+     "content": [
+      {
+       "value": "",
+       "page": 10,
+       "picture": "foot"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "mountain"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "pencil"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "camel"
+      },
+      {
+       "value": "",
+       "page": 10,
+       "picture": "grapes"
+      }
+     ]
+    }
+   ],
+   "notes": "صفحات تهيئة مصوّرة؛ لا كلمات مكتوبة تحت الصور في الأنشطة ٣ و٩–١٢ (التسمية شفوية). النشيد في نشاط ٢ بلا عنوان ولا اسم شاعر."
+  },
+  {
+   "kind": "intro",
+   "title": "أَتَعَرَّفُ صَوْتَ الْمَدِّالطويل",
+   "letter": "ا ىٰ",
+   "pages": [
+    11,
+    12
+   ],
+   "activities": [
+    {
+     "n": "١",
+     "page": 11,
+     "instruction": "أُرَدِّدُ مُنْتَبِهًا لِصَوْتِ الْمَدِّ الطَّوِيْلِ (ا، ىٰ)",
+     "type": "repeat",
+     "content": [
+      {
+       "value": "",
+       "page": 11,
+       "picture": "house"
+      },
+      {
+       "value": "",
+       "page": 11,
+       "picture": "candies"
+      },
+      {
+       "value": "",
+       "page": 11,
+       "picture": "gazelle"
+      },
+      {
+       "value": "",
+       "page": 11,
+       "picture": "football goal"
+      },
+      {
+       "value": "",
+       "page": 11,
+       "picture": "walking cane"
+      }
+     ]
+    },
+    {
+     "n": "٢",
+     "page": 11,
+     "instruction": "أَضَعُ ✓ فِي المربع أَسْفَلَ الصُّوْرَةِ الَّتِي أَنْطِقُ فَيْهَا صَوْتَ الْمَدِّ الطويل (ا، ىٰ)",
+     "type": "listen-distinguish",
+     "content": [
+      {
+       "value": "بَابُ",
+       "page": 11,
+       "picture": "door"
+      },
+      {
+       "value": "مُرَبَّىٰ",
+       "page": 11,
+       "picture": "jam"
+      },
+      {
+       "value": "بَطَّةُ",
+       "page": 11,
+       "picture": "duck"
+      },
+      {
+       "value": "دَارُ",
+       "page": 11,
+       "picture": "house"
+      }
+     ]
+    },
+    {
+     "n": "٣",
+     "page": 11,
+     "instruction": "أَسْتَمِعُ لِنُطْقِ الْكَلِمَاتِ، ثُمَّ أَضَعُ دَائِرَةً حَوْلَ الْكَلِمَاتِ الَّتِي تَحْوِي صَوْتَ الْمَدِّ الطويل (ا، ىٰ)",
+     "type": "listen-distinguish",
+     "content": [
+      {
+       "value": "نَارُ",
+       "page": 11,
+       "picture": "fire"
+      },
+      {
+       "value": "مُسْتَشْفَىٰ",
+       "page": 11,
+       "picture": "hospital"
+      },
+      {
+       "value": "غَزَالُ",
+       "page": 11,
+       "picture": "gazelle"
+      },
+      {
+       "value": "بَقَرَةُ",
+       "page": 11,
+       "picture": "cow"
+      }
+     ]
+    },
+    {
+     "n": "٤",
+     "page": 12,
+     "instruction": "أَرْسُمُ دَائِرَةً حَوْلَ صَوْتِ الْمَدِّ ( ا ، ىٰ)",
+     "type": "circle",
+     "content": [
+      {
+       "value": "ا",
+       "page": 12
+      },
+      {
+       "value": "ي",
+       "page": 12
+      },
+      {
+       "value": "ا",
+       "page": 12
+      },
+      {
+       "value": "لـ",
+       "page": 12
+      },
+      {
+       "value": "ىٰ",
+       "page": 12
+      },
+      {
+       "value": "ط",
+       "page": 12
+      }
+     ]
+    },
+    {
+     "n": "٥",
+     "page": 12,
+     "instruction": "أَرْسُمُ صَوْتَ الْمَدِّ الطويل ( ا ، ىٰ) بِخَطٍّ وَاضِحٍ :",
+     "type": "trace",
+     "content": [
+      {
+       "value": "ا",
+       "page": 12
+      },
+      {
+       "value": "ىٰ",
+       "page": 12
+      },
+      {
+       "value": "ا",
+       "page": 12
+      },
+      {
+       "value": "ىٰ",
+       "page": 12
+      }
+     ]
+    },
+    {
+     "n": "٦",
+     "page": 12,
+     "instruction": "أَرْسُمُ صَوْتَ الْمَدِّ الطويل (ا، ىٰ) فِي الْكَلِمَاتِ الآتِيَةِ :",
+     "type": "write",
+     "content": [
+      {
+       "value": "نَـ..رُ (نَارُ)",
+       "page": 12,
+       "picture": "fire"
+      },
+      {
+       "value": "مَرْمَـ... (مَرْمَىٰ)",
+       "page": 12,
+       "picture": "football goal"
+      },
+      {
+       "value": "دَ..رُ (دَارُ)",
+       "page": 12,
+       "picture": "house"
+      },
+      {
+       "value": "حَلْوَ... (حَلْوَىٰ)",
+       "page": 12,
+       "picture": "candies"
+      }
+     ]
+    }
+   ],
+   "notes": "عنوان الدرس في الكتاب ملتصق «الْمَدِّالطويل» بلا مسافة. كلمة «الطويل» في التعليمات غير مشكولة في الكتاب، و«المربع» غير مشكولة. «فَيْهَا» بفتحة على الفاء كما في الكتاب. في نشاط ٢ يُرسم رمز ✓ (صورة شخصية علامة صح) بين «أَضَعُ» و«فِي». في نشاط ٦ الكلمة بين القوسين هي الإكمال المتوقع (استنتاج) والكتاب يعرض الكلمة ناقصة بنقاط حمراء. نشاط ٥: سطر نموذج أحمر ثم سطر منقّط للتتبّع ثم أسطر فارغة."
+  },
+  {
+   "kind": "intro",
+   "title": "أَتَعَرَّفُ صَوْتَ الْمَدِّ الطويل",
+   "letter": "و",
+   "pages": [
+    13,
+    14
+   ],
+   "activities": [
+    {
+     "n": "١",
+     "page": 13,
+     "instruction": "أُرَدِّدُ مُنْتَبِهًا لِصَوْتِ الْمَدِّ الطَّوِيْلِ (و)",
+     "type": "repeat",
+     "content": [
+      {
+       "value": "",
+       "page": 13,
+       "picture": "owl"
+      },
+      {
+       "value": "",
+       "page": 13,
+       "picture": "chick"
+      },
+      {
+       "value": "",
+       "page": 13,
+       "picture": "sparrow"
+      },
+      {
+       "value": "",
+       "page": 13,
+       "picture": "peacock"
+      },
+      {
+       "value": "",
+       "page": 13,
+       "picture": "sheep"
+      }
+     ]
+    },
+    {
+     "n": "٢",
+     "page": 13,
+     "instruction": "أَضَعُ ✓ فِي المربع أَسْفَلَ الصُّوْرَةِ الَّتِي أَنْطِقُ فَيْهَا صَوْتَ الْمَدِّ الطويل (و)",
+     "type": "listen-distinguish",
+     "content": [
+      {
+       "value": "بُوْمَةُ",
+       "page": 13,
+       "picture": "owl"
+      },
+      {
+       "value": "خَرُوْفُ",
+       "page": 13,
+       "picture": "sheep"
+      },
+      {
+       "value": "دُمْيَةُ",
+       "page": 13,
+       "picture": "doll"
+      },
+      {
+       "value": "نُجُوْمُ",
+       "page": 13,
+       "picture": "stars"
+      }
+     ]
+    },
+    {
+     "n": "٣",
+     "page": 13,
+     "instruction": "أَسْتَمِعُ لِنُطْقِ الْكَلِمَاتِ، ثُمَّ أَضَعُ دَائِرَةً حَوْلَ الْكَلِمَاتِ الَّتِي تَحْوِي صَوْتَ الْمَدِّ الطويل (و)",
+     "type": "listen-distinguish",
+     "content": [
+      {
+       "value": "حَاسُوْبُ",
+       "page": 13,
+       "picture": "laptop"
+      },
+      {
+       "value": "بُنْدُقُ",
+       "page": 13,
+       "picture": "hazelnuts"
+      },
+      {
+       "value": "بُوْقُ",
+       "page": 13,
+       "picture": "horn"
+      },
+      {
+       "value": "تُوْتُ",
+       "page": 13,
+       "picture": "berries"
+      }
+     ]
+    },
+    {
+     "n": "٤",
+     "page": 14,
+     "instruction": "أَرْسُمُ دَائِرَةً حَوْلَ صَوْتِ الْمَدِّ الطويل (و)",
+     "type": "circle",
+     "content": [
+      {
+       "value": "م",
+       "page": 14
+      },
+      {
+       "value": "و",
+       "page": 14
+      },
+      {
+       "value": "ر",
+       "page": 14
+      },
+      {
+       "value": "و",
+       "page": 14
+      },
+      {
+       "value": "ف",
+       "page": 14
+      },
+      {
+       "value": "ز",
+       "page": 14
+      }
+     ]
+    },
+    {
+     "n": "٥",
+     "page": 14,
+     "instruction": "أَرْسُمُ صَوْتَ الْمَدِّ (و) بِخَطٍّ وَاضِحٍ :",
+     "type": "trace",
+     "content": [
+      {
+       "value": "و",
+       "page": 14
+      },
+      {
+       "value": "و",
+       "page": 14
+      },
+      {
+       "value": "و",
+       "page": 14
+      },
+      {
+       "value": "و",
+       "page": 14
+      }
+     ]
+    },
+    {
+     "n": "٦",
+     "page": 14,
+     "instruction": "أَرْسُمُ صَوْتَ الْمَدِّ الطويل (و) فِي الْكَلِمَاتِ الآتِيَةِ :",
+     "type": "write",
+     "content": [
+      {
+       "value": "خَرُ..فُ (خَرُوْفُ)",
+       "page": 14,
+       "picture": "sheep"
+      },
+      {
+       "value": "حُـ..تُ (حُوْتُ)",
+       "page": 14,
+       "picture": "whale"
+      },
+      {
+       "value": "صُـ..صُ (صُوْصُ)",
+       "page": 14,
+       "picture": "chick"
+      },
+      {
+       "value": "لَيْمُـ..نُ (لَيْمُوْنُ)",
+       "page": 14,
+       "picture": "lemon"
+      }
+     ]
+    }
+   ],
+   "notes": "الإكمال بين القوسين في نشاط ٦ استنتاج. «الطويل» و«المربع» غير مشكولتين في الكتاب. نشاط ٥: نموذج أحمر «و» أربع مرات ثم سطر منقّط."
+  },
+  {
+   "kind": "intro",
+   "title": "أَتَعَرَّفُ صَوْتَ الْمَدِّ",
+   "letter": "يـ ي",
+   "pages": [
+    15,
+    16
+   ],
+   "activities": [
+    {
+     "n": "١",
+     "page": 15,
+     "instruction": "أُرَدِّدُ مُنْتَبِهًا لِصَوْتِ الْمَدِّ الطَّوِيْلِ (يـ ، ي)",
+     "type": "repeat",
+     "content": [
+      {
+       "value": "",
+       "page": 15,
+       "picture": "table with milk bottle, juice, melon, figs, raisins"
+      }
+     ]
+    },
+    {
+     "n": "٢",
+     "page": 15,
+     "instruction": "أَضَعُ ✓ فِي المربع أَسْفَلَ الصُّوْرَةِ الَّتِي أَنْطِقُ فَيْهَا صَوْتَ الْمَدِّ الطويل (يـ ، ي)",
+     "type": "listen-distinguish",
+     "content": [
+      {
+       "value": "تِيْنُ",
+       "page": 15,
+       "picture": "fig"
+      },
+      {
+       "value": "مِيْزَانُ",
+       "page": 15,
+       "picture": "scale"
+      },
+      {
+       "value": "سِوَارُ",
+       "page": 15,
+       "picture": "bracelet"
+      },
+      {
+       "value": "فِيْلُ",
+       "page": 15,
+       "picture": "elephant"
+      }
+     ]
+    },
+    {
+     "n": "٣",
+     "page": 15,
+     "instruction": "أَسْتَمِعُ لِنُطْقِ الْكَلِمَاتِ، ثُمَّ أَضَعُ دَائِرَةً حَوْلَ الْكَلِمَاتِ الَّتِي تَحْوِي صَوْتَ الْمَدِّ الطويل (يـ ، ي)",
+     "type": "listen-distinguish",
+     "content": [
+      {
+       "value": "حَلِيْبُ",
+       "page": 15,
+       "picture": "milk"
+      },
+      {
+       "value": "بِسَاطُ",
+       "page": 15,
+       "picture": "rug"
+      },
+      {
+       "value": "رِيْشُ",
+       "page": 15,
+       "picture": "feathers"
+      },
+      {
+       "value": "دِيْكُ",
+       "page": 15,
+       "picture": "rooster"
+      }
+     ]
+    },
+    {
+     "n": "٤",
+     "page": 16,
+     "instruction": "أَرْسُمُ دَائِرَةً حَوْلَ صَوْتِ الْمَدِّ الطويل (يـ ، ي)",
+     "type": "circle",
+     "content": [
+      {
+       "value": "ى",
+       "page": 16
+      },
+      {
+       "value": "ب",
+       "page": 16
+      },
+      {
+       "value": "ي",
+       "page": 16
+      },
+      {
+       "value": "بـ",
+       "page": 16
+      },
+      {
+       "value": "يـ",
+       "page": 16
+      },
+      {
+       "value": "تـ",
+       "page": 16
+      }
+     ]
+    },
+    {
+     "n": "٥",
+     "page": 16,
+     "instruction": "أَرْسُمُ صَوْتَ الْمَدِّ الطويل (يـ ، ي) بِخَطٍّ وَاضِحٍ :",
+     "type": "trace",
+     "content": [
+      {
+       "value": "يـ",
+       "page": 16
+      },
+      {
+       "value": "ـيـ",
+       "page": 16
+      },
+      {
+       "value": "ي",
+       "page": 16
+      }
+     ]
+    },
+    {
+     "n": "٦",
+     "page": 16,
+     "instruction": "أَرْسُمُ صَوْتَ الْمَدِّ الطويل (يـ ، ي) فِي الْكَلِمَاتِ الآتِيَةِ :",
+     "type": "write",
+     "content": [
+      {
+       "value": "بِطِّـ..ـخُ (بِطِّيْخُ)",
+       "page": 16,
+       "picture": "melon"
+      },
+      {
+       "value": "رِ..ـشُ (رِيْشُ)",
+       "page": 16,
+       "picture": "feathers"
+      },
+      {
+       "value": "سَفِـ..ـنَةُ (سَفِيْنَةُ)",
+       "page": 16,
+       "picture": "ship"
+      },
+      {
+       "value": "فِـ..ـلُ (فِيْلُ)",
+       "page": 16,
+       "picture": "elephant"
+      }
+     ]
+    }
+   ],
+   "notes": "عنوان الصفحة «أَتَعَرَّفُ صَوْتَ الْمَدِّ» بلا «الطويل». نشاط ١ صورة واحدة لمائدة (زجاجة مكتوب عليها «حليب»). «بِسَاطُ» تبدو الكسرة تحت الباء. الإكمال في نشاط ٦ استنتاج."
+  }
+ ],
+ "uncertain": [
+  "١١: فَيْهَا — الحركة على الفاء تبدو فتحة (كذلك في ١٣ و١٥) وهي خطأ مطبعي محتمل؛ نُقلت كما ظهرت",
+  "٨: دَائِرَةً في سحابة المختلف بلا فتحة على الدال؛ في سحابة المتشابه بفتحة",
+  "١٠: نشاط ٩ — أسماء الصور (دجاجة/دار، دمية/دودة، درع/ديك) غير مكتوبة؛ وصفُها فقط"
+ ]
+}

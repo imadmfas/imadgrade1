@@ -1,0 +1,1029 @@
+{
+ "section": "الوَحْدَةُ الأُوْلَى : أُسْرَتِي",
+ "pages": [
+  17,
+  30
+ ],
+ "lessons": [
+  {
+   "kind": "listening",
+   "title": "الدَّرْسُ الأَوَّلُ : الاِسْتِمَاعُ",
+   "letter": "",
+   "pages": [
+    17
+   ],
+   "activities": [
+    {
+     "n": "",
+     "page": 17,
+     "instruction": "",
+     "type": "other",
+     "content": [
+      {
+       "value": "",
+       "page": 17,
+       "picture": "family of four (father, mother with bag, girl, boy) standing in front of house"
+      }
+     ]
+    }
+   ],
+   "notes": "صورة واحدة لأسرة (أب وأم وبنت وولد) أمام البيت؛ لا نص مكتوب غير العنوان. عنوان الوحدة: الوَحْدَةُ الأُوْلَى : أُسْرَتِي"
+  },
+  {
+   "kind": "conversation",
+   "title": "الدَّرْسُ الثَّانِي : الـمُحَادَثَةُ",
+   "letter": "",
+   "pages": [
+    17
+   ],
+   "activities": [
+    {
+     "n": "",
+     "page": 17,
+     "instruction": "أَنَا أَتَحَدَّثُ :",
+     "type": "other",
+     "content": [
+      {
+       "value": "",
+       "page": 17,
+       "picture": "father reading with son, mother reading to small daughter in living room"
+      },
+      {
+       "value": "",
+       "page": 17,
+       "picture": "mother in kitchen with boy and girl, plate of food"
+      },
+      {
+       "value": "",
+       "page": 17,
+       "picture": "boy carrying a tray of food to an old woman at the door"
+      },
+      {
+       "value": "أَصِفُ مَا أَرَاهُ فِي كُلِّ صُوْرَةٍ .",
+       "page": 17
+      },
+      {
+       "value": "كَيْفَ أَتَعَامَلُ مَعَ كُلِّ فَرْدٍ مِنْ أَفْرَادِ أُسْرَتِي ؟",
+       "page": 17
+      },
+      {
+       "value": "أُكَوِّنُ قِصَّةً قَصِيْرَةً مِنَ الصُّوَرِ الثَّلاثِ .",
+       "page": 17
+      }
+     ]
+    }
+   ],
+   "notes": "ثلاث صور متصلة بخطوط، وتعليمات «أنا أتحدّث» منقولة كما هي."
+  },
+  {
+   "kind": "letter",
+   "title": "أَتَعَرَّفُ الحَرْفَ (ب)",
+   "letter": "ب",
+   "pages": [
+    18,
+    19,
+    20
+   ],
+   "activities": [
+    {
+     "n": "١",
+     "page": 18,
+     "instruction": "أُرَدِّدُ مُنْتَبِهًا لِصَوْتِ حَرْفِ (ب)",
+     "type": "repeat",
+     "content": [
+      {
+       "value": "بَقَرَةُ",
+       "page": 18,
+       "picture": "cow"
+      },
+      {
+       "value": "بُرْتُقَالُ",
+       "page": 18,
+       "picture": "oranges"
+      },
+      {
+       "value": "بِسَاطُ",
+       "page": 18,
+       "picture": "rug"
+      },
+      {
+       "value": "حَلِيْبُ",
+       "page": 18,
+       "picture": "milk"
+      },
+      {
+       "value": "خُبْزُ",
+       "page": 18,
+       "picture": "bread"
+      },
+      {
+       "value": "بَابُ",
+       "page": 18,
+       "picture": "door"
+      },
+      {
+       "value": "بُوْقُ",
+       "page": 18,
+       "picture": "trumpet"
+      },
+      {
+       "value": "طَبِيْبُ",
+       "page": 18,
+       "picture": "doctor"
+      }
+     ]
+    },
+    {
+     "n": "٢",
+     "page": 18,
+     "instruction": "أَنْطِقُ صَوْتَ (ب) مَعَ أَصْوَاتِ الْمَدِّ الْقَصِيْرَةِ، وَأَصْوَاتِ الْمَدِّ الطَّوِيْلَةِ :",
+     "type": "syllables",
+     "content": [
+      {
+       "value": "بَـ",
+       "page": 18
+      },
+      {
+       "value": "بَا",
+       "page": 18
+      },
+      {
+       "value": "بُـ",
+       "page": 18
+      },
+      {
+       "value": "بُوْ",
+       "page": 18
+      },
+      {
+       "value": "بِـ",
+       "page": 18
+      },
+      {
+       "value": "بِيْـ",
+       "page": 18
+      }
+     ]
+    },
+    {
+     "n": "٣",
+     "page": 19,
+     "instruction": "أَسْتَمِعُ لِلَفْظِ الْكَلِمَات، ثُمَّ أَنْطِقُ (ب) مَعَ أَصْوَاتِ الْمَدِّ الْقَصِيْرَةِ، وَأَصْوَاتِ الْمَدِّ الطَّوِيْلَةِ.",
+     "type": "repeat",
+     "content": [
+      {
+       "value": "بَصَلُ",
+       "page": 19,
+       "picture": "onions"
+      },
+      {
+       "value": "بُرْتُقَالُ",
+       "page": 19,
+       "picture": "oranges"
+      },
+      {
+       "value": "بِطِّيْخُ",
+       "page": 19,
+       "picture": "melon"
+      },
+      {
+       "value": "بَابُ",
+       "page": 19,
+       "picture": "door"
+      },
+      {
+       "value": "بُوْقُ",
+       "page": 19,
+       "picture": "trumpet"
+      },
+      {
+       "value": "طَبِيْبُ",
+       "page": 19,
+       "picture": "doctor"
+      }
+     ]
+    },
+    {
+     "n": "٤",
+     "page": 19,
+     "instruction": "أَسْتَمِعُ لِلَفْظِ الْكَلِمَاتِ، وَأُمَيِّزُ صَوْتَ ( ب ) السَّاكِنَ فِي الْمَقَاطِعِ :",
+     "type": "sukun",
+     "content": [
+      {
+       "value": "طَبْلُ",
+       "page": 19,
+       "picture": "drum"
+      },
+      {
+       "value": "طَبْ",
+       "page": 19
+      },
+      {
+       "value": "جُبْنُ",
+       "page": 19,
+       "picture": "cheese"
+      },
+      {
+       "value": "جُبْ",
+       "page": 19
+      },
+      {
+       "value": "شِبْلُ",
+       "page": 19,
+       "picture": "lion cub"
+      },
+      {
+       "value": "شِبْ",
+       "page": 19
+      }
+     ]
+    },
+    {
+     "n": "٥",
+     "page": 19,
+     "instruction": "أَقْرَأُ الْكَلِمَاتِ، ثُمَّ أُحَلِّلُهَا إِلَى مَقَاطِعِهَا",
+     "type": "analyze",
+     "content": [
+      {
+       "value": "بَابُ",
+       "page": 19
+      },
+      {
+       "value": "بَابَا",
+       "page": 19
+      },
+      {
+       "value": "بَابِي",
+       "page": 19
+      }
+     ]
+    },
+    {
+     "n": "٦",
+     "page": 20,
+     "instruction": "أُرَكِّبُ مِنَ الْمَقَاطِعِ التَّالِيَةِ كَلِمَاتٍ، ثُمَّ أَقْرَأُهَا :",
+     "type": "compose",
+     "content": [
+      {
+       "value": "بَا + بُ",
+       "page": 20
+      },
+      {
+       "value": "بَا + بَا",
+       "page": 20
+      },
+      {
+       "value": "بَا + بي",
+       "page": 20
+      },
+      {
+       "value": "(بَابُ)",
+       "page": 20
+      },
+      {
+       "value": "(بَابَا)",
+       "page": 20
+      },
+      {
+       "value": "(بَابِي)",
+       "page": 20
+      }
+     ]
+    },
+    {
+     "n": "٧",
+     "page": 20,
+     "instruction": "أَقْرَأُ",
+     "type": "read",
+     "content": [
+      {
+       "value": "بَابُ",
+       "page": 20
+      },
+      {
+       "value": "بَابَا",
+       "page": 20
+      },
+      {
+       "value": "بَابِي",
+       "page": 20
+      }
+     ]
+    }
+   ],
+   "notes": "يبدأ هنا «الدَّرْسُ الثَّالِثُ : القِرَاءَةُ» (ص١٨). العنوان في الكتاب «أَتَعَرَّفُ الحَرْفَ» والحرف داخل سحابة؛ أُضيف الحرف بين قوسين للتمييز. صورة افتتاحية: family picnic on a rug: bread, milk, oranges, grapes. في ص١٨ كلمة «نشاط ١» بلا تشكيل. مقطع «بي» في قطعة البازل ص٢٠ بلا كسرة. الكلمات بين القوسين في نشاط ٦ هي النواتج المتوقعة (استنتاج) والكتاب يترك أسطراً فارغة. ص٢٠: حرف ب كبير مع صورة بوق."
+  },
+  {
+   "kind": "letter",
+   "title": "أَتَعَرَّفُ الحَرْفَ (م)",
+   "letter": "م",
+   "pages": [
+    21,
+    22,
+    23
+   ],
+   "activities": [
+    {
+     "n": "١",
+     "page": 21,
+     "instruction": "أُرَدِّدُ مُنْتَبِهًا لِصَوْتِ حَرْفِ (م)",
+     "type": "repeat",
+     "content": [
+      {
+       "value": "مَوْزُ",
+       "page": 21,
+       "picture": "bananas"
+      },
+      {
+       "value": "مُرَبَّعُ",
+       "page": 21,
+       "picture": "square"
+      },
+      {
+       "value": "مِفْتَاحُ",
+       "page": 21,
+       "picture": "key"
+      },
+      {
+       "value": "ثُوْمُ",
+       "page": 21,
+       "picture": "garlic"
+      },
+      {
+       "value": "قَمْحُ",
+       "page": 21,
+       "picture": "wheat"
+      },
+      {
+       "value": "مِزْمَارُ",
+       "page": 21,
+       "picture": "flute"
+      },
+      {
+       "value": "لَيْمُوْنُ",
+       "page": 21,
+       "picture": "lemons"
+      },
+      {
+       "value": "مِيْزَانُ",
+       "page": 21,
+       "picture": "scale"
+      }
+     ]
+    },
+    {
+     "n": "٢",
+     "page": 21,
+     "instruction": "أَنْطِقُ صَوْتَ (م) مَعَ أَصْوَاتِ الْمَدِّ الْقَصِيْرَةِ، وَأَصْوَاتِ الْمَدِّ الطَّوِيْلَةِ :",
+     "type": "syllables",
+     "content": [
+      {
+       "value": "مَـ",
+       "page": 21
+      },
+      {
+       "value": "مَا",
+       "page": 21
+      },
+      {
+       "value": "مُـ",
+       "page": 21
+      },
+      {
+       "value": "مُوْ",
+       "page": 21
+      },
+      {
+       "value": "مِـ",
+       "page": 21
+      },
+      {
+       "value": "مِيْـ",
+       "page": 21
+      }
+     ]
+    },
+    {
+     "n": "٣",
+     "page": 22,
+     "instruction": "أَسْتَمِعُ لِلَفْظِ الْكَلِمَات، ثُمَّ أَنْطِقُ (م) مَعَ أَصْوَاتِ الْمَدِّ الْقَصِيْرَةِ، وَأَصْوَاتِ الْمَدِّ الطَّوِيْلَةِ.",
+     "type": "repeat",
+     "content": [
+      {
+       "value": "مَوْزُ",
+       "page": 22,
+       "picture": "bananas"
+      },
+      {
+       "value": "مُثَلَّثُ",
+       "page": 22,
+       "picture": "triangle"
+      },
+      {
+       "value": "مِقَصُّ",
+       "page": 22,
+       "picture": "scissors"
+      },
+      {
+       "value": "مِزْمَارُ",
+       "page": 22,
+       "picture": "flute"
+      },
+      {
+       "value": "لَيْمُوْنُ",
+       "page": 22,
+       "picture": "lemons"
+      },
+      {
+       "value": "مِيْزَانُ",
+       "page": 22,
+       "picture": "scale"
+      }
+     ]
+    },
+    {
+     "n": "٤",
+     "page": 22,
+     "instruction": "أَسْتَمِعُ لِلَفْظِ الْكَلِمَاتِ، وَأُمَيِّزُ صَوْتَ ( م ) السَّاكِنَ فِي الْمَقَاطِعِ :",
+     "type": "sukun",
+     "content": [
+      {
+       "value": "تَمْرُ",
+       "page": 22,
+       "picture": "dates"
+      },
+      {
+       "value": "تَمْ",
+       "page": 22
+      },
+      {
+       "value": "قَمْحُ",
+       "page": 22,
+       "picture": "wheat"
+      },
+      {
+       "value": "قَمْ",
+       "page": 22
+      },
+      {
+       "value": "تِمْسَاحُ",
+       "page": 22,
+       "picture": "crocodile"
+      },
+      {
+       "value": "تِمْ",
+       "page": 22
+      }
+     ]
+    },
+    {
+     "n": "٥",
+     "page": 22,
+     "instruction": "أَقْرَأُ الْكَلِمَاتِ، ثُمَّ أُحَلِّلُهَا إِلَى مَقَاطِعِهَا",
+     "type": "analyze",
+     "content": [
+      {
+       "value": "مَامَا",
+       "page": 22
+      },
+      {
+       "value": "بُوْمُ",
+       "page": 22
+      }
+     ]
+    },
+    {
+     "n": "٦",
+     "page": 23,
+     "instruction": "أُرَكِّبُ مِنَ الْمَقَاطِعِ التَّالِيَةِ كَلِمَاتٍ، ثُمَّ أَقْرَأُهَا :",
+     "type": "compose",
+     "content": [
+      {
+       "value": "مَا + مَا",
+       "page": 23
+      },
+      {
+       "value": "(مَامَا)",
+       "page": 23
+      },
+      {
+       "value": "بُوْ + مُ",
+       "page": 23
+      },
+      {
+       "value": "(بُوْمُ)",
+       "page": 23
+      }
+     ]
+    },
+    {
+     "n": "٧",
+     "page": 23,
+     "instruction": "أَقْرَأُ",
+     "type": "read",
+     "content": [
+      {
+       "value": "بَابَا",
+       "page": 23
+      },
+      {
+       "value": "مَامَا",
+       "page": 23
+      },
+      {
+       "value": "بُوْمُ",
+       "page": 23
+      }
+     ]
+    }
+   ],
+   "notes": "صورة افتتاحية: family in kitchen: father cutting lemons, garlic, bananas, mother with blender, wheat in vase. ص٢٣: حرف م كبير متكرر مع صورة ماعز. النواتج بين القوسين في نشاط ٦ استنتاج."
+  },
+  {
+   "kind": "letter",
+   "title": "أَتَعَرَّفُ الحَرْفَ (د)",
+   "letter": "د",
+   "pages": [
+    24,
+    25,
+    26
+   ],
+   "activities": [
+    {
+     "n": "١",
+     "page": 24,
+     "instruction": "أُرَدِّدُ مُنْتَبِهًا لِصَوْتِ حَرْفِ (د)",
+     "type": "repeat",
+     "content": [
+      {
+       "value": "دَلَّةُ",
+       "page": 24,
+       "picture": "coffee pot"
+      },
+      {
+       "value": "دُبُّ",
+       "page": 24,
+       "picture": "bear"
+      },
+      {
+       "value": "دِرْهَمُ",
+       "page": 24,
+       "picture": "coin"
+      },
+      {
+       "value": "أَسَدُ",
+       "page": 24,
+       "picture": "lion"
+      },
+      {
+       "value": "قِدْرُ",
+       "page": 24,
+       "picture": "cooking pot"
+      },
+      {
+       "value": "دَارُ",
+       "page": 24,
+       "picture": "house"
+      },
+      {
+       "value": "دُوْدُ",
+       "page": 24,
+       "picture": "worms"
+      },
+      {
+       "value": "دِيْكُ",
+       "page": 24,
+       "picture": "rooster"
+      }
+     ]
+    },
+    {
+     "n": "٢",
+     "page": 24,
+     "instruction": "أَنْطِقُ صَوْتَ (د) مَعَ أَصْوَاتِ الْمَدِّ الْقَصِيْرَةِ، وَأَصْوَاتِ الْمَدِّ الطَّوِيْلَةِ :",
+     "type": "syllables",
+     "content": [
+      {
+       "value": "دَ",
+       "page": 24
+      },
+      {
+       "value": "دَا",
+       "page": 24
+      },
+      {
+       "value": "دُ",
+       "page": 24
+      },
+      {
+       "value": "دُوْ",
+       "page": 24
+      },
+      {
+       "value": "دِ",
+       "page": 24
+      },
+      {
+       "value": "دِيْـ",
+       "page": 24
+      }
+     ]
+    },
+    {
+     "n": "٣",
+     "page": 25,
+     "instruction": "أَسْتَمِعُ لِلَفْظِ الْكَلِمَات، ثُمَّ أَنْطِقُ (د) مَعَ أَصْوَاتِ الْمَدِّ الْقَصِيْرَةِ، وَأَصْوَاتِ الْمَدِّ الطَّوِيْلَةِ.",
+     "type": "repeat",
+     "content": [
+      {
+       "value": "دَرَجُ",
+       "page": 25,
+       "picture": "ladder"
+      },
+      {
+       "value": "دُمْيَةُ",
+       "page": 25,
+       "picture": "doll"
+      },
+      {
+       "value": "دِبْسُ",
+       "page": 25,
+       "picture": "date syrup tin"
+      },
+      {
+       "value": "دَارُ",
+       "page": 25,
+       "picture": "house"
+      },
+      {
+       "value": "دُوْرُ",
+       "page": 25,
+       "picture": "row of houses"
+      },
+      {
+       "value": "دِيْكُ",
+       "page": 25,
+       "picture": "rooster"
+      }
+     ]
+    },
+    {
+     "n": "٤",
+     "page": 25,
+     "instruction": "أَسْتَمِعُ لِلَفْظِ الْكَلِمَاتِ، وَأُمَيِّزُ صَوْتَ ( د ) السَّاكِنَ فِي الْمَقَاطِعِ :",
+     "type": "sukun",
+     "content": [
+      {
+       "value": "مَدْرَسَةُ",
+       "page": 25,
+       "picture": "school"
+      },
+      {
+       "value": "مَدْ",
+       "page": 25
+      },
+      {
+       "value": "قِدْرُ",
+       "page": 25,
+       "picture": "cooking pot"
+      },
+      {
+       "value": "قِدْ",
+       "page": 25
+      },
+      {
+       "value": "هُدْهُدُ",
+       "page": 25,
+       "picture": "hoopoe"
+      },
+      {
+       "value": "هُدْ",
+       "page": 25
+      }
+     ]
+    },
+    {
+     "n": "٥",
+     "page": 25,
+     "instruction": "أَقْرَأُ الْكَلِمَاتِ، ثُمَّ أُحَلِّلُهَا إِلَى مَقَاطِعِهَا",
+     "type": "analyze",
+     "content": [
+      {
+       "value": "دَادَا",
+       "page": 25
+      },
+      {
+       "value": "دُوْدُ",
+       "page": 25
+      }
+     ]
+    },
+    {
+     "n": "٦",
+     "page": 26,
+     "instruction": "أُرَكِّبُ مِنَ الْمَقَاطِعِ التَّالِيَةِ كَلِمَاتٍ، ثُمَّ أَقْرَأُهَا :",
+     "type": "compose",
+     "content": [
+      {
+       "value": "دَا + دَا",
+       "page": 26
+      },
+      {
+       "value": "(دَادَا)",
+       "page": 26
+      },
+      {
+       "value": "دَا + مَ",
+       "page": 26
+      },
+      {
+       "value": "(دَامَ)",
+       "page": 26
+      }
+     ]
+    },
+    {
+     "n": "٧",
+     "page": 26,
+     "instruction": "أَقْرَأُ",
+     "type": "read",
+     "content": [
+      {
+       "value": "بَابَا",
+       "page": 26
+      },
+      {
+       "value": "مَامَا",
+       "page": 26
+      },
+      {
+       "value": "دَادَا",
+       "page": 26
+      }
+     ]
+    }
+   ],
+   "notes": "صورة افتتاحية: children playing in garden with teddy bears, rooster on fence, ladder. علبة الدبس عليها «عسل التمر». ص٢٦: حرف د كبير مع دمية. النواتج بين القوسين في نشاط ٦ استنتاج."
+  },
+  {
+   "kind": "letter",
+   "title": "أَتَعَرَّفُ الحَرْفَ (ف)",
+   "letter": "ف",
+   "pages": [
+    27,
+    28,
+    29
+   ],
+   "activities": [
+    {
+     "n": "١",
+     "page": 27,
+     "instruction": "أُرَدِّدُ مُنْتَبِهًا لِصَوْتِ حَرْفِ (ف)",
+     "type": "repeat",
+     "content": [
+      {
+       "value": "فَرَاشَةُ",
+       "page": 27,
+       "picture": "butterfly"
+      },
+      {
+       "value": "فُسْتَانُ",
+       "page": 27,
+       "picture": "dress"
+      },
+      {
+       "value": "فِنْجَانُ",
+       "page": 27,
+       "picture": "cup"
+      },
+      {
+       "value": "مِعْطَفُ",
+       "page": 27,
+       "picture": "coat"
+      },
+      {
+       "value": "مِفْتَاحُ",
+       "page": 27,
+       "picture": "key"
+      },
+      {
+       "value": "فَانُوْسُ",
+       "page": 27,
+       "picture": "lantern"
+      },
+      {
+       "value": "نَافُوْرَةُ",
+       "page": 27,
+       "picture": "fountain"
+      },
+      {
+       "value": "فِيْلُ",
+       "page": 27,
+       "picture": "elephant"
+      }
+     ]
+    },
+    {
+     "n": "٢",
+     "page": 28,
+     "instruction": "أَنْطِقُ صَوْتَ (ف) مَعَ أَصْوَاتِ الْمَدِّ الْقَصِيْرَةِ، وَأَصْوَاتِ الْمَدِّ الطَّوِيْلَةِ :",
+     "type": "syllables",
+     "content": [
+      {
+       "value": "فَـ",
+       "page": 28
+      },
+      {
+       "value": "فَا",
+       "page": 28
+      },
+      {
+       "value": "فُـ",
+       "page": 28
+      },
+      {
+       "value": "فُوْ",
+       "page": 28
+      },
+      {
+       "value": "فِـ",
+       "page": 28
+      },
+      {
+       "value": "فِيْـ",
+       "page": 28
+      }
+     ]
+    },
+    {
+     "n": "٣",
+     "page": 28,
+     "instruction": "أَسْتَمِعُ لِلَفْظِ الْكَلِمَات، ثُمَّ أَنْطِقُ (ف) مَعَ أَصْوَاتِ الْمَدِّ الْقَصِيْرَةِ، وَأَصْوَاتِ الْمَدِّ الطَّوِيْلَةِ.",
+     "type": "repeat",
+     "content": [
+      {
+       "value": "فَهْدُ",
+       "page": 28,
+       "picture": "cheetah"
+      },
+      {
+       "value": "فُرْنُ",
+       "page": 28,
+       "picture": "oven"
+      },
+      {
+       "value": "فِنْجَانُ",
+       "page": 28,
+       "picture": "cup"
+      },
+      {
+       "value": "فَانُوْسُ",
+       "page": 28,
+       "picture": "lantern"
+      },
+      {
+       "value": "عُصْفُوْرُ",
+       "page": 28,
+       "picture": "bird"
+      },
+      {
+       "value": "فِيْلُ",
+       "page": 28,
+       "picture": "elephant"
+      }
+     ]
+    },
+    {
+     "n": "٤",
+     "page": 28,
+     "instruction": "أَسْتَمِعُ لِلَفْظِ الْكَلِمَاتِ، وَأُمَيِّزُ صَوْتَ ( ف ) السَّاكِنَ فِي الْمَقَاطِعِ :",
+     "type": "sukun",
+     "content": [
+      {
+       "value": "ضِفْدَعُ",
+       "page": 28,
+       "picture": "frog"
+      },
+      {
+       "value": "ضِفْ",
+       "page": 28
+      },
+      {
+       "value": "حَفْلَةُ",
+       "page": 28,
+       "picture": "party"
+      },
+      {
+       "value": "حَفْ",
+       "page": 28
+      },
+      {
+       "value": "طِفْلُ",
+       "page": 28,
+       "picture": "baby"
+      },
+      {
+       "value": "طِفْ",
+       "page": 28
+      }
+     ]
+    },
+    {
+     "n": "٥",
+     "page": 29,
+     "instruction": "أَقْرَأُ الْكَلِمَاتِ، ثُمَّ أُحَلِّلُهَا إِلَى مَقَاطِعِهَا",
+     "type": "analyze",
+     "content": [
+      {
+       "value": "فَمُ",
+       "page": 29
+      },
+      {
+       "value": "مُفِيْدُ",
+       "page": 29
+      }
+     ]
+    },
+    {
+     "n": "٦",
+     "page": 29,
+     "instruction": "أُرَكِّبُ مِنَ الْمَقَاطِعِ التَّالِيَةِ كَلِمَاتٍ، ثُمَّ أَقْرَأُهَا :",
+     "type": "compose",
+     "content": [
+      {
+       "value": "فَا + دِي",
+       "page": 29
+      },
+      {
+       "value": "(فَادِي)",
+       "page": 29
+      },
+      {
+       "value": "دُ + فُوْ + فُ",
+       "page": 29
+      },
+      {
+       "value": "(دُفُوْفُ)",
+       "page": 29
+      }
+     ]
+    },
+    {
+     "n": "٧",
+     "page": 29,
+     "instruction": "أَقْرَأُ",
+     "type": "read",
+     "content": [
+      {
+       "value": "فَمُ",
+       "page": 29
+      },
+      {
+       "value": "فَادِي",
+       "page": 29
+      },
+      {
+       "value": "مُفِيْدُ",
+       "page": 29
+      },
+      {
+       "value": "دُفُوْفُ",
+       "page": 29
+      }
+     ]
+    }
+   ],
+   "notes": "صورة افتتاحية: girl in red dress with butterflies and toy elephant. نشاط ٥: «مُفِيْدُ» تُحلَّل إلى ثلاثة مقاطع (ثلاث دوائر)، و«فَمُ» إلى مقطعين. النواتج بين القوسين في نشاط ٦ استنتاج."
+  },
+  {
+   "kind": "nashid",
+   "title": "مَامَا بَابَا",
+   "letter": "",
+   "pages": [
+    30
+   ],
+   "activities": [
+    {
+     "n": "",
+     "page": 30,
+     "instruction": "",
+     "type": "other",
+     "content": [
+      {
+       "value": "نشيد «مَامَا بَابَا» — شعر: عبد العزيز أبو غوش — ٤ أبيات (٨ أشطر)، لم يُنقل نصّه",
+       "page": 30,
+       "picture": "family in front of house"
+      }
+     ]
+    }
+   ],
+   "notes": "اسم الشاعر مكتوب في الكتاب: «شعر : عبد العزيز أبو غوش» (غير مشكول)."
+  }
+ ],
+ "uncertain": [
+  "١٩، ٢٢، ٢٥، ٢٨ (نشاط ٤): الحركة على الحرف الأول في المقاطع تقع بين سطري الكلمة والمقطع فيصعب نسبتها؛ اعتُمدت القراءة الصحيحة لغوياً: طَبْلُ/طَبْ، شِبْلُ/شِبْ، قَمْحُ/قَمْ، تِمْسَاحُ/تِمْ، قِدْرُ/قِدْ، ضِفْدَعُ/ضِفْ، طِفْلُ/طِفْ (استنتاج)",
+  "١٨، ٢١، ٢٤، ٢٨ (نشاط ٢): كسرة المقطع الأول في المربع الثالث (بِـ، مِـ، دِ، فِـ) تقع تحت الحرف قريباً من المقطع الثاني (استنتاج)",
+  "٢٠: «بي» في قطعة البازل بلا كسرة",
+  "٢٥: «دُوْرُ» صورتها صف بيوت، والقراءة واضحة"
+ ]
+}
