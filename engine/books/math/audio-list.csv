@@ -1,0 +1,439 @@
+﻿اسم الملف,النص المشكول,الدرس,الصفحة
+c-praise1.mp3,أَحْسَنْتَ!,c,
+c-praise2.mp3,رَائِعٌ!,c,
+c-praise3.mp3,مُمْتَازٌ!,c,
+c-encourage1.mp3,حَاوِلْ مَرَّةً أُخْرَى,c,
+c-encourage2.mp3,هَيَّا مَرَّةً أُخْرَى,c,
+c-star1.mp3,نَجْمَةٌ جَدِيدَةٌ!,c,
+c-sticker1.mp3,مُلْصَقٌ جَدِيدٌ لِدَفْتَرِكَ!,c,
+c-welcome1.mp3,هَيَّا نَلْعَبُ وَنَتَعَلَّمُ!,c,
+c-map1.mp3,اِخْتَرْ دَرْسًا مِنَ الطَّرِيقِ,c,
+c-count.mp3,عُدَّ ثُمَّ اخْتَرِ الْعَدَدَ,c,
+c-trace.mp3,تَتَبَّعِ الْعَدَدَ بِإِصْبَعِكَ,c,
+c-pattern.mp3,أَكْمِلِ النَّمَطَ,c,
+c-arithadd.mp3,اِخْتَرْ نَاتِجَ الْجَمْعِ,c,
+c-arithsub.mp3,اِخْتَرْ نَاتِجَ الطَّرْحِ,c,
+c-arithmix.mp3,اِخْتَرِ النَّاتِجَ,c,
+c-hopadd.mp3,عُدَّ إِلَى الْأَمَامِ وَالْمِسْ,c,
+c-hopsub.mp3,عُدَّ إِلَى الْوَرَاءِ وَالْمِسْ,c,
+c-more.mp3,اِلْمَسِ الْأَكْثَرَ,c,
+c-less.mp3,اِلْمَسِ الْأَقَلَّ,c,
+c-sign.mp3,اِخْتَرِ الرَّمْزَ الْمُنَاسِبَ,c,
+c-asc.mp3,رَتِّبْ مِنَ الْأَصْغَرِ إِلَى الْأَكْبَرِ,c,
+c-desc.mp3,رَتِّبْ مِنَ الْأَكْبَرِ إِلَى الْأَصْغَرِ,c,
+c-rowpick.mp3,اِلْمَسِ الَّذِي تَسْمَعُ تَرْتِيبَهُ,c,
+c-place.mp3,عُدَّ الْعَشَرَاتِ وَالْآحَادَ,c,
+c-sort.mp3,ضَعْ كُلَّ شَيْءٍ فِي سَلَّتِهِ,c,
+c-match.mp3,اِسْحَبِ الِاسْمَ إِلَى شَكْلِهِ,c,
+c-memory.mp3,اِقْلِبْ بِطَاقَتَيْنِ مُتَشَابِهَتَيْنِ,c,
+c-clock.mp3,اِسْمَعْ وَاخْتَرِ السَّاعَةَ,c,
+c-train.mp3,اِسْمَعْ وَاخْتَرِ النَّاتِجَ,c,
+n-00.mp3,صِفْرٌ,n,
+n-01.mp3,وَاحِدٌ,n,
+n-02.mp3,اِثْنَانِ,n,
+n-03.mp3,ثَلَاثَةٌ,n,
+n-04.mp3,أَرْبَعَةٌ,n,
+n-05.mp3,خَمْسَةٌ,n,
+n-06.mp3,سِتَّةٌ,n,
+n-07.mp3,سَبْعَةٌ,n,
+n-08.mp3,ثَمَانِيَةٌ,n,
+n-09.mp3,تِسْعَةٌ,n,
+n-10.mp3,عَشَرَةٌ,n,
+n-11.mp3,أَحَدَ عَشَرَ,n,
+n-12.mp3,اِثْنَا عَشَرَ,n,
+n-13.mp3,ثَلَاثَةَ عَشَرَ,n,
+n-14.mp3,أَرْبَعَةَ عَشَرَ,n,
+n-15.mp3,خَمْسَةَ عَشَرَ,n,
+n-16.mp3,سِتَّةَ عَشَرَ,n,
+n-17.mp3,سَبْعَةَ عَشَرَ,n,
+n-18.mp3,ثَمَانِيَةَ عَشَرَ,n,
+n-19.mp3,تِسْعَةَ عَشَرَ,n,
+n-20.mp3,عِشْرُونَ,n,
+n-t30.mp3,ثَلَاثُونَ,n,
+n-t40.mp3,أَرْبَعُونَ,n,
+n-t50.mp3,خَمْسُونَ,n,
+n-t60.mp3,سِتُّونَ,n,
+n-t70.mp3,سَبْعُونَ,n,
+n-t80.mp3,ثَمَانُونَ,n,
+n-t90.mp3,تِسْعُونَ,n,
+n-o01.mp3,الْأَوَّلُ,n,40
+n-o02.mp3,الثَّانِي,n,40
+n-o03.mp3,الثَّالِثُ,n,40
+n-o04.mp3,الرَّابِعُ,n,40
+n-o05.mp3,الْخَامِسُ,n,40
+n-o06.mp3,السَّادِسُ,n,40
+n-o07.mp3,السَّابِعُ,n,40
+n-o08.mp3,الثَّامِنُ,n,40
+n-o09.mp3,التَّاسِعُ,n,40
+n-o10.mp3,الْعَاشِرُ,n,40
+n-gt.mp3,أَكْبَرُ مِنْ,n,34
+n-lt.mp3,أَصْغَرُ مِنْ,n,34
+n-eq.mp3,يُسَاوِي,n,34
+n-ones.mp3,آحَادٌ,n,158
+n-tens.mp3,عَشَرَاتٌ,n,158
+u4-sortshape-x72.mp3,دَائِرَةٌ,u4-sortshape,85
+u4-sortshape-x73.mp3,مُرَبَّعٌ,u4-sortshape,85
+u4-sortshape-x74.mp3,مُثَلَّثٌ,u4-sortshape,85
+u4-sorttype-x75.mp3,الْفَرَاشَاتُ,u4-sorttype,84
+u4-sorttype-x76.mp3,النَّحَلَاتُ,u4-sorttype,84
+u4-sorttype-x77.mp3,الْأَشْجَارُ,u4-sorttype,84
+u4-sorttype-x78.mp3,الْوُرُودُ,u4-sorttype,84
+u7-quarter-x79.mp3,نِصْفٌ,u7-quarter,137
+u7-quarter-x80.mp3,رُبْعٌ,u7-quarter,137
+u1-unit.mp3,الْأَنْمَاطُ وَالْأَعْدَادُ حَتَّى ٢٠,u1,6
+u1-pattern-x82.mp3,أَصْفَرُ,u1-pattern,8
+u1-pattern-x83.mp3,أَحْمَرُ,u1-pattern,8
+u1-pattern-sticker.mp3,مُلْصَقُ الدَّرْسِ ١,u1-pattern,8
+u1-n12-sticker.mp3,مُلْصَقُ الدَّرْسِ ٢,u1-n12,10
+u1-n34-sticker.mp3,مُلْصَقُ الدَّرْسِ ٣,u1-n34,12
+u1-n56-sticker.mp3,مُلْصَقُ الدَّرْسِ ٤,u1-n56,14
+u1-n789-sticker.mp3,مُلْصَقُ الدَّرْسِ ٥,u1-n789,16
+u1-n0-sticker.mp3,مُلْصَقُ الدَّرْسِ ٦,u1-n0,18
+u1-n10-g2.mp3,اِخْتَرِ الْعَدَدَ النَّاقِصَ,u1-n10,21
+u1-n10-sticker.mp3,مُلْصَقُ الدَّرْسِ ٧,u1-n10,20
+u1-n11-sticker.mp3,مُلْصَقُ الدَّرْسِ ٨,u1-n11,22
+u1-n16-x93.mp3,٢١,u1-n16,25
+u1-n16-x94.mp3,٢٢,u1-n16,25
+u1-n16-sticker.mp3,مُلْصَقُ الدَّرْسِ ٩,u1-n16,24
+u1-plan-x96.mp3,٧، ٨، ٩، ١٠,u1-plan,27
+u1-plan-x97.mp3,٧,u1-plan,27
+u1-plan-x98.mp3,٨,u1-plan,27
+u1-plan-x99.mp3,٩,u1-plan,27
+u1-plan-x100.mp3,١٠,u1-plan,27
+u1-plan-x101.mp3,١١، ١٢، ١٣، ١٤,u1-plan,27
+u1-plan-x102.mp3,١١,u1-plan,27
+u1-plan-x103.mp3,١٢,u1-plan,27
+u1-plan-x104.mp3,١٣,u1-plan,27
+u1-plan-x105.mp3,١٤,u1-plan,27
+u1-plan-x106.mp3,١٥، ١٦، ١٧، ١٨,u1-plan,27
+u1-plan-x107.mp3,١٥,u1-plan,27
+u1-plan-x108.mp3,١٦,u1-plan,27
+u1-plan-x109.mp3,١٧,u1-plan,27
+u1-plan-x110.mp3,١٨,u1-plan,27
+u1-plan-sticker.mp3,مُلْصَقُ الدَّرْسِ ١٠,u1-plan,26
+u2-unit.mp3,مُقَارَنَةُ الْأَعْدَادِ وَتَرْتِيبُهَا,u2,32
+u2-cmp9-x113.mp3,٦ أَكْبَرُ مِنْ ٣,u2-cmp9,34
+u2-cmp9-x114.mp3,٣ أَصْغَرُ مِنْ ٥,u2-cmp9,34
+u2-cmp9-x115.mp3,٧ أَكْبَرُ مِنْ ٤,u2-cmp9,34
+u2-cmp9-x116.mp3,٦ أَصْغَرُ مِنْ ٧,u2-cmp9,34
+u2-cmp9-x117.mp3,٥ أَصْغَرُ مِنْ ٦,u2-cmp9,34
+u2-cmp9-x118.mp3,٢ أَصْغَرُ مِنْ ٥,u2-cmp9,34
+u2-cmp9-x119.mp3,٩ أَكْبَرُ مِنْ ٧,u2-cmp9,34
+u2-cmp9-x120.mp3,٦ يُسَاوِي ٦,u2-cmp9,34
+u2-cmp9-x121.mp3,٤ أَصْغَرُ مِنْ ٦,u2-cmp9,34
+u2-ord9-x122.mp3,٢، ٤، ٧,u2-ord9,39
+u2-ord9-x123.mp3,٢,u2-ord9,39
+u2-ord9-x124.mp3,٤,u2-ord9,39
+u2-ord9-x125.mp3,٢، ٥، ٦,u2-ord9,39
+u2-ord9-x126.mp3,٥,u2-ord9,39
+u2-ord9-x127.mp3,٦,u2-ord9,39
+u2-ord9-x128.mp3,٣، ٦، ٩,u2-ord9,39
+u2-ord9-x129.mp3,٣,u2-ord9,39
+u2-ord9-x130.mp3,٧، ٥، ٤,u2-ord9,39
+u2-ord9-x131.mp3,٩، ٦، ٤,u2-ord9,39
+u2-ord9-x132.mp3,٨، ٣، ٢,u2-ord9,39
+u2-plan-x133.mp3,٣، ٥، ٧,u2-plan,43
+u2-plan-x134.mp3,٤، ٦، ٩,u2-plan,43
+u2-plan-x135.mp3,٤، ٦، ٧,u2-plan,43
+u2-cmp20-x136.mp3,١١ أَكْبَرُ مِنْ ٥,u2-cmp20,44
+u2-cmp20-x137.mp3,١٢ أَصْغَرُ مِنْ ١٤,u2-cmp20,44
+u2-cmp20-x138.mp3,١٥ أَكْبَرُ مِنْ ١٣,u2-cmp20,44
+u2-cmp20-x139.mp3,١٤ أَصْغَرُ مِنْ ١٧,u2-cmp20,45
+u2-cmp20-x140.mp3,٦ أَصْغَرُ مِنْ ١١,u2-cmp20,45
+u2-cmp20-x141.mp3,٩ أَصْغَرُ مِنْ ١٩,u2-cmp20,45
+u2-cmp20-x142.mp3,١٤ يُسَاوِي ١٤,u2-cmp20,45
+u2-cmp20-x143.mp3,٢٠ أَكْبَرُ مِنْ ١٨,u2-cmp20,45
+u2-ord20-x144.mp3,١٣، ١٥، ١٨,u2-ord20,48
+u2-ord20-x145.mp3,١٣، ١٥، ١٦,u2-ord20,48
+u2-ord20-x146.mp3,١٤، ١٧، ١٩,u2-ord20,48
+u2-ord20-x147.mp3,١٩,u2-ord20,48
+u2-ord20-x148.mp3,١٨، ١٥، ١٣,u2-ord20,49
+u2-ord20-x149.mp3,١٦، ١٥، ١١,u2-ord20,49
+u2-ord20-x150.mp3,١٩، ١٧، ١٤,u2-ord20,49
+u3-unit.mp3,الْجَمْعُ وَالطَّرْحُ حَتَّى ١٠,u3,54
+u3-addstory-x152.mp3,١ + ٢ = ٣,u3-addstory,56
+u3-addstory-x153.mp3,٣ + ٢ = ٥,u3-addstory,56
+u3-addstory-x154.mp3,٣ + ١ = ٤,u3-addstory,56
+u3-addstory-x155.mp3,٢ + ٢ = ٤,u3-addstory,56
+u3-addstory-x156.mp3,١ + ٢,u3-addstory,56
+u3-addstory-x157.mp3,٣ + ٢,u3-addstory,56
+u3-addstory-x158.mp3,٣ + ١,u3-addstory,56
+u3-addstory-x159.mp3,٢ + ٢,u3-addstory,56
+u3-addzero-x160.mp3,٢ + ٠ = ٢,u3-addzero,58
+u3-addzero-x161.mp3,١ + ١ = ٢,u3-addzero,58
+u3-addzero-x162.mp3,٤ + ٠ = ٤,u3-addzero,58
+u3-addzero-x163.mp3,٣ + ٣ = ٦,u3-addzero,58
+u3-addzero-x164.mp3,٦ + ٠ = ٦,u3-addzero,59
+u3-addzero-x165.mp3,٠ + ٢ = ٢,u3-addzero,59
+u3-make6-x166.mp3,١ + ٣ = ٤,u3-make6,60
+u3-make6-x167.mp3,٢ + ١ = ٣,u3-make6,60
+u3-make6-x168.mp3,٢ + ٣ = ٥,u3-make6,60
+u3-make6-x169.mp3,٤ + ١ = ٥,u3-make6,60
+u3-make6-x170.mp3,٥ + ١ = ٦,u3-make6,60
+u3-make10-x171.mp3,٥ + ٤ = ٩,u3-make10,62
+u3-make10-x172.mp3,٣ + ٦ = ٩,u3-make10,62
+u3-make10-x173.mp3,٥ + ٣ = ٨,u3-make10,62
+u3-make10-x174.mp3,٤ + ٤ = ٨,u3-make10,62
+u3-make10-x175.mp3,٤ + ٣ = ٧,u3-make10,62
+u3-make10-x176.mp3,٦ + ٣ = ٩,u3-make10,63
+u3-make10-x177.mp3,٢ + ٥ = ٧,u3-make10,63
+u3-make10-x178.mp3,١ + ٨ = ٩,u3-make10,63
+u3-make10-x179.mp3,١ + ٩ = ١٠,u3-make10,63
+u3-subidea-x180.mp3,٥ − ٣ = ٢,u3-subidea,64
+u3-subidea-x181.mp3,٥ − ٢ = ٣,u3-subidea,64
+u3-subidea-x182.mp3,٦ − ٣ = ٣,u3-subidea,64
+u3-subidea-x183.mp3,٧ − ٣ = ٤,u3-subidea,64
+u3-subidea-x184.mp3,٥ − ٣,u3-subidea,64
+u3-subidea-x185.mp3,٠,u3-subidea,64
+u3-subidea-x186.mp3,٥ − ٢,u3-subidea,64
+u3-subidea-x187.mp3,١,u3-subidea,64
+u3-subidea-x188.mp3,٦ − ٣,u3-subidea,64
+u3-subidea-x189.mp3,٧ − ٣,u3-subidea,64
+u3-sub6-x190.mp3,٥ − ٤ = ١,u3-sub6,66
+u3-sub6-x191.mp3,٤ − ٢ = ٢,u3-sub6,66
+u3-sub6-x192.mp3,٣ − ١ = ٢,u3-sub6,66
+u3-sub6-x193.mp3,٥ − ١ = ٤,u3-sub6,67
+u3-sub6-x194.mp3,٤ − ٣ = ١,u3-sub6,67
+u3-sub6-x195.mp3,٦ − ٤ = ٢,u3-sub6,67
+u3-sub10-x196.mp3,٦ − ١ = ٥,u3-sub10,68
+u3-sub10-x197.mp3,٨ − ٥ = ٣,u3-sub10,68
+u3-sub10-x198.mp3,١٠ − ٤ = ٦,u3-sub10,68
+u3-sub10-x199.mp3,٦ − ٤,u3-sub10,68
+u3-sub10-x200.mp3,٦ − ١,u3-sub10,68
+u3-sub10-x201.mp3,٨ − ٥,u3-sub10,68
+u3-sub10-x202.mp3,١٠ − ٤,u3-sub10,68
+u3-related-x203.mp3,٣ + ٤ = ٧,u3-related,70
+u3-related-x204.mp3,٧ − ٤ = ٣,u3-related,70
+u3-subzero-x205.mp3,٢ − ٠ = ٢,u3-subzero,72
+u3-subzero-x206.mp3,٢ − ٢ = ٠,u3-subzero,72
+u3-subzero-x207.mp3,٤ − ٠ = ٤,u3-subzero,72
+u3-subzero-x208.mp3,٦ − ٠ = ٦,u3-subzero,72
+u3-subzero-x209.mp3,٧ − ٧ = ٠,u3-subzero,72
+u3-subzero-x210.mp3,٢ − ٠,u3-subzero,72
+u3-subzero-x211.mp3,٢ − ٢,u3-subzero,72
+u3-subzero-x212.mp3,٤ − ٠,u3-subzero,72
+u3-subzero-x213.mp3,٦ − ٠,u3-subzero,72
+u3-subzero-x214.mp3,٧ − ٧,u3-subzero,72
+u3-plan-x215.mp3,٥ + ٥ = ١٠,u3-plan,74
+u3-plan-x216.mp3,٤ + ٤,u3-plan,74
+u3-plan-x217.mp3,٥ + ٥,u3-plan,74
+u3-plan-x218.mp3,٣ + ٣,u3-plan,74
+u3-plan-x219.mp3,٦ + ٣,u3-plan,74
+u4-unit.mp3,التَّصْنِيفُ وَالتَّمْثِيلُ بِمُخَطَّطَاتِ الصُّوَرِ,u4,80
+u4-picto-x221.mp3,٤ أَكْبَرُ مِنْ ٣,u4-picto,86
+u4-picto-x222.mp3,٣ أَصْغَرُ مِنْ ٤,u4-picto,86
+u4-readpicto-g2.mp3,أَيُّ الْحَيَوَانَاتِ أَكْثَرُ عَدَدًا؟,u4-readpicto,89
+u4-readpicto-x224.mp3,أَيُّ الْحَيَوَانَاتِ أَقَلُّ عَدَدًا؟,u4-readpicto,89
+u4-plan-g2.mp3,أَيُّ الْوُرُودِ أَكْثَرُ عَدَدًا؟,u4-plan,90
+u4-plan-x226.mp3,أَيُّ الْوُرُودِ أَقَلُّ عَدَدًا؟,u4-plan,90
+u4-plan-x227.mp3,أَيُّ الْكُرَاتِ أَكْثَرُ عَدَدًا؟,u4-plan,90
+u5-unit.mp3,الْجَمْعُ حَتَّى الْعَدَدِ ٢٠,u5,96
+u5-count-on-x229.mp3,٩ + ٢ = ١١,u5-count-on,98
+u5-count-on-x230.mp3,٨ + ٣ = ١١,u5-count-on,98
+u5-count-on-x231.mp3,١١ + ٣ = ١٤,u5-count-on,98
+u5-count-on-x232.mp3,١٣ + ٣ = ١٦,u5-count-on,98
+u5-count-on-x233.mp3,١٦ + ٢ = ١٨,u5-count-on,98
+u5-count-on-x234.mp3,٩ + ٣ = ١٢,u5-count-on,99
+u5-count-on-x235.mp3,١٥ + ١ = ١٦,u5-count-on,99
+u5-count-on-x236.mp3,١٤ + ٢ = ١٦,u5-count-on,99
+u5-count-on-x237.mp3,١٦ + ٣ = ١٩,u5-count-on,99
+u5-line-x238.mp3,١٢ + ٣ = ١٥,u5-line,100
+u5-line-x239.mp3,١٢ + ٢ = ١٤,u5-line,100
+u5-line-x240.mp3,٨ + ٤ = ١٢,u5-line,100
+u5-line-x241.mp3,١٢ + ٣,u5-line,100
+u5-line-x242.mp3,٩ + ٣,u5-line,100
+u5-line-x243.mp3,٩ + ٢,u5-line,100
+u5-line-x244.mp3,١٢ + ٢,u5-line,100
+u5-line-x245.mp3,٨ + ٤,u5-line,100
+u5-doubles-x246.mp3,٥ + ٦ = ١١,u5-doubles,102
+u5-doubles-x247.mp3,٨ + ٨ = ١٦,u5-doubles,103
+u5-doubles-x248.mp3,٨ + ٩ = ١٧,u5-doubles,103
+u5-doubles-x249.mp3,٨ + ٧ = ١٥,u5-doubles,103
+u5-doubles-x250.mp3,٦ + ٦ = ١٢,u5-doubles,103
+u5-make10-x251.mp3,٩ + ٤ = ١٣,u5-make10,104
+u5-make10-x252.mp3,٦ + ٧ = ١٣,u5-make10,104
+u5-make10-x253.mp3,٩ + ٤,u5-make10,104
+u5-make10-x254.mp3,٨ + ٣,u5-make10,104
+u5-make10-x255.mp3,٦ + ٧,u5-make10,104
+u5-plan-x256.mp3,٨ + ٦ = ١٤,u5-plan,106
+u5-plan-x257.mp3,٦ + ٥ = ١١,u5-plan,106
+u5-plan-x258.mp3,٧ + ٨ = ١٥,u5-plan,106
+u5-plan-x259.mp3,٨ + ٦,u5-plan,106
+u5-plan-x260.mp3,٦ + ٥,u5-plan,106
+u5-plan-x261.mp3,٦ + ٦,u5-plan,106
+u5-plan-x262.mp3,٧ + ٨,u5-plan,106
+u5-plan-x263.mp3,٤ + ٣,u5-plan,106
+u6-unit.mp3,الطَّرْحُ حَتَّى ٢٠,u6,112
+u6-count-back-x265.mp3,١٣ − ٢ = ١١,u6-count-back,114
+u6-count-back-x266.mp3,١١ − ٣ = ٨,u6-count-back,114
+u6-count-back-x267.mp3,٨ − ٢ = ٦,u6-count-back,114
+u6-count-back-x268.mp3,١٢ − ٣ = ٩,u6-count-back,114
+u6-count-back-x269.mp3,١٠ − ٣ = ٧,u6-count-back,114
+u6-line-x270.mp3,١٤ − ٣ = ١١,u6-line,116
+u6-line-x271.mp3,٨ − ٣ = ٥,u6-line,116
+u6-line-x272.mp3,١٧ − ٥ = ١٢,u6-line,116
+u6-line-x273.mp3,١٤ − ٣,u6-line,116
+u6-line-x274.mp3,١١ − ٣,u6-line,116
+u6-line-x275.mp3,١٣ − ٢,u6-line,116
+u6-line-x276.mp3,٨ − ٣,u6-line,116
+u6-line-x277.mp3,١٧ − ٥,u6-line,116
+u6-compare-x278.mp3,١٢ أَكْبَرُ مِنْ ٩,u6-compare,118
+u6-compare-x279.mp3,١١ أَكْبَرُ مِنْ ٩,u6-compare,118
+u6-compare-x280.mp3,١٠ أَكْبَرُ مِنْ ٧,u6-compare,118
+u6-compare-x281.mp3,١٢ − ٩ = ٣,u6-compare,118
+u6-compare-x282.mp3,١٤ − ٩ = ٥,u6-compare,118
+u6-compare-x283.mp3,١٠ − ٧ = ٣,u6-compare,118
+u6-related-x284.mp3,٦ + ٨ = ١٤,u6-related,120
+u6-related-x285.mp3,١٤ − ٨ = ٦,u6-related,120
+u6-related-x286.mp3,١٤ − ٦ = ٨,u6-related,120
+u6-related-x287.mp3,١٢ − ٨ = ٤,u6-related,120
+u6-related-x288.mp3,٦ + ٨,u6-related,120
+u6-related-x289.mp3,١٤ − ٨,u6-related,120
+u6-related-x290.mp3,١٤ − ٦,u6-related,120
+u6-related-x291.mp3,١٢ − ٨,u6-related,120
+u7-unit.mp3,الْهَنْدَسَةُ وَالْقِيَاسُ,u7,128
+u7-days-g1.mp3,رَتِّبْ أَيَّامَ الْأُسْبُوعِ,u7-days,130
+u7-days-x294.mp3,السَّبْتُ، الْأَحَدُ، الِاثْنَيْنِ,u7-days,130
+u7-days-x295.mp3,السَّبْتُ,u7-days,130
+u7-days-x296.mp3,الْأَحَدُ,u7-days,130
+u7-days-x297.mp3,الِاثْنَيْنِ,u7-days,130
+u7-days-x298.mp3,الِاثْنَيْنِ، الثُّلَاثَاءُ، الْأَرْبِعَاءُ,u7-days,130
+u7-days-x299.mp3,الثُّلَاثَاءُ,u7-days,130
+u7-days-x300.mp3,الْأَرْبِعَاءُ,u7-days,130
+u7-days-x301.mp3,الْأَرْبِعَاءُ، الْخَمِيسُ، الْجُمُعَةُ,u7-days,130
+u7-days-x302.mp3,الْخَمِيسُ,u7-days,130
+u7-days-x303.mp3,الْجُمُعَةُ,u7-days,130
+u7-days-g2.mp3,اِسْمَعْ وَاخْتَرِ الْيَوْمَ,u7-days,130
+u7-days-x305.mp3,يَبْدَأُ الْأُسْبُوعُ بِيَوْمِ,u7-days,130
+u7-days-x306.mp3,الْيَوْمُ الَّذِي بَعْدَ الْأَحَدِ,u7-days,130
+u7-days-x307.mp3,الْيَوْمُ الَّذِي بَعْدَ الْخَمِيسِ,u7-days,130
+u7-clock-x308.mp3,السَّاعَةُ ٣,u7-clock,133
+u7-clock-x309.mp3,السَّاعَةُ ٧,u7-clock,133
+u7-clock-x310.mp3,السَّاعَةُ ٤,u7-clock,133
+u7-clock-x311.mp3,السَّاعَةُ ١٠,u7-clock,133
+u7-clock-x312.mp3,السَّاعَةُ ١٢,u7-clock,133
+u7-half-g1.mp3,اِلْمَسِ الشَّكْلَ الَّذِي نِصْفُهُ مُلَوَّنٌ,u7-half,134
+u7-quarter-g1.mp3,اِلْمَسِ الشَّكْلَ الَّذِي رُبْعُهُ مُلَوَّنٌ,u7-quarter,136
+u7-halfhour-x315.mp3,السَّاعَةُ ٣ وَالنِّصْفُ,u7-halfhour,138
+u7-halfhour-x316.mp3,السَّاعَةُ ٢ وَالنِّصْفُ,u7-halfhour,138
+u7-halfhour-x317.mp3,السَّاعَةُ ٤ وَالنِّصْفُ,u7-halfhour,138
+u7-halfhour-x318.mp3,السَّاعَةُ ٩ وَالنِّصْفُ,u7-halfhour,138
+u7-halfhour-x319.mp3,السَّاعَةُ ١١ وَالنِّصْفُ,u7-halfhour,138
+u7-length-g2.mp3,اِلْمَسِ الْأَطْوَلَ,u7-length,140
+u7-length-x321.mp3,أَيُّ الْبُرْجَيْنِ أَطْوَلُ؟,u7-length,140
+u7-length-x322.mp3,اِلْمَسِ الْأَقْصَرَ,u7-length,140
+u7-plan-g1.mp3,اِسْمَعْ وَاخْتَرِ الْعَدَدَ,u7-plan,142
+u7-plan-x324.mp3,كَمْ شِبْرًا طُولُ السَّبُّورَةِ؟,u7-plan,142
+u7-plan-x325.mp3,الِاثْنَيْنِ ٦، فَمَا تَارِيخُ الْأَرْبِعَاءِ؟,u7-plan,142
+u7-plan-x326.mp3,مَا تَارِيخُ الِاثْنَيْنِ الْقَادِمِ؟,u7-plan,142
+u7-solids-w01.mp3,مُكَعَّبٌ,u7-solids,144
+u7-solids-w02.mp3,شِبْهُ مُكَعَّبٍ,u7-solids,144
+u7-solids-w03.mp3,كُرَةٌ,u7-solids,144
+u7-solids-w04.mp3,أُسْطُوَانَةٌ,u7-solids,144
+u7-solids-w05.mp3,مَخْرُوطٌ,u7-solids,144
+u7-solids-g1.mp3,اِسْمَعْ وَاخْتَرِ الْمُجَسَّمَ,u7-solids,144
+u7-plane-w02.mp3,مُسْتَطِيلٌ,u7-plane,146
+u8-unit.mp3,الْأَعْدَادُ حَتَّى ٩٩ وَالْقِيمَةُ الْمَكَانِيَّةُ,u8,154
+u8-tens-x335.mp3,١٠٠,u8-tens,157
+u8-ones-tens-x336.mp3,٢٦,u8-ones-tens,158
+u8-ones-tens-x337.mp3,٢٧,u8-ones-tens,158
+u8-ones-tens-x338.mp3,٣٦,u8-ones-tens,158
+u8-ones-tens-x339.mp3,٢٥,u8-ones-tens,158
+u8-ones-tens-x340.mp3,٣٤,u8-ones-tens,158
+u8-ones-tens-x341.mp3,٣٥,u8-ones-tens,158
+u8-ones-tens-x342.mp3,٦١,u8-ones-tens,158
+u8-ones-tens-x343.mp3,٧١,u8-ones-tens,158
+u8-ones-tens-x344.mp3,٣٣,u8-ones-tens,158
+u8-ones-tens-x345.mp3,٤٢,u8-ones-tens,158
+u8-ones-tens-x346.mp3,٤٣,u8-ones-tens,158
+u8-ones-tens-x347.mp3,٨٩,u8-ones-tens,158
+u8-ones-tens-x348.mp3,٩٩,u8-ones-tens,158
+u8-ones-tens-x349.mp3,١٠٩,u8-ones-tens,158
+u8-skip5-x350.mp3,٣٢,u8-skip5,160
+u8-skip5-x351.mp3,٥٢,u8-skip5,160
+u8-skip5-x352.mp3,٦٢,u8-skip5,160
+u8-skip5-x353.mp3,٤٤,u8-skip5,160
+u8-skip5-x354.mp3,٢٤,u8-skip5,160
+u8-skip5-x355.mp3,٤٥,u8-skip5,160
+u8-skip2-x356.mp3,٢٨,u8-skip2,162
+u8-skip2-x357.mp3,٧٤,u8-skip2,162
+u8-skip2-x358.mp3,٧٦,u8-skip2,162
+u8-skip2-x359.mp3,٧٨,u8-skip2,162
+u8-skip2-x360.mp3,٨٢,u8-skip2,162
+u8-skip2-x361.mp3,٨٤,u8-skip2,162
+u8-skip2-x362.mp3,٨٦,u8-skip2,162
+u8-skip2-x363.mp3,٨٨,u8-skip2,162
+u8-cmp99-x364.mp3,٤٧ أَكْبَرُ مِنْ ٢٣,u8-cmp99,164
+u8-cmp99-x365.mp3,٤٧,u8-cmp99,164
+u8-cmp99-x366.mp3,٢٣,u8-cmp99,164
+u8-cmp99-x367.mp3,٥٦ أَكْبَرُ مِنْ ٣٦,u8-cmp99,164
+u8-cmp99-x368.mp3,٥٦,u8-cmp99,164
+u8-cmp99-x369.mp3,٨٣ أَصْغَرُ مِنْ ٨٩,u8-cmp99,164
+u8-cmp99-x370.mp3,٨٣,u8-cmp99,164
+u8-cmp99-x371.mp3,٢٤ أَصْغَرُ مِنْ ٢٦,u8-cmp99,164
+u8-cmp99-x372.mp3,٧٥ أَصْغَرُ مِنْ ٧٨,u8-cmp99,164
+u8-cmp99-x373.mp3,٧٥,u8-cmp99,164
+u8-cmp99-g2.mp3,اِلْمَسِ الْأَصْغَرَ مِنْ ٥٠,u8-cmp99,165
+u8-cmp99-x375.mp3,٨١,u8-cmp99,165
+u8-cmp99-x376.mp3,٤١,u8-cmp99,165
+u8-cmp99-x377.mp3,٩٥,u8-cmp99,165
+u8-cmp99-x378.mp3,٨٥,u8-cmp99,165
+u8-cmp99-x379.mp3,٣٨,u8-cmp99,165
+u8-nbr99-x380.mp3,٣٩,u8-nbr99,166
+u8-nbr99-x381.mp3,٩٧,u8-nbr99,166
+u8-nbr99-x382.mp3,٩٨,u8-nbr99,166
+u8-ord99-x383.mp3,٤٢، ٤٤، ٤٧,u8-ord99,168
+u8-ord99-x384.mp3,٢٧، ٣٤، ٤١,u8-ord99,168
+u8-ord99-x385.mp3,٢٤، ٣٣، ٤٨، ٥٢,u8-ord99,168
+u8-ord99-x386.mp3,٤٨,u8-ord99,168
+u8-ord99-x387.mp3,٤٧، ٤٤، ٤٢,u8-ord99,169
+u8-ord99-x388.mp3,٩٩، ٩٥، ٧٩، ٧٥,u8-ord99,169
+u8-ord99-x389.mp3,٧٩,u8-ord99,169
+u8-ord99-x390.mp3,٤١، ٣٤، ٢٧,u8-ord99,169
+u9-unit.mp3,الْجَمْعُ وَالطَّرْحُ حَتَّى ٩٩ دُونَ إِعَادَةِ تَسْمِيَةٍ,u9,176
+u9-tens-x392.mp3,٣٠ + ٢٠ = ٥٠,u9-tens,178
+u9-tens-x393.mp3,٢٠ + ١٠ = ٣٠,u9-tens,178
+u9-tens-x394.mp3,٤٠ + ٢٠ = ٦٠,u9-tens,178
+u9-tens-x395.mp3,٦٠ + ٣٠ = ٩٠,u9-tens,178
+u9-tens-x396.mp3,٦٠ − ٢٠ = ٤٠,u9-tens,178
+u9-tens-x397.mp3,٥٠ − ٣٠ = ٢٠,u9-tens,178
+u9-tens-x398.mp3,٨٠ − ٣٠ = ٥٠,u9-tens,178
+u9-tens-x399.mp3,٧٠ − ٤٠ = ٣٠,u9-tens,178
+u9-add99-x400.mp3,٣٢ + ٢٥ = ٥٧,u9-add99,180
+u9-add99-x401.mp3,٥٥,u9-add99,180
+u9-add99-x402.mp3,٥٧,u9-add99,180
+u9-add99-x403.mp3,٥٩,u9-add99,180
+u9-add99-x404.mp3,٢٣ + ٥٤ = ٧٧,u9-add99,180
+u9-add99-x405.mp3,٧٧,u9-add99,180
+u9-add99-x406.mp3,٥٤,u9-add99,180
+u9-add99-x407.mp3,٣٢ + ٦٣ = ٩٥,u9-add99,180
+u9-add99-x408.mp3,٩٣,u9-add99,180
+u9-add99-x409.mp3,٦٣,u9-add99,180
+u9-add99-x410.mp3,١٦ + ٤٣ = ٥٩,u9-add99,180
+u9-add99-x411.mp3,٥١ + ١٤ = ٦٥,u9-add99,180
+u9-add99-x412.mp3,٦٤,u9-add99,180
+u9-add99-x413.mp3,٦٥,u9-add99,180
+u9-add99-x414.mp3,٦٧,u9-add99,180
+u9-add99-x415.mp3,٥١,u9-add99,180
+u9-add99-x416.mp3,٣٢ + ٢٥,u9-add99,180
+u9-add99-x417.mp3,٢٣ + ٥٤,u9-add99,180
+u9-add99-x418.mp3,٣٢ + ٦٣,u9-add99,180
+u9-add99-x419.mp3,١٦ + ٤٣,u9-add99,180
+u9-add99-x420.mp3,٦٠,u9-add99,180
+u9-add99-x421.mp3,٥١ + ١٤,u9-add99,180
+u9-sub99-x422.mp3,٣٦ − ١٤ = ٢٢,u9-sub99,182
+u9-sub99-x423.mp3,٢٨ − ١٥ = ١٣,u9-sub99,182
+u9-sub99-x424.mp3,٤٢ − ١١ = ٣١,u9-sub99,182
+u9-sub99-x425.mp3,٢٩,u9-sub99,182
+u9-sub99-x426.mp3,٣١,u9-sub99,182
+u9-sub99-x427.mp3,٨٧ − ١٤ = ٧٣,u9-sub99,182
+u9-sub99-x428.mp3,٧٣,u9-sub99,182
+u9-sub99-x429.mp3,٨٧,u9-sub99,182
+u9-sub99-x430.mp3,٩٣ − ١١ = ٨٢,u9-sub99,182
+u9-sub99-x431.mp3,٣٦ − ١٤,u9-sub99,182
+u9-sub99-x432.mp3,٢٨ − ١٥,u9-sub99,182
+u9-sub99-x433.mp3,٤٢ − ١١,u9-sub99,182
+u9-sub99-x434.mp3,٣٠,u9-sub99,182
+u9-sub99-x435.mp3,٨٧ − ١٤,u9-sub99,182
+u9-sub99-x436.mp3,٩٣ − ١١,u9-sub99,182
+c-booktitle.mp3,الرِّيَاضِيَّاتُ,c,1
