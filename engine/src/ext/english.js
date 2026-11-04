@@ -109,7 +109,7 @@ if (EN && typeof document !== 'undefined' && !document.getElementById('en-style'
 .g-talk .who svg{width:100%;height:100%}
 .g-talk .bub{position:relative;direction:ltr;text-align:left;background:#fff;border:4px solid color-mix(in srgb,var(--c1) 35%,#fff);border-radius:26px;padding:8px 20px;min-height:64px;font-family:'Andika',sans-serif;font-size:clamp(28px,4.8vmin,42px);font-weight:700;color:var(--ink,#3b2a1a);box-shadow:0 5px 0 rgba(0,0,0,.07);cursor:pointer;line-height:1.35}
 .g-talk .bub.seen{border-color:#8ce99a}
-.g-talk.many .bub{font-size:clamp(24px,3.8vmin,34px);min-height:56px;padding:6px 16px}.g-talk.many .who{width:min(11vmin,70px);height:min(11vmin,70px)}
+.g-talk.many .bub{font-size:clamp(28px,3.8vmin,34px);min-height:64px;padding:6px 16px}.g-talk.many .who{width:min(11vmin,70px);height:min(11vmin,70px)}
 /* العدّ */
 .g-count{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:space-evenly;gap:10px}
 .g-count .q{direction:ltr;font-family:'Andika',sans-serif;font-size:clamp(28px,4.6vmin,40px);font-weight:700;background:#fff;border-radius:20px;padding:4px 18px;min-height:56px}
@@ -126,7 +126,7 @@ if (EN && typeof document !== 'undefined' && !document.getElementById('en-style'
 .g-yesno .yb{display:flex;gap:22px;direction:ltr}
 .g-yesno .ans{min-width:150px;min-height:96px;border-radius:30px;font-family:'Andika',sans-serif;font-size:clamp(38px,6vmin,52px);font-weight:700;color:#fff;border:none;box-shadow:0 6px 0 rgba(0,0,0,.18)}
 .g-yesno .ans.y{background:#40c057}.g-yesno .ans.n{background:#fa5252}.g-yesno .ans.ok{outline:6px solid #ffd43b}
-@media (orientation:landscape) and (max-height:500px){.g-count .thing{width:min(11vh,70px);height:min(11vh,70px)}.g-count .num{min-width:72px;min-height:72px}.g-yesno{flex-direction:row;flex-wrap:wrap}.g-yesno .ypic{width:38vh;height:38vh}.g-talk .bub{font-size:24px;min-height:48px;padding:4px 14px}.g-talk .who{width:56px;height:56px}.g-abc{--pic:min(20vh,110px)}.g-abc .bigl{width:30vh;height:30vh;font-size:22vh}}
+@media (orientation:landscape) and (max-height:500px){.g-count .thing{width:min(11vh,70px);height:min(11vh,70px)}.g-count .num{min-width:72px;min-height:72px}.g-yesno{flex-direction:row;flex-wrap:wrap}.g-yesno .ypic{width:38vh;height:38vh}.g-talk .bub{font-size:28px;min-height:64px;padding:4px 14px;line-height:1.3}.g-talk .who{width:56px;height:56px}.g-abc{--pic:min(20vh,110px)}.g-abc .bigl{width:30vh;height:30vh;font-size:22vh}}
 </style>`);
 }
 

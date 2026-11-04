@@ -4,6 +4,7 @@ import { gsap, $, $$, SFX, state, sleep, esc, shuffle, reshuffle } from '../core
 import { art, ART } from '../art.js';
 import { SHAPES, shake, glowHint, popIn, burst, tw } from '../games.js';
 import { TEMPLATES2 } from '../games2.js';
+import { TEMPLATES as EN } from './english.js';
 
 /* ---------- أشكال الأرقام للتتبّع (٠–٩) داخل مربع 100×100 ---------- */
 Object.assign(SHAPES, {
@@ -446,4 +447,6 @@ const askchoose = (stage, game, ctx) => {
   return api;
 };
 
-export const TEMPLATES = { count, arith, compare, hop, pattern, rowpick, place, near, askchoose };
+// قالب «count» في كتاب الإنجليزي يحمل الاسم نفسه ببيانات مختلفة (items بدل groups)؛ يُوجَّه إليه هنا
+const countAny = (stage, game, ctx) => ((game.data.rounds || [])[0] && !game.data.rounds[0].groups && EN.count ? EN.count(stage, game, ctx) : count(stage, game, ctx));
+export const TEMPLATES = { count: countAny, arith, compare, hop, pattern, rowpick, place, near, askchoose };

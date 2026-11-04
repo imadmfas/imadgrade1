@@ -4,7 +4,8 @@ const path = require('path'), fs = require('fs');
 const ROOT = path.resolve(__dirname, '../..');
 const VPS = [['phone', 390, 844], ['phoneL', 844, 390], ['tablet', 800, 1280], ['desk', 1366, 768]];
 const only = process.argv[2] ? process.argv[2].split(',') : null;
-const OUT = path.join(__dirname, 'shots'); fs.mkdirSync(OUT, { recursive: true });
+const BOOK = process.argv[3] || 'reading';
+const OUT = path.join(__dirname, 'shots', BOOK); fs.mkdirSync(OUT, { recursive: true });
 (async () => {
   const b = await chromium.launch();
   const errs = [], issues = [];
@@ -24,8 +25,8 @@ const OUT = path.join(__dirname, 'shots'); fs.mkdirSync(OUT, { recursive: true }
       r.forEach((x) => issues.push(`${vn}/${name}: ${x}`));
       await p.screenshot({ path: path.join(OUT, `${vn}-${name}.png`) });
     };
-    await p.goto('file://' + ROOT + '/index.html'); await p.waitForFunction(() => document.body.classList.contains('booted')); await p.waitForTimeout(1600); await check('0shelf');
-    await p.goto('file://' + ROOT + '/reading/index.html'); await p.waitForFunction(() => document.body.classList.contains('booted'));
+    if (BOOK === 'reading') { await p.goto('file://' + ROOT + '/index.html'); await p.waitForFunction(() => document.body.classList.contains('booted')); await p.waitForTimeout(1600); await check('0shelf'); }
+    await p.goto('file://' + ROOT + '/' + BOOK + '/index.html'); await p.waitForFunction(() => document.body.classList.contains('booted'));
     await p.evaluate(() => { window.__kids.gsap.ticker.lagSmoothing(0); try { localStorage.clear(); } catch (e) {} });
     await p.waitForTimeout(1400); await check('1cover');
     await p.click('#coverGo', { force: true }); await p.waitForTimeout(1500); await check('2map');

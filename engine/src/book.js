@@ -105,6 +105,7 @@ function openMap(fromCover) {
       if (L === nxt) { const m = document.createElement('div'); m.className = 'map-mascot' + (x > W / 2 ? ' left' : ''); m.style.left = x + 'px'; m.style.top = y + 'px'; road.appendChild(m); mapMascot && mapMascot.kill(); mapMascot = Mascot(m); m.addEventListener('click', () => el.click()); }
     }
   });
+  { const RW = road.clientWidth || W; $$('.node,.station', road).forEach((el) => { const w = el.offsetWidth, x = parseFloat(el.style.left); if (w) el.style.left = Math.max(w / 2 + 6, Math.min(RW - w / 2 - 6, x)) + 'px'; }); }
   { const els = $$('.node,.station', road); if (state.reduced) popIn(els); else gsap.fromTo(els, { scale: 0.2, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.45, ease: 'back.out(2)', stagger: Math.min(0.08, 0.9 / els.length) }); }
   const nx = $('.node.next', road); if (nx) setTimeout(() => nx.scrollIntoView({ block: 'center', behavior: state.reduced ? 'auto' : 'smooth' }), 200);
   if (fromCover) setTimeout(() => instruct(COMMON.map, audioOf(COMMON.map)), 400);

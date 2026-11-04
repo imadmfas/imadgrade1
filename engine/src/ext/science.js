@@ -16,7 +16,7 @@ const STYLE = `<style id="sci-css">
 .s-look{width:100%;height:100%;display:flex;overflow:auto}
 .s-look .lgrid{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-content:center;max-width:980px;margin:auto}
 .g-order .piece svg,.g-order .oslot svg{width:min(19vw,12vh,120px);height:min(19vw,12vh,120px)}.g-order .piece{padding:4px 8px}.g-order .oslot{min-width:calc(min(19vw,12vh,120px) + 24px);width:auto;height:auto;min-height:calc(min(19vw,12vh,120px) + 16px);padding:4px}
-.s-card{position:relative;background:#fff;border-radius:24px;box-shadow:0 5px 0 rgba(0,0,0,.08);border:4px solid transparent;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px 12px;min-width:120px;max-width:min(44vw,300px)}
+.s-card{position:relative;background:#fff;border-radius:24px;box-shadow:0 5px 0 rgba(0,0,0,.08);border:4px solid transparent;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px 12px;min-width:120px;max-width:min(43vw,300px)}@media (max-width:520px){.s-look .lgrid{gap:8px}.s-card{padding:6px 8px}}
 .s-card .lp{width:min(22vw,17vh,130px);height:min(22vw,17vh,130px)}.s-card .lp svg{width:100%;height:100%}
 .s-card .lt{font-size:clamp(28px,4.4vmin,36px);font-weight:700;line-height:1.6;text-align:center}
 .s-card.seen{border-color:#8ce99a}.s-card .tick{position:absolute;top:4px;left:8px;color:#2f9e44;font-style:normal;font-size:26px;opacity:0}.s-card.seen .tick{opacity:1}
@@ -50,7 +50,7 @@ const STYLE = `<style id="sci-css">
 </style>`;
 if (typeof document !== 'undefined' && !document.getElementById('sci-css')) document.head.insertAdjacentHTML('beforeend', STYLE);
 // عناوين دروس العلوم جمل طويلة: عقدة الخريطة تصير بطاقة مستديرة بعنوان أصغر (في كتاب العلوم وحده)
-if (typeof document !== 'undefined' && /\/science\//.test(location.pathname) && !document.getElementById('sci-map')) document.head.insertAdjacentHTML('beforeend', `<style id="sci-map">#road .node{width:min(176px,46vw);height:auto;min-height:104px;border-radius:32px;padding:8px 10px;gap:2px}#road .n-title{color:#fff;font-size:22px;line-height:1.55;text-align:center}#road .n-stars{font-size:18px}.g-sort .sitem svg{width:min(24vw,13vh,110px);height:min(24vw,13vh,110px)}.g-choose .opt .opic{width:min(26vw,20vh,170px);height:min(26vw,20vh,170px)}</style>`);
+if (typeof document !== 'undefined' && /\/science\//.test(location.pathname) && !document.getElementById('sci-map')) document.head.insertAdjacentHTML('beforeend', `<style id="sci-map">#road .node{width:min(236px,58vw);height:auto;min-height:104px;border-radius:32px;padding:8px 10px;gap:2px}#road .n-title{color:#fff;font-size:28px;line-height:1.45;text-align:center}#road .n-stars{font-size:18px}.g-sort .sitem svg{width:min(24vw,13vh,110px);height:min(24vw,13vh,110px)}.g-choose .opt .opic{width:min(26vw,20vh,170px);height:min(26vw,20vh,170px)}</style>`);
 
 /* 1) اِلْمَسْ وَاسْمَعْ: بطاقات صور وكلمات، كل بطاقة تنطق اسمها */
 const look = (stage, game, ctx) => {

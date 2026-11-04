@@ -34,7 +34,7 @@ body.rm #coverGo.ready{animation:none}
 .station,.node{position:absolute;transform:translate(-50%,-50%)}
 .station{display:flex;flex-direction:column;align-items:center;gap:2px;background:none}
 .flag{width:84px;height:84px;border-radius:50%;background:var(--c2);color:#fff;font-size:44px;font-weight:700;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 0 color-mix(in srgb,var(--c2) 70%,#000 25%);border:5px solid #fff}
-.st-title{background:#fff;border-radius:16px;padding:0 14px;font-size:28px;font-weight:700;white-space:nowrap;box-shadow:0 3px 0 rgba(0,0,0,.08)}
+.st-title{background:#fff;border-radius:16px;padding:0 14px;font-size:28px;font-weight:700;white-space:normal;max-width:min(340px,86vw);text-align:center;line-height:1.45;box-shadow:0 3px 0 rgba(0,0,0,.08)}
 .node{width:104px;height:104px;border-radius:50%;background:var(--c1);color:#fff;border:6px solid #fff;box-shadow:0 7px 0 color-mix(in srgb,var(--c1) 70%,#000 25%);display:flex;flex-direction:column;align-items:center;justify-content:center}
 .node.full{background:#40c057;box-shadow:0 7px 0 #2b8a3e}
 .node.next{animation:pulse 1.4s ease-in-out infinite}
@@ -194,12 +194,13 @@ body[data-view=lesson] .l-head{grid-area:head;align-self:end}
 .prompts{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
 .prompt{width:76px;height:76px;border-radius:50%;background:#fff;box-shadow:0 5px 0 rgba(0,0,0,.1);font-size:28px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:2px}
 .prompt span{font-family:sans-serif;font-size:24px}.prompt.seen{background:#ebfbee}
+@media (max-height:520px){.prompts{gap:8px;max-height:100%;overflow:auto;align-content:safe center;padding:4px}.prompt{width:66px;height:66px;font-size:26px}.prompt span{font-size:20px}}
 .pboard{display:grid;grid-template-columns:repeat(var(--cols),1fr);width:min(100%,560px);aspect-ratio:400/260;border-radius:18px;overflow:hidden;background:#fff;box-shadow:inset 0 0 0 4px #eadfc9}
 .pslot{border:2px dashed #e1d3b8;display:flex}.pslot.full{border:none}
 .pslot svg,.ppiece svg{width:100%;height:100%;display:block}
 .ppool{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
 .ppiece{width:min(28vw,150px);background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 5px 0 rgba(0,0,0,.12);touch-action:none;cursor:grab;position:relative;z-index:3}
-.g-read{width:100%;height:100%;display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:12px;max-width:900px;margin:0 auto;overflow:auto}
+.g-read{width:100%;height:100%;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:12px;max-width:900px;margin:0 auto;overflow:auto}.g-read>.rline:first-child{margin-top:auto}.g-read>.rline:last-child{margin-bottom:auto}
 .rline{background:#fff;border-radius:22px;padding:6px 18px;font-size:clamp(28px,5vmin,40px);font-weight:600;line-height:1.9;box-shadow:0 4px 0 rgba(0,0,0,.07);text-align:right}
 .rline span{border-radius:8px;transition:background .2s}.rline span.on{background:#fff3bf;color:var(--c1)}
 .rline.seen{box-shadow:0 4px 0 #8ce99a}
@@ -226,7 +227,7 @@ body[data-view=lesson] .l-head{grid-area:head;align-self:end}
  .mgrid{width:min(100%,calc((100vh - 150px) * var(--cols) / 2));gap:8px}
  .g-puzzle{flex-direction:row}.pboard{width:min(55%,calc((100vh - 130px) * 400 / 260))}.ppiece{width:min(12vw,84px)}
  .nashid{gap:2px;padding:4px}.n-art{width:min(60%,calc((100vh - 230px) * 400 / 260))}.n-title{font-size:30px}
- .g-build .piece,.g-order .piece{font-size:28px;min-height:64px;min-width:64px;padding:0 8px}.pool{gap:8px}.g-build{gap:4px}.slots .slot{height:72px}
+ .g-build .piece,.g-order .piece{font-size:28px;min-height:64px;min-width:64px;padding:0 8px}.pool{gap:8px}.g-build{gap:4px;display:grid;grid-template-columns:auto 1fr;grid-template-areas:"t s" "p p";align-items:center;align-content:space-evenly;justify-items:center}.g-build>.target{grid-area:t}.g-build>.slots{grid-area:s}.g-build>.pool{grid-area:p}.slots .slot{height:72px}
  .big-letter{width:150px!important;height:150px!important}.big-letter span{font-size:124px!important}
  .sticker-page{flex-direction:row;flex-wrap:wrap;gap:6px 24px;padding:6px}.sticker{width:150px;height:150px;padding:16px}
  #cMascot{width:70px;height:72px}#cTitle{font-size:38px;line-height:1.35}#cGrade{font-size:26px}#cover{gap:2px}#coverGo{height:72px;margin-top:2px}
