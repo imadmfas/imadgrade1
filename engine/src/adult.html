@@ -1,0 +1,42 @@
+<button id="bAdult" class="adult" type="button" aria-label="ركن الوالدين والمعلم: اضغط مطوّلاً ثلاث ثوانٍ">⚙️</button>
+<div id="gate" class="dlg adult" hidden><div class="box">
+  <h3>للكبار فقط</h3>
+  <p>اختر ناتج الجمع:</p>
+  <div id="gateQ"></div>
+  <div id="gateA"></div>
+  <div class="row" style="justify-content:center"><button type="button" id="gateX">رجوع</button></div>
+</div></div>
+<div id="adult" class="dlg adult" hidden><div class="box">
+  <h3>ركن الوالدين والمعلم</h3>
+  <div class="row"><button type="button" class="abtn go" id="aNote">أرسل ملاحظة عبر واتساب</button><button type="button" class="abtn" id="aCert">شهادة الوحدة</button></div>
+  <h4>تقدّم الطفل</h4>
+  <ul id="aProg"></ul>
+  <h4>الصوت والحركة</h4>
+  <label><input type="checkbox" id="aSound"> تشغيل الصوت</label>
+  <label>مستوى الصوت <input type="range" id="aVol" min="0" max="1" step="0.05"></label>
+  <label><input type="checkbox" id="aMusic"> موسيقى خلفية هادئة</label>
+  <label><input type="checkbox" id="aRm"> تقليل الحركة</label>
+  <label><input type="checkbox" id="aLite"> الوضع الخفيف للأجهزة الضعيفة</label>
+  <h4>دليل قصير للأهل والمعلمين</h4>
+  <ul>
+    <li>اختاروا كتاباً من الرف، ثم درساً من طريق المغامرة. لا توجد دروس مقفلة، فيستطيع المعلم فتح درس اليوم مباشرة.</li>
+    <li>لكل درس صفحات لعب قصيرة. كل لعبة تمنح نجمة، ومن يجمع نجوم الدرس كلها ينال ملصقاً في دفتر الملصقات.</li>
+    <li>لا مؤقت ولا خسارة. بعد محاولتين يلمع الجواب الصحيح ويُنطق، ثم يجرّب الطفل من جديد.</li>
+    <li>زر السمّاعة يعيد التعليمة، وزر البيت يعود إلى الخريطة، والسهمان يقلبان الصفحات.</li>
+    <li>لمشاركة درس محدد انسخوا رابط الصفحة وهو مفتوح؛ يفتح الرابط الدرس مباشرة دون الغلاف.</li>
+    <li>يُحفظ التقدم على هذا الجهاز وحده، ولا تُجمع أي بيانات عن الطفل.</li>
+  </ul>
+  <h4>المقاطع الصوتية الناقصة</h4>
+  <div id="aMissing"></div>
+  <p id="aVisits" hidden></p>
+  <div class="row"><button type="button" id="adultClose">إغلاق</button></div>
+</div></div>
+<div id="note" class="dlg adult" hidden><form class="box" id="noteF">
+  <h3>ملاحظة على المكتبة</h3>
+  <p id="noteWhere" style="color:#7a6650;margin:0 0 6px"></p>
+  <label>الاسم (اختياري)<input id="noteName" maxlength="60" autocomplete="name"></label>
+  <label>الصفة<select id="noteRole"><option>والد أو والدة</option><option>معلم أو معلمة</option><option>غير ذلك</option></select></label>
+  <label>نوع الملاحظة<select id="noteType"><option>خطأ في المحتوى أو التشكيل</option><option>صعوبة على الطفل</option><option>مشكلة في التشغيل أو العرض</option><option>اقتراح تحسين</option></select></label>
+  <label>الملاحظة<textarea id="noteText" rows="5" required maxlength="1500" placeholder="اكتب ملاحظتك هنا…"></textarea></label>
+  <div class="row"><button type="button" id="noteCancel">إلغاء</button><button type="submit" class="go">إرسال عبر واتساب</button></div>
+</form></div>

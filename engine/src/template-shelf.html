@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#3aa0e0">
+<title>مكتبتي الملوّنة — الصف الأول الابتدائي</title>
+<meta name="description" content="مكتبة تفاعلية مجانية لكتب الصف الأول الابتدائي في المنهج العراقي، طبعة 2026: ألعاب وأصوات ورسوم للأطفال.">
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+/*STYLE*/
+:root{--c1:#3aa0e0;--soft:#e7f5ff}
+body{display:flex;flex-direction:column;align-items:center;overflow-y:auto;overflow-x:hidden;height:auto;min-height:100%}
+html{overflow-y:auto}
+header{position:relative;z-index:2;text-align:center;padding:14px 10px 0;display:flex;align-items:center;gap:10px;justify-content:center}
+#shMascot{width:min(110px,24vmin);height:min(114px,25vmin);cursor:pointer;flex:none}
+header h1{margin:0;font-size:clamp(36px,8vmin,60px);color:#e5484d;line-height:1.5;text-shadow:0 3px 0 #fff}
+header p{margin:0;font-size:clamp(24px,4.6vmin,32px);font-weight:600;color:#1c7ed6}
+.edition{font-family:'Noto Naskh Arabic',serif;font-size:15px;color:#7a6650;margin:0 0 6px;z-index:2}
+#shelf{position:relative;z-index:2;width:min(980px,96vw);padding:10px 14px 0}
+#books{display:grid;grid-template-columns:repeat(3,1fr);gap:46px 18px;padding:18px 10px 0;position:relative}
+#books::before,#books::after{content:'';position:absolute;left:-14px;right:-14px;height:26px;border-radius:8px;background:linear-gradient(#c88a54,#a0663a);box-shadow:0 8px 0 #7d4c28,0 18px 24px rgba(0,0,0,.18);z-index:-1}
+#books::before{top:calc(50% - 16px)}#books::after{bottom:-26px}
+.book{position:relative;aspect-ratio:3/4;border-radius:10px 22px 22px 10px;background:linear-gradient(135deg,var(--bc),color-mix(in srgb,var(--bc) 75%,#000 12%));box-shadow:inset -10px 0 0 rgba(255,255,255,.18),0 8px 0 rgba(0,0,0,.15);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:10px 8px;transform-style:preserve-3d;perspective:600px}
+.book .spine{position:absolute;right:0;top:0;bottom:0;width:14px;border-radius:0 22px 22px 0;background:var(--bc2);opacity:.9}
+.b-ico{width:min(16vw,110px);height:min(16vw,110px);background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 0 rgba(0,0,0,.12)}
+.b-ico svg{width:72%;height:72%}
+.txt-ico{font-size:min(9vw,60px);font-weight:700;color:var(--bc);line-height:1}
+.b-title{font-size:clamp(20px,3.6vw,30px);font-weight:700;line-height:1.5;text-align:center;text-shadow:0 2px 0 rgba(0,0,0,.18)}
+.ribbon{position:absolute;top:12px;left:-6px;background:#fff;color:var(--bc);font-size:clamp(18px,2.6vw,22px);font-weight:700;padding:0 12px;border-radius:0 12px 12px 0;box-shadow:0 3px 0 rgba(0,0,0,.12)}
+.book.soon{filter:saturate(.75)}
+.book.soon .b-ico,.book.soon .b-title{opacity:.85}
+#shVisits{z-index:2;margin:44px 0 90px;font-family:'Noto Naskh Arabic',serif;font-size:16px;color:#7a6650}
+footer{z-index:2;font-family:'Noto Naskh Arabic',serif;font-size:14px;color:#7a6650;text-align:center;margin-top:44px;line-height:1.8;padding:0 70px}
+@media (max-width:600px) and (orientation:portrait){#books{grid-template-columns:repeat(2,1fr);gap:40px 16px}#books::before{top:calc(33.3% - 18px)}#books::after{bottom:-26px}.book{aspect-ratio:4/5}.b-ico{width:24vw;height:24vw}.txt-ico{font-size:13vw}.b-title{font-size:clamp(22px,6vw,28px)}}
+@media (max-width:600px) and (orientation:portrait){#books .shelf2{position:absolute;left:-14px;right:-14px;top:calc(66.6% - 10px);height:26px;border-radius:8px;background:linear-gradient(#c88a54,#a0663a);box-shadow:0 8px 0 #7d4c28;z-index:-1;display:block}}
+.shelf2{display:none}
+@media (min-aspect-ratio:5/4) and (min-height:501px){#shelf{width:min(1200px,96vw)}#books{grid-template-columns:repeat(6,1fr)}#books::before{display:none}.b-ico{width:min(9vw,110px);height:min(9vw,110px)}.txt-ico{font-size:min(5vw,56px)}.b-title{font-size:clamp(20px,1.9vw,28px)}}
+#bAdult{top:10px;bottom:auto}
+@media (max-height:500px){header{padding-top:4px}#books{grid-template-columns:repeat(6,1fr);gap:16px 12px}#books::before{display:none}.b-title{font-size:20px}.b-ico{width:12vh;height:12vh}#shMascot{width:80px;height:84px}}
+</style>
+</head>
+<body>
+<div id="bg" aria-hidden="true"></div>
+<header><div id="shMascot" role="img" aria-label="سُهَيْل"></div><div><h1 id="libTitle"></h1><p id="libGrade"></p></div></header>
+<p class="edition">المنهج العراقي — طبعة 2026</p>
+<main id="shelf"><div id="books"></div></main>
+<footer>إعداد البروفيسور عماد محمد فرحان، باستعمال المساعد الذكي كلاود (Claude)<br>مجاني للأطفال والأهل والمعلمين، دون تسجيل ودون إعلانات</footer>
+<p id="shVisits" hidden></p>
+/*ADULT*/
+<script>window.__WA='/*WA*/';window.__AVAIL=/*AVAIL*/;window.__AUDIO_ALL=/*AUDIOALL*/;</script>
+<script>
+(function(){var b=document.getElementById('bg');for(var i=0;i<12;i++){var e=document.createElement('i');var s=16+Math.random()*40;e.style.cssText='--s:'+s+'px;--d:'+(14+Math.random()*16)+'s;--dl:-'+(Math.random()*20)+'s;--dx:'+((Math.random()-.5)*120)+'px;left:'+(Math.random()*100)+'%';b.appendChild(e);}})();
+</script>
+<script>/*BUNDLE*/</script>
+</body>
+</html>

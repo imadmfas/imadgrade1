@@ -1,0 +1,54 @@
+@font-face{font-family:'Noto Naskh Arabic';src:url(FONTROOT/noto-naskh-arabic-arabic-500-normal.woff2) format('woff2');font-weight:400 500;font-display:swap}
+@font-face{font-family:'Noto Naskh Arabic';src:url(FONTROOT/noto-naskh-arabic-arabic-700-normal.woff2) format('woff2');font-weight:600 800;font-display:swap}
+@font-face{font-family:'Scheherazade New';src:url(FONTROOT/scheherazade-new-arabic-400-normal.woff2) format('woff2');font-weight:400 500;font-display:swap}
+@font-face{font-family:'Scheherazade New';src:url(FONTROOT/scheherazade-new-arabic-700-normal.woff2) format('woff2');font-weight:600 800;font-display:swap}
+@font-face{font-family:'Amiri';src:url(FONTROOT/amiri-arabic-400-normal.woff2) format('woff2');font-weight:400 500;font-display:swap}
+@font-face{font-family:'Amiri';src:url(FONTROOT/amiri-arabic-700-normal.woff2) format('woff2');font-weight:600 800;font-display:swap}
+:root{--kf:'KIDFONT','Noto Naskh Arabic',serif;--c1:#e5484d;--c2:#3aa0e0;--soft:#ffe3e3;--ink:#4a3426;--paper:#fffaf0;--lh:1.9}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;overflow:hidden}
+body{font-family:var(--kf);color:var(--ink);background:radial-gradient(circle at 20% 10%,#fff 0,var(--soft) 60%,color-mix(in srgb,var(--soft) 70%,var(--c2) 12%) 100%);direction:rtl;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;touch-action:manipulation;line-height:var(--lh)}
+input,textarea,select{-webkit-user-select:text;user-select:text}
+button{font-family:inherit;color:inherit}
+[hidden]{display:none!important}
+.tap{cursor:pointer;min-width:64px;min-height:64px;border:none;-webkit-user-select:none;user-select:none}
+/* خلفية حية لطيفة */
+#bg{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+#bg i{position:absolute;bottom:-60px;width:var(--s);height:var(--s);border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,rgba(255,255,255,.25) 60%,rgba(255,255,255,0));border:2px solid rgba(255,255,255,.7);animation:float var(--d) linear infinite;animation-delay:var(--dl);opacity:.7}
+@keyframes float{to{transform:translate(var(--dx),-115vh)}}
+body.rm #bg,body.lite #bg{display:none}
+/* أزرار الطفل الكبيرة */
+.kbtn{width:72px;height:72px;border-radius:24px;background:#fff;box-shadow:0 5px 0 rgba(0,0,0,.14),0 8px 18px rgba(0,0,0,.08);font-size:34px;display:inline-flex;align-items:center;justify-content:center;transition:transform .12s}
+.kbtn:active{transform:translateY(4px);box-shadow:0 1px 0 rgba(0,0,0,.14)}
+.kbtn:disabled{opacity:.35}
+.kbtn svg{width:42px;height:42px}
+/* ركن الكبار: ترس صغير يحتاج ضغطاً مطوّلاً */
+#bAdult{position:fixed;left:10px;bottom:10px;z-index:40;width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.55);font-size:26px;opacity:.75;display:flex;align-items:center;justify-content:center}
+#bAdult::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:5px solid transparent;border-top-color:var(--c1)}
+#bAdult.holding::after{animation:hold 3s linear forwards}
+@keyframes hold{0%{transform:rotate(0);border-right-color:transparent}50%{border-right-color:var(--c1)}100%{transform:rotate(720deg);border-color:var(--c1)}}
+.adult{font-family:'Noto Naskh Arabic',serif;line-height:1.7}
+.dlg{position:fixed;inset:0;z-index:70;background:rgba(30,20,10,.5);display:flex;align-items:center;justify-content:center;padding:12px}
+.dlg .box{background:#fffaf0;border-radius:20px;padding:18px 20px;width:min(560px,96vw);max-height:92vh;overflow:auto;box-shadow:0 20px 60px rgba(0,0,0,.35);font-size:16px}
+.dlg h3{margin:0 0 8px;font-size:22px}
+.dlg h4{margin:14px 0 4px;font-size:17px;color:var(--c1)}
+.dlg label{display:block;margin:7px 0}
+.dlg input[type=text],.dlg input:not([type]),.dlg select,.dlg textarea{display:block;width:100%;margin-top:4px;padding:8px 10px;border:1px solid #d8c8a8;border-radius:10px;font:inherit;background:#fff}
+.dlg .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.dlg .row button,.dlg .abtn{padding:9px 16px;border-radius:12px;border:1px solid #d8c8a8;background:#fff;font:inherit;cursor:pointer;min-height:44px}
+.dlg .go{background:#1f8f4e!important;border-color:#1f8f4e!important;color:#fff}
+.dlg ol{font-size:14px;max-height:220px;overflow:auto;padding-inline-start:22px}
+.dlg code{font-size:12px;direction:ltr;unicode-bidi:isolate;background:#f1e9d8;padding:0 4px;border-radius:4px}
+#gate .box{text-align:center;width:min(380px,92vw)}
+#gateQ{font-size:44px;margin:6px 0 12px;direction:ltr}
+#gateA{display:flex;gap:12px;justify-content:center}
+#gateA button{width:84px;height:72px;font-size:32px;border-radius:16px;border:2px solid #d8c8a8;background:#fff;cursor:pointer}
+/* الشخصية المرافقة */
+.mascot{width:100%;height:100%;overflow:visible}
+/* شرارات وقصاصات */
+.spark{position:fixed;width:12px;height:12px;border-radius:50%;z-index:90;pointer-events:none;margin:-6px 0 0 -6px}
+.confetti{position:fixed;top:0;width:12px;height:16px;border-radius:3px;z-index:90;pointer-events:none}
+.big-star{position:fixed;left:50%;top:42%;margin:-90px 0 0 -90px;width:180px;height:180px;font-size:170px;line-height:180px;text-align:center;color:#fcc419;text-shadow:0 6px 0 #e8a300,0 10px 30px rgba(0,0,0,.2);z-index:95;pointer-events:none;font-family:sans-serif}
+.hint{animation:hint .6s ease-in-out 4;box-shadow:0 0 0 8px #ffe066,0 0 28px 10px #ffd43b!important;border-radius:20px}
+@keyframes hint{50%{transform:scale(1.08)}}
+body.rm .hint{animation:none}

@@ -1,0 +1,10 @@
+{
+ "name": "مكتبتي الملوّنة — الصف الأول الابتدائي",
+ "short_name": "مكتبتي الملوّنة",
+ "start_url": "./",
+ "display": "standalone",
+ "dir": "rtl",
+ "lang": "ar",
+ "background_color": "#e7f5ff",
+ "theme_color": "#3aa0e0"
+}

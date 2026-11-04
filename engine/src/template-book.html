@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="/*COLOR*/">
+<title>/*TITLE*/ — مكتبتي الملوّنة</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<style>
+/*STYLE*/
+/* ---------- الغلاف ---------- */
+#cover{position:fixed;inset:0;z-index:30;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:16px;text-align:center;background:linear-gradient(160deg,var(--c1),color-mix(in srgb,var(--c1) 70%,#000 8%));color:#fff;overflow:auto}
+#cover::before{content:'';position:absolute;inset:14px;border:4px dashed rgba(255,255,255,.45);border-radius:28px;pointer-events:none}
+#cMascot{width:min(150px,30vmin);height:min(155px,31vmin);cursor:pointer}
+#cTitle{margin:0;font-size:clamp(40px,9vmin,72px);font-weight:700;line-height:1.5;text-shadow:0 4px 0 rgba(0,0,0,.15)}
+#cGrade{margin:0;font-size:clamp(26px,5vmin,36px);font-weight:600}
+.badge{display:inline-block;background:#fff;color:var(--c1);padding:4px 18px;border-radius:30px;font-size:clamp(17px,3.4vmin,22px);font-weight:700;box-shadow:0 4px 0 rgba(0,0,0,.12)}
+.credit{font-size:clamp(14px,2.8vmin,17px);opacity:.95;max-width:560px;line-height:1.7}
+#coverGo{margin-top:8px;min-width:240px;height:84px;border-radius:44px;background:#ffd43b;color:#4a3426;font-size:clamp(32px,6vmin,40px);font-weight:700;box-shadow:0 7px 0 #e0a800;border:none;cursor:pointer;opacity:.55}
+#coverGo.ready{opacity:1;animation:breathe 1.6s ease-in-out infinite}
+body.rm #coverGo.ready{animation:none}
+@keyframes breathe{50%{transform:scale(1.06)}}
+/* ---------- الخريطة ---------- */
+#map{position:fixed;inset:0;display:flex;flex-direction:column;z-index:5}
+.topbar{display:flex;align-items:center;gap:10px;padding:10px 12px;padding-top:max(10px,env(safe-area-inset-top));z-index:6}
+.topbar .grow{flex:1;min-width:0;text-align:center;font-size:28px;font-weight:700;color:var(--c1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#mapScroll{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;touch-action:pan-y}
+#road{position:relative;margin:0 auto;max-width:720px;width:100%}
+.road-svg{position:absolute;left:0;top:0}
+.road-base{fill:none;stroke:#f3d9a4;stroke-width:46;stroke-linecap:round}
+.road-dash{fill:none;stroke:#fff;stroke-width:6;stroke-dasharray:4 22;stroke-linecap:round}
+.deco{position:absolute;width:84px;height:84px;opacity:.9;pointer-events:none}
+.deco svg{width:100%;height:100%}
+.station,.node{position:absolute;transform:translate(-50%,-50%)}
+.station{display:flex;flex-direction:column;align-items:center;gap:2px;background:none}
+.flag{width:84px;height:84px;border-radius:50%;background:var(--c2);color:#fff;font-size:44px;font-weight:700;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 0 color-mix(in srgb,var(--c2) 70%,#000 25%);border:5px solid #fff}
+.st-title{background:#fff;border-radius:16px;padding:0 14px;font-size:28px;font-weight:700;white-space:nowrap;box-shadow:0 3px 0 rgba(0,0,0,.08)}
+.node{width:104px;height:104px;border-radius:50%;background:var(--c1);color:#fff;border:6px solid #fff;box-shadow:0 7px 0 color-mix(in srgb,var(--c1) 70%,#000 25%);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.node.full{background:#40c057;box-shadow:0 7px 0 #2b8a3e}
+.node.next{animation:pulse 1.4s ease-in-out infinite}
+body.rm .node.next{animation:none}
+@keyframes pulse{50%{box-shadow:0 7px 0 color-mix(in srgb,var(--c1) 70%,#000 25%),0 0 0 14px rgba(255,212,59,.6)}}
+.n-title{font-size:52px;font-weight:700;line-height:1}
+.n-stars{position:absolute;bottom:-38px;white-space:nowrap;font-family:sans-serif;font-size:24px;color:#d9cbb0}
+.n-stars i{font-style:normal}.n-stars i.on{color:#fcc419;text-shadow:0 2px 0 #e8a300}
+.map-mascot{position:absolute;width:86px;height:90px;transform:translate(40px,-118px);z-index:2;cursor:pointer}.map-mascot.left{transform:translate(-126px,-118px)}
+/* ---------- الدرس ---------- */
+#lesson{position:fixed;inset:0;z-index:5;display:grid;grid-template-columns:auto 1fr auto;grid-template-rows:auto 1fr auto;grid-template-areas:"home head again" "main main main" "prev stars next";gap:8px 10px;padding:10px;padding-top:max(10px,env(safe-area-inset-top));padding-bottom:max(10px,env(safe-area-inset-bottom))}
+#bHome{grid-area:home}#bAgain{grid-area:again}#bPrev{grid-area:prev}#bNext{grid-area:next}
+.l-head{grid-area:head;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.4;min-width:0;font-family:'Noto Naskh Arabic',serif;color:#7a6650}
+#lUnit{font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+#lPage{font-size:14px}
+#lStars{grid-area:stars;align-self:center;text-align:center;font-family:sans-serif;font-size:34px;color:#e4d6bb;white-space:nowrap}
+#lStars i{font-style:normal;display:inline-block}
+#lStars i.on{color:#fcc419;text-shadow:0 2px 0 #e8a300}
+#lStars i.cur{transform:translateY(-4px) scale(1.15)}
+#book3d{grid-area:main;min-height:0;position:relative;perspective:1600px;display:flex;flex-direction:column}
+.speaker{position:relative;z-index:8;display:flex;align-items:center;gap:6px;min-height:76px;padding:0 4px 4px}
+#lMascot{flex:none;width:72px;height:76px;cursor:pointer}
+#bubble{flex:1;min-width:0;background:#fff;border-radius:22px;padding:2px 16px;font-size:clamp(28px,4.4vmin,34px);font-weight:600;box-shadow:0 4px 0 rgba(0,0,0,.08);line-height:1.75;text-align:center;pointer-events:none;border:3px solid var(--soft);position:relative;min-height:62px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;column-gap:.3em}
+#bubble::before{content:'';position:absolute;left:-12px;top:50%;margin-top:-10px;border:10px solid transparent;border-right-color:#fff;border-left:0}
+#page{position:relative;flex:1;min-height:0;width:100%;max-width:1100px;margin:0 auto;transform-style:preserve-3d}
+.sheet{position:absolute;inset:0;background:var(--paper);border-radius:28px;box-shadow:0 8px 0 color-mix(in srgb,var(--c1) 30%,#d8c39c),0 16px 36px rgba(0,0,0,.1);display:flex;flex-direction:column;overflow:hidden;transform-origin:50% 100%;border:4px solid #fff}
+.sheet.pop-up{animation:popup .7s cubic-bezier(.2,1.5,.4,1) both}
+@keyframes popup{0%{transform:rotateX(70deg) scale(.92);opacity:.2}100%{transform:none;opacity:1}}
+.sheet.turn-out{transform-origin:0 50%;animation:turnout .45s ease-in forwards}
+.sheet.turn-back{transform-origin:100% 50%;animation:turnback .45s ease-in forwards}
+@keyframes turnout{to{transform:rotateY(-100deg) skewY(4deg);opacity:.4;filter:brightness(.85)}}
+@keyframes turnback{to{transform:rotateY(100deg) skewY(-4deg);opacity:.4;filter:brightness(.85)}}
+.stage{flex:1;min-height:0;position:relative;display:flex;align-items:center;justify-content:center;padding:12px}
+/* عناصر الألعاب */
+.card{background:#fff;border-radius:24px;box-shadow:0 5px 0 rgba(0,0,0,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px;position:relative}
+.card .pic{width:var(--pic);height:var(--pic)}
+.card .pic svg{width:100%;height:100%}
+.card .word{font-size:clamp(28px,4.6vmin,40px);font-weight:700;line-height:1.9}
+.card .tick{position:absolute;top:4px;left:8px;font-style:normal;color:#40c057;font-size:26px;opacity:0;font-family:sans-serif}
+.card.seen{box-shadow:0 5px 0 #8ce99a,0 0 0 4px #b2f2bb}
+.card.seen .tick{opacity:1}
+.g-listen{width:100%;height:100%;display:flex;align-items:center;gap:14px;--pic:min(15vmin,110px)}
+.big-letter{flex:none;width:min(36vmin,240px);height:min(36vmin,240px);border-radius:46%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 0 color-mix(in srgb,var(--c2) 40%,#fff),inset 0 0 0 6px color-mix(in srgb,var(--c2) 25%,#fff);cursor:pointer}
+.big-letter span{font-size:min(26vmin,170px);color:var(--c1);font-weight:700;line-height:1}
+.g-listen .cards{flex:1;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-content:center}
+@media (orientation:portrait){.g-listen{flex-direction:column;justify-content:space-evenly;gap:8px}.g-listen .cards{grid-template-columns:repeat(3,1fr);flex:none;width:100%;gap:8px}.g-listen{--pic:min(8vh,17vw)}.big-letter{width:max(150px,min(18vh,40vw));height:max(150px,min(18vh,40vw))}.big-letter span{font-size:max(124px,min(14vh,30vw))}.card .word{font-size:28px;line-height:1.7}}
+@media (orientation:portrait) and (min-width:700px){.g-listen .cards{grid-template-columns:repeat(4,1fr)}}
+/* التتبّع */
+.g-trace{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.tr-wrap{position:relative;flex:none;touch-action:none;background:#fff;border-radius:34px;box-shadow:inset 0 0 0 5px var(--soft)}
+.tr-svg,.tr-canvas{position:absolute;inset:0;width:100%;height:100%}
+.tr-canvas{pointer-events:none}
+.tr-guide{fill:none;stroke:#f1e6d2;stroke-width:15;stroke-linecap:round;stroke-linejoin:round}
+.tr-guide-dot{fill:#f1e6d2}
+.tr-dash{fill:none;stroke:#c9b48f;stroke-width:1.6;stroke-dasharray:.1 4;stroke-linecap:round;opacity:.5}
+.tr-dash.cur{opacity:1;stroke:#8a6d43}
+.tr-arrow{fill:none;stroke:var(--c2);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tr-start{fill:#40c057;stroke:#fff;stroke-width:1.6}
+.tr-fill{fill:none;stroke:var(--c1);stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:300;stroke-dashoffset:300;transition:stroke-dashoffset 1s ease}
+.tr-fill.on{stroke-dashoffset:0}
+.tr-fill-dot{fill:var(--c1);opacity:0;transition:opacity .6s .6s}.tr-fill-dot.on{opacity:1}
+/* البالونات */
+.g-balloons{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.sky{display:flex;gap:min(5vw,40px);align-items:center;justify-content:center;flex-wrap:wrap}
+.balloon{position:relative;width:min(26vw,24vh,170px);height:calc(min(26vw,24vh,170px)*1.5);background:none;padding:0}
+.balloon svg{width:100%;height:100%;overflow:visible}
+.balloon .txt{position:absolute;top:33%;left:0;right:0;transform:translateY(-50%);text-align:center;font-size:max(40px,min(13vw,11vh,72px));font-weight:700;color:#3b2a1a;text-shadow:0 0 6px #fff,0 0 3px #fff,0 0 2px #fff;line-height:1.6}
+/* المطابقة */
+.g-match{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:space-around;gap:10px}
+.pics{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.pic-card{width:min(27vw,26vh,190px);height:calc(min(27vw,26vh,190px) + 52px);background:#fff;border-radius:26px;box-shadow:0 5px 0 rgba(0,0,0,.08);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:10px 6px 0;border:4px dashed transparent;transition:border-color .2s,transform .2s}
+.pic-card svg{width:100%;flex:1;min-height:0}
+.pic-card .lbl{height:52px;font-size:clamp(28px,4.4vmin,36px);font-weight:700;color:var(--c1);line-height:1.6}
+.pic-card.near{border-color:var(--c2);transform:scale(1.05)}
+.pic-card.ok{border-color:#40c057;border-style:solid}
+.dock{min-height:100px;display:flex;align-items:center;justify-content:center}
+.word-card,.piece{background:#fff;border-radius:22px;padding:4px 26px;font-size:clamp(40px,7vmin,60px);font-weight:700;color:var(--ink);box-shadow:0 6px 0 color-mix(in srgb,var(--c2) 45%,#fff),0 10px 20px rgba(0,0,0,.08);border:4px solid color-mix(in srgb,var(--c2) 50%,#fff);touch-action:none;cursor:grab;min-width:96px;min-height:84px;display:flex;align-items:center;justify-content:center;line-height:1.7;position:relative;z-index:3}
+.word-card.drag,.piece.drag{z-index:50;cursor:grabbing;box-shadow:0 14px 30px rgba(0,0,0,.2)}
+/* تركيب الكلمة */
+.g-build{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:space-around;gap:8px}
+.target{display:flex;align-items:center;gap:14px}
+.t-pic{width:min(20vmin,130px);height:min(20vmin,130px)}.t-pic svg{width:100%;height:100%}
+.ear{width:72px;height:72px;border-radius:50%;background:#fff;font-size:34px;box-shadow:0 5px 0 rgba(0,0,0,.1);font-family:sans-serif}
+.slots{display:flex;gap:14px;min-height:110px;align-items:center}
+.slot{width:min(28vw,150px);height:100px;border-radius:24px;border:5px dashed color-mix(in srgb,var(--c1) 50%,#fff);background:color-mix(in srgb,var(--soft) 50%,#fff);font-size:clamp(40px,7vmin,60px);font-weight:700;display:flex;align-items:center;justify-content:center;line-height:1.7;transition:transform .2s}
+.slot.near{transform:scale(1.07);border-color:var(--c2)}
+.slot.full{border-style:solid;border-color:#40c057;background:#ebfbee}
+.joined{font-size:min(20vmin,120px);font-weight:700;color:var(--c1);line-height:1.6;padding:0 20px}
+.pool{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+/* الملصق */
+.sticker-page{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px}
+.sticker{width:min(40vmin,240px);height:min(40vmin,240px);border-radius:50%;background:#fff;padding:24px;box-shadow:0 0 0 10px #ffe066,0 10px 0 10px #f5c518;filter:grayscale(1);opacity:.4}
+.sticker.got{filter:none;opacity:1}
+.sticker svg{width:100%;height:100%}
+.st-name{font-size:clamp(30px,5vmin,40px);font-weight:700}
+.st-row{display:flex;gap:16px}
+/* دفتر الملصقات */
+#stickers{position:fixed;inset:0;display:flex;flex-direction:column;z-index:6}
+#stGrid{flex:1;overflow:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:16px;padding:16px;align-content:start;max-width:900px;margin:0 auto;width:100%}
+.st-cell{background:#fff;border-radius:24px;padding:10px;display:flex;flex-direction:column;align-items:center;box-shadow:0 5px 0 rgba(0,0,0,.08);filter:grayscale(1);opacity:.45}
+.st-cell.got{filter:none;opacity:1;box-shadow:0 0 0 5px #ffe066,0 5px 0 5px #f5c518}
+.st-cell svg{width:90px;height:90px}.st-cell span{font-size:32px;font-weight:700}
+body[data-view=lesson] #bAdult{left:50%;bottom:max(14px,env(safe-area-inset-bottom));transform:translateX(-50%)}
+body[data-view=lesson] #lStars{grid-area:head;align-self:start;line-height:1.3}
+body[data-view=lesson] .l-head{grid-area:head;align-self:end}
+#lUnit{display:none}
+.slot{width:min(28vw,24vmin,200px);height:min(100px,16vmin);min-height:80px}
+.word-card,.piece{font-size:clamp(40px,8vmin,72px)}
+.t-pic{width:min(22vmin,160px);height:min(22vmin,160px)}
+.ear{width:min(13vmin,90px);height:min(13vmin,90px);min-width:72px;min-height:72px;font-size:clamp(34px,6vmin,48px)}
+/* الشهادة */
+#certCanvas{width:100%;height:auto;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,.15);margin:8px 0}
+/* الهاتف أفقياً: ارتفاع قليل، فتصير الأزرار عموديْن جانبيين */
+@media (max-height:520px){
+ .topbar{padding:4px 10px}.kbtn{width:64px;height:64px;font-size:30px;border-radius:20px}
+ #lesson{grid-template-columns:64px 1fr 64px;grid-template-rows:1fr 1fr;grid-template-areas:"home main again" "prev main next";padding:6px 8px;gap:6px 8px}
+ #bHome,#bAgain{align-self:start}#bPrev,#bNext{align-self:end}
+ .l-head{display:none}
+ #lStars{position:fixed;top:4px;left:50%;transform:translateX(-50%);font-size:24px;z-index:9;grid-area:auto}
+ .speaker{min-height:56px;padding-top:22px}#lMascot{width:52px;height:56px}#bubble{min-height:50px;font-size:28px;line-height:1.55}
+ .stage{padding:6px}
+ .slots{min-height:84px}.slot{height:80px}
+ .dock{min-height:84px}
+ body[data-view=lesson] #bAdult{left:8px;top:50%;bottom:auto;transform:translateY(-50%)}
+ .big-letter{width:150px!important;height:150px!important}.big-letter span{font-size:124px!important}
+ .sticker-page{flex-direction:row;flex-wrap:wrap;gap:6px 24px;padding:6px}.sticker{width:150px;height:150px;padding:16px}
+ #cMascot{width:70px;height:72px}#cTitle{font-size:38px;line-height:1.35}#cGrade{font-size:26px}#cover{gap:2px}#coverGo{height:72px;margin-top:2px}
+ .credit{margin:2px 0}
+}
+</style>
+</head>
+<body>
+<div id="bg" aria-hidden="true"></div>
+
+<section id="cover">
+  <div id="cMascot" role="img" aria-label="سُهَيْل"></div>
+  <h1 id="cTitle"></h1>
+  <p id="cGrade"></p>
+  <span class="badge">مَجَّانِيٌّ لِلْأَطْفَالِ وَالْأَهْلِ وَالْمُعَلِّمِينَ</span>
+  <p class="credit">إعداد البروفيسور عماد محمد فرحان، باستعمال المساعد الذكي كلاود (Claude)</p>
+  <button id="coverGo" type="button" disabled>هَيَّا نَلْعَبُ</button>
+</section>
+
+<section id="map" hidden>
+  <div class="topbar">
+    <button class="kbtn tap" id="bShelf" type="button" aria-label="الرف"><svg viewBox="0 0 24 24" fill="none" stroke="#4a3426" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18M5 20V6h3v14M10 20V4h3v16M15 20l2-13 3 .5-2 12.5"/></svg></button>
+    <div class="grow">/*TITLE*/</div>
+    <button class="kbtn tap" id="bStickers" type="button" aria-label="دفتر الملصقات">📒</button>
+  </div>
+  <div id="mapScroll"><div id="road"></div></div>
+</section>
+
+<section id="lesson" hidden>
+  <button class="kbtn tap" id="bHome" type="button" aria-label="الخريطة"><svg viewBox="0 0 24 24" fill="none" stroke="#4a3426" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg></button>
+  <div class="l-head"><span id="lUnit"></span><span id="lPage"></span></div>
+  <button class="kbtn tap" id="bAgain" type="button" aria-label="اسمع مرة أخرى"><svg viewBox="0 0 24 24" fill="none" stroke="#4a3426" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9z" fill="#ffd43b"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12"/></svg></button>
+  <div id="book3d">
+    <div class="speaker"><div id="lMascot"></div><div id="bubble"></div></div>
+    <div id="page"></div>
+  </div>
+  <button class="kbtn tap" id="bPrev" type="button" aria-label="السابق"><svg viewBox="0 0 24 24" fill="none" stroke="#4a3426" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+  <div id="lStars"></div>
+  <button class="kbtn tap" id="bNext" type="button" aria-label="التالي"><svg viewBox="0 0 24 24" fill="none" stroke="#4a3426" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <span id="lTitle" hidden></span>
+</section>
+
+<section id="stickers" hidden>
+  <div class="topbar"><button class="kbtn tap" id="stBack" type="button" aria-label="الخريطة">🗺️</button><div class="grow">📒</div><span style="width:72px"></span></div>
+  <div id="stGrid"></div>
+</section>
+
+<div id="cert" class="dlg adult" hidden><div class="box">
+  <h3>شهادة نهاية الوحدة</h3>
+  <p id="certUnit"></p>
+  <label>اسم الطفل (يكتبه الأهل)<input id="certName" maxlength="40"></label>
+  <canvas id="certCanvas"></canvas>
+  <div class="row"><button type="button" id="certSave" class="go">حفظ صورة</button><button type="button" id="certPrint">طباعة</button><button type="button" id="certClose">إغلاق</button></div>
+</div></div>
+/*ADULT*/
+<script>window.__WA='/*WA*/';window.__AVAIL=/*AVAIL*/;window.__AUDIO_ALL=/*AUDIOALL*/;</script>
+<script>
+(function(){var b=document.getElementById('bg');for(var i=0;i<12;i++){var e=document.createElement('i');var s=16+Math.random()*40;e.style.cssText='--s:'+s+'px;--d:'+(14+Math.random()*16)+'s;--dl:-'+(Math.random()*20)+'s;--dx:'+((Math.random()-.5)*120)+'px;left:'+(Math.random()*100)+'%';b.appendChild(e);}})();
+</script>
+<script>/*BUNDLE*/</script>
+</body>
+</html>
