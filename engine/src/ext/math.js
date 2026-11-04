@@ -3,6 +3,7 @@
 import { gsap, $, $$, SFX, state, sleep, esc, shuffle, reshuffle } from '../core.js';
 import { art, ART } from '../art.js';
 import { SHAPES, shake, glowHint, popIn, burst, tw } from '../games.js';
+import { TEMPLATES2 } from '../games2.js';
 
 /* ---------- أشكال الأرقام للتتبّع (٠–٩) داخل مربع 100×100 ---------- */
 Object.assign(SHAPES, {
@@ -71,6 +72,29 @@ const CSS = `
 .m-rod.seen,.m-unit.seen{border-color:#8ce99a;background:#ebfbee}
 .m-unit{width:64px;height:64px;background:none;padding:0;border-radius:12px;border:3px solid transparent}
 .m-unit svg{width:100%;height:100%}
+.m-ask{font-size:clamp(28px,5vmin,40px);font-weight:700;line-height:1.6;background:#fff;border-radius:20px;padding:0 18px;box-shadow:0 4px 0 rgba(0,0,0,.07);text-align:center;max-width:96%;color:#343a40}
+.g-choose>.m-ask{margin-bottom:4px}
+.m-near{flex:1;min-height:0;width:100%;display:flex;align-items:flex-start;justify-content:center;padding-bottom:6px}
+.m-scene{position:relative;border-radius:22px;background:#e7f5ff;box-shadow:0 4px 0 rgba(0,0,0,.07);flex:none}
+.m-scene.map{background:#fff9db}.m-scene.grid{background:#fff}
+.m-scene>svg.bg{position:absolute;inset:0;width:100%;height:100%;border-radius:22px}
+.m-pin.tap{position:absolute;width:0;height:0;min-width:0;min-height:0;padding:0;margin:0;border:0;background:none;cursor:pointer;overflow:visible}
+.m-pin .pic{position:absolute;left:0;bottom:0;transform:translateX(-50%);width:var(--a);height:var(--a);pointer-events:auto}
+.m-pin .pic svg{width:100%;height:100%}
+.m-pin .lw{position:absolute;display:block}
+.m-pin .lab{white-space:nowrap;font-size:28px;font-weight:700;line-height:1.4;min-height:64px;min-width:64px;display:flex;align-items:center;justify-content:center;padding:0 12px;background:#fff;border:4px solid color-mix(in srgb,var(--c1) 55%,#fff);border-radius:18px;box-shadow:0 3px 0 rgba(0,0,0,.1);color:#343a40;box-sizing:border-box}
+.m-pin.art .lw{top:6px;left:0;transform:translateX(-50%)}
+.m-pin.art.low .lw{top:78px}
+.m-pin.art.el .lw{transform:translateX(calc(-1 * var(--a) / 2))}
+.m-pin.art.er .lw{left:auto;right:0;transform:translateX(calc(var(--a) / 2))}
+.m-pin .dot{position:absolute;width:24px;height:24px;left:-12px;top:-12px;border-radius:50%;background:#1c7ed6;border:4px solid #fff;box-shadow:0 0 0 2px #4a3426}
+.m-pin.s-r .lw{left:16px;top:0;transform:translateY(-50%)}
+.m-pin.s-l .lw{right:16px;top:0;transform:translateY(-50%)}
+.m-pin.s-t .lw{bottom:16px;left:0;transform:translateX(-50%)}
+.m-pin.s-b .lw{top:16px;left:0;transform:translateX(-50%)}
+.m-pin.ref .lab{background:#fff3bf;border-color:#f59f00}
+.m-pin.ref .dot{background:#e64980;width:30px;height:30px;left:-15px;top:-15px}
+.m-pin .lab.ok{background:#ebfbee;border-color:#40c057}
 `;
 if (typeof document !== 'undefined' && !document.getElementById('m-css')) document.head.insertAdjacentHTML('beforeend', `<style id="m-css">${CSS}</style>`);
 
@@ -355,4 +379,71 @@ const place = (stage, game, ctx) => {
   return { destroy() { R.stop(); }, auto: async () => { for (let n = 0; n < R0.length; n++) { await sleep(300); for (const b of all) { if (!b.classList.contains('seen')) b.click(); await sleep(60); } await sleep(1000); const g = $$('.m-opt', wrap).find((e) => e.dataset.v === String(cur.answer)); g && g.click(); await sleep(2000); } } };
 };
 
-export const TEMPLATES = { count, arith, compare, hop, pattern, rowpick, place };
+/* ======================================================================
+   8) الأقرب والأبعد (ص١٤٨–١٤٩): مشهد على خط، أو شبكة مربعات، أو خريطة مبسطة.
+   السؤال مكتوب فوق المشهد ومنطوق؛ يلمس الطفل الأقرب أو الأبعد عن الشيء المعلَّم.
+   round: { scene:'line'|'grid'|'map', ask, ref:{label,x,y,art?,side?}, items:[…], answer }
+   ====================================================================== */
+const VB = { line: [100, 64], grid: [100, 100], map: [100, 100] };
+const GRID = (i) => 8 + i * 12; // الشبكة ٧×٧ مربعات، الإحداثيات بأرقام الخطوط
+const sceneBg = (sc) => {
+  if (sc === 'line') return `<svg class="bg" viewBox="0 0 100 64" preserveAspectRatio="none"><rect x="0" y="42" width="100" height="22" fill="#d3f9d8"/><path d="M0 42H100" stroke="#4a3426" stroke-width="0.8"/></svg>`;
+  if (sc === 'grid') { let d = ''; for (let i = 0; i <= 7; i++) d += `M${GRID(i)} 8V92M8 ${GRID(i)}H92`; return `<svg class="bg" viewBox="0 0 100 100"><path d="${d}" stroke="#4a3426" stroke-width="0.7" fill="none"/></svg>`; }
+  return art('m_iraq', 'bg');
+};
+const near = (stage, game, ctx) => {
+  const R0 = game.data.rounds, T = tries(ctx);
+  const root = h(`<div class="m-wrap"><div class="m-ask"></div><div class="m-near"><div class="m-scene"></div></div></div>`); stage.appendChild(root);
+  const ask = $('.m-ask', root), area = $('.m-near', root), scene = $('.m-scene', root); let cur = null, pins = [], done = false;
+  const R = rounds(R0.length, async (k, next) => {
+    T.reset(); cur = R0[k]; done = false; ask.textContent = cur.ask; scene.innerHTML = ''; scene.className = 'm-scene ' + cur.scene;
+    let [vw, vh] = VB[cur.scene]; const [w, hh] = box(area);
+    let W, H;
+    if (cur.scene === 'line') { W = Math.min(w - 16, 900); H = Math.max(200, Math.min(hh - 8, W * 1.05, 560)); vh = (H / W) * vw; }
+    else { const sc = Math.max(2, Math.min((w - 24) / vw, (hh - 30) / vh)); W = vw * sc; H = vh * sc; }
+    scene.style.width = Math.round(W) + 'px'; scene.style.height = Math.round(H) + 'px';
+    const two = cur.scene === 'line' && W < 640, gy = vh - (two ? 152 : 80) * (vw / W); // خط الأرض: تحته مكان للأسماء (سطران في الشاشة الضيقة)
+    scene.insertAdjacentHTML('beforeend', cur.scene === 'line' ? `<svg class="bg" viewBox="0 0 100 ${vh.toFixed(2)}" preserveAspectRatio="none"><rect x="0" y="${gy.toFixed(2)}" width="100" height="${(vh - gy).toFixed(2)}" fill="#d3f9d8"/><path d="M0 ${gy.toFixed(2)}H100" stroke="#4a3426" stroke-width="0.6"/></svg>` : sceneBg(cur.scene));
+    const A = Math.round(Math.min(W * 0.24, (gy / vh) * H * 0.85, 160));
+    const pos = (p) => (cur.scene === 'grid' ? [GRID(p.x), GRID(p.y)] : cur.scene === 'line' ? [p.x, gy] : [p.x, p.y]);
+    const mk = (p, isRef, i) => {
+      const [x, y] = pos(p);
+      const b = h(`<button class="m-pin tap ${p.art ? 'art' : 'pt s-' + (p.side || 'r')}${isRef ? ' ref' : ''}" type="button" style="left:${(x / vw) * 100}%;top:${(y / vh) * 100}%;--a:${A}px">${p.art ? `<span class="pic">${pic(p.art)}</span>` : '<span class="dot"></span>'}<span class="lw"><span class="lab">${esc(p.label)}</span></span></button>`);
+      if (p.art && cur.scene === 'line') b.classList.add(x < 25 ? 'el' : x > 75 ? 'er' : 'mid');
+      if (!isRef) b.dataset.i = i; scene.appendChild(b); return b;
+    };
+    const refEl = mk(cur.ref, true);
+    pins = cur.items.map((p, i) => mk(p, false, i));
+    if (cur.scene === 'line') { const all = [[cur.ref, refEl], ...cur.items.map((p, i) => [p, pins[i]])].sort((a, b) => a[0].x - b[0].x); if (two) all[1][1].classList.add('low'); }
+    const lab = (b) => $('.lab', b);
+    const good = () => lab(pins[cur.answer]);
+    refEl.addEventListener('click', () => { SFX.pop(); ctx.say(cur.ref.label, ctx.audioOf(cur.ref.label)); });
+    pins.forEach((b) => b.addEventListener('click', () => {
+      if (done) return; const i = +b.dataset.i, p = cur.items[i];
+      if (i === cur.answer) { done = true; lab(b).classList.add('ok'); burst(lab(b), '#69db7c'); ctx.praise(p.label); setTimeout(next, 2200); }
+      else { ctx.say(p.label, ctx.audioOf(p.label)); T.miss(lab(b), good(), cur.ask); }
+    }));
+    popIn([refEl, ...pins]);
+    if (k === 0) await ctx.instruct(game.say, game.audio);
+    await sleep(120); ctx.say(cur.ask, ctx.audioOf(cur.ask));
+  }, ctx);
+  ctx.replay = () => cur && ctx.say(cur.ask, ctx.audioOf(cur.ask));
+  R.start();
+  return { destroy() { R.stop(); }, auto: async () => { for (let n = 0; n < R0.length; n++) { await sleep(400); pins[cur.answer] && pins[cur.answer].click(); await sleep(2500); } } };
+};
+
+/* ======================================================================
+   9) اسمع واختر مع السؤال مكتوباً (ص١٤٢–١٤٣): قالب «اسمع واختر» نفسه، ويظهر نص سؤال كل جولة فوق الخيارات
+   ====================================================================== */
+const askchoose = (stage, game, ctx) => {
+  const R0 = game.data.rounds, says = new Set(R0.map((r) => r.say));
+  const ask = h(`<div class="m-ask">${esc(R0[0].say)}</div>`);
+  const say0 = ctx.say;
+  ctx.say = (t, a) => { if (says.has(t)) ask.textContent = t; return say0(t, a); };
+  const api = TEMPLATES2.choose(stage, game, ctx);
+  const g = $('.g-choose', stage); g.insertBefore(ask, g.firstChild);
+  ask.addEventListener('click', () => ctx.say(ask.textContent, ctx.audioOf(ask.textContent)));
+  return api;
+};
+
+export const TEMPLATES = { count, arith, compare, hop, pattern, rowpick, place, near, askchoose };

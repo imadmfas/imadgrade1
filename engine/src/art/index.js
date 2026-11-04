@@ -11,8 +11,9 @@ import * as A8 from './ethics-people.js';
 import * as A9 from './ethics-scenes.js';
 import * as A10 from './islamic-a.js';
 import * as A11 from './math-a.js';
-import * as A12 from './science-a.js';
-import * as A13 from './science-b.js';
+import * as A12 from './math-b.js';
+import * as A13 from './science-a.js';
+import * as A14 from './science-b.js';
 Object.values(A0).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
 Object.values(A1).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
 Object.values(A2).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
@@ -27,3 +28,4 @@ Object.values(A10).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k
 Object.values(A11).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
 Object.values(A12).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
 Object.values(A13).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
+Object.values(A14).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });

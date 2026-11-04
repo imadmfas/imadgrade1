@@ -269,8 +269,27 @@ for U in units:
                         rr.append(rd)
                 for r in rr:
                     if not 2 <= len(r['options']) <= 4 or not 0 <= r['answer'] < len(r['options']): fail(f'{where}: خيارات غير صالحة')
-                g = {'template': 'choose', 'data': {'rounds': rr}, 'say': G['say']}
+                g = {'template': G.get('tpl', 'choose'), 'data': {'rounds': rr}, 'say': G['say']}
                 first_art = first_art or next((o['art'] for r in rr for o in r['options'] if o.get('art')), None)
+            elif t == 'near':
+                # الأقرب والأبعد: الجواب يُحسب من مواقع المشهد (المربعات في الشبكة، والمسافة المستقيمة في غيرها)
+                rr = []
+                for r in G['rounds']:
+                    ref, its = r['ref'], r['items']
+                    for x in [ref] + its: check_art(x.get('art'), where)
+                    if r['scene'] == 'grid': dist = lambda p: abs(p['x'] - ref['x']) + abs(p['y'] - ref['y'])
+                    else: dist = lambda p: ((p['x'] - ref['x']) ** 2 + (p['y'] - ref['y']) ** 2) ** 0.5
+                    ds = [dist(p) for p in its]
+                    want = min(ds) if r['mode'] == 'near' else max(ds)
+                    if ds.count(want) != 1: fail(f'{where}: لا جواب واحد في {r["ask"]}')
+                    ai = ds.index(want)
+                    if its[ai]['label'] != r['ans']: fail(f'{where}: الجواب المحسوب {its[ai]["label"]} ≠ {r["ans"]}')
+                    if sorted(ds)[-1] - sorted(ds)[0] < 0.15 * max(ds): fail(f'{where}: الفرق بين المسافتين صغير في {r["ask"]}')
+                    if ('أَقْرَبُ' in r['ask']) != (r['mode'] == 'near'): fail(f'{where}: السؤال لا يطابق النوع')
+                    rr.append({'scene': r['scene'], 'ask': r['ask'], 'ref': ref, 'items': its, 'answer': ai})
+                    report['checks']['compares'] += 1
+                    first_art = first_art or ref.get('art')
+                g = {'template': 'near', 'data': {'rounds': rr}, 'say': G['say']}
             else:
                 fail(f'{where}: قالب غير معروف')
                 continue
@@ -301,9 +320,10 @@ for les in LESSONS:
         g['audio'] = reg(g['say'], lid, g['page'], f'g{gi+1}')
         d, pg = g['data'], g['page']
         for r in d.get('rounds', []):
-            for k in ('say', 'result'):
+            for k in ('say', 'result', 'ask'):
                 if r.get(k): reg(r[k], lid, pg)
-            for o in r.get('options', []) + r.get('items', []):
+            for o in ([r['ref']] + r['items'] if g['template'] == 'near' else []): reg(o['label'], lid, pg)
+            for o in r.get('options', []) + (r.get('items', []) if g['template'] != 'near' else []):
                 if isinstance(o, dict) and o.get('text'): reg(o['text'], lid, pg)
                 if isinstance(o, dict) and o.get('say'): reg(o['say'], lid, pg)
             for o in r.get('seq', []):
@@ -349,13 +369,14 @@ for les in LESSONS:
 
 report['lessons'] = len(LESSONS); report['games'] = sum(len(l['games']) for l in LESSONS); report['clips'] = len(rows)
 report['skipped_pages'] = ['١–٥ (الغلاف والمقدمة والمحتوى)', 'الاختبارات القبلية ومراجعات الفصول واختباراتها (٧، ٢٨–٣١، ٣٣، ٥٠–٥٣، ٥٥، ٧٦–٧٩، ٨١، ٩٢–٩٥، ٩٧، ١٠٨–١١١، ١١٣، ١٢٢–١٢٧، ١٢٩، ١٥٠–١٥٣، ١٥٥، ١٧٠–١٧٥، ١٧٧، ١٨٤–١٨٨)',
-                          'درس البعد المكاني (١٤٨–١٤٩): خريطة العراق ومشاهد القرب والبعد تحتاج مشهداً مرسوماً بالمسافات؛ لم يُبنَ له لعب']
+                          'u7-space ص١٤٩ س٣ (أيّ الصفوف أقرب إلى الإدارة/المكتبة/المختبر في مدرستك): سؤال عن مدرسة الطفل بلا صورة، فلم تُبنَ له لعبة']
 report['inferred'] = ['تشكيل العناوين والكلمات المعروضة مكمَّل: الكتاب يشكّل بعض الحروف فقط؛ حُفظ تشكيل الكتاب وأُضيف الناقص، والنص كما طُبع محفوظ في الحقل bookTitle.',
                       'أسماء الأعداد المنطوقة (وَاحِدٌ … عِشْرُونَ) من مفردات الكتاب ص١٠–٢٤ بتشكيل كامل بصيغة الرفع؛ والعشرات (ثَلَاثُونَ …) من مفردات ص١٥٦.',
                       'أيام الأسبوع ص١٣٠ بتشكيل كامل؛ الكتاب يكتب «الاثنَين» فكُتب «الِاثْنَيْنِ».']
 report['outside'] = ['الخيارات الخاطئة في ألعاب الأعداد أعداد مجاورة للجواب (فرق ١ أو ٢ أو ١٠) يولّدها البناء، وكلها ضمن مدى أعداد الدرس.',
                      'الأشياء التي لا رسم لها في المكتبة (جزر، هدايا، ملاعق…) رُسمت مكعباتِ عدّ بالعدد نفسه؛ الدلافين أسماكاً؛ وانظر notes في كل درس.',
-                     'u4-sortshape: أسماء الأشكال (دَائِرَةٌ، مُرَبَّعٌ، مُثَلَّثٌ) من درس الأشكال المستوية ص١٤٦.']
+                     'u4-sortshape: أسماء الأشكال (دَائِرَةٌ، مُرَبَّعٌ، مُثَلَّثٌ) من درس الأشكال المستوية ص١٤٦.',
+                     'u7-space: الكتاب يعرض الولد والبقرة والنخلة صوراً بلا كلمات، فسُمّيت «الْوَلَدُ، الْبَقَرَةُ، النَّخْلَةُ» لتُنطق عند اللمس؛ وخريطة العراق رسمٌ مبسط أصلي (حدود تقريبية ونقاط للمحافظات) لا نسخة من خريطة الكتاب.']
 print('lessons', report['lessons'], 'games', report['games'], 'clips', report['clips'], 'checks', report['checks'])
 for b in bad: print('!', b)
 if bad: sys.exit(1)
