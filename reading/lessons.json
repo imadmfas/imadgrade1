@@ -12,10 +12,749 @@
  },
  "lessons": [
   {
+   "id": "u0-prep",
+   "book": "reading",
+   "unit": 0,
+   "unitTitle": "التَّهْيِئَةُ",
+   "unitPage": 7,
+   "pages": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "title": "التَّهْيِئَةُ",
+   "kind": "prep",
+   "items": [],
+   "syllables": [],
+   "games": [
+    {
+     "template": "choose",
+     "page": 9,
+     "say": "اِسْمَعْ وَاخْتَرِ الصُّورَةَ",
+     "data": {
+      "rounds": [
+       {
+        "say": "فَوْقَ",
+        "options": [
+         {
+          "art": "pos_above"
+         },
+         {
+          "art": "pos_below"
+         },
+         {
+          "art": "pos_front"
+         },
+         {
+          "art": "pos_behind"
+         }
+        ],
+        "answer": 0
+       },
+       {
+        "say": "تَحْتَ",
+        "options": [
+         {
+          "art": "pos_above"
+         },
+         {
+          "art": "pos_below"
+         },
+         {
+          "art": "pos_front"
+         },
+         {
+          "art": "pos_behind"
+         }
+        ],
+        "answer": 1
+       },
+       {
+        "say": "أَمَامَ",
+        "options": [
+         {
+          "art": "pos_above"
+         },
+         {
+          "art": "pos_below"
+         },
+         {
+          "art": "pos_front"
+         },
+         {
+          "art": "pos_behind"
+         }
+        ],
+        "answer": 2
+       },
+       {
+        "say": "خَلْفَ",
+        "options": [
+         {
+          "art": "pos_above"
+         },
+         {
+          "art": "pos_below"
+         },
+         {
+          "art": "pos_front"
+         },
+         {
+          "art": "pos_behind"
+         }
+        ],
+        "answer": 3
+       }
+      ]
+     },
+     "audio": "c-choose.mp3"
+    },
+    {
+     "template": "choose",
+     "page": 8,
+     "say": "اِلْمَسِ الصُّورَةَ الْمُخْتَلِفَةَ",
+     "data": {
+      "rounds": [
+       {
+        "say": "اِلْمَسِ الصُّورَةَ الْمُخْتَلِفَةَ",
+        "options": [
+         {
+          "art": "ostrich"
+         },
+         {
+          "art": "ostrich"
+         },
+         {
+          "art": "rooster"
+         },
+         {
+          "art": "ostrich"
+         }
+        ],
+        "answer": 2
+       },
+       {
+        "say": "اِلْمَسِ الصُّورَةَ الْمُخْتَلِفَةَ",
+        "options": [
+         {
+          "art": "ball"
+         },
+         {
+          "art": "ball"
+         },
+         {
+          "art": "ball"
+         },
+         {
+          "art": "lemon"
+         }
+        ],
+        "answer": 3
+       },
+       {
+        "say": "اِلْمَسِ الصُّورَةَ الْمُخْتَلِفَةَ",
+        "options": [
+         {
+          "art": "book"
+         },
+         {
+          "art": "pencil"
+         },
+         {
+          "art": "book"
+         }
+        ],
+        "answer": 1
+       }
+      ]
+     },
+     "audio": "u0-prep-x33.mp3"
+    },
+    {
+     "template": "choose",
+     "page": 9,
+     "say": "اِلْمَسِ الْأَطْوَلَ",
+     "data": {
+      "rounds": [
+       {
+        "say": "اِلْمَسِ الْأَطْوَلَ",
+        "options": [
+         {
+          "art": "pencil",
+          "scale": 0.6
+         },
+         {
+          "art": "pencil",
+          "scale": 1
+         },
+         {
+          "art": "pencil",
+          "scale": 0.8
+         }
+        ],
+        "answer": 1
+       },
+       {
+        "say": "اِلْمَسِ الْأَقْصَرَ",
+        "options": [
+         {
+          "art": "pencil",
+          "scale": 0.9
+         },
+         {
+          "art": "pencil",
+          "scale": 0.5
+         },
+         {
+          "art": "pencil",
+          "scale": 1
+         }
+        ],
+        "answer": 1
+       }
+      ]
+     },
+     "audio": "u0-prep-x34.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ النَّجْمَةِ",
+    "art": "star",
+    "audio": "u0-prep-sticker.mp3"
+   }
+  },
+  {
+   "id": "u0-madd-alif",
+   "book": "reading",
+   "unit": 0,
+   "unitTitle": "التَّهْيِئَةُ",
+   "unitPage": 7,
+   "pages": [
+    11,
+    12
+   ],
+   "title": "ا ى",
+   "kind": "madd",
+   "items": [
+    {
+     "value": "بَابُ",
+     "page": 11,
+     "art": "bab",
+     "audio": "u0-madd-alif-w01.mp3"
+    },
+    {
+     "value": "مُرَبَّىٰ",
+     "page": 11,
+     "art": "jam",
+     "audio": "u0-madd-alif-w02.mp3"
+    },
+    {
+     "value": "بَطَّةُ",
+     "page": 11,
+     "art": "duck",
+     "audio": "u0-madd-alif-w03.mp3"
+    },
+    {
+     "value": "دَارُ",
+     "page": 11,
+     "art": "house",
+     "audio": "u0-madd-alif-w04.mp3"
+    },
+    {
+     "value": "نَارُ",
+     "page": 11,
+     "art": "fire",
+     "audio": "u0-madd-alif-w05.mp3"
+    },
+    {
+     "value": "مُسْتَشْفَىٰ",
+     "page": 11,
+     "art": "hospital",
+     "audio": "u0-madd-alif-w06.mp3"
+    },
+    {
+     "value": "غَزَالُ",
+     "page": 11,
+     "art": "gazelle",
+     "audio": "u0-madd-alif-w07.mp3"
+    },
+    {
+     "value": "بَقَرَةُ",
+     "page": 11,
+     "art": "baqara",
+     "audio": "u0-madd-alif-w08.mp3"
+    }
+   ],
+   "syllables": [],
+   "games": [
+    {
+     "template": "listen",
+     "page": 11,
+     "data": {
+      "letter": "ا ى",
+      "items": [
+       "بَابُ",
+       "مُرَبَّىٰ",
+       "بَطَّةُ",
+       "دَارُ",
+       "نَارُ",
+       "مُسْتَشْفَىٰ",
+       "غَزَالُ",
+       "بَقَرَةُ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 12,
+     "data": {
+      "shape": "alif"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "balloons",
+     "page": 11,
+     "data": {
+      "choices": [
+       "بَابُ",
+       "مُرَبَّىٰ",
+       "بَطَّةُ",
+       "دَارُ",
+       "نَارُ",
+       "مُسْتَشْفَىٰ",
+       "غَزَالُ",
+       "بَقَرَةُ"
+      ],
+      "targets": [
+       "بَابُ",
+       "بَطَّةُ",
+       "نَارُ",
+       "غَزَالُ"
+      ],
+      "per": 3
+     },
+     "say": "فَرْقِعِ الْبَالُونَ الَّذِي تَسْمَعُهُ",
+     "audio": "c-balloons.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ بَابُ",
+    "art": "bab",
+    "audio": "u0-madd-alif-sticker.mp3"
+   }
+  },
+  {
+   "id": "u0-madd-waw",
+   "book": "reading",
+   "unit": 0,
+   "unitTitle": "التَّهْيِئَةُ",
+   "unitPage": 7,
+   "pages": [
+    13,
+    14
+   ],
+   "title": "و",
+   "kind": "madd",
+   "items": [
+    {
+     "value": "بُوْمَةُ",
+     "page": 13,
+     "art": "owl",
+     "audio": "u0-madd-waw-w01.mp3"
+    },
+    {
+     "value": "خَرُوْفُ",
+     "page": 13,
+     "art": "sheep",
+     "audio": "u0-madd-waw-w02.mp3"
+    },
+    {
+     "value": "دُمْيَةُ",
+     "page": 13,
+     "art": "doll",
+     "audio": "u0-madd-waw-w03.mp3"
+    },
+    {
+     "value": "نُـجُوْمُ",
+     "page": 13,
+     "art": "stars",
+     "audio": "u0-madd-waw-w04.mp3"
+    },
+    {
+     "value": "حَاسُوْبُ",
+     "page": 13,
+     "art": "laptop",
+     "audio": "u0-madd-waw-w05.mp3"
+    },
+    {
+     "value": "بُنْدُقُ",
+     "page": 13,
+     "art": "hazelnut",
+     "audio": "u0-madd-waw-w06.mp3"
+    },
+    {
+     "value": "بُوْقُ",
+     "page": 13,
+     "art": "buq",
+     "audio": "u0-madd-waw-w07.mp3"
+    },
+    {
+     "value": "تُوْتُ",
+     "page": 13,
+     "art": "berries",
+     "audio": "u0-madd-waw-w08.mp3"
+    }
+   ],
+   "syllables": [],
+   "games": [
+    {
+     "template": "listen",
+     "page": 13,
+     "data": {
+      "letter": "و",
+      "items": [
+       "بُوْمَةُ",
+       "خَرُوْفُ",
+       "دُمْيَةُ",
+       "نُـجُوْمُ",
+       "حَاسُوْبُ",
+       "بُنْدُقُ",
+       "بُوْقُ",
+       "تُوْتُ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 14,
+     "data": {
+      "shape": "waw"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "balloons",
+     "page": 13,
+     "data": {
+      "choices": [
+       "بُوْمَةُ",
+       "خَرُوْفُ",
+       "دُمْيَةُ",
+       "نُـجُوْمُ",
+       "حَاسُوْبُ",
+       "بُنْدُقُ",
+       "بُوْقُ",
+       "تُوْتُ"
+      ],
+      "targets": [
+       "بُوْمَةُ",
+       "دُمْيَةُ",
+       "حَاسُوْبُ",
+       "بُوْقُ"
+      ],
+      "per": 3
+     },
+     "say": "فَرْقِعِ الْبَالُونَ الَّذِي تَسْمَعُهُ",
+     "audio": "c-balloons.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ بُوْمَةُ",
+    "art": "owl",
+    "audio": "u0-madd-waw-sticker.mp3"
+   }
+  },
+  {
+   "id": "u0-madd-ya",
+   "book": "reading",
+   "unit": 0,
+   "unitTitle": "التَّهْيِئَةُ",
+   "unitPage": 7,
+   "pages": [
+    15,
+    16
+   ],
+   "title": "ي",
+   "kind": "madd",
+   "items": [
+    {
+     "value": "تِيْنُ",
+     "page": 15,
+     "art": "fig",
+     "audio": "u0-madd-ya-w01.mp3"
+    },
+    {
+     "value": "مِيْزَانُ",
+     "page": 15,
+     "art": "scale",
+     "audio": "u0-madd-ya-w02.mp3"
+    },
+    {
+     "value": "سِوَارُ",
+     "page": 15,
+     "art": "bracelet",
+     "audio": "u0-madd-ya-w03.mp3"
+    },
+    {
+     "value": "فِيْلُ",
+     "page": 15,
+     "art": "elephant",
+     "audio": "u0-madd-ya-w04.mp3"
+    },
+    {
+     "value": "حَلِيْبُ",
+     "page": 15,
+     "art": "halib",
+     "audio": "u0-madd-ya-w05.mp3"
+    },
+    {
+     "value": "بِسَاطُ",
+     "page": 15,
+     "art": "bisat",
+     "audio": "u0-madd-ya-w06.mp3"
+    },
+    {
+     "value": "رِيْشُ",
+     "page": 15,
+     "art": "feathers",
+     "audio": "u0-madd-ya-w07.mp3"
+    },
+    {
+     "value": "دِيْكُ",
+     "page": 15,
+     "art": "rooster",
+     "audio": "u0-madd-ya-w08.mp3"
+    }
+   ],
+   "syllables": [],
+   "games": [
+    {
+     "template": "listen",
+     "page": 15,
+     "data": {
+      "letter": "ي",
+      "items": [
+       "تِيْنُ",
+       "مِيْزَانُ",
+       "سِوَارُ",
+       "فِيْلُ",
+       "حَلِيْبُ",
+       "بِسَاطُ",
+       "رِيْشُ",
+       "دِيْكُ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 16,
+     "data": {
+      "shape": "ya"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "balloons",
+     "page": 15,
+     "data": {
+      "choices": [
+       "تِيْنُ",
+       "مِيْزَانُ",
+       "سِوَارُ",
+       "فِيْلُ",
+       "حَلِيْبُ",
+       "بِسَاطُ",
+       "رِيْشُ",
+       "دِيْكُ"
+      ],
+      "targets": [
+       "تِيْنُ",
+       "سِوَارُ",
+       "حَلِيْبُ",
+       "رِيْشُ"
+      ],
+      "per": 3
+     },
+     "say": "فَرْقِعِ الْبَالُونَ الَّذِي تَسْمَعُهُ",
+     "audio": "c-balloons.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ تِيْنُ",
+    "art": "fig",
+    "audio": "u0-madd-ya-sticker.mp3"
+   }
+  },
+  {
+   "id": "u1-open",
+   "book": "reading",
+   "unit": 1,
+   "unitTitle": "الوَحْدَةُ الأُوْلَى : أُسْرَتِي",
+   "unitPage": 17,
+   "pages": [
+    17
+   ],
+   "title": "★",
+   "kind": "open",
+   "items": [],
+   "syllables": [],
+   "games": [
+    {
+     "template": "scene",
+     "page": 17,
+     "data": {
+      "scene": {
+       "items": [
+        {
+         "art": "house",
+         "x": 20,
+         "y": 70,
+         "w": 110
+        },
+        {
+         "art": "palm_tree",
+         "x": 140,
+         "y": 40,
+         "w": 120
+        },
+        {
+         "art": "bisat",
+         "x": 230,
+         "y": 160,
+         "w": 90
+        },
+        {
+         "art": "khubz",
+         "x": 300,
+         "y": 170,
+         "w": 60
+        },
+        {
+         "art": "grandfather",
+         "x": 250,
+         "y": 80,
+         "w": 90
+        },
+        {
+         "art": "girl",
+         "x": 320,
+         "y": 90,
+         "w": 75
+        }
+       ],
+       "bg": {}
+      },
+      "prompts": [
+       {
+        "text": "أَصِفُ مَا أَرَاهُ فِي كُلِّ صُوْرَةٍ",
+        "page": 17,
+        "audio": "u1-open-q01.mp3"
+       },
+       {
+        "text": "كَيْفَ أتَعَامَلُ مَعَ كُلِّ فَرْدٍ مِنْ أفْرَادِ أُسْرَتِي ؟",
+        "page": 17,
+        "audio": "u1-open-q02.mp3"
+       },
+       {
+        "text": "أُكَوِّنُ قِصَّةً قَصِيْرَةً مِنَ الصُّوَرِ الثَّلاثِ",
+        "page": 17,
+        "audio": "u1-open-q03.mp3"
+       }
+      ]
+     },
+     "say": "اِلْمَسِ الصُّورَةَ وَتَحَدَّثْ",
+     "audio": "c-scene.mp3"
+    },
+    {
+     "template": "puzzle",
+     "page": 17,
+     "data": {
+      "scene": {
+       "items": [
+        {
+         "art": "house",
+         "x": 20,
+         "y": 70,
+         "w": 110
+        },
+        {
+         "art": "palm_tree",
+         "x": 140,
+         "y": 40,
+         "w": 120
+        },
+        {
+         "art": "bisat",
+         "x": 230,
+         "y": 160,
+         "w": 90
+        },
+        {
+         "art": "khubz",
+         "x": 300,
+         "y": 170,
+         "w": 60
+        },
+        {
+         "art": "grandfather",
+         "x": 250,
+         "y": 80,
+         "w": 90
+        },
+        {
+         "art": "girl",
+         "x": 320,
+         "y": 90,
+         "w": 75
+        }
+       ],
+       "bg": {}
+      },
+      "pieces": 4
+     },
+     "say": "رَكِّبِ الصُّورَةَ",
+     "audio": "c-puzzle.mp3"
+    }
+   ],
+   "prompts": [
+    {
+     "text": "أَصِفُ مَا أَرَاهُ فِي كُلِّ صُوْرَةٍ",
+     "page": 17,
+     "audio": "u1-open-q01.mp3"
+    },
+    {
+     "text": "كَيْفَ أتَعَامَلُ مَعَ كُلِّ فَرْدٍ مِنْ أفْرَادِ أُسْرَتِي ؟",
+     "page": 17,
+     "audio": "u1-open-q02.mp3"
+    },
+    {
+     "text": "أُكَوِّنُ قِصَّةً قَصِيْرَةً مِنَ الصُّوَرِ الثَّلاثِ",
+     "page": 17,
+     "audio": "u1-open-q03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ أُسْرَتِي",
+    "art": "house",
+    "audio": "u1-open-sticker.mp3"
+   }
+  },
+  {
    "id": "u1-ba",
    "book": "reading",
    "unit": 1,
-   "unitTitle": "الْوَحْدَةُ الْأُولَى: أُسْرَتِي",
+   "unitTitle": "الوَحْدَةُ الأُوْلَى : أُسْرَتِي",
    "unitPage": 17,
    "pages": [
     18,
@@ -23,20 +762,13 @@
     20
    ],
    "title": "ب",
-   "subtitle": "الدَّرْسُ الثَّالِثُ: الْقِرَاءَةُ",
-   "narration": [
-    {
-     "text": "أَتَعَرَّفُ الْحَرْفَ",
-     "page": 18,
-     "audio": "u1-ba-n1.mp3"
-    }
-   ],
+   "kind": "letter",
    "items": [
     {
      "value": "بَقَرَةُ",
      "page": 18,
      "art": "baqara",
-     "audio": "u1-ba-w01.mp3"
+     "audio": "u0-madd-alif-w08.mp3"
     },
     {
      "value": "بُرْتُقَالُ",
@@ -48,13 +780,13 @@
      "value": "بِسَاطُ",
      "page": 18,
      "art": "bisat",
-     "audio": "u1-ba-w03.mp3"
+     "audio": "u0-madd-ya-w06.mp3"
     },
     {
      "value": "حَلِيْبُ",
      "page": 18,
      "art": "halib",
-     "audio": "u1-ba-w04.mp3"
+     "audio": "u0-madd-ya-w05.mp3"
     },
     {
      "value": "خُبْزُ",
@@ -66,13 +798,13 @@
      "value": "بَابُ",
      "page": 18,
      "art": "bab",
-     "audio": "u1-ba-w06.mp3"
+     "audio": "u0-madd-alif-w01.mp3"
     },
     {
      "value": "بُوْقُ",
      "page": 18,
      "art": "buq",
-     "audio": "u1-ba-w07.mp3"
+     "audio": "u0-madd-waw-w07.mp3"
     },
     {
      "value": "طَبِيْبُ",
@@ -91,6 +823,36 @@
      "page": 19,
      "art": "bittikh",
      "audio": "u1-ba-w10.mp3"
+    },
+    {
+     "value": "طَبْلُ",
+     "page": 19,
+     "art": "drum",
+     "audio": "u1-ba-w11.mp3"
+    },
+    {
+     "value": "جُبْنُ",
+     "page": 19,
+     "art": "cheese",
+     "audio": "u1-ba-w12.mp3"
+    },
+    {
+     "value": "شِبْلُ",
+     "page": 19,
+     "art": "lion_cub",
+     "audio": "u1-ba-w13.mp3"
+    },
+    {
+     "value": "بَابَا",
+     "page": 19,
+     "art": null,
+     "audio": "u1-ba-w14.mp3"
+    },
+    {
+     "value": "بَابِي",
+     "page": 19,
+     "art": null,
+     "audio": "u1-ba-w15.mp3"
     }
    ],
    "syllables": [
@@ -123,44 +885,12 @@
      "value": "بِيْـ",
      "page": 18,
      "audio": "u1-ba-s06.mp3"
-    },
-    {
-     "value": "بُ",
-     "page": 20,
-     "audio": "u1-ba-s07.mp3"
-    },
-    {
-     "value": "بِي",
-     "page": 20,
-     "audio": "u1-ba-s08.mp3"
-    },
-    {
-     "value": "بَابُ",
-     "page": 19,
-     "audio": "u1-ba-w06.mp3"
-    },
-    {
-     "value": "بَابَا",
-     "page": 19,
-     "audio": "u1-ba-s10.mp3"
-    },
-    {
-     "value": "بَابِي",
-     "page": 19,
-     "audio": "u1-ba-s11.mp3"
-    },
-    {
-     "value": "ب",
-     "page": 18,
-     "audio": "u1-ba-s12.mp3"
     }
    ],
    "games": [
     {
      "template": "listen",
-     "rounds": 1,
      "page": 18,
-     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
      "data": {
       "letter": "ب",
       "items": [
@@ -174,24 +904,21 @@
        "طَبِيْبُ"
       ]
      },
-     "audio": "u1-ba-g1.mp3"
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
     },
     {
      "template": "trace",
-     "rounds": 1,
      "page": 20,
-     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
      "data": {
-      "glyph": "ب",
       "shape": "ba"
      },
-     "audio": "u1-ba-g2.mp3"
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
     },
     {
      "template": "balloons",
-     "rounds": 4,
      "page": 18,
-     "say": "فَرْقِعِ الْبَالُونَ الَّذِي تَسْمَعُهُ",
      "data": {
       "choices": [
        "بَـ",
@@ -209,13 +936,12 @@
       ],
       "per": 3
      },
-     "audio": "u1-ba-g3.mp3"
+     "say": "فَرْقِعِ الْبَالُونَ الَّذِي تَسْمَعُهُ",
+     "audio": "c-balloons.mp3"
     },
     {
      "template": "match",
-     "rounds": 4,
      "page": 19,
-     "say": "اِسْحَبِ الْكَلِمَةَ إِلَى صُورَتِهَا",
      "data": {
       "pairs": [
        "بَابُ",
@@ -225,13 +951,12 @@
       ],
       "per": 3
      },
-     "audio": "u1-ba-g4.mp3"
+     "say": "اِسْحَبِ الْكَلِمَةَ إِلَى صُورَتِهَا",
+     "audio": "c-match.mp3"
     },
     {
      "template": "build",
-     "rounds": 3,
      "page": 20,
-     "say": "رَكِّبِ الْكَلِمَةَ مِنْ مَقَاطِعِهَا",
      "data": {
       "pieces": [
        "بُ",
@@ -263,54 +988,9183 @@
        }
       ]
      },
-     "audio": "u1-ba-g5.mp3"
+     "say": "رَكِّبِ الْكَلِمَةَ مِنْ مَقَاطِعِهَا",
+     "audio": "c-build.mp3"
+    }
+   ],
+   "sentences": [],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ب",
+    "art": "baqara",
+    "audio": "u1-ba-sticker.mp3"
+   }
+  },
+  {
+   "id": "u1-mim",
+   "book": "reading",
+   "unit": 1,
+   "unitTitle": "الوَحْدَةُ الأُوْلَى : أُسْرَتِي",
+   "unitPage": 17,
+   "pages": [
+    21,
+    22,
+    23
+   ],
+   "title": "م",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "مَوْزُ",
+     "page": 21,
+     "art": "bananas",
+     "audio": "u1-mim-w01.mp3"
+    },
+    {
+     "value": "مُرَبَّعُ",
+     "page": 21,
+     "art": "square",
+     "audio": "u1-mim-w02.mp3"
+    },
+    {
+     "value": "مِفْتَاحُ",
+     "page": 21,
+     "art": "key",
+     "audio": "u1-mim-w03.mp3"
+    },
+    {
+     "value": "ثُوْمُ",
+     "page": 21,
+     "art": "garlic",
+     "audio": "u1-mim-w04.mp3"
+    },
+    {
+     "value": "قَمْحُ",
+     "page": 21,
+     "art": "wheat",
+     "audio": "u1-mim-w05.mp3"
+    },
+    {
+     "value": "مِزْمَارُ",
+     "page": 21,
+     "art": "flute",
+     "audio": "u1-mim-w06.mp3"
+    },
+    {
+     "value": "لَيْمُوْنُ",
+     "page": 21,
+     "art": "lemons",
+     "audio": "u1-mim-w07.mp3"
+    },
+    {
+     "value": "مِيْزَانُ",
+     "page": 21,
+     "art": "scale",
+     "audio": "u0-madd-ya-w02.mp3"
+    },
+    {
+     "value": "مُثَلَّثُ",
+     "page": 22,
+     "art": "triangle",
+     "audio": "u1-mim-w09.mp3"
+    },
+    {
+     "value": "مِقَصُّ",
+     "page": 22,
+     "art": "scissors",
+     "audio": "u1-mim-w10.mp3"
+    },
+    {
+     "value": "تَمْرُ",
+     "page": 22,
+     "art": "dates",
+     "audio": "u1-mim-w11.mp3"
+    },
+    {
+     "value": "تِمْسَاحُ",
+     "page": 22,
+     "art": "crocodile",
+     "audio": "u1-mim-w12.mp3"
+    },
+    {
+     "value": "مَامَا",
+     "page": 22,
+     "art": null,
+     "audio": "u1-mim-w13.mp3"
+    },
+    {
+     "value": "بُوْمُ",
+     "page": 22,
+     "art": "owl",
+     "audio": "u1-mim-w14.mp3"
+    },
+    {
+     "value": "بَابَا",
+     "page": 23,
+     "art": null,
+     "audio": "u1-ba-w14.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "مَـ",
+     "page": 21,
+     "audio": "u1-mim-s01.mp3"
+    },
+    {
+     "value": "مَا",
+     "page": 21,
+     "audio": "u1-mim-s02.mp3"
+    },
+    {
+     "value": "مُـ",
+     "page": 21,
+     "audio": "u1-mim-s03.mp3"
+    },
+    {
+     "value": "مُوْ",
+     "page": 21,
+     "audio": "u1-mim-s04.mp3"
+    },
+    {
+     "value": "مِـ",
+     "page": 21,
+     "audio": "u1-mim-s05.mp3"
+    },
+    {
+     "value": "مِيْـ",
+     "page": 21,
+     "audio": "u1-mim-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 21,
+     "data": {
+      "letter": "م",
+      "items": [
+       "مَوْزُ",
+       "مُرَبَّعُ",
+       "مِفْتَاحُ",
+       "ثُوْمُ",
+       "قَمْحُ",
+       "مِزْمَارُ",
+       "لَيْمُوْنُ",
+       "مِيْزَانُ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 23,
+     "data": {
+      "shape": "mim"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "build",
+     "page": 21,
+     "data": {
+      "pieces": [
+       "مَوْ",
+       "زُ",
+       "مِفْـ",
+       "ـتَا",
+       "حُ",
+       "ثُوْ",
+       "مُ"
+      ],
+      "words": [
+       {
+        "word": "مَوْزُ",
+        "parts": [
+         "مَوْ",
+         "زُ"
+        ],
+        "art": "bananas"
+       },
+       {
+        "word": "مِفْتَاحُ",
+        "parts": [
+         "مِفْـ",
+         "ـتَا",
+         "حُ"
+        ],
+        "art": "key"
+       },
+       {
+        "word": "ثُوْمُ",
+        "parts": [
+         "ثُوْ",
+         "مُ"
+        ],
+        "art": "garlic"
+       }
+      ]
+     },
+     "say": "رَكِّبِ الْكَلِمَةَ مِنْ مَقَاطِعِهَا",
+     "audio": "c-build.mp3"
+    }
+   ],
+   "sentences": [],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ م",
+    "art": "bananas",
+    "audio": "u1-mim-sticker.mp3"
+   }
+  },
+  {
+   "id": "u1-dal",
+   "book": "reading",
+   "unit": 1,
+   "unitTitle": "الوَحْدَةُ الأُوْلَى : أُسْرَتِي",
+   "unitPage": 17,
+   "pages": [
+    24,
+    25,
+    26
+   ],
+   "title": "د",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "دَلَّةُ",
+     "page": 24,
+     "art": "coffee_pot",
+     "audio": "u1-dal-w01.mp3"
+    },
+    {
+     "value": "دُبُّ",
+     "page": 24,
+     "art": "bear",
+     "audio": "u1-dal-w02.mp3"
+    },
+    {
+     "value": "دِرْهَمُ",
+     "page": 24,
+     "art": "coin",
+     "audio": "u1-dal-w03.mp3"
+    },
+    {
+     "value": "أَسَدُ",
+     "page": 24,
+     "art": "lion",
+     "audio": "u1-dal-w04.mp3"
+    },
+    {
+     "value": "قِدْرُ",
+     "page": 24,
+     "art": "cooking_pot",
+     "audio": "u1-dal-w05.mp3"
+    },
+    {
+     "value": "دَارُ",
+     "page": 24,
+     "art": "house",
+     "audio": "u0-madd-alif-w04.mp3"
+    },
+    {
+     "value": "دُوْدُ",
+     "page": 24,
+     "art": "worms",
+     "audio": "u1-dal-w07.mp3"
+    },
+    {
+     "value": "دِيْكُ",
+     "page": 24,
+     "art": "rooster",
+     "audio": "u0-madd-ya-w08.mp3"
+    },
+    {
+     "value": "دَرَجُ",
+     "page": 25,
+     "art": "ladder",
+     "audio": "u1-dal-w09.mp3"
+    },
+    {
+     "value": "دُمْيَةُ",
+     "page": 25,
+     "art": "doll",
+     "audio": "u0-madd-waw-w03.mp3"
+    },
+    {
+     "value": "دِبْسُ",
+     "page": 25,
+     "art": "date_syrup_tin",
+     "audio": "u1-dal-w11.mp3"
+    },
+    {
+     "value": "دُوْرُ",
+     "page": 25,
+     "art": "row_of_houses",
+     "audio": "u1-dal-w12.mp3"
+    },
+    {
+     "value": "مَدْرَسَةُ",
+     "page": 25,
+     "art": "school",
+     "audio": "u1-dal-w13.mp3"
+    },
+    {
+     "value": "هُدْهُدُ",
+     "page": 25,
+     "art": "hoopoe",
+     "audio": "u1-dal-w14.mp3"
+    },
+    {
+     "value": "دَادَا",
+     "page": 25,
+     "art": null,
+     "audio": "u1-dal-w15.mp3"
+    },
+    {
+     "value": "بَابَا",
+     "page": 26,
+     "art": null,
+     "audio": "u1-ba-w14.mp3"
+    },
+    {
+     "value": "مَامَا",
+     "page": 26,
+     "art": null,
+     "audio": "u1-mim-w13.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "دَ",
+     "page": 24,
+     "audio": "u1-dal-s01.mp3"
+    },
+    {
+     "value": "دَا",
+     "page": 24,
+     "audio": "u1-dal-s02.mp3"
+    },
+    {
+     "value": "دُ",
+     "page": 24,
+     "audio": "u1-dal-s03.mp3"
+    },
+    {
+     "value": "دُوْ",
+     "page": 24,
+     "audio": "u1-dal-s04.mp3"
+    },
+    {
+     "value": "دِ",
+     "page": 24,
+     "audio": "u1-dal-s05.mp3"
+    },
+    {
+     "value": "دِيْـ",
+     "page": 24,
+     "audio": "u1-dal-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 24,
+     "data": {
+      "letter": "د",
+      "items": [
+       "دَلَّةُ",
+       "دُبُّ",
+       "دِرْهَمُ",
+       "أَسَدُ",
+       "قِدْرُ",
+       "دَارُ",
+       "دُوْدُ",
+       "دِيْكُ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 26,
+     "data": {
+      "shape": "dal"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "match",
+     "page": 24,
+     "data": {
+      "pairs": [
+       "دَلَّةُ",
+       "دُبُّ",
+       "دِرْهَمُ",
+       "أَسَدُ"
+      ],
+      "per": 3
+     },
+     "say": "اِسْحَبِ الْكَلِمَةَ إِلَى صُورَتِهَا",
+     "audio": "c-match.mp3"
+    }
+   ],
+   "sentences": [],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ د",
+    "art": "coffee_pot",
+    "audio": "u1-dal-sticker.mp3"
+   }
+  },
+  {
+   "id": "u1-fa",
+   "book": "reading",
+   "unit": 1,
+   "unitTitle": "الوَحْدَةُ الأُوْلَى : أُسْرَتِي",
+   "unitPage": 17,
+   "pages": [
+    27,
+    28,
+    29
+   ],
+   "title": "ف",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "فَرَاشَةُ",
+     "page": 27,
+     "art": "butterfly",
+     "audio": "u1-fa-w01.mp3"
+    },
+    {
+     "value": "فُسْتَانُ",
+     "page": 27,
+     "art": "dress",
+     "audio": "u1-fa-w02.mp3"
+    },
+    {
+     "value": "فِنْجَانُ",
+     "page": 27,
+     "art": "cup",
+     "audio": "u1-fa-w03.mp3"
+    },
+    {
+     "value": "مِعْطَفُ",
+     "page": 27,
+     "art": "coat",
+     "audio": "u1-fa-w04.mp3"
+    },
+    {
+     "value": "مِفْتَاحُ",
+     "page": 27,
+     "art": "key",
+     "audio": "u1-mim-w03.mp3"
+    },
+    {
+     "value": "فَانُوْسُ",
+     "page": 27,
+     "art": "lantern",
+     "audio": "u1-fa-w06.mp3"
+    },
+    {
+     "value": "نَافُوْرَةُ",
+     "page": 27,
+     "art": "fountain",
+     "audio": "u1-fa-w07.mp3"
+    },
+    {
+     "value": "فِيْلُ",
+     "page": 27,
+     "art": "elephant",
+     "audio": "u0-madd-ya-w04.mp3"
+    },
+    {
+     "value": "فَهْدُ",
+     "page": 28,
+     "art": "cheetah",
+     "audio": "u1-fa-w09.mp3"
+    },
+    {
+     "value": "فُرْنُ",
+     "page": 28,
+     "art": "oven",
+     "audio": "u1-fa-w10.mp3"
+    },
+    {
+     "value": "عُصْفُوْرُ",
+     "page": 28,
+     "art": "bird",
+     "audio": "u1-fa-w11.mp3"
+    },
+    {
+     "value": "ضِفْدَعُ",
+     "page": 28,
+     "art": "frog",
+     "audio": "u1-fa-w12.mp3"
+    },
+    {
+     "value": "حَفْلَةُ",
+     "page": 28,
+     "art": "party",
+     "audio": "u1-fa-w13.mp3"
+    },
+    {
+     "value": "طِفْلُ",
+     "page": 28,
+     "art": "baby",
+     "audio": "u1-fa-w14.mp3"
+    },
+    {
+     "value": "مُفِيْدُ",
+     "page": 29,
+     "art": null,
+     "audio": "u1-fa-w15.mp3"
+    },
+    {
+     "value": "فَادِي",
+     "page": 29,
+     "art": null,
+     "audio": "u1-fa-w16.mp3"
+    },
+    {
+     "value": "دُفُوْفُ",
+     "page": 29,
+     "art": null,
+     "audio": "u1-fa-w17.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "فَـ",
+     "page": 28,
+     "audio": "u1-fa-s01.mp3"
+    },
+    {
+     "value": "فَا",
+     "page": 28,
+     "audio": "u1-fa-s02.mp3"
+    },
+    {
+     "value": "فُـ",
+     "page": 28,
+     "audio": "u1-fa-s03.mp3"
+    },
+    {
+     "value": "فُوْ",
+     "page": 28,
+     "audio": "u1-fa-s04.mp3"
+    },
+    {
+     "value": "فِـ",
+     "page": 28,
+     "audio": "u1-fa-s05.mp3"
+    },
+    {
+     "value": "فِيْـ",
+     "page": 28,
+     "audio": "u1-fa-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 27,
+     "data": {
+      "letter": "ف",
+      "items": [
+       "فَرَاشَةُ",
+       "فُسْتَانُ",
+       "فِنْجَانُ",
+       "مِعْطَفُ",
+       "مِفْتَاحُ",
+       "فَانُوْسُ",
+       "نَافُوْرَةُ",
+       "فِيْلُ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 29,
+     "data": {
+      "shape": "fa"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "memory",
+     "page": 27,
+     "data": {
+      "pairs": [
+       {
+        "text": "فَرَاشَةُ",
+        "art": "butterfly"
+       },
+       {
+        "text": "فُسْتَانُ",
+        "art": "dress"
+       },
+       {
+        "text": "فِنْجَانُ",
+        "art": "cup"
+       },
+       {
+        "text": "مِعْطَفُ",
+        "art": "coat"
+       }
+      ]
+     },
+     "say": "اِقْلِبْ بِطَاقَتَيْنِ مُتَشَابِهَتَيْنِ",
+     "audio": "c-memory.mp3"
+    }
+   ],
+   "sentences": [],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ف",
+    "art": "butterfly",
+    "audio": "u1-fa-sticker.mp3"
+   }
+  },
+  {
+   "id": "u1-nashid",
+   "book": "reading",
+   "unit": 1,
+   "unitTitle": "الوَحْدَةُ الأُوْلَى : أُسْرَتِي",
+   "unitPage": 17,
+   "pages": [
+    30
+   ],
+   "title": "♪",
+   "kind": "nashid",
+   "items": [],
+   "syllables": [],
+   "games": [],
+   "nashid": {
+    "title": "مَامَا بَابَا",
+    "poet": "",
+    "page": 30,
+    "audio": "u1-nashid.mp3"
+   },
+   "scene": {
+    "items": [
+     {
+      "art": "house",
+      "x": 20,
+      "y": 70,
+      "w": 110
+     },
+     {
+      "art": "palm_tree",
+      "x": 140,
+      "y": 40,
+      "w": 120
+     },
+     {
+      "art": "bisat",
+      "x": 230,
+      "y": 160,
+      "w": 90
+     },
+     {
+      "art": "khubz",
+      "x": 300,
+      "y": 170,
+      "w": 60
+     },
+     {
+      "art": "grandfather",
+      "x": 250,
+      "y": 80,
+      "w": 90
+     },
+     {
+      "art": "girl",
+      "x": 320,
+      "y": 90,
+      "w": 75
+     }
+    ],
+    "bg": {}
+   }
+  },
+  {
+   "id": "u2-open",
+   "book": "reading",
+   "unit": 2,
+   "unitTitle": "الوَحْدَةُ الثَّانِيَةُ: مَدْرَسَتِي",
+   "unitPage": 31,
+   "pages": [
+    31
+   ],
+   "title": "★",
+   "kind": "open",
+   "items": [],
+   "syllables": [],
+   "games": [
+    {
+     "template": "scene",
+     "page": 31,
+     "data": {
+      "scene": {
+       "items": [
+        {
+         "art": "school",
+         "x": 10,
+         "y": 50,
+         "w": 150
+        },
+        {
+         "art": "blackboard",
+         "x": 170,
+         "y": 70,
+         "w": 100
+        },
+        {
+         "art": "schoolgirl",
+         "x": 270,
+         "y": 90,
+         "w": 90
+        },
+        {
+         "art": "schoolbag",
+         "x": 320,
+         "y": 170,
+         "w": 60
+        },
+        {
+         "art": "pencil",
+         "x": 180,
+         "y": 180,
+         "w": 60
+        },
+        {
+         "art": "clock",
+         "x": 300,
+         "y": 10,
+         "w": 50
+        }
+       ],
+       "bg": {}
+      },
+      "prompts": [
+       {
+        "text": "أصِفُ مَا أُشَاهِدُهُ فِي كُلِّ صُوْرَةٍ",
+        "page": 31,
+        "audio": "u2-open-q01.mp3"
+       },
+       {
+        "text": "لِمَاذَا يَجْتَمِعُ التَّلَامِيْذُ فِي سَاحَةِ المَدْرَسَةِ؟",
+        "page": 31,
+        "audio": "u2-open-q02.mp3"
+       },
+       {
+        "text": "تَخَيَّلْ نَفْسَكَ فِي هَذِهِ الغُرْفَةِ الصَّفِّيَّةِ، مَا الأعْمَالُ الّتِي تَقُوْمُ بِهَا؟",
+        "page": 31,
+        "audio": "u2-open-q03.mp3"
+       },
+       {
+        "text": "قَدِّمْ نَصِيْحَةً لِزَمِيْلِكَ تَحُثُّهُ فِيْهَا عَلَى حُسْنِ التَّعَامُلِ مَعَ المُعَلِّمِ وَالزُّمَلَاءِ",
+        "page": 31,
+        "audio": "u2-open-q04.mp3"
+       },
+       {
+        "text": "كَوّنْ قِصَّةً مِنَ الصُّوَرِ الَّتِي أمَامَكَ",
+        "page": 31,
+        "audio": "u2-open-q05.mp3"
+       }
+      ]
+     },
+     "say": "اِلْمَسِ الصُّورَةَ وَتَحَدَّثْ",
+     "audio": "c-scene.mp3"
+    },
+    {
+     "template": "puzzle",
+     "page": 31,
+     "data": {
+      "scene": {
+       "items": [
+        {
+         "art": "school",
+         "x": 10,
+         "y": 50,
+         "w": 150
+        },
+        {
+         "art": "blackboard",
+         "x": 170,
+         "y": 70,
+         "w": 100
+        },
+        {
+         "art": "schoolgirl",
+         "x": 270,
+         "y": 90,
+         "w": 90
+        },
+        {
+         "art": "schoolbag",
+         "x": 320,
+         "y": 170,
+         "w": 60
+        },
+        {
+         "art": "pencil",
+         "x": 180,
+         "y": 180,
+         "w": 60
+        },
+        {
+         "art": "clock",
+         "x": 300,
+         "y": 10,
+         "w": 50
+        }
+       ],
+       "bg": {}
+      },
+      "pieces": 4
+     },
+     "say": "رَكِّبِ الصُّورَةَ",
+     "audio": "c-puzzle.mp3"
+    }
+   ],
+   "prompts": [
+    {
+     "text": "أصِفُ مَا أُشَاهِدُهُ فِي كُلِّ صُوْرَةٍ",
+     "page": 31,
+     "audio": "u2-open-q01.mp3"
+    },
+    {
+     "text": "لِمَاذَا يَجْتَمِعُ التَّلَامِيْذُ فِي سَاحَةِ المَدْرَسَةِ؟",
+     "page": 31,
+     "audio": "u2-open-q02.mp3"
+    },
+    {
+     "text": "تَخَيَّلْ نَفْسَكَ فِي هَذِهِ الغُرْفَةِ الصَّفِّيَّةِ، مَا الأعْمَالُ الّتِي تَقُوْمُ بِهَا؟",
+     "page": 31,
+     "audio": "u2-open-q03.mp3"
+    },
+    {
+     "text": "قَدِّمْ نَصِيْحَةً لِزَمِيْلِكَ تَحُثُّهُ فِيْهَا عَلَى حُسْنِ التَّعَامُلِ مَعَ المُعَلِّمِ وَالزُّمَلَاءِ",
+     "page": 31,
+     "audio": "u2-open-q04.mp3"
+    },
+    {
+     "text": "كَوّنْ قِصَّةً مِنَ الصُّوَرِ الَّتِي أمَامَكَ",
+     "page": 31,
+     "audio": "u2-open-q05.mp3"
     }
    ],
    "sticker": {
-    "name": "مُلْصَقُ الْبَابِ",
-    "art": "bab",
-    "audio": "u1-ba-sticker.mp3"
+    "name": "مُلْصَقُ مَدْرَسَتِي",
+    "art": "school",
+    "audio": "u2-open-sticker.mp3"
+   }
+  },
+  {
+   "id": "u2-ra",
+   "book": "reading",
+   "unit": 2,
+   "unitTitle": "الوَحْدَةُ الثَّانِيَةُ: مَدْرَسَتِي",
+   "unitPage": 31,
+   "pages": [
+    32,
+    33,
+    34
+   ],
+   "title": "ر",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "رَمْلُ",
+     "page": 32,
+     "art": "sand",
+     "audio": "u2-ra-w01.mp3"
+    },
+    {
+     "value": "رُمَّانُ",
+     "page": 32,
+     "art": "pomegranates",
+     "audio": "u2-ra-w02.mp3"
+    },
+    {
+     "value": "رِجْلُ",
+     "page": 32,
+     "art": "foot",
+     "audio": "u2-ra-w03.mp3"
+    },
+    {
+     "value": "جَزَرُ",
+     "page": 32,
+     "art": "carrots",
+     "audio": "u2-ra-w04.mp3"
+    },
+    {
+     "value": "قِرْدُ",
+     "page": 32,
+     "art": "monkey",
+     "audio": "u2-ra-w05.mp3"
+    },
+    {
+     "value": "مِبْرَاةُ",
+     "page": 32,
+     "art": "pencil_sharpener",
+     "audio": "u2-ra-w06.mp3"
+    },
+    {
+     "value": "خَرُوْفُ",
+     "page": 32,
+     "art": "sheep",
+     "audio": "u0-madd-waw-w02.mp3"
+    },
+    {
+     "value": "سَرِيْرُ",
+     "page": 32,
+     "art": "bed",
+     "audio": "u2-ra-w08.mp3"
+    },
+    {
+     "value": "رَضِيعُ",
+     "page": 33,
+     "art": "baby",
+     "audio": "u2-ra-w09.mp3"
+    },
+    {
+     "value": "رُزُّ",
+     "page": 33,
+     "art": "rice",
+     "audio": "u2-ra-w10.mp3"
+    },
+    {
+     "value": "رِبَاطُ",
+     "page": 33,
+     "art": "necktie",
+     "audio": "u2-ra-w11.mp3"
+    },
+    {
+     "value": "رِيْشَةُ",
+     "page": 33,
+     "art": "feather",
+     "audio": "u2-ra-w12.mp3"
+    },
+    {
+     "value": "فُرْشَاةُ",
+     "page": 33,
+     "art": "paintbrush",
+     "audio": "u2-ra-w13.mp3"
+    },
+    {
+     "value": "بِرْكَةُ",
+     "page": 33,
+     "art": "pond",
+     "audio": "u2-ra-w14.mp3"
+    },
+    {
+     "value": "رِيْـمُ",
+     "page": 33,
+     "art": null,
+     "audio": "u2-ra-w15.mp3"
+    },
+    {
+     "value": "رَمَىٰ",
+     "page": 33,
+     "art": null,
+     "audio": "u2-ra-w16.mp3"
+    },
+    {
+     "value": "مَرَامُ",
+     "page": 33,
+     "art": null,
+     "audio": "u2-ra-w17.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "رَ",
+     "page": 32,
+     "audio": "u2-ra-s01.mp3"
+    },
+    {
+     "value": "رَا",
+     "page": 32,
+     "audio": "u2-ra-s02.mp3"
+    },
+    {
+     "value": "رُ",
+     "page": 32,
+     "audio": "u2-ra-s03.mp3"
+    },
+    {
+     "value": "رُوْ",
+     "page": 32,
+     "audio": "u2-ra-s04.mp3"
+    },
+    {
+     "value": "رِ",
+     "page": 32,
+     "audio": "u2-ra-s05.mp3"
+    },
+    {
+     "value": "رِيْـ",
+     "page": 32,
+     "audio": "u2-ra-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 32,
+     "data": {
+      "letter": "ر",
+      "items": [
+       "رَمْلُ",
+       "رُمَّانُ",
+       "رِجْلُ",
+       "جَزَرُ",
+       "قِرْدُ",
+       "مِبْرَاةُ",
+       "خَرُوْفُ",
+       "سَرِيْرُ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 34,
+     "data": {
+      "shape": "ra"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "train",
+     "page": 32,
+     "data": {
+      "rounds": [
+       {
+        "say": "رَمْلُ",
+        "options": [
+         {
+          "text": "رَمْلُ"
+         },
+         {
+          "text": "رِيْـمُ"
+         },
+         {
+          "text": "قِرْدُ"
+         }
+        ],
+        "answer": 0
+       },
+       {
+        "say": "رُمَّانُ",
+        "options": [
+         {
+          "text": "رَضِيعُ"
+         },
+         {
+          "text": "بِرْكَةُ"
+         },
+         {
+          "text": "رُمَّانُ"
+         }
+        ],
+        "answer": 2
+       },
+       {
+        "say": "رِجْلُ",
+        "options": [
+         {
+          "text": "خَرُوْفُ"
+         },
+         {
+          "text": "رِجْلُ"
+         },
+         {
+          "text": "قِرْدُ"
+         }
+        ],
+        "answer": 1
+       },
+       {
+        "say": "جَزَرُ",
+        "options": [
+         {
+          "text": "جَزَرُ"
+         },
+         {
+          "text": "سَرِيْرُ"
+         },
+         {
+          "text": "فُرْشَاةُ"
+         }
+        ],
+        "answer": 0
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاخْتَرِ الْكَلِمَةَ",
+     "audio": "c-train.mp3"
+    }
+   ],
+   "sentences": [],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ر",
+    "art": "sand",
+    "audio": "u2-ra-sticker.mp3"
+   }
+  },
+  {
+   "id": "u2-sin",
+   "book": "reading",
+   "unit": 2,
+   "unitTitle": "الوَحْدَةُ الثَّانِيَةُ: مَدْرَسَتِي",
+   "unitPage": 31,
+   "pages": [
+    35,
+    36,
+    37
+   ],
+   "title": "س",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "سَلّةُ",
+     "page": 35,
+     "art": "basket",
+     "audio": "u2-sin-w01.mp3"
+    },
+    {
+     "value": "سُلَحْفَاةُ",
+     "page": 35,
+     "art": "turtle",
+     "audio": "u2-sin-w02.mp3"
+    },
+    {
+     "value": "سِتَارَةُ",
+     "page": 35,
+     "art": "curtain",
+     "audio": "u2-sin-w03.mp3"
+    },
+    {
+     "value": "شَمْسُ",
+     "page": 35,
+     "art": "sun",
+     "audio": "u2-sin-w04.mp3"
+    },
+    {
+     "value": "مِسْمَارُ",
+     "page": 35,
+     "art": "nail",
+     "audio": "u2-sin-w05.mp3"
+    },
+    {
+     "value": "سَاعَةُ",
+     "page": 35,
+     "art": "clock",
+     "audio": "u2-sin-w06.mp3"
+    },
+    {
+     "value": "حَاسُوْبُ",
+     "page": 35,
+     "art": "laptop",
+     "audio": "u0-madd-waw-w05.mp3"
+    },
+    {
+     "value": "تَـماسِيْحُ",
+     "page": 35,
+     "art": "crocodiles",
+     "audio": "u2-sin-w08.mp3"
+    },
+    {
+     "value": "سَبُّوْرَةُ",
+     "page": 36,
+     "art": "blackboard",
+     "audio": "u2-sin-w09.mp3"
+    },
+    {
+     "value": "سُكَّرُ",
+     "page": 36,
+     "art": "sugar",
+     "audio": "u2-sin-w10.mp3"
+    },
+    {
+     "value": "سِنْجَابُ",
+     "page": 36,
+     "art": "squirrel",
+     "audio": "u2-sin-w11.mp3"
+    },
+    {
+     "value": "سُوْقُ",
+     "page": 36,
+     "art": "market",
+     "audio": "u2-sin-w12.mp3"
+    },
+    {
+     "value": "تَماسِيْحُ",
+     "page": 36,
+     "art": "crocodiles",
+     "audio": "u2-sin-w13.mp3"
+    },
+    {
+     "value": "مِسْطَرَةُ",
+     "page": 36,
+     "art": "ruler",
+     "audio": "u2-sin-w14.mp3"
+    },
+    {
+     "value": "نَسْرُ",
+     "page": 36,
+     "art": "eagle",
+     "audio": "u2-sin-w15.mp3"
+    },
+    {
+     "value": "سَارَ",
+     "page": 37,
+     "art": null,
+     "audio": "u2-sin-w16.mp3"
+    },
+    {
+     "value": "سَافَرَ",
+     "page": 37,
+     "art": null,
+     "audio": "u2-sin-w17.mp3"
+    },
+    {
+     "value": "دَرَسَ",
+     "page": 37,
+     "art": null,
+     "audio": "u2-sin-w18.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "سَـ",
+     "page": 36,
+     "audio": "u2-sin-s01.mp3"
+    },
+    {
+     "value": "سَا",
+     "page": 36,
+     "audio": "u2-sin-s02.mp3"
+    },
+    {
+     "value": "سُـ",
+     "page": 36,
+     "audio": "u2-sin-s03.mp3"
+    },
+    {
+     "value": "سُوْ",
+     "page": 36,
+     "audio": "u2-sin-s04.mp3"
+    },
+    {
+     "value": "سِـ",
+     "page": 36,
+     "audio": "u2-sin-s05.mp3"
+    },
+    {
+     "value": "سِيْـ",
+     "page": 36,
+     "audio": "u2-sin-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 35,
+     "data": {
+      "letter": "س",
+      "items": [
+       "سَلّةُ",
+       "سُلَحْفَاةُ",
+       "سِتَارَةُ",
+       "شَمْسُ",
+       "مِسْمَارُ",
+       "سَاعَةُ",
+       "حَاسُوْبُ",
+       "تَـماسِيْحُ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 37,
+     "data": {
+      "shape": "sin"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "complete",
+     "page": 36,
+     "data": {
+      "rounds": [
+       {
+        "word": "سَلّةُ",
+        "start": 0,
+        "end": 2,
+        "options": [
+         "مَ",
+         "سَ",
+         "رَ"
+        ],
+        "answer": 1,
+        "art": "basket"
+       },
+       {
+        "word": "سُلَحْفَاةُ",
+        "start": 0,
+        "end": 2,
+        "options": [
+         "سُ",
+         "بُ",
+         "دُ"
+        ],
+        "answer": 0,
+        "art": "turtle"
+       },
+       {
+        "word": "سِتَارَةُ",
+        "start": 0,
+        "end": 2,
+        "options": [
+         "فِ",
+         "سِ",
+         "دِ"
+        ],
+        "answer": 1,
+        "art": "curtain"
+       },
+       {
+        "word": "شَمْسُ",
+        "start": 4,
+        "end": 6,
+        "options": [
+         "فُ",
+         "بُ",
+         "سُ"
+        ],
+        "answer": 2,
+        "art": "sun"
+       }
+      ]
+     },
+     "say": "ضَعِ الْحَرْفَ النَّاقِصَ",
+     "audio": "c-complete.mp3"
+    },
+    {
+     "template": "read",
+     "page": 37,
+     "data": {
+      "sentences": [
+       {
+        "text": "رَسَمَ مُوْسَى بَابَا",
+        "audio": "u2-sin-r01.mp3"
+       },
+       {
+        "text": "رَسَمَ فَارِسُ مَامَا",
+        "audio": "u2-sin-r02.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "رَسَمَ مُوْسَى بَابَا",
+     "page": 37,
+     "audio": "u2-sin-r01.mp3"
+    },
+    {
+     "text": "رَسَمَ فَارِسُ مَامَا",
+     "page": 37,
+     "audio": "u2-sin-r02.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ س",
+    "art": "basket",
+    "audio": "u2-sin-sticker.mp3"
+   }
+  },
+  {
+   "id": "u2-nun",
+   "book": "reading",
+   "unit": 2,
+   "unitTitle": "الوَحْدَةُ الثَّانِيَةُ: مَدْرَسَتِي",
+   "unitPage": 31,
+   "pages": [
+    38,
+    39,
+    40
+   ],
+   "title": "ن",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "نَمْلُ",
+     "page": 38,
+     "art": "ants",
+     "audio": "u2-nun-w01.mp3"
+    },
+    {
+     "value": "نُجُوْمُ",
+     "page": 38,
+     "art": "stars",
+     "audio": "u2-nun-w02.mp3"
+    },
+    {
+     "value": "نِقَاطُ",
+     "page": 38,
+     "art": null,
+     "audio": "u2-nun-w03.mp3"
+    },
+    {
+     "value": "حِصَانُ",
+     "page": 38,
+     "art": "horse",
+     "audio": "u2-nun-w04.mp3"
+    },
+    {
+     "value": "فِنْجَانُ",
+     "page": 38,
+     "art": "cup",
+     "audio": "u1-fa-w03.mp3"
+    },
+    {
+     "value": "نَارُ",
+     "page": 38,
+     "art": "fire",
+     "audio": "u0-madd-alif-w05.mp3"
+    },
+    {
+     "value": "فَانُوْسُ",
+     "page": 38,
+     "art": "lantern",
+     "audio": "u1-fa-w06.mp3"
+    },
+    {
+     "value": "نِيْرَانُ",
+     "page": 38,
+     "art": "fires",
+     "audio": "u2-nun-w08.mp3"
+    },
+    {
+     "value": "نَسْرُ",
+     "page": 39,
+     "art": "eagle",
+     "audio": "u2-sin-w15.mp3"
+    },
+    {
+     "value": "نُمُوْرُ",
+     "page": 39,
+     "art": "tigers",
+     "audio": "u2-nun-w10.mp3"
+    },
+    {
+     "value": "جُنُوْدُ",
+     "page": 39,
+     "art": "soldiers",
+     "audio": "u2-nun-w11.mp3"
+    },
+    {
+     "value": "جَنِيْنُ",
+     "page": 39,
+     "art": "fetus",
+     "audio": "u2-nun-w12.mp3"
+    },
+    {
+     "value": "بِنْتُ",
+     "page": 39,
+     "art": "girl",
+     "audio": "u2-nun-w13.mp3"
+    },
+    {
+     "value": "بُنْدُقُ",
+     "page": 39,
+     "art": "hazelnut",
+     "audio": "u0-madd-waw-w06.mp3"
+    },
+    {
+     "value": "مِنْجَلُ",
+     "page": 39,
+     "art": "sickle",
+     "audio": "u2-nun-w15.mp3"
+    },
+    {
+     "value": "نُوْرُ",
+     "page": 39,
+     "art": null,
+     "audio": "u2-nun-w16.mp3"
+    },
+    {
+     "value": "مَنَارُ",
+     "page": 39,
+     "art": null,
+     "audio": "u2-nun-w17.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "نَـ",
+     "page": 38,
+     "audio": "u2-nun-s01.mp3"
+    },
+    {
+     "value": "نَا",
+     "page": 38,
+     "audio": "u2-nun-s02.mp3"
+    },
+    {
+     "value": "نُـ",
+     "page": 38,
+     "audio": "u2-nun-s03.mp3"
+    },
+    {
+     "value": "نُوْ",
+     "page": 38,
+     "audio": "u2-nun-s04.mp3"
+    },
+    {
+     "value": "نِـ",
+     "page": 38,
+     "audio": "u2-nun-s05.mp3"
+    },
+    {
+     "value": "نِيْـ",
+     "page": 38,
+     "audio": "u2-nun-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 38,
+     "data": {
+      "letter": "ن",
+      "items": [
+       "نَمْلُ",
+       "نُجُوْمُ",
+       "نِقَاطُ",
+       "حِصَانُ",
+       "فِنْجَانُ",
+       "نَارُ",
+       "فَانُوْسُ",
+       "نِيْرَانُ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 40,
+     "data": {
+      "shape": "nun"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "balloons",
+     "page": 38,
+     "data": {
+      "choices": [
+       "نَـ",
+       "نَا",
+       "نُـ",
+       "نُوْ",
+       "نِـ",
+       "نِيْـ"
+      ],
+      "targets": [
+       "نَـ",
+       "نُوْ",
+       "نِـ",
+       "نَا"
+      ],
+      "per": 3
+     },
+     "say": "فَرْقِعِ الْبَالُونَ الَّذِي تَسْمَعُهُ",
+     "audio": "c-balloons.mp3"
+    },
+    {
+     "template": "read",
+     "page": 40,
+     "data": {
+      "sentences": [
+       {
+        "text": "فِي مَرْسَمِ رَنِيْـنَ",
+        "audio": "u2-nun-r01.mp3"
+       },
+       {
+        "text": "رَسَمَ فَارِسُ نُورَ",
+        "audio": "u2-nun-r02.mp3"
+       },
+       {
+        "text": "رَسَمَ سِنَانُ مَنَارَ",
+        "audio": "u2-nun-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "فِي مَرْسَمِ رَنِيْـنَ",
+     "page": 40,
+     "audio": "u2-nun-r01.mp3"
+    },
+    {
+     "text": "رَسَمَ فَارِسُ نُورَ",
+     "page": 40,
+     "audio": "u2-nun-r02.mp3"
+    },
+    {
+     "text": "رَسَمَ سِنَانُ مَنَارَ",
+     "page": 40,
+     "audio": "u2-nun-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ن",
+    "art": "ants",
+    "audio": "u2-nun-sticker.mp3"
+   }
+  },
+  {
+   "id": "u2-ta",
+   "book": "reading",
+   "unit": 2,
+   "unitTitle": "الوَحْدَةُ الثَّانِيَةُ: مَدْرَسَتِي",
+   "unitPage": 31,
+   "pages": [
+    41,
+    42,
+    43
+   ],
+   "title": "ت",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "تَمْرُ",
+     "page": 41,
+     "art": "dates",
+     "audio": "u1-mim-w11.mp3"
+    },
+    {
+     "value": "تُفَّاحَةُ",
+     "page": 41,
+     "art": "apple",
+     "audio": "u2-ta-w02.mp3"
+    },
+    {
+     "value": "تِمْسَاحُ",
+     "page": 41,
+     "art": "crocodile",
+     "audio": "u1-mim-w12.mp3"
+    },
+    {
+     "value": "عَنْكَبُوْتُ",
+     "page": 41,
+     "art": "spider",
+     "audio": "u2-ta-w04.mp3"
+    },
+    {
+     "value": "سِتْرَةُ",
+     "page": 41,
+     "art": "jacket",
+     "audio": "u2-ta-w05.mp3"
+    },
+    {
+     "value": "تَاجُ",
+     "page": 41,
+     "art": "crown",
+     "audio": "u2-ta-w06.mp3"
+    },
+    {
+     "value": "تُوْتُ",
+     "page": 41,
+     "art": "berries",
+     "audio": "u0-madd-waw-w08.mp3"
+    },
+    {
+     "value": "تِيْنُ",
+     "page": 41,
+     "art": "fig",
+     "audio": "u0-madd-ya-w01.mp3"
+    },
+    {
+     "value": "تُفَّاحُ",
+     "page": 42,
+     "art": "apple",
+     "audio": "u2-ta-w09.mp3"
+    },
+    {
+     "value": "خَتْمُ",
+     "page": 42,
+     "art": "stamp",
+     "audio": "u2-ta-w10.mp3"
+    },
+    {
+     "value": "شَتْلاتُ",
+     "page": 42,
+     "art": "seedlings",
+     "audio": "u2-ta-w11.mp3"
+    },
+    {
+     "value": "سِرْتُ",
+     "page": 42,
+     "art": null,
+     "audio": "u2-ta-w12.mp3"
+    },
+    {
+     "value": "فَاتِنُ",
+     "page": 42,
+     "art": null,
+     "audio": "u2-ta-w13.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "تَـ",
+     "page": 41,
+     "audio": "u2-ta-s01.mp3"
+    },
+    {
+     "value": "تَا",
+     "page": 41,
+     "audio": "u2-ta-s02.mp3"
+    },
+    {
+     "value": "تُـ",
+     "page": 41,
+     "audio": "u2-ta-s03.mp3"
+    },
+    {
+     "value": "تُوْ",
+     "page": 41,
+     "audio": "u2-ta-s04.mp3"
+    },
+    {
+     "value": "تِـ",
+     "page": 41,
+     "audio": "u2-ta-s05.mp3"
+    },
+    {
+     "value": "تِيْـ",
+     "page": 41,
+     "audio": "u2-ta-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 41,
+     "data": {
+      "letter": "ت",
+      "items": [
+       "تَمْرُ",
+       "تُفَّاحَةُ",
+       "تِمْسَاحُ",
+       "عَنْكَبُوْتُ",
+       "سِتْرَةُ",
+       "تَاجُ",
+       "تُوْتُ",
+       "تِيْنُ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 43,
+     "data": {
+      "shape": "ta"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "build",
+     "page": 41,
+     "data": {
+      "pieces": [
+       "تَمْـ",
+       "ـرُ",
+       "تِمْـ",
+       "ـسَا",
+       "حُ",
+       "تَا",
+       "جُ"
+      ],
+      "words": [
+       {
+        "word": "تَمْرُ",
+        "parts": [
+         "تَمْـ",
+         "ـرُ"
+        ],
+        "art": "dates"
+       },
+       {
+        "word": "تِمْسَاحُ",
+        "parts": [
+         "تِمْـ",
+         "ـسَا",
+         "حُ"
+        ],
+        "art": "crocodile"
+       },
+       {
+        "word": "تَاجُ",
+        "parts": [
+         "تَا",
+         "جُ"
+        ],
+        "art": "crown"
+       }
+      ]
+     },
+     "say": "رَكِّبِ الْكَلِمَةَ مِنْ مَقَاطِعِهَا",
+     "audio": "c-build.mp3"
+    },
+    {
+     "template": "read",
+     "page": 43,
+     "data": {
+      "sentences": [
+       {
+        "text": "فِي بُسْتَانِ فَاتِنَ تِيْنُ",
+        "audio": "u2-ta-r01.mp3"
+       },
+       {
+        "text": "فِي بُسْتَانِ مَامَا تُوْتُ",
+        "audio": "u2-ta-r02.mp3"
+       },
+       {
+        "text": "فِي بُسْتَانِ بَابَا تَـمْرُ",
+        "audio": "u2-ta-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "فِي بُسْتَانِ فَاتِنَ تِيْنُ",
+     "page": 43,
+     "audio": "u2-ta-r01.mp3"
+    },
+    {
+     "text": "فِي بُسْتَانِ مَامَا تُوْتُ",
+     "page": 43,
+     "audio": "u2-ta-r02.mp3"
+    },
+    {
+     "text": "فِي بُسْتَانِ بَابَا تَـمْرُ",
+     "page": 43,
+     "audio": "u2-ta-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ت",
+    "art": "dates",
+    "audio": "u2-ta-sticker.mp3"
+   }
+  },
+  {
+   "id": "u2-tam",
+   "book": "reading",
+   "unit": 2,
+   "unitTitle": "الوَحْدَةُ الثَّانِيَةُ: مَدْرَسَتِي",
+   "unitPage": 31,
+   "pages": [
+    44,
+    45,
+    46
+   ],
+   "title": "ة",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "مِبْرَاةُ",
+     "page": 44,
+     "art": "pencil_sharpener",
+     "audio": "u2-ra-w06.mp3"
+    },
+    {
+     "value": "مِـمْحَاةُ",
+     "page": 44,
+     "art": "eraser",
+     "audio": "u2-tam-w02.mp3"
+    },
+    {
+     "value": "مِسْطَرَةُ",
+     "page": 44,
+     "art": "ruler",
+     "audio": "u2-sin-w14.mp3"
+    },
+    {
+     "value": "حَقِيْبَةُ",
+     "page": 44,
+     "art": "schoolbag",
+     "audio": "u2-tam-w04.mp3"
+    },
+    {
+     "value": "مَدْرَسَةُ",
+     "page": 44,
+     "art": "school",
+     "audio": "u1-dal-w13.mp3"
+    },
+    {
+     "value": "تِلْمِيْذَةُ",
+     "page": 44,
+     "art": "schoolgirl",
+     "audio": "u2-tam-w06.mp3"
+    },
+    {
+     "value": "سَمَكَةُ",
+     "page": 45,
+     "art": "fish",
+     "audio": "u2-tam-w07.mp3"
+    },
+    {
+     "value": "بَنَاتُ",
+     "page": 45,
+     "art": "girls",
+     "audio": "u2-tam-w08.mp3"
+    },
+    {
+     "value": "دُمْيَةُ",
+     "page": 45,
+     "art": "doll",
+     "audio": "u0-madd-waw-w03.mp3"
+    },
+    {
+     "value": "تُوْتُ",
+     "page": 45,
+     "art": "berries",
+     "audio": "u0-madd-waw-w08.mp3"
+    },
+    {
+     "value": "سَفِيْنَـ",
+     "page": 45,
+     "art": "ship",
+     "audio": "u2-tam-w11.mp3"
+    },
+    {
+     "value": "وَرْدَ",
+     "page": 45,
+     "art": "rose",
+     "audio": "u2-tam-w12.mp3"
+    },
+    {
+     "value": "مِسْطَرَ",
+     "page": 45,
+     "art": "ruler",
+     "audio": "u2-tam-w13.mp3"
+    },
+    {
+     "value": "بُوْمَـ",
+     "page": 45,
+     "art": "owl",
+     "audio": "u2-tam-w14.mp3"
+    },
+    {
+     "value": "مَدْرَسَـ",
+     "page": 45,
+     "art": "school",
+     "audio": "u2-tam-w15.mp3"
+    },
+    {
+     "value": "سَارَةُ",
+     "page": 45,
+     "art": null,
+     "audio": "u2-tam-w16.mp3"
+    },
+    {
+     "value": "دِيْـمَةُ",
+     "page": 45,
+     "art": null,
+     "audio": "u2-tam-w17.mp3"
+    },
+    {
+     "value": "سَفِيْنَةُ",
+     "page": 46,
+     "art": null,
+     "audio": "u2-tam-w18.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "ةُ",
+     "page": 44,
+     "audio": "u2-tam-s01.mp3"
+    },
+    {
+     "value": "ـةُ",
+     "page": 44,
+     "audio": "u2-tam-s02.mp3"
+    },
+    {
+     "value": "ةَ",
+     "page": 44,
+     "audio": "u2-tam-s03.mp3"
+    },
+    {
+     "value": "ـةَ",
+     "page": 44,
+     "audio": "u2-tam-s04.mp3"
+    },
+    {
+     "value": "ةِ",
+     "page": 44,
+     "audio": "u2-tam-s05.mp3"
+    },
+    {
+     "value": "ـةِ",
+     "page": 44,
+     "audio": "u2-tam-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 44,
+     "data": {
+      "letter": "ة",
+      "items": [
+       "مِبْرَاةُ",
+       "مِـمْحَاةُ",
+       "مِسْطَرَةُ",
+       "حَقِيْبَةُ",
+       "مَدْرَسَةُ",
+       "تِلْمِيْذَةُ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 46,
+     "data": {
+      "shape": "tam"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "match",
+     "page": 44,
+     "data": {
+      "pairs": [
+       "مِبْرَاةُ",
+       "مِـمْحَاةُ",
+       "مِسْطَرَةُ",
+       "حَقِيْبَةُ"
+      ],
+      "per": 3
+     },
+     "say": "اِسْحَبِ الْكَلِمَةَ إِلَى صُورَتِهَا",
+     "audio": "c-match.mp3"
+    },
+    {
+     "template": "read",
+     "page": 46,
+     "data": {
+      "sentences": [
+       {
+        "text": "فِي مَدْرَسَةِ سَارَةَ",
+        "audio": "u2-tam-r01.mp3"
+       },
+       {
+        "text": "سَارَةُ تَرْسُمُ بَابَا",
+        "audio": "u2-tam-r02.mp3"
+       },
+       {
+        "text": "مَرْوَةُ تَرْسُمُ مَامَا",
+        "audio": "u2-tam-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "فِي مَدْرَسَةِ سَارَةَ",
+     "page": 46,
+     "audio": "u2-tam-r01.mp3"
+    },
+    {
+     "text": "سَارَةُ تَرْسُمُ بَابَا",
+     "page": 46,
+     "audio": "u2-tam-r02.mp3"
+    },
+    {
+     "text": "مَرْوَةُ تَرْسُمُ مَامَا",
+     "page": 46,
+     "audio": "u2-tam-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ة",
+    "art": "pencil_sharpener",
+    "audio": "u2-tam-sticker.mp3"
+   }
+  },
+  {
+   "id": "u2-tanween",
+   "book": "reading",
+   "unit": 2,
+   "unitTitle": "الوَحْدَةُ الثَّانِيَةُ: مَدْرَسَتِي",
+   "unitPage": 31,
+   "pages": [
+    47,
+    48
+   ],
+   "title": "ـٌ",
+   "kind": "tanween",
+   "items": [
+    {
+     "value": "قِرْدٌ",
+     "page": 47,
+     "art": "monkey",
+     "audio": "u2-tanween-w01.mp3"
+    },
+    {
+     "value": "كِتَابٌ",
+     "page": 47,
+     "art": "book",
+     "audio": "u2-tanween-w02.mp3"
+    },
+    {
+     "value": "لَـحْمٌ",
+     "page": 47,
+     "art": "meat",
+     "audio": "u2-tanween-w03.mp3"
+    },
+    {
+     "value": "حَقِيْبَةٌ",
+     "page": 47,
+     "art": "bag",
+     "audio": "u2-tanween-w04.mp3"
+    },
+    {
+     "value": "بَابٌ",
+     "page": 47,
+     "art": "bab",
+     "audio": "u2-tanween-w05.mp3"
+    },
+    {
+     "value": "سَفِيْنَةٌ",
+     "page": 47,
+     "art": null,
+     "audio": "u2-tanween-w06.mp3"
+    },
+    {
+     "value": "مِسْمَارٌ",
+     "page": 47,
+     "art": "nail",
+     "audio": "u2-tanween-w07.mp3"
+    },
+    {
+     "value": "فَارِسٌ",
+     "page": 47,
+     "art": null,
+     "audio": "u2-tanween-w08.mp3"
+    },
+    {
+     "value": "مَدْرَسَةٌ",
+     "page": 47,
+     "art": "school",
+     "audio": "u2-tanween-w09.mp3"
+    },
+    {
+     "value": "سُوْرٌ",
+     "page": 47,
+     "art": null,
+     "audio": "u2-tanween-w10.mp3"
+    },
+    {
+     "value": "سِرْبٌ",
+     "page": 47,
+     "art": null,
+     "audio": "u2-tanween-w11.mp3"
+    }
+   ],
+   "syllables": [],
+   "games": [
+    {
+     "template": "listen",
+     "page": 47,
+     "data": {
+      "letter": "ـٌ",
+      "items": [
+       "قِرْدٌ",
+       "كِتَابٌ",
+       "لَـحْمٌ",
+       "حَقِيْبَةٌ",
+       "بَابٌ",
+       "مِسْمَارٌ",
+       "مَدْرَسَةٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "balloons",
+     "page": 47,
+     "data": {
+      "choices": [
+       "قِرْدٌ",
+       "كِتَابٌ",
+       "لَـحْمٌ",
+       "حَقِيْبَةٌ",
+       "بَابٌ",
+       "سَفِيْنَةٌ"
+      ],
+      "targets": [
+       "قِرْدٌ",
+       "كِتَابٌ",
+       "لَـحْمٌ",
+       "حَقِيْبَةٌ"
+      ],
+      "per": 3
+     },
+     "say": "فَرْقِعِ الْبَالُونَ الَّذِي تَسْمَعُهُ",
+     "audio": "c-balloons.mp3"
+    },
+    {
+     "template": "match",
+     "page": 47,
+     "data": {
+      "pairs": [
+       "قِرْدٌ",
+       "كِتَابٌ",
+       "لَـحْمٌ",
+       "حَقِيْبَةٌ"
+      ],
+      "per": 3
+     },
+     "say": "اِسْحَبِ الْكَلِمَةَ إِلَى صُورَتِهَا",
+     "audio": "c-match.mp3"
+    },
+    {
+     "template": "read",
+     "page": 48,
+     "data": {
+      "sentences": [
+       {
+        "text": "يَدْرُسُ فَارِسٌ فِي مَدْرَسَتِي",
+        "audio": "u2-tanween-r01.mp3"
+       },
+       {
+        "text": "فِي مَدْرَسَـــتِي دُرُوْسٌ",
+        "audio": "u2-tanween-r02.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "يَدْرُسُ فَارِسٌ فِي مَدْرَسَتِي",
+     "page": 48,
+     "audio": "u2-tanween-r01.mp3"
+    },
+    {
+     "text": "فِي مَدْرَسَـــتِي دُرُوْسٌ",
+     "page": 48,
+     "audio": "u2-tanween-r02.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ الضَّمِّ",
+    "art": "monkey",
+    "audio": "u2-tanween-sticker.mp3"
+   }
+  },
+  {
+   "id": "u2-nashid",
+   "book": "reading",
+   "unit": 2,
+   "unitTitle": "الوَحْدَةُ الثَّانِيَةُ: مَدْرَسَتِي",
+   "unitPage": 31,
+   "pages": [
+    48
+   ],
+   "title": "♪",
+   "kind": "nashid",
+   "items": [],
+   "syllables": [],
+   "games": [],
+   "nashid": {
+    "title": "مَدْرَسَتِي",
+    "poet": "",
+    "page": 48,
+    "audio": "u2-nashid.mp3"
    },
-   "speak": {
-    "أَحْسَنْتَ!": "c-praise1.mp3",
-    "رَائِعٌ!": "c-praise2.mp3",
-    "مُمْتَازٌ!": "c-praise3.mp3",
-    "حَاوِلْ مَرَّةً أُخْرَى": "c-encourage1.mp3",
-    "هَيَّا مَرَّةً أُخْرَى": "c-encourage2.mp3",
-    "نَجْمَةٌ جَدِيدَةٌ!": "c-star1.mp3",
-    "مُلْصَقٌ جَدِيدٌ لِدَفْتَرِكَ!": "c-sticker1.mp3",
-    "هَيَّا نَلْعَبُ وَنَتَعَلَّمُ!": "c-welcome1.mp3",
-    "اِخْتَرْ دَرْسًا مِنَ الطَّرِيقِ": "c-map1.mp3",
-    "قِرَاءَتِي الْجَدِيدَةُ": "c-booktitle.mp3",
-    "الْوَحْدَةُ الْأُولَى: أُسْرَتِي": "u1-ba-unit.mp3",
-    "أَتَعَرَّفُ الْحَرْفَ": "u1-ba-n1.mp3",
-    "بَقَرَةُ": "u1-ba-w01.mp3",
-    "بُرْتُقَالُ": "u1-ba-w02.mp3",
-    "بِسَاطُ": "u1-ba-w03.mp3",
-    "حَلِيْبُ": "u1-ba-w04.mp3",
-    "خُبْزُ": "u1-ba-w05.mp3",
-    "بَابُ": "u1-ba-w06.mp3",
-    "بُوْقُ": "u1-ba-w07.mp3",
-    "طَبِيْبُ": "u1-ba-w08.mp3",
-    "بَصَلُ": "u1-ba-w09.mp3",
-    "بِطِّيْخُ": "u1-ba-w10.mp3",
-    "بَـ": "u1-ba-s01.mp3",
-    "بَا": "u1-ba-s02.mp3",
-    "بُـ": "u1-ba-s03.mp3",
-    "بُوْ": "u1-ba-s04.mp3",
-    "بِـ": "u1-ba-s05.mp3",
-    "بِيْـ": "u1-ba-s06.mp3",
-    "بُ": "u1-ba-s07.mp3",
-    "بِي": "u1-ba-s08.mp3",
-    "بَابَا": "u1-ba-s10.mp3",
-    "بَابِي": "u1-ba-s11.mp3",
-    "ب": "u1-ba-s12.mp3",
-    "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ": "u1-ba-g1.mp3",
-    "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ": "u1-ba-g2.mp3",
-    "فَرْقِعِ الْبَالُونَ الَّذِي تَسْمَعُهُ": "u1-ba-g3.mp3",
-    "اِسْحَبِ الْكَلِمَةَ إِلَى صُورَتِهَا": "u1-ba-g4.mp3",
-    "رَكِّبِ الْكَلِمَةَ مِنْ مَقَاطِعِهَا": "u1-ba-g5.mp3",
-    "مُلْصَقُ الْبَابِ": "u1-ba-sticker.mp3"
+   "scene": {
+    "items": [
+     {
+      "art": "school",
+      "x": 10,
+      "y": 50,
+      "w": 150
+     },
+     {
+      "art": "blackboard",
+      "x": 170,
+      "y": 70,
+      "w": 100
+     },
+     {
+      "art": "schoolgirl",
+      "x": 270,
+      "y": 90,
+      "w": 90
+     },
+     {
+      "art": "schoolbag",
+      "x": 320,
+      "y": 170,
+      "w": 60
+     },
+     {
+      "art": "pencil",
+      "x": 180,
+      "y": 180,
+      "w": 60
+     },
+     {
+      "art": "clock",
+      "x": 300,
+      "y": 10,
+      "w": 50
+     }
+    ],
+    "bg": {}
+   }
+  },
+  {
+   "id": "u3-open",
+   "book": "reading",
+   "unit": 3,
+   "unitTitle": "الوَحْدَةُ الثَّالِثَةُ : وَطَنِي",
+   "unitPage": 49,
+   "pages": [
+    49
+   ],
+   "title": "★",
+   "kind": "open",
+   "items": [],
+   "syllables": [],
+   "games": [
+    {
+     "template": "scene",
+     "page": 49,
+     "data": {
+      "scene": {
+       "items": [
+        {
+         "art": "iraqi_flag",
+         "x": 20,
+         "y": 40,
+         "w": 110
+        },
+        {
+         "art": "palm_trees",
+         "x": 120,
+         "y": 60,
+         "w": 120
+        },
+        {
+         "art": "mosque",
+         "x": 230,
+         "y": 60,
+         "w": 110
+        },
+        {
+         "art": "bridge",
+         "x": 40,
+         "y": 160,
+         "w": 120
+        },
+        {
+         "art": "boat",
+         "x": 260,
+         "y": 175,
+         "w": 80
+        },
+        {
+         "art": "birds",
+         "x": 160,
+         "y": 5,
+         "w": 70
+        }
+       ],
+       "bg": {}
+      },
+      "prompts": [
+       {
+        "text": "صورة ١: احتفال في الصفّ، على السبّورة «العيد الوطني» (بلا تشكيل)، بالونات وزهور، وصور على الجدار (جبل، بوّابة عشتار، شلّال، سفينة/مشحوف)، وتلاميذ يلوّحون",
+        "page": 49,
+        "audio": "u3-open-q01.mp3"
+       },
+       {
+        "text": "أَصِفُ مَا أَرَاهُ فِي كُلِّ صُوْرَة",
+        "page": 49,
+        "audio": "u3-open-q02.mp3"
+       },
+       {
+        "text": "مَا اسْمُ اَلـمَنْطِقَةِ الَّتِي تَسْكُنُهَا؟ وَمَا الَّذي يُـمَيِّزُهَا؟",
+        "page": 49,
+        "audio": "u3-open-q03.mp3"
+       },
+       {
+        "text": "مَا وَاجِبُنَا تِجَاهَ وَطَنِنَا العِرَاقِ؟",
+        "page": 49,
+        "audio": "u3-open-q04.mp3"
+       },
+       {
+        "text": "أُكَوِّنُ قِصَّةً قَصِيْرَةً مِنَ الصُّوَرِ الثَّلَاثِ",
+        "page": 49,
+        "audio": "u3-open-q05.mp3"
+       }
+      ]
+     },
+     "say": "اِلْمَسِ الصُّورَةَ وَتَحَدَّثْ",
+     "audio": "c-scene.mp3"
+    },
+    {
+     "template": "puzzle",
+     "page": 49,
+     "data": {
+      "scene": {
+       "items": [
+        {
+         "art": "iraqi_flag",
+         "x": 20,
+         "y": 40,
+         "w": 110
+        },
+        {
+         "art": "palm_trees",
+         "x": 120,
+         "y": 60,
+         "w": 120
+        },
+        {
+         "art": "mosque",
+         "x": 230,
+         "y": 60,
+         "w": 110
+        },
+        {
+         "art": "bridge",
+         "x": 40,
+         "y": 160,
+         "w": 120
+        },
+        {
+         "art": "boat",
+         "x": 260,
+         "y": 175,
+         "w": 80
+        },
+        {
+         "art": "birds",
+         "x": 160,
+         "y": 5,
+         "w": 70
+        }
+       ],
+       "bg": {}
+      },
+      "pieces": 4
+     },
+     "say": "رَكِّبِ الصُّورَةَ",
+     "audio": "c-puzzle.mp3"
+    }
+   ],
+   "prompts": [
+    {
+     "text": "صورة ١: احتفال في الصفّ، على السبّورة «العيد الوطني» (بلا تشكيل)، بالونات وزهور، وصور على الجدار (جبل، بوّابة عشتار، شلّال، سفينة/مشحوف)، وتلاميذ يلوّحون",
+     "page": 49,
+     "audio": "u3-open-q01.mp3"
+    },
+    {
+     "text": "أَصِفُ مَا أَرَاهُ فِي كُلِّ صُوْرَة",
+     "page": 49,
+     "audio": "u3-open-q02.mp3"
+    },
+    {
+     "text": "مَا اسْمُ اَلـمَنْطِقَةِ الَّتِي تَسْكُنُهَا؟ وَمَا الَّذي يُـمَيِّزُهَا؟",
+     "page": 49,
+     "audio": "u3-open-q03.mp3"
+    },
+    {
+     "text": "مَا وَاجِبُنَا تِجَاهَ وَطَنِنَا العِرَاقِ؟",
+     "page": 49,
+     "audio": "u3-open-q04.mp3"
+    },
+    {
+     "text": "أُكَوِّنُ قِصَّةً قَصِيْرَةً مِنَ الصُّوَرِ الثَّلَاثِ",
+     "page": 49,
+     "audio": "u3-open-q05.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ وَطَنِي",
+    "art": "iraqi_flag",
+    "audio": "u3-open-sticker.mp3"
+   }
+  },
+  {
+   "id": "u3-waw",
+   "book": "reading",
+   "unit": 3,
+   "unitTitle": "الوَحْدَةُ الثَّالِثَةُ : وَطَنِي",
+   "unitPage": 49,
+   "pages": [
+    50,
+    51,
+    52
+   ],
+   "title": "و",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "وَرْدَةٌ",
+     "page": 50,
+     "art": "rose",
+     "audio": "u3-waw-w01.mp3"
+    },
+    {
+     "value": "وُجُوْهٌ",
+     "page": 50,
+     "art": "faces",
+     "audio": "u3-waw-w02.mp3"
+    },
+    {
+     "value": "وِسَادَةٌ",
+     "page": 50,
+     "art": "pillow",
+     "audio": "u3-waw-w03.mp3"
+    },
+    {
+     "value": "دَلْوٌ",
+     "page": 50,
+     "art": "bucket",
+     "audio": "u3-waw-w04.mp3"
+    },
+    {
+     "value": "مَوْزٌ",
+     "page": 50,
+     "art": "bananas",
+     "audio": "u3-waw-w05.mp3"
+    },
+    {
+     "value": "فَوَاكِهُ",
+     "page": 50,
+     "art": "fruit_basket",
+     "audio": "u3-waw-w06.mp3"
+    },
+    {
+     "value": "طَاوُوْسٌ",
+     "page": 50,
+     "art": "peacock",
+     "audio": "u3-waw-w07.mp3"
+    },
+    {
+     "value": "تَلْوِيْنٌ",
+     "page": 50,
+     "art": "painting",
+     "audio": "u3-waw-w08.mp3"
+    },
+    {
+     "value": "وَجْهٌ",
+     "page": 51,
+     "art": "face",
+     "audio": "u3-waw-w09.mp3"
+    },
+    {
+     "value": "وُرُوْدٌ",
+     "page": 51,
+     "art": "flowers",
+     "audio": "u3-waw-w10.mp3"
+    },
+    {
+     "value": "وِعَاءٌ",
+     "page": 51,
+     "art": "plate",
+     "audio": "u3-waw-w11.mp3"
+    },
+    {
+     "value": "دَوَاءٌ",
+     "page": 51,
+     "art": "medicine",
+     "audio": "u3-waw-w12.mp3"
+    },
+    {
+     "value": "قَوْسٌ",
+     "page": 51,
+     "art": "bow_arrow",
+     "audio": "u3-waw-w13.mp3"
+    },
+    {
+     "value": "خَوْخٌ",
+     "page": 51,
+     "art": "peach",
+     "audio": "u3-waw-w14.mp3"
+    },
+    {
+     "value": "نَوْرَسُ",
+     "page": 51,
+     "art": null,
+     "audio": "u3-waw-w15.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "وَ",
+     "page": 50,
+     "audio": "u3-waw-s01.mp3"
+    },
+    {
+     "value": "وَا",
+     "page": 50,
+     "audio": "u3-waw-s02.mp3"
+    },
+    {
+     "value": "وُ",
+     "page": 50,
+     "audio": "u3-waw-s03.mp3"
+    },
+    {
+     "value": "وُوْ",
+     "page": 50,
+     "audio": "u3-waw-s04.mp3"
+    },
+    {
+     "value": "وِ",
+     "page": 50,
+     "audio": "u3-waw-s05.mp3"
+    },
+    {
+     "value": "وِيْـ",
+     "page": 50,
+     "audio": "u3-waw-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 50,
+     "data": {
+      "letter": "و",
+      "items": [
+       "وَرْدَةٌ",
+       "وُجُوْهٌ",
+       "وِسَادَةٌ",
+       "دَلْوٌ",
+       "مَوْزٌ",
+       "فَوَاكِهُ",
+       "طَاوُوْسٌ",
+       "تَلْوِيْنٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 52,
+     "data": {
+      "shape": "waw"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "memory",
+     "page": 50,
+     "data": {
+      "pairs": [
+       {
+        "text": "وَرْدَةٌ",
+        "art": "rose"
+       },
+       {
+        "text": "وُجُوْهٌ",
+        "art": "faces"
+       },
+       {
+        "text": "وِسَادَةٌ",
+        "art": "pillow"
+       },
+       {
+        "text": "دَلْوٌ",
+        "art": "bucket"
+       }
+      ]
+     },
+     "say": "اِقْلِبْ بِطَاقَتَيْنِ مُتَشَابِهَتَيْنِ",
+     "audio": "c-memory.mp3"
+    },
+    {
+     "template": "read",
+     "page": 52,
+     "data": {
+      "sentences": [
+       {
+        "text": "سَافَرَ وِسَامٌ وَنَوْرَسُ",
+        "audio": "u3-waw-r01.mp3"
+       },
+       {
+        "text": "فِي دَرْبِ وِسَام وَنَوْرَس دَارُ فَادِي",
+        "audio": "u3-waw-r02.mp3"
+       },
+       {
+        "text": "فِي دَارِ فَادِي وَرْدٌ",
+        "audio": "u3-waw-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "سَافَرَ وِسَامٌ وَنَوْرَسُ",
+     "page": 52,
+     "audio": "u3-waw-r01.mp3"
+    },
+    {
+     "text": "فِي دَرْبِ وِسَام وَنَوْرَس دَارُ فَادِي",
+     "page": 52,
+     "audio": "u3-waw-r02.mp3"
+    },
+    {
+     "text": "فِي دَارِ فَادِي وَرْدٌ",
+     "page": 52,
+     "audio": "u3-waw-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ و",
+    "art": "rose",
+    "audio": "u3-waw-sticker.mp3"
+   }
+  },
+  {
+   "id": "u3-ya",
+   "book": "reading",
+   "unit": 3,
+   "unitTitle": "الوَحْدَةُ الثَّالِثَةُ : وَطَنِي",
+   "unitPage": 49,
+   "pages": [
+    53,
+    54,
+    55
+   ],
+   "title": "ي",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "يَقْطِيْـنٌ",
+     "page": 53,
+     "art": "pumpkin",
+     "audio": "u3-ya-w01.mp3"
+    },
+    {
+     "value": "يُصَلِّي",
+     "page": 53,
+     "art": "boy_praying",
+     "audio": "u3-ya-w02.mp3"
+    },
+    {
+     "value": "يَدٌ",
+     "page": 53,
+     "art": "hand",
+     "audio": "u3-ya-w03.mp3"
+    },
+    {
+     "value": "شَايٌ",
+     "page": 53,
+     "art": "tea",
+     "audio": "u3-ya-w04.mp3"
+    },
+    {
+     "value": "لَيْمُوْنٌ",
+     "page": 53,
+     "art": "lemons",
+     "audio": "u3-ya-w05.mp3"
+    },
+    {
+     "value": "خِيَارٌ",
+     "page": 53,
+     "art": "cucumber",
+     "audio": "u3-ya-w06.mp3"
+    },
+    {
+     "value": "طُيُوْرٌ",
+     "page": 53,
+     "art": "birds",
+     "audio": "u3-ya-w07.mp3"
+    },
+    {
+     "value": "مَلايِيْـنُ",
+     "page": 53,
+     "art": "money",
+     "audio": "u3-ya-w08.mp3"
+    },
+    {
+     "value": "يُصَفِّقُ",
+     "page": 54,
+     "art": "clapping",
+     "audio": "u3-ya-w09.mp3"
+    },
+    {
+     "value": "مَصَايِفُ",
+     "page": 54,
+     "art": "waterfall",
+     "audio": "u3-ya-w10.mp3"
+    },
+    {
+     "value": "يَاسَمِيْـنُ",
+     "page": 54,
+     "art": "jasmine",
+     "audio": "u3-ya-w11.mp3"
+    },
+    {
+     "value": "بَيْضٌ",
+     "page": 54,
+     "art": "eggs",
+     "audio": "u3-ya-w12.mp3"
+    },
+    {
+     "value": "هَيْلٌ",
+     "page": 54,
+     "art": "cardamom",
+     "audio": "u3-ya-w13.mp3"
+    },
+    {
+     "value": "زَيْتٌ",
+     "page": 54,
+     "art": "oil",
+     "audio": "u3-ya-w14.mp3"
+    },
+    {
+     "value": "يُوْسُفُ",
+     "page": 54,
+     "art": null,
+     "audio": "u3-ya-w15.mp3"
+    },
+    {
+     "value": "بُيُوْتٌ",
+     "page": 54,
+     "art": null,
+     "audio": "u3-ya-w16.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "يَـ",
+     "page": 53,
+     "audio": "u3-ya-s01.mp3"
+    },
+    {
+     "value": "يَا",
+     "page": 53,
+     "audio": "u3-ya-s02.mp3"
+    },
+    {
+     "value": "يُـ",
+     "page": 53,
+     "audio": "u3-ya-s03.mp3"
+    },
+    {
+     "value": "يُوْ",
+     "page": 53,
+     "audio": "u3-ya-s04.mp3"
+    },
+    {
+     "value": "يِـ",
+     "page": 53,
+     "audio": "u3-ya-s05.mp3"
+    },
+    {
+     "value": "يِيْـ",
+     "page": 53,
+     "audio": "u3-ya-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 53,
+     "data": {
+      "letter": "ي",
+      "items": [
+       "يَقْطِيْـنٌ",
+       "يُصَلِّي",
+       "يَدٌ",
+       "شَايٌ",
+       "لَيْمُوْنٌ",
+       "خِيَارٌ",
+       "طُيُوْرٌ",
+       "مَلايِيْـنُ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 55,
+     "data": {
+      "shape": "ya"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "train",
+     "page": 53,
+     "data": {
+      "rounds": [
+       {
+        "say": "يَقْطِيْـنٌ",
+        "options": [
+         {
+          "text": "هَيْلٌ"
+         },
+         {
+          "text": "بَيْضٌ"
+         },
+         {
+          "text": "يَقْطِيْـنٌ"
+         }
+        ],
+        "answer": 2
+       },
+       {
+        "say": "يُصَلِّي",
+        "options": [
+         {
+          "text": "يُصَلِّي"
+         },
+         {
+          "text": "يَاسَمِيْـنُ"
+         },
+         {
+          "text": "بَيْضٌ"
+         }
+        ],
+        "answer": 0
+       },
+       {
+        "say": "شَايٌ",
+        "options": [
+         {
+          "text": "شَايٌ"
+         },
+         {
+          "text": "يُصَفِّقُ"
+         },
+         {
+          "text": "خِيَارٌ"
+         }
+        ],
+        "answer": 0
+       },
+       {
+        "say": "لَيْمُوْنٌ",
+        "options": [
+         {
+          "text": "لَيْمُوْنٌ"
+         },
+         {
+          "text": "يَاسَمِيْـنُ"
+         },
+         {
+          "text": "يَقْطِيْـنٌ"
+         }
+        ],
+        "answer": 0
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاخْتَرِ الْكَلِمَةَ",
+     "audio": "c-train.mp3"
+    },
+    {
+     "template": "read",
+     "page": 55,
+     "data": {
+      "sentences": [
+       {
+        "text": "يَبْنِي يُوْسُفُ بَيْتَ مَرْيَـمَ",
+        "audio": "u3-ya-r01.mp3"
+       },
+       {
+        "text": "بَيْتُ مَرْيَـمَ فِي مَدِيْنَتِي",
+        "audio": "u3-ya-r02.mp3"
+       },
+       {
+        "text": "فِي مَدِيْنَتِي بُيُوْتٌ وَمَدْرَسَةٌ",
+        "audio": "u3-ya-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "يَبْنِي يُوْسُفُ بَيْتَ مَرْيَـمَ",
+     "page": 55,
+     "audio": "u3-ya-r01.mp3"
+    },
+    {
+     "text": "بَيْتُ مَرْيَـمَ فِي مَدِيْنَتِي",
+     "page": 55,
+     "audio": "u3-ya-r02.mp3"
+    },
+    {
+     "text": "فِي مَدِيْنَتِي بُيُوْتٌ وَمَدْرَسَةٌ",
+     "page": 55,
+     "audio": "u3-ya-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ي",
+    "art": "pumpkin",
+    "audio": "u3-ya-sticker.mp3"
+   }
+  },
+  {
+   "id": "u3-qaf",
+   "book": "reading",
+   "unit": 3,
+   "unitTitle": "الوَحْدَةُ الثَّالِثَةُ : وَطَنِي",
+   "unitPage": 49,
+   "pages": [
+    56,
+    57,
+    58
+   ],
+   "title": "ق",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "قَلَمٌ",
+     "page": 56,
+     "art": "pencil",
+     "audio": "u3-qaf-w01.mp3"
+    },
+    {
+     "value": "قُبَّعَةٌ",
+     "page": 56,
+     "art": "cap",
+     "audio": "u3-qaf-w02.mp3"
+    },
+    {
+     "value": "قِرْشٌ",
+     "page": 56,
+     "art": "shark",
+     "audio": "u3-qaf-w03.mp3"
+    },
+    {
+     "value": "بِطْرِيْقٌ",
+     "page": 56,
+     "art": "penguin",
+     "audio": "u3-qaf-w04.mp3"
+    },
+    {
+     "value": "صَقْرٌ",
+     "page": 56,
+     "art": "eagle",
+     "audio": "u3-qaf-w05.mp3"
+    },
+    {
+     "value": "قَارِبٌ",
+     "page": 56,
+     "art": "boat",
+     "audio": "u3-qaf-w06.mp3"
+    },
+    {
+     "value": "نُقُوْدٌ",
+     "page": 56,
+     "art": "money",
+     "audio": "u3-qaf-w07.mp3"
+    },
+    {
+     "value": "دَقِيْقٌ",
+     "page": 56,
+     "art": "flour_sack",
+     "audio": "u3-qaf-w08.mp3"
+    },
+    {
+     "value": "قُنْفُذٌ",
+     "page": 57,
+     "art": "hedgehog",
+     "audio": "u3-qaf-w09.mp3"
+    },
+    {
+     "value": "قِصَّةٌ",
+     "page": 57,
+     "art": "story_reading",
+     "audio": "u3-qaf-w10.mp3"
+    },
+    {
+     "value": "بُرْتُقَالٌ",
+     "page": 57,
+     "art": "burtuqal",
+     "audio": "u3-qaf-w11.mp3"
+    },
+    {
+     "value": "حَقِيْبَةٌ",
+     "page": 57,
+     "art": "bag",
+     "audio": "u2-tanween-w04.mp3"
+    },
+    {
+     "value": "حَقْلٌ",
+     "page": 57,
+     "art": "field",
+     "audio": "u3-qaf-w13.mp3"
+    },
+    {
+     "value": "عَقْرَبٌ",
+     "page": 57,
+     "art": "scorpion",
+     "audio": "u3-qaf-w14.mp3"
+    },
+    {
+     "value": "سُوْقٌ",
+     "page": 57,
+     "art": "market",
+     "audio": "u3-qaf-w15.mp3"
+    },
+    {
+     "value": "قَرْيَةٌ",
+     "page": 57,
+     "art": null,
+     "audio": "u3-qaf-w16.mp3"
+    },
+    {
+     "value": "مِنْقَارٌ",
+     "page": 57,
+     "art": null,
+     "audio": "u3-qaf-w17.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "قَـ",
+     "page": 56,
+     "audio": "u3-qaf-s01.mp3"
+    },
+    {
+     "value": "قَا",
+     "page": 56,
+     "audio": "u3-qaf-s02.mp3"
+    },
+    {
+     "value": "قُـ",
+     "page": 56,
+     "audio": "u3-qaf-s03.mp3"
+    },
+    {
+     "value": "قُوْ",
+     "page": 56,
+     "audio": "u3-qaf-s04.mp3"
+    },
+    {
+     "value": "قِـ",
+     "page": 56,
+     "audio": "u3-qaf-s05.mp3"
+    },
+    {
+     "value": "قِيْـ",
+     "page": 56,
+     "audio": "u3-qaf-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 56,
+     "data": {
+      "letter": "ق",
+      "items": [
+       "قَلَمٌ",
+       "قُبَّعَةٌ",
+       "قِرْشٌ",
+       "بِطْرِيْقٌ",
+       "صَقْرٌ",
+       "قَارِبٌ",
+       "نُقُوْدٌ",
+       "دَقِيْقٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 58,
+     "data": {
+      "shape": "qaf"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "complete",
+     "page": 57,
+     "data": {
+      "rounds": [
+       {
+        "word": "قَلَمٌ",
+        "start": 0,
+        "end": 2,
+        "options": [
+         "نَ",
+         "يَ",
+         "قَ"
+        ],
+        "answer": 2,
+        "art": "pencil"
+       },
+       {
+        "word": "قُبَّعَةٌ",
+        "start": 0,
+        "end": 2,
+        "options": [
+         "نُ",
+         "قُ",
+         "يُ"
+        ],
+        "answer": 1,
+        "art": "cap"
+       },
+       {
+        "word": "قِرْشٌ",
+        "start": 0,
+        "end": 2,
+        "options": [
+         "سِ",
+         "قِ",
+         "ةِ"
+        ],
+        "answer": 1,
+        "art": "shark"
+       },
+       {
+        "word": "بِطْرِيْقٌ",
+        "start": 8,
+        "end": 10,
+        "options": [
+         "تٌ",
+         "يٌ",
+         "قٌ"
+        ],
+        "answer": 2,
+        "art": "penguin"
+       }
+      ]
+     },
+     "say": "ضَعِ الْحَرْفَ النَّاقِصَ",
+     "audio": "c-complete.mp3"
+    },
+    {
+     "template": "read",
+     "page": 58,
+     "data": {
+      "sentences": [
+       {
+        "text": "يَسِيْرُ وِسَامٌ فِي مَدِيْنَةِ رَوَانَ",
+        "audio": "u3-qaf-r01.mp3"
+       },
+       {
+        "text": "فِي مَدِيْنَةِ رَوَان بُيُوْتٌ وَمَدْرَسَةٌ",
+        "audio": "u3-qaf-r02.mp3"
+       },
+       {
+        "text": "قُرْبَ مَدِيْنَةِ رَوَان قَرْيَةٌ وَسُوْقٌ قَدِيْـمٌ",
+        "audio": "u3-qaf-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "يَسِيْرُ وِسَامٌ فِي مَدِيْنَةِ رَوَانَ",
+     "page": 58,
+     "audio": "u3-qaf-r01.mp3"
+    },
+    {
+     "text": "فِي مَدِيْنَةِ رَوَان بُيُوْتٌ وَمَدْرَسَةٌ",
+     "page": 58,
+     "audio": "u3-qaf-r02.mp3"
+    },
+    {
+     "text": "قُرْبَ مَدِيْنَةِ رَوَان قَرْيَةٌ وَسُوْقٌ قَدِيْـمٌ",
+     "page": 58,
+     "audio": "u3-qaf-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ق",
+    "art": "pencil",
+    "audio": "u3-qaf-sticker.mp3"
+   }
+  },
+  {
+   "id": "u3-lam",
+   "book": "reading",
+   "unit": 3,
+   "unitTitle": "الوَحْدَةُ الثَّالِثَةُ : وَطَنِي",
+   "unitPage": 49,
+   "pages": [
+    59,
+    60,
+    61
+   ],
+   "title": "ل",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "لَـحْمٌ",
+     "page": 59,
+     "art": "meat",
+     "audio": "u2-tanween-w03.mp3"
+    },
+    {
+     "value": "لُعْبَةٌ",
+     "page": 59,
+     "art": "rocking_horse",
+     "audio": "u3-lam-w02.mp3"
+    },
+    {
+     "value": "لِسَانٌ",
+     "page": 59,
+     "art": "tongue",
+     "audio": "u3-lam-w03.mp3"
+    },
+    {
+     "value": "غَزَالٌ",
+     "page": 59,
+     "art": "deer",
+     "audio": "u3-lam-w04.mp3"
+    },
+    {
+     "value": "كَلْبٌ",
+     "page": 59,
+     "art": "dog",
+     "audio": "u3-lam-w05.mp3"
+    },
+    {
+     "value": "لَاْعِبٌ",
+     "page": 59,
+     "art": "football_player",
+     "audio": "u3-lam-w06.mp3"
+    },
+    {
+     "value": "قُلُوْبٌ",
+     "page": 59,
+     "art": "hearts",
+     "audio": "u3-lam-w07.mp3"
+    },
+    {
+     "value": "حَليْبٌ",
+     "page": 59,
+     "art": "halib",
+     "audio": "u3-lam-w08.mp3"
+    },
+    {
+     "value": "ثَلَاثَةٌ",
+     "page": 60,
+     "art": "number_three",
+     "audio": "u3-lam-w09.mp3"
+    },
+    {
+     "value": "بَالُوْنٌ",
+     "page": 60,
+     "art": "balloon",
+     "audio": "u3-lam-w10.mp3"
+    },
+    {
+     "value": "حَلِيْبٌ",
+     "page": 60,
+     "art": "milk_bottle",
+     "audio": "u3-lam-w11.mp3"
+    },
+    {
+     "value": "مَلْعَبٌ",
+     "page": 60,
+     "art": "stadium",
+     "audio": "u3-lam-w12.mp3"
+    },
+    {
+     "value": "دَلْوٌ",
+     "page": 60,
+     "art": "bucket",
+     "audio": "u3-waw-w04.mp3"
+    },
+    {
+     "value": "فُلْفُلٌ",
+     "page": 60,
+     "art": "peppers",
+     "audio": "u3-lam-w14.mp3"
+    },
+    {
+     "value": "رَمْلٌ",
+     "page": 60,
+     "art": "sand",
+     "audio": "u3-lam-w15.mp3"
+    },
+    {
+     "value": "قَالَتْ",
+     "page": 60,
+     "art": null,
+     "audio": "u3-lam-w16.mp3"
+    },
+    {
+     "value": "نَـمْلَةٌ",
+     "page": 60,
+     "art": null,
+     "audio": "u3-lam-w17.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "لَـ",
+     "page": 59,
+     "audio": "u3-lam-s01.mp3"
+    },
+    {
+     "value": "لَا",
+     "page": 59,
+     "audio": "u3-lam-s02.mp3"
+    },
+    {
+     "value": "لُـ",
+     "page": 59,
+     "audio": "u3-lam-s03.mp3"
+    },
+    {
+     "value": "لُوْ",
+     "page": 59,
+     "audio": "u3-lam-s04.mp3"
+    },
+    {
+     "value": "لِـ",
+     "page": 59,
+     "audio": "u3-lam-s05.mp3"
+    },
+    {
+     "value": "لِيْـ",
+     "page": 59,
+     "audio": "u3-lam-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 59,
+     "data": {
+      "letter": "ل",
+      "items": [
+       "لَـحْمٌ",
+       "لُعْبَةٌ",
+       "لِسَانٌ",
+       "غَزَالٌ",
+       "كَلْبٌ",
+       "لَاْعِبٌ",
+       "قُلُوْبٌ",
+       "حَليْبٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 61,
+     "data": {
+      "shape": "lam"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "balloons",
+     "page": 59,
+     "data": {
+      "choices": [
+       "لَـ",
+       "لَا",
+       "لُـ",
+       "لُوْ",
+       "لِـ",
+       "لِيْـ"
+      ],
+      "targets": [
+       "لَـ",
+       "لُوْ",
+       "لِـ",
+       "لَا"
+      ],
+      "per": 3
+     },
+     "say": "فَرْقِعِ الْبَالُونَ الَّذِي تَسْمَعُهُ",
+     "audio": "c-balloons.mp3"
+    },
+    {
+     "template": "read",
+     "page": 61,
+     "data": {
+      "sentences": [
+       {
+        "text": "قَالَ وَلِيدٌ: فِي بِلَادِي بَيْتِي",
+        "audio": "u3-lam-r01.mp3"
+       },
+       {
+        "text": "قَالَتْ رَوَانُ: فِي بِلَادِي مَدِيْنَتِي",
+        "audio": "u3-lam-r02.mp3"
+       },
+       {
+        "text": "قَالَتْ فَاتِنُ: فِي بِلَادِي بُسْتَانِي",
+        "audio": "u3-lam-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "قَالَ وَلِيدٌ: فِي بِلَادِي بَيْتِي",
+     "page": 61,
+     "audio": "u3-lam-r01.mp3"
+    },
+    {
+     "text": "قَالَتْ رَوَانُ: فِي بِلَادِي مَدِيْنَتِي",
+     "page": 61,
+     "audio": "u3-lam-r02.mp3"
+    },
+    {
+     "text": "قَالَتْ فَاتِنُ: فِي بِلَادِي بُسْتَانِي",
+     "page": 61,
+     "audio": "u3-lam-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ل",
+    "art": "meat",
+    "audio": "u3-lam-sticker.mp3"
+   }
+  },
+  {
+   "id": "u3-tta",
+   "book": "reading",
+   "unit": 3,
+   "unitTitle": "الوَحْدَةُ الثَّالِثَةُ : وَطَنِي",
+   "unitPage": 49,
+   "pages": [
+    62,
+    63,
+    64
+   ],
+   "title": "ط",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "طَبِيْبٌ",
+     "page": 62,
+     "art": "tabib",
+     "audio": "u3-tta-w01.mp3"
+    },
+    {
+     "value": "طُيُوْرٌ",
+     "page": 62,
+     "art": "birds",
+     "audio": "u3-ya-w07.mp3"
+    },
+    {
+     "value": "طِفْلٌ",
+     "page": 62,
+     "art": "baby",
+     "audio": "u3-tta-w03.mp3"
+    },
+    {
+     "value": "خَيَّاطٌ",
+     "page": 62,
+     "art": "tailor",
+     "audio": "u3-tta-w04.mp3"
+    },
+    {
+     "value": "بِطْرِيْقٌ",
+     "page": 62,
+     "art": "penguin",
+     "audio": "u3-qaf-w04.mp3"
+    },
+    {
+     "value": "قُبْطَانٌ",
+     "page": 62,
+     "art": "sailor_captain",
+     "audio": "u3-tta-w06.mp3"
+    },
+    {
+     "value": "عُطُوْرٌ",
+     "page": 62,
+     "art": "perfumes",
+     "audio": "u3-tta-w07.mp3"
+    },
+    {
+     "value": "يَقْطِيْـنٌ",
+     "page": 62,
+     "art": "pumpkin",
+     "audio": "u3-ya-w01.mp3"
+    },
+    {
+     "value": "طَبْلٌ",
+     "page": 63,
+     "art": "drum",
+     "audio": "u3-tta-w09.mp3"
+    },
+    {
+     "value": "قِطَارٌ",
+     "page": 63,
+     "art": "train",
+     "audio": "u3-tta-w10.mp3"
+    },
+    {
+     "value": "مُسْتَطِيْلٌ",
+     "page": 63,
+     "art": "rectangle",
+     "audio": "u3-tta-w11.mp3"
+    },
+    {
+     "value": "مِطْرَقَةٌ",
+     "page": 63,
+     "art": "hammer",
+     "audio": "u3-tta-w12.mp3"
+    },
+    {
+     "value": "مَطْبَخٌ",
+     "page": 63,
+     "art": "kitchen",
+     "audio": "u3-tta-w13.mp3"
+    },
+    {
+     "value": "طَرِيْقٌ",
+     "page": 63,
+     "art": null,
+     "audio": "u3-tta-w14.mp3"
+    },
+    {
+     "value": "وَطَنِي",
+     "page": 63,
+     "art": null,
+     "audio": "u3-tta-w15.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "طَ",
+     "page": 62,
+     "audio": "u3-tta-s01.mp3"
+    },
+    {
+     "value": "طَا",
+     "page": 62,
+     "audio": "u3-tta-s02.mp3"
+    },
+    {
+     "value": "طُ",
+     "page": 62,
+     "audio": "u3-tta-s03.mp3"
+    },
+    {
+     "value": "طُوْ",
+     "page": 62,
+     "audio": "u3-tta-s04.mp3"
+    },
+    {
+     "value": "طِ",
+     "page": 62,
+     "audio": "u3-tta-s05.mp3"
+    },
+    {
+     "value": "طِيْـ",
+     "page": 62,
+     "audio": "u3-tta-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 62,
+     "data": {
+      "letter": "ط",
+      "items": [
+       "طَبِيْبٌ",
+       "طُيُوْرٌ",
+       "طِفْلٌ",
+       "خَيَّاطٌ",
+       "بِطْرِيْقٌ",
+       "قُبْطَانٌ",
+       "عُطُوْرٌ",
+       "يَقْطِيْـنٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 64,
+     "data": {
+      "shape": "tta"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "build",
+     "page": 62,
+     "data": {
+      "pieces": [
+       "طَـ",
+       "ـبِيْـ",
+       "ـبٌ",
+       "طُـ",
+       "ـيُوْ",
+       "رٌ",
+       "طَ"
+      ],
+      "words": [
+       {
+        "word": "طَبِيْبٌ",
+        "parts": [
+         "طَـ",
+         "ـبِيْـ",
+         "ـبٌ"
+        ],
+        "art": "tabib"
+       },
+       {
+        "word": "طُيُوْرٌ",
+        "parts": [
+         "طُـ",
+         "ـيُوْ",
+         "رٌ"
+        ],
+        "art": "birds"
+       }
+      ]
+     },
+     "say": "رَكِّبِ الْكَلِمَةَ مِنْ مَقَاطِعِهَا",
+     "audio": "c-build.mp3"
+    },
+    {
+     "template": "read",
+     "page": 64,
+     "data": {
+      "sentences": [
+       {
+        "text": "فَاطِمَةُ فِي مَدْرَسَتِي",
+        "audio": "u3-tta-r01.mp3"
+       },
+       {
+        "text": "تَقُوْلُ فَاطِمَةُ: رَسَمْتُ بِقَلَمِي",
+        "audio": "u3-tta-r02.mp3"
+       },
+       {
+        "text": "وَطَنِي، وَطَنِي بَيْتِي",
+        "audio": "u3-tta-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "فَاطِمَةُ فِي مَدْرَسَتِي",
+     "page": 64,
+     "audio": "u3-tta-r01.mp3"
+    },
+    {
+     "text": "تَقُوْلُ فَاطِمَةُ: رَسَمْتُ بِقَلَمِي",
+     "page": 64,
+     "audio": "u3-tta-r02.mp3"
+    },
+    {
+     "text": "وَطَنِي، وَطَنِي بَيْتِي",
+     "page": 64,
+     "audio": "u3-tta-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ط",
+    "art": "tabib",
+    "audio": "u3-tta-sticker.mp3"
+   }
+  },
+  {
+   "id": "u3-ayn",
+   "book": "reading",
+   "unit": 3,
+   "unitTitle": "الوَحْدَةُ الثَّالِثَةُ : وَطَنِي",
+   "unitPage": 49,
+   "pages": [
+    65,
+    66,
+    67
+   ],
+   "title": "ع",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "عَلَمٌ",
+     "page": 65,
+     "art": "iraqi_flag",
+     "audio": "u3-ayn-w01.mp3"
+    },
+    {
+     "value": "عُصْفُوْرٌ",
+     "page": 65,
+     "art": "bird",
+     "audio": "u3-ayn-w02.mp3"
+    },
+    {
+     "value": "عِظَامٌ",
+     "page": 65,
+     "art": "bones",
+     "audio": "u3-ayn-w03.mp3"
+    },
+    {
+     "value": "إِصْبَعٌ",
+     "page": 65,
+     "art": "finger",
+     "audio": "u3-ayn-w04.mp3"
+    },
+    {
+     "value": "شُعْلَةٌ",
+     "page": 65,
+     "art": "torch",
+     "audio": "u3-ayn-w05.mp3"
+    },
+    {
+     "value": "عَالِمٌ",
+     "page": 65,
+     "art": "scientist",
+     "audio": "u3-ayn-w06.mp3"
+    },
+    {
+     "value": "عُوْدٌ",
+     "page": 65,
+     "art": "oud",
+     "audio": "u3-ayn-w07.mp3"
+    },
+    {
+     "value": "عِيْدَانٌ",
+     "page": 65,
+     "art": "sticks",
+     "audio": "u3-ayn-w08.mp3"
+    },
+    {
+     "value": "عِنَبٌ",
+     "page": 66,
+     "art": "grapes",
+     "audio": "u3-ayn-w09.mp3"
+    },
+    {
+     "value": "نَعَامَةٌ",
+     "page": 66,
+     "art": "ostrich",
+     "audio": "u3-ayn-w10.mp3"
+    },
+    {
+     "value": "ثَعْلَبٌ",
+     "page": 66,
+     "art": "fox",
+     "audio": "u3-ayn-w11.mp3"
+    },
+    {
+     "value": "نَعْنَاعٌ",
+     "page": 66,
+     "art": "mint",
+     "audio": "u3-ayn-w12.mp3"
+    },
+    {
+     "value": "لُعْبَةٌ",
+     "page": 66,
+     "art": "rocking_horse",
+     "audio": "u3-lam-w02.mp3"
+    },
+    {
+     "value": "عِرَاقٌ",
+     "page": 66,
+     "art": null,
+     "audio": "u3-ayn-w14.mp3"
+    },
+    {
+     "value": "يَرْفَعُ",
+     "page": 66,
+     "art": null,
+     "audio": "u3-ayn-w15.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "عَـ",
+     "page": 65,
+     "audio": "u3-ayn-s01.mp3"
+    },
+    {
+     "value": "عَا",
+     "page": 65,
+     "audio": "u3-ayn-s02.mp3"
+    },
+    {
+     "value": "عُـ",
+     "page": 65,
+     "audio": "u3-ayn-s03.mp3"
+    },
+    {
+     "value": "عُوْ",
+     "page": 65,
+     "audio": "u3-ayn-s04.mp3"
+    },
+    {
+     "value": "عِـ",
+     "page": 65,
+     "audio": "u3-ayn-s05.mp3"
+    },
+    {
+     "value": "عِيْـ",
+     "page": 65,
+     "audio": "u3-ayn-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 65,
+     "data": {
+      "letter": "ع",
+      "items": [
+       "عَلَمٌ",
+       "عُصْفُوْرٌ",
+       "عِظَامٌ",
+       "إِصْبَعٌ",
+       "شُعْلَةٌ",
+       "عَالِمٌ",
+       "عُوْدٌ",
+       "عِيْدَانٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 67,
+     "data": {
+      "shape": "ayn"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "match",
+     "page": 65,
+     "data": {
+      "pairs": [
+       "عَلَمٌ",
+       "عُصْفُوْرٌ",
+       "عِظَامٌ",
+       "إِصْبَعٌ"
+      ],
+      "per": 3
+     },
+     "say": "اِسْحَبِ الْكَلِمَةَ إِلَى صُورَتِهَا",
+     "audio": "c-match.mp3"
+    },
+    {
+     "template": "read",
+     "page": 67,
+     "data": {
+      "sentences": [
+       {
+        "text": "يَرْفَعُ عَامِرٌ عَلَمَ وَطَنِي",
+        "audio": "u3-ayn-r01.mp3"
+       },
+       {
+        "text": "عَلَمُ وَطَنِي مَرْفُوْعٌ، عَلَمُ وَطَنِي",
+        "audio": "u3-ayn-r02.mp3"
+       },
+       {
+        "text": "يُرَفْرِفُ فَوْقَ مَدْرَسَتِي",
+        "audio": "u3-ayn-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "يَرْفَعُ عَامِرٌ عَلَمَ وَطَنِي",
+     "page": 67,
+     "audio": "u3-ayn-r01.mp3"
+    },
+    {
+     "text": "عَلَمُ وَطَنِي مَرْفُوْعٌ، عَلَمُ وَطَنِي",
+     "page": 67,
+     "audio": "u3-ayn-r02.mp3"
+    },
+    {
+     "text": "يُرَفْرِفُ فَوْقَ مَدْرَسَتِي",
+     "page": 67,
+     "audio": "u3-ayn-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ع",
+    "art": "iraqi_flag",
+    "audio": "u3-ayn-sticker.mp3"
+   }
+  },
+  {
+   "id": "u3-tanween",
+   "book": "reading",
+   "unit": 3,
+   "unitTitle": "الوَحْدَةُ الثَّالِثَةُ : وَطَنِي",
+   "unitPage": 49,
+   "pages": [
+    68,
+    69
+   ],
+   "title": "ـً",
+   "kind": "tanween",
+   "items": [
+    {
+     "value": "عَلَمًا",
+     "page": 68,
+     "art": "iraqi_flag",
+     "audio": "u3-tanween-w01.mp3"
+    },
+    {
+     "value": "بُوْمَةً",
+     "page": 68,
+     "art": "owl",
+     "audio": "u3-tanween-w02.mp3"
+    },
+    {
+     "value": "تَـمْرًا",
+     "page": 68,
+     "art": "dates",
+     "audio": "u3-tanween-w03.mp3"
+    },
+    {
+     "value": "وَرَقَةً",
+     "page": 68,
+     "art": "paper_sheet",
+     "audio": "u3-tanween-w04.mp3"
+    },
+    {
+     "value": "قَلَـمًا",
+     "page": 68,
+     "art": null,
+     "audio": "u3-tanween-w05.mp3"
+    },
+    {
+     "value": "مَدْرَسَةً",
+     "page": 68,
+     "art": "school",
+     "audio": "u3-tanween-w06.mp3"
+    }
+   ],
+   "syllables": [],
+   "games": [
+    {
+     "template": "listen",
+     "page": 68,
+     "data": {
+      "letter": "ـً",
+      "items": [
+       "عَلَمًا",
+       "بُوْمَةً",
+       "تَـمْرًا",
+       "وَرَقَةً",
+       "مَدْرَسَةً"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "balloons",
+     "page": 68,
+     "data": {
+      "choices": [
+       "عَلَمًا",
+       "بُوْمَةً",
+       "تَـمْرًا",
+       "وَرَقَةً",
+       "قَلَـمًا",
+       "مَدْرَسَةً"
+      ],
+      "targets": [
+       "عَلَمًا",
+       "بُوْمَةً",
+       "تَـمْرًا",
+       "وَرَقَةً"
+      ],
+      "per": 3
+     },
+     "say": "فَرْقِعِ الْبَالُونَ الَّذِي تَسْمَعُهُ",
+     "audio": "c-balloons.mp3"
+    },
+    {
+     "template": "match",
+     "page": 68,
+     "data": {
+      "pairs": [
+       "عَلَمًا",
+       "بُوْمَةً",
+       "تَـمْرًا",
+       "وَرَقَةً"
+      ],
+      "per": 3
+     },
+     "say": "اِسْحَبِ الْكَلِمَةَ إِلَى صُورَتِهَا",
+     "audio": "c-match.mp3"
+    },
+    {
+     "template": "sort",
+     "page": 68,
+     "data": {
+      "bins": [
+       {
+        "label": "تَنْوِيْنُ الضَّمِّ"
+       },
+       {
+        "label": "تَنْوِيْنُ الْفَتْحِ"
+       }
+      ],
+      "items": [
+       {
+        "text": "قِرْدٌ",
+        "bin": 0
+       },
+       {
+        "text": "كِتَابٌ",
+        "bin": 0
+       },
+       {
+        "text": "لَـحْمٌ",
+        "bin": 0
+       },
+       {
+        "text": "عَلَمًا",
+        "bin": 1
+       },
+       {
+        "text": "بُوْمَةً",
+        "bin": 1
+       },
+       {
+        "text": "تَـمْرًا",
+        "bin": 1
+       }
+      ]
+     },
+     "say": "ضَعْ كُلَّ كَلِمَةٍ فِي سَلَّتِهَا",
+     "audio": "c-sort.mp3"
+    },
+    {
+     "template": "read",
+     "page": 68,
+     "data": {
+      "sentences": [
+       {
+        "text": "رَفَعَ عَامِرٌ عَلَمًا",
+        "audio": "u3-tanween-r01.mp3"
+       },
+       {
+        "text": "زَرَعَتْ فَاطِمَةُ وَرْدَةً",
+        "audio": "u3-tanween-r02.mp3"
+       },
+       {
+        "text": "بَرَىٰ رَامِي قَلَـمًا",
+        "audio": "u3-tanween-r03.mp3"
+       },
+       {
+        "text": "رَسَمَ يُوْسُفُ مَدْرَسَةً",
+        "audio": "u3-tanween-r04.mp3"
+       },
+       {
+        "text": "رَفَعَ عَامِرٌ عَلَمًا فَوْقَ مَدْرَسَتِي",
+        "audio": "u3-tanween-r05.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "رَفَعَ عَامِرٌ عَلَمًا",
+     "page": 68,
+     "audio": "u3-tanween-r01.mp3"
+    },
+    {
+     "text": "زَرَعَتْ فَاطِمَةُ وَرْدَةً",
+     "page": 68,
+     "audio": "u3-tanween-r02.mp3"
+    },
+    {
+     "text": "بَرَىٰ رَامِي قَلَـمًا",
+     "page": 68,
+     "audio": "u3-tanween-r03.mp3"
+    },
+    {
+     "text": "رَسَمَ يُوْسُفُ مَدْرَسَةً",
+     "page": 68,
+     "audio": "u3-tanween-r04.mp3"
+    },
+    {
+     "text": "رَفَعَ عَامِرٌ عَلَمًا فَوْقَ مَدْرَسَتِي",
+     "page": 69,
+     "audio": "u3-tanween-r05.mp3"
+    },
+    {
+     "text": "يَبْقَىٰ عَلَمُ وَطَنِي مَرْفُوْعـًا وَعَالِيًا",
+     "page": 69,
+     "audio": "u3-tanween-r06.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ الْفَتْحِ",
+    "art": "iraqi_flag",
+    "audio": "u3-tanween-sticker.mp3"
+   }
+  },
+  {
+   "id": "u3-nashid",
+   "book": "reading",
+   "unit": 3,
+   "unitTitle": "الوَحْدَةُ الثَّالِثَةُ : وَطَنِي",
+   "unitPage": 49,
+   "pages": [
+    70
+   ],
+   "title": "♪",
+   "kind": "nashid",
+   "items": [],
+   "syllables": [],
+   "games": [],
+   "nashid": {
+    "title": "نَحْنُ أَطْفَالُ الْعِرَاقْ",
+    "poet": "",
+    "page": 70,
+    "audio": "u3-nashid.mp3"
+   },
+   "scene": {
+    "items": [
+     {
+      "art": "iraqi_flag",
+      "x": 20,
+      "y": 40,
+      "w": 110
+     },
+     {
+      "art": "palm_trees",
+      "x": 120,
+      "y": 60,
+      "w": 120
+     },
+     {
+      "art": "mosque",
+      "x": 230,
+      "y": 60,
+      "w": 110
+     },
+     {
+      "art": "bridge",
+      "x": 40,
+      "y": 160,
+      "w": 120
+     },
+     {
+      "art": "boat",
+      "x": 260,
+      "y": 175,
+      "w": 80
+     },
+     {
+      "art": "birds",
+      "x": 160,
+      "y": 5,
+      "w": 70
+     }
+    ],
+    "bg": {}
+   }
+  },
+  {
+   "id": "u4-open",
+   "book": "reading",
+   "unit": 4,
+   "unitTitle": "الْوَحْدَةُ الرَّابِعَةُ: صِحَّتِي وَبِيْئَتِي",
+   "unitPage": 71,
+   "pages": [
+    71
+   ],
+   "title": "★",
+   "kind": "open",
+   "items": [],
+   "syllables": [],
+   "games": [
+    {
+     "template": "scene",
+     "page": 71,
+     "data": {
+      "scene": {
+       "items": [
+        {
+         "art": "boy_washing_at_sink",
+         "x": 20,
+         "y": 70,
+         "w": 110
+        },
+        {
+         "art": "apple",
+         "x": 150,
+         "y": 160,
+         "w": 60
+        },
+        {
+         "art": "toothpaste",
+         "x": 220,
+         "y": 170,
+         "w": 60
+        },
+        {
+         "art": "trees",
+         "x": 260,
+         "y": 50,
+         "w": 120
+        },
+        {
+         "art": "flowers",
+         "x": 140,
+         "y": 90,
+         "w": 80
+        },
+        {
+         "art": "pigeon",
+         "x": 300,
+         "y": 10,
+         "w": 50
+        }
+       ],
+       "bg": {}
+      },
+      "prompts": [
+       {
+        "text": "أَصِفُ مَا أَرَاهُ فِي كُلِّ صُوْرَةٍ",
+        "page": 71,
+        "audio": "u1-open-q01.mp3"
+       },
+       {
+        "text": "كَيْفَ أُحَافِظُ عَلَى صِحَّتِي؟",
+        "page": 71,
+        "audio": "u4-open-q02.mp3"
+       },
+       {
+        "text": "أَتَـحَدَّثُ عَنِ النَّظَافَةِ وَالصِّحَّةِ وَالْعِنَايَةِ بِهَا",
+        "page": 71,
+        "audio": "u4-open-q03.mp3"
+       },
+       {
+        "text": "أُكَوِّنُ قِصَّةً قَصِيْرَةً مِنَ الصُّوَرِ",
+        "page": 71,
+        "audio": "u4-open-q04.mp3"
+       }
+      ]
+     },
+     "say": "اِلْمَسِ الصُّورَةَ وَتَحَدَّثْ",
+     "audio": "c-scene.mp3"
+    },
+    {
+     "template": "puzzle",
+     "page": 71,
+     "data": {
+      "scene": {
+       "items": [
+        {
+         "art": "boy_washing_at_sink",
+         "x": 20,
+         "y": 70,
+         "w": 110
+        },
+        {
+         "art": "apple",
+         "x": 150,
+         "y": 160,
+         "w": 60
+        },
+        {
+         "art": "toothpaste",
+         "x": 220,
+         "y": 170,
+         "w": 60
+        },
+        {
+         "art": "trees",
+         "x": 260,
+         "y": 50,
+         "w": 120
+        },
+        {
+         "art": "flowers",
+         "x": 140,
+         "y": 90,
+         "w": 80
+        },
+        {
+         "art": "pigeon",
+         "x": 300,
+         "y": 10,
+         "w": 50
+        }
+       ],
+       "bg": {}
+      },
+      "pieces": 6
+     },
+     "say": "رَكِّبِ الصُّورَةَ",
+     "audio": "c-puzzle.mp3"
+    }
+   ],
+   "prompts": [
+    {
+     "text": "أَصِفُ مَا أَرَاهُ فِي كُلِّ صُوْرَةٍ",
+     "page": 71,
+     "audio": "u1-open-q01.mp3"
+    },
+    {
+     "text": "كَيْفَ أُحَافِظُ عَلَى صِحَّتِي؟",
+     "page": 71,
+     "audio": "u4-open-q02.mp3"
+    },
+    {
+     "text": "أَتَـحَدَّثُ عَنِ النَّظَافَةِ وَالصِّحَّةِ وَالْعِنَايَةِ بِهَا",
+     "page": 71,
+     "audio": "u4-open-q03.mp3"
+    },
+    {
+     "text": "أُكَوِّنُ قِصَّةً قَصِيْرَةً مِنَ الصُّوَرِ",
+     "page": 71,
+     "audio": "u4-open-q04.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ صِحَّتِي وَبِيْئَتِي",
+    "art": "boy_washing_at_sink",
+    "audio": "u4-open-sticker.mp3"
+   }
+  },
+  {
+   "id": "u4-hha",
+   "book": "reading",
+   "unit": 4,
+   "unitTitle": "الْوَحْدَةُ الرَّابِعَةُ: صِحَّتِي وَبِيْئَتِي",
+   "unitPage": 71,
+   "pages": [
+    72,
+    73,
+    74
+   ],
+   "title": "ح",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "حَمَامَةٌ",
+     "page": 72,
+     "art": "pigeon",
+     "audio": "u4-hha-w01.mp3"
+    },
+    {
+     "value": "حُبُوبٌ",
+     "page": 72,
+     "art": "seeds",
+     "audio": "u4-hha-w02.mp3"
+    },
+    {
+     "value": "حِذَاءٌ",
+     "page": 72,
+     "art": "shoes",
+     "audio": "u4-hha-w03.mp3"
+    },
+    {
+     "value": "مِفْتَاحٌ",
+     "page": 72,
+     "art": "key",
+     "audio": "u4-hha-w04.mp3"
+    },
+    {
+     "value": "لَحْمٌ",
+     "page": 72,
+     "art": "meat",
+     "audio": "u4-hha-w05.mp3"
+    },
+    {
+     "value": "حَائِطٌ",
+     "page": 72,
+     "art": "brick_wall",
+     "audio": "u4-hha-w06.mp3"
+    },
+    {
+     "value": "حُوْتٌ",
+     "page": 72,
+     "art": "whale",
+     "audio": "u4-hha-w07.mp3"
+    },
+    {
+     "value": "طَحِيْنٌ",
+     "page": 72,
+     "art": "flour_sack",
+     "audio": "u4-hha-w08.mp3"
+    },
+    {
+     "value": "حَلْوَىٰ",
+     "page": 73,
+     "art": "candy",
+     "audio": "u4-hha-w09.mp3"
+    },
+    {
+     "value": "حُبُوْبٌ",
+     "page": 73,
+     "art": "seeds",
+     "audio": "u4-hha-w10.mp3"
+    },
+    {
+     "value": "حِزَامٌ",
+     "page": 73,
+     "art": "belt",
+     "audio": "u4-hha-w11.mp3"
+    },
+    {
+     "value": "مِحْفَظَةٌ",
+     "page": 73,
+     "art": "pencil_case",
+     "audio": "u4-hha-w12.mp3"
+    },
+    {
+     "value": "فَحْمٌ",
+     "page": 73,
+     "art": "charcoal",
+     "audio": "u4-hha-w13.mp3"
+    },
+    {
+     "value": "مِحْرَارٌ",
+     "page": 73,
+     "art": "thermometer",
+     "audio": "u4-hha-w14.mp3"
+    },
+    {
+     "value": "يَحْيَىٰ",
+     "page": 73,
+     "art": null,
+     "audio": "u4-hha-w15.mp3"
+    },
+    {
+     "value": "حَسَنٌ",
+     "page": 73,
+     "art": null,
+     "audio": "u4-hha-w16.mp3"
+    },
+    {
+     "value": "حَنَانُ",
+     "page": 73,
+     "art": null,
+     "audio": "u4-hha-w17.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "حَـ",
+     "page": 72,
+     "audio": "u4-hha-s01.mp3"
+    },
+    {
+     "value": "حَا",
+     "page": 72,
+     "audio": "u4-hha-s02.mp3"
+    },
+    {
+     "value": "حُـ",
+     "page": 72,
+     "audio": "u4-hha-s03.mp3"
+    },
+    {
+     "value": "حُوْ",
+     "page": 72,
+     "audio": "u4-hha-s04.mp3"
+    },
+    {
+     "value": "حِـ",
+     "page": 72,
+     "audio": "u4-hha-s05.mp3"
+    },
+    {
+     "value": "حِيْـ",
+     "page": 72,
+     "audio": "u4-hha-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 72,
+     "data": {
+      "letter": "ح",
+      "items": [
+       "حَمَامَةٌ",
+       "حُبُوبٌ",
+       "حِذَاءٌ",
+       "مِفْتَاحٌ",
+       "لَحْمٌ",
+       "حَائِطٌ",
+       "حُوْتٌ",
+       "طَحِيْنٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 74,
+     "data": {
+      "shape": "hha"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "memory",
+     "page": 72,
+     "data": {
+      "pairs": [
+       {
+        "text": "حَمَامَةٌ",
+        "art": "pigeon"
+       },
+       {
+        "text": "حُبُوبٌ",
+        "art": "seeds"
+       },
+       {
+        "text": "حِذَاءٌ",
+        "art": "shoes"
+       },
+       {
+        "text": "مِفْتَاحٌ",
+        "art": "key"
+       }
+      ]
+     },
+     "say": "اِقْلِبْ بِطَاقَتَيْنِ مُتَشَابِهَتَيْنِ",
+     "audio": "c-memory.mp3"
+    },
+    {
+     "template": "read",
+     "page": 74,
+     "data": {
+      "sentences": [
+       {
+        "text": "عِنْدَ يَحْيَىٰ وَحَنَانَ حَمَامٌ",
+        "audio": "u4-hha-r01.mp3"
+       },
+       {
+        "text": "تُرِيْدُ حَمَامَةُ يَحْيَىٰ طَعَامًا",
+        "audio": "u4-hha-r02.mp3"
+       },
+       {
+        "text": "نَعْطِفُ عَلَى حَمَامِنَا",
+        "audio": "u4-hha-r03.mp3"
+       },
+       {
+        "text": "وَلَا نَحْبِسُ حَيَوَانًا",
+        "audio": "u4-hha-r04.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "عِنْدَ يَحْيَىٰ وَحَنَانَ حَمَامٌ",
+     "page": 74,
+     "audio": "u4-hha-r01.mp3"
+    },
+    {
+     "text": "تُرِيْدُ حَمَامَةُ يَحْيَىٰ طَعَامًا",
+     "page": 74,
+     "audio": "u4-hha-r02.mp3"
+    },
+    {
+     "text": "نَعْطِفُ عَلَى حَمَامِنَا",
+     "page": 74,
+     "audio": "u4-hha-r03.mp3"
+    },
+    {
+     "text": "وَلَا نَحْبِسُ حَيَوَانًا",
+     "page": 74,
+     "audio": "u4-hha-r04.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ح",
+    "art": "pigeon",
+    "audio": "u4-hha-sticker.mp3"
+   }
+  },
+  {
+   "id": "u4-shin",
+   "book": "reading",
+   "unit": 4,
+   "unitTitle": "الْوَحْدَةُ الرَّابِعَةُ: صِحَّتِي وَبِيْئَتِي",
+   "unitPage": 71,
+   "pages": [
+    75,
+    76,
+    77
+   ],
+   "title": "ش",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "شَمْعَةٌ",
+     "page": 75,
+     "art": "candle",
+     "audio": "u4-shin-w01.mp3"
+    },
+    {
+     "value": "شُبَّاكٌ",
+     "page": 75,
+     "art": "window",
+     "audio": "u4-shin-w02.mp3"
+    },
+    {
+     "value": "شِرَاعٌ",
+     "page": 75,
+     "art": "sailboat",
+     "audio": "u4-shin-w03.mp3"
+    },
+    {
+     "value": "مِشْمِشٌ",
+     "page": 75,
+     "art": "apricots",
+     "audio": "u4-shin-w04.mp3"
+    },
+    {
+     "value": "أَشْجَارٌ",
+     "page": 75,
+     "art": "trees",
+     "audio": "u4-shin-w05.mp3"
+    },
+    {
+     "value": "شَارِعٌ",
+     "page": 75,
+     "art": "street",
+     "audio": "u4-shin-w06.mp3"
+    },
+    {
+     "value": "قُشُوْرٌ",
+     "page": 75,
+     "art": "banana_peels",
+     "audio": "u4-shin-w07.mp3"
+    },
+    {
+     "value": "مَنَاشِيْرُ",
+     "page": 75,
+     "art": "saws",
+     "audio": "u4-shin-w08.mp3"
+    },
+    {
+     "value": "شَمْسٌ",
+     "page": 76,
+     "art": "sun",
+     "audio": "u4-shin-w09.mp3"
+    },
+    {
+     "value": "شِبْلٌ",
+     "page": 76,
+     "art": "lion_cub",
+     "audio": "u4-shin-w10.mp3"
+    },
+    {
+     "value": "طَبَاشِيْرُ",
+     "page": 76,
+     "art": "chalk",
+     "audio": "u4-shin-w11.mp3"
+    },
+    {
+     "value": "مِشْعَلٌ",
+     "page": 76,
+     "art": "torch",
+     "audio": "u4-shin-w12.mp3"
+    },
+    {
+     "value": "عُشْبٌ",
+     "page": 76,
+     "art": "grass",
+     "audio": "u4-shin-w13.mp3"
+    },
+    {
+     "value": "مِشْطٌ",
+     "page": 76,
+     "art": "comb",
+     "audio": "u4-shin-w14.mp3"
+    },
+    {
+     "value": "شِيْرِيْنُ",
+     "page": 76,
+     "art": null,
+     "audio": "u4-shin-w15.mp3"
+    },
+    {
+     "value": "جَمِيْلَةٌ",
+     "page": 77,
+     "art": null,
+     "audio": "u4-shin-w16.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "شَـ",
+     "page": 75,
+     "audio": "u4-shin-s01.mp3"
+    },
+    {
+     "value": "شَا",
+     "page": 75,
+     "audio": "u4-shin-s02.mp3"
+    },
+    {
+     "value": "شُـ",
+     "page": 75,
+     "audio": "u4-shin-s03.mp3"
+    },
+    {
+     "value": "شُوْ",
+     "page": 75,
+     "audio": "u4-shin-s04.mp3"
+    },
+    {
+     "value": "شِـ",
+     "page": 75,
+     "audio": "u4-shin-s05.mp3"
+    },
+    {
+     "value": "شِيْـ",
+     "page": 75,
+     "audio": "u4-shin-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 75,
+     "data": {
+      "letter": "ش",
+      "items": [
+       "شَمْعَةٌ",
+       "شُبَّاكٌ",
+       "شِرَاعٌ",
+       "مِشْمِشٌ",
+       "أَشْجَارٌ",
+       "شَارِعٌ",
+       "قُشُوْرٌ",
+       "مَنَاشِيْرُ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 77,
+     "data": {
+      "shape": "shin"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "train",
+     "page": 75,
+     "data": {
+      "rounds": [
+       {
+        "say": "شَمْعَةٌ",
+        "options": [
+         {
+          "text": "شِيْرِيْنُ"
+         },
+         {
+          "text": "شَمْعَةٌ"
+         },
+         {
+          "text": "شَمْسٌ"
+         }
+        ],
+        "answer": 1
+       },
+       {
+        "say": "شُبَّاكٌ",
+        "options": [
+         {
+          "text": "مِشْطٌ"
+         },
+         {
+          "text": "شُبَّاكٌ"
+         },
+         {
+          "text": "شَارِعٌ"
+         }
+        ],
+        "answer": 1
+       },
+       {
+        "say": "شِرَاعٌ",
+        "options": [
+         {
+          "text": "شَمْسٌ"
+         },
+         {
+          "text": "شِرَاعٌ"
+         },
+         {
+          "text": "مِشْعَلٌ"
+         }
+        ],
+        "answer": 1
+       },
+       {
+        "say": "مِشْمِشٌ",
+        "options": [
+         {
+          "text": "أَشْجَارٌ"
+         },
+         {
+          "text": "مِشْمِشٌ"
+         },
+         {
+          "text": "قُشُوْرٌ"
+         }
+        ],
+        "answer": 1
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاخْتَرِ الْكَلِمَةَ",
+     "audio": "c-train.mp3"
+    },
+    {
+     "template": "read",
+     "page": 77,
+     "data": {
+      "sentences": [
+       {
+        "text": "فِيْ حَدِيْقَةِ شِيْرِيْنَ عُشْبٌ",
+        "audio": "u4-shin-r01.mp3"
+       },
+       {
+        "text": "وَوَرْدٌ وَمِشْمِشٌ وَعِنَبٌ",
+        "audio": "u4-shin-r02.mp3"
+       },
+       {
+        "text": "قَطَفَتْ شِيْرِيْنُ مِشْمِشًا وَعِنَبًا",
+        "audio": "u4-shin-r03.mp3"
+       },
+       {
+        "text": "فِيْ حَدِيْقَةِ شِيْرِيْنَ فَرَاشَاتٌ",
+        "audio": "u4-shin-r04.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "فِيْ حَدِيْقَةِ شِيْرِيْنَ عُشْبٌ",
+     "page": 77,
+     "audio": "u4-shin-r01.mp3"
+    },
+    {
+     "text": "وَوَرْدٌ وَمِشْمِشٌ وَعِنَبٌ",
+     "page": 77,
+     "audio": "u4-shin-r02.mp3"
+    },
+    {
+     "text": "قَطَفَتْ شِيْرِيْنُ مِشْمِشًا وَعِنَبًا",
+     "page": 77,
+     "audio": "u4-shin-r03.mp3"
+    },
+    {
+     "text": "فِيْ حَدِيْقَةِ شِيْرِيْنَ فَرَاشَاتٌ",
+     "page": 77,
+     "audio": "u4-shin-r04.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ش",
+    "art": "candle",
+    "audio": "u4-shin-sticker.mp3"
+   }
+  },
+  {
+   "id": "u4-zay",
+   "book": "reading",
+   "unit": 4,
+   "unitTitle": "الْوَحْدَةُ الرَّابِعَةُ: صِحَّتِي وَبِيْئَتِي",
+   "unitPage": 71,
+   "pages": [
+    78,
+    79,
+    80
+   ],
+   "title": "ز",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "زَهْرَةٌ",
+     "page": 78,
+     "art": "flower",
+     "audio": "u4-zay-w01.mp3"
+    },
+    {
+     "value": "زُجَاجَةٌ",
+     "page": 78,
+     "art": "bottle",
+     "audio": "u4-zay-w02.mp3"
+    },
+    {
+     "value": "زِرٌّ",
+     "page": 78,
+     "art": "button",
+     "audio": "u4-zay-w03.mp3"
+    },
+    {
+     "value": "مَاعِزٌ",
+     "page": 78,
+     "art": "goat",
+     "audio": "u4-zay-w04.mp3"
+    },
+    {
+     "value": "مِزْمَارٌ",
+     "page": 78,
+     "art": "recorder_flute",
+     "audio": "u4-zay-w05.mp3"
+    },
+    {
+     "value": "غَزَالٌ",
+     "page": 78,
+     "art": "deer",
+     "audio": "u3-lam-w04.mp3"
+    },
+    {
+     "value": "حَلَزُوْنٌ",
+     "page": 78,
+     "art": "snail",
+     "audio": "u4-zay-w07.mp3"
+    },
+    {
+     "value": "جَزِيْرَةٌ",
+     "page": 78,
+     "art": "island",
+     "audio": "u4-zay-w08.mp3"
+    },
+    {
+     "value": "زَيْتُوْنٌ",
+     "page": 79,
+     "art": "olive_branch",
+     "audio": "u4-zay-w09.mp3"
+    },
+    {
+     "value": "زِيْنةٌ",
+     "page": 79,
+     "art": "party_decorations",
+     "audio": "u4-zay-w10.mp3"
+    },
+    {
+     "value": "أَزْهَارٌ",
+     "page": 79,
+     "art": "flowers",
+     "audio": "u4-zay-w11.mp3"
+    },
+    {
+     "value": "مِزْهَرِيَّةٌ",
+     "page": 79,
+     "art": "flower_vase",
+     "audio": "u4-zay-w12.mp3"
+    },
+    {
+     "value": "زُرْنَا",
+     "page": 79,
+     "art": null,
+     "audio": "u4-zay-w13.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "زَ",
+     "page": 78,
+     "audio": "u4-zay-s01.mp3"
+    },
+    {
+     "value": "زَا",
+     "page": 78,
+     "audio": "u4-zay-s02.mp3"
+    },
+    {
+     "value": "زُ",
+     "page": 78,
+     "audio": "u1-mim-x108.mp3"
+    },
+    {
+     "value": "زُوْ",
+     "page": 78,
+     "audio": "u4-zay-s04.mp3"
+    },
+    {
+     "value": "زِ",
+     "page": 78,
+     "audio": "u4-zay-s05.mp3"
+    },
+    {
+     "value": "زِيْـ",
+     "page": 78,
+     "audio": "u4-zay-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 78,
+     "data": {
+      "letter": "ز",
+      "items": [
+       "زَهْرَةٌ",
+       "زُجَاجَةٌ",
+       "زِرٌّ",
+       "مَاعِزٌ",
+       "مِزْمَارٌ",
+       "غَزَالٌ",
+       "حَلَزُوْنٌ",
+       "جَزِيْرَةٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 80,
+     "data": {
+      "shape": "zay"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "complete",
+     "page": 79,
+     "data": {
+      "rounds": [
+       {
+        "word": "زَهْرَةٌ",
+        "start": 0,
+        "end": 2,
+        "options": [
+         "حَ",
+         "زَ",
+         "لَ"
+        ],
+        "answer": 1,
+        "art": "flower"
+       },
+       {
+        "word": "زُجَاجَةٌ",
+        "start": 0,
+        "end": 2,
+        "options": [
+         "حُ",
+         "شُ",
+         "زُ"
+        ],
+        "answer": 2,
+        "art": "bottle"
+       },
+       {
+        "word": "زِرٌّ",
+        "start": 0,
+        "end": 2,
+        "options": [
+         "زِ",
+         "شِ",
+         "قِ"
+        ],
+        "answer": 0,
+        "art": "button"
+       },
+       {
+        "word": "مَاعِزٌ",
+        "start": 5,
+        "end": 7,
+        "options": [
+         "طٌ",
+         "حٌ",
+         "زٌ"
+        ],
+        "answer": 2,
+        "art": "goat"
+       }
+      ]
+     },
+     "say": "ضَعِ الْحَرْفَ النَّاقِصَ",
+     "audio": "c-complete.mp3"
+    },
+    {
+     "template": "read",
+     "page": 80,
+     "data": {
+      "sentences": [
+       {
+        "text": "زُرْنَا مَزْرَعَةَ زَيْنَبَ",
+        "audio": "u4-zay-r01.mp3"
+       },
+       {
+        "text": "زَيْنَبُ تَـحْمِلُ زَيْتُوْنًا",
+        "audio": "u4-zay-r02.mp3"
+       },
+       {
+        "text": "نَشْتَرِي مِنْ مَزْرَعَةِ زَيْنَبَ",
+        "audio": "u4-zay-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "زُرْنَا مَزْرَعَةَ زَيْنَبَ",
+     "page": 80,
+     "audio": "u4-zay-r01.mp3"
+    },
+    {
+     "text": "زَيْنَبُ تَـحْمِلُ زَيْتُوْنًا",
+     "page": 80,
+     "audio": "u4-zay-r02.mp3"
+    },
+    {
+     "text": "نَشْتَرِي مِنْ مَزْرَعَةِ زَيْنَبَ",
+     "page": 80,
+     "audio": "u4-zay-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ز",
+    "art": "flower",
+    "audio": "u4-zay-sticker.mp3"
+   }
+  },
+  {
+   "id": "u4-jim",
+   "book": "reading",
+   "unit": 4,
+   "unitTitle": "الْوَحْدَةُ الرَّابِعَةُ: صِحَّتِي وَبِيْئَتِي",
+   "unitPage": 71,
+   "pages": [
+    81,
+    82,
+    83
+   ],
+   "title": "ج",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "جَزَرٌ",
+     "page": 81,
+     "art": "carrots",
+     "audio": "u4-jim-w01.mp3"
+    },
+    {
+     "value": "جُبْنٌ",
+     "page": 81,
+     "art": "cheese",
+     "audio": "u4-jim-w02.mp3"
+    },
+    {
+     "value": "جِسْرٌ",
+     "page": 81,
+     "art": "bridge",
+     "audio": "u4-jim-w03.mp3"
+    },
+    {
+     "value": "ثَلْجٌ",
+     "page": 81,
+     "art": "ice",
+     "audio": "u4-jim-w04.mp3"
+    },
+    {
+     "value": "نَجْمٌ",
+     "page": 81,
+     "art": "star",
+     "audio": "u4-jim-w05.mp3"
+    },
+    {
+     "value": "جَامِعٌ",
+     "page": 81,
+     "art": "mosque",
+     "audio": "u4-jim-w06.mp3"
+    },
+    {
+     "value": "نُجُوْمٌ",
+     "page": 81,
+     "art": "stars",
+     "audio": "u4-jim-w07.mp3"
+    },
+    {
+     "value": "عَجِيْنٌ",
+     "page": 81,
+     "art": "dough",
+     "audio": "u4-jim-w08.mp3"
+    },
+    {
+     "value": "جَامُوْسَةٌ",
+     "page": 82,
+     "art": "buffalo",
+     "audio": "u4-jim-w09.mp3"
+    },
+    {
+     "value": "مَعْجُوْنٌ",
+     "page": 82,
+     "art": "toothpaste",
+     "audio": "u4-jim-w10.mp3"
+    },
+    {
+     "value": "رِجْلٌ",
+     "page": 82,
+     "art": "foot",
+     "audio": "u4-jim-w11.mp3"
+    },
+    {
+     "value": "مِجْهَرٌ",
+     "page": 82,
+     "art": "microscope",
+     "audio": "u4-jim-w12.mp3"
+    },
+    {
+     "value": "نَرْجِسُ",
+     "page": 82,
+     "art": null,
+     "audio": "u4-jim-w13.mp3"
+    },
+    {
+     "value": "زُجَاجٌ",
+     "page": 82,
+     "art": null,
+     "audio": "u4-jim-w14.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "جَـ",
+     "page": 81,
+     "audio": "u4-jim-s01.mp3"
+    },
+    {
+     "value": "جَا",
+     "page": 81,
+     "audio": "u4-jim-s02.mp3"
+    },
+    {
+     "value": "جُـ",
+     "page": 81,
+     "audio": "u4-jim-s03.mp3"
+    },
+    {
+     "value": "جُوْ",
+     "page": 81,
+     "audio": "u4-jim-s04.mp3"
+    },
+    {
+     "value": "جِـ",
+     "page": 81,
+     "audio": "u4-jim-s05.mp3"
+    },
+    {
+     "value": "جِيْـ",
+     "page": 81,
+     "audio": "u4-jim-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 81,
+     "data": {
+      "letter": "ج",
+      "items": [
+       "جَزَرٌ",
+       "جُبْنٌ",
+       "جِسْرٌ",
+       "ثَلْجٌ",
+       "نَجْمٌ",
+       "جَامِعٌ",
+       "نُجُوْمٌ",
+       "عَجِيْنٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 83,
+     "data": {
+      "shape": "jim"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "balloons",
+     "page": 81,
+     "data": {
+      "choices": [
+       "جَـ",
+       "جَا",
+       "جُـ",
+       "جُوْ",
+       "جِـ",
+       "جِيْـ"
+      ],
+      "targets": [
+       "جَـ",
+       "جُوْ",
+       "جِـ",
+       "جَا"
+      ],
+      "per": 3
+     },
+     "say": "فَرْقِعِ الْبَالُونَ الَّذِي تَسْمَعُهُ",
+     "audio": "c-balloons.mp3"
+    },
+    {
+     "template": "read",
+     "page": 83,
+     "data": {
+      "sentences": [
+       {
+        "text": "رِحَابُ جَارَةُ جَنَىٰ",
+        "audio": "u4-jim-r01.mp3"
+       },
+       {
+        "text": "عِنْدَ رِحَابَ حَدِيْقَةٌ، تَزْرَعُ",
+        "audio": "u4-jim-r02.mp3"
+       },
+       {
+        "text": "رِحَابُ وَرْدًا وَنَرْجِسًا جَمِيْلًا",
+        "audio": "u4-jim-r03.mp3"
+       },
+       {
+        "text": "نَزْرَعُ وَلَا نَقْطَعُ",
+        "audio": "u4-jim-r04.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "رِحَابُ جَارَةُ جَنَىٰ",
+     "page": 83,
+     "audio": "u4-jim-r01.mp3"
+    },
+    {
+     "text": "عِنْدَ رِحَابَ حَدِيْقَةٌ، تَزْرَعُ",
+     "page": 83,
+     "audio": "u4-jim-r02.mp3"
+    },
+    {
+     "text": "رِحَابُ وَرْدًا وَنَرْجِسًا جَمِيْلًا",
+     "page": 83,
+     "audio": "u4-jim-r03.mp3"
+    },
+    {
+     "text": "نَزْرَعُ وَلَا نَقْطَعُ",
+     "page": 83,
+     "audio": "u4-jim-r04.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ج",
+    "art": "carrots",
+    "audio": "u4-jim-sticker.mp3"
+   }
+  },
+  {
+   "id": "u4-sad",
+   "book": "reading",
+   "unit": 4,
+   "unitTitle": "الْوَحْدَةُ الرَّابِعَةُ: صِحَّتِي وَبِيْئَتِي",
+   "unitPage": 71,
+   "pages": [
+    84,
+    85,
+    86
+   ],
+   "title": "ص",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "صَيَّادٌ",
+     "page": 84,
+     "art": "hunter",
+     "audio": "u4-sad-w01.mp3"
+    },
+    {
+     "value": "صُنْدُوْقٌ",
+     "page": 84,
+     "art": "box",
+     "audio": "u4-sad-w02.mp3"
+    },
+    {
+     "value": "صِنَّارَةٌ",
+     "page": 84,
+     "art": "fishing_rod",
+     "audio": "u4-sad-w03.mp3"
+    },
+    {
+     "value": "قَفَصٌ",
+     "page": 84,
+     "art": "birdcage",
+     "audio": "u4-sad-w04.mp3"
+    },
+    {
+     "value": "إِصْبَعٌ",
+     "page": 84,
+     "art": "finger",
+     "audio": "u3-ayn-w04.mp3"
+    },
+    {
+     "value": "صَافِرَةٌ",
+     "page": 84,
+     "art": "whistle",
+     "audio": "u4-sad-w06.mp3"
+    },
+    {
+     "value": "صُوْصٌ",
+     "page": 84,
+     "art": "chick",
+     "audio": "u4-sad-w07.mp3"
+    },
+    {
+     "value": "صِيْصَانٌ",
+     "page": 84,
+     "art": "chicks",
+     "audio": "u4-sad-w08.mp3"
+    },
+    {
+     "value": "صَقْرٌ",
+     "page": 85,
+     "art": "eagle",
+     "audio": "u3-qaf-w05.mp3"
+    },
+    {
+     "value": "صَارُوْخٌ",
+     "page": 85,
+     "art": "rocket",
+     "audio": "u4-sad-w10.mp3"
+    },
+    {
+     "value": "صُوْرَةٌ",
+     "page": 85,
+     "art": "picture",
+     "audio": "u4-sad-w11.mp3"
+    },
+    {
+     "value": "قَصْرٌ",
+     "page": 85,
+     "art": "palace",
+     "audio": "u4-sad-w12.mp3"
+    },
+    {
+     "value": "مِصْباحٌ",
+     "page": 85,
+     "art": "light_bulb",
+     "audio": "u4-sad-w13.mp3"
+    },
+    {
+     "value": "صَبَا",
+     "page": 85,
+     "art": null,
+     "audio": "u4-sad-w14.mp3"
+    },
+    {
+     "value": "صَبَاحٌ",
+     "page": 85,
+     "art": null,
+     "audio": "u4-sad-w15.mp3"
+    },
+    {
+     "value": "عَصِيْرٌ",
+     "page": 85,
+     "art": null,
+     "audio": "u4-sad-w16.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "صَـ",
+     "page": 84,
+     "audio": "u4-sad-s01.mp3"
+    },
+    {
+     "value": "صَا",
+     "page": 84,
+     "audio": "u4-sad-s02.mp3"
+    },
+    {
+     "value": "صُـ",
+     "page": 84,
+     "audio": "u4-sad-s03.mp3"
+    },
+    {
+     "value": "صُوْ",
+     "page": 84,
+     "audio": "u4-sad-s04.mp3"
+    },
+    {
+     "value": "صِـ",
+     "page": 84,
+     "audio": "u4-sad-s05.mp3"
+    },
+    {
+     "value": "صِيْـ",
+     "page": 84,
+     "audio": "u4-sad-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 84,
+     "data": {
+      "letter": "ص",
+      "items": [
+       "صَيَّادٌ",
+       "صُنْدُوْقٌ",
+       "صِنَّارَةٌ",
+       "قَفَصٌ",
+       "إِصْبَعٌ",
+       "صَافِرَةٌ",
+       "صُوْصٌ",
+       "صِيْصَانٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 86,
+     "data": {
+      "shape": "sad"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "build",
+     "page": 84,
+     "data": {
+      "pieces": [
+       "صَيْـ",
+       "ـيَا",
+       "دٌ",
+       "صُنْـ",
+       "ـدُوْ",
+       "قٌ",
+       "صَـ"
+      ],
+      "words": [
+       {
+        "word": "صَيَّادٌ",
+        "parts": [
+         "صَيْـ",
+         "ـيَا",
+         "دٌ"
+        ],
+        "art": "hunter"
+       },
+       {
+        "word": "صُنْدُوْقٌ",
+        "parts": [
+         "صُنْـ",
+         "ـدُوْ",
+         "قٌ"
+        ],
+        "art": "box"
+       }
+      ]
+     },
+     "say": "رَكِّبِ الْكَلِمَةَ مِنْ مَقَاطِعِهَا",
+     "audio": "c-build.mp3"
+    },
+    {
+     "template": "read",
+     "page": 86,
+     "data": {
+      "sentences": [
+       {
+        "text": "صَبَاحٌ جَمِيْلٌ يَامَامَا وَبَابَا",
+        "audio": "u4-sad-r01.mp3"
+       },
+       {
+        "text": "صَبَاحٌ جَمِيْلٌ يَا صَادِقُ",
+        "audio": "u4-sad-r02.mp3"
+       },
+       {
+        "text": "قَالَتْ مَامَا: تَتَنَاوَلُ صَبَا",
+        "audio": "u4-sad-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "صَبَاحٌ جَمِيْلٌ يَامَامَا وَبَابَا",
+     "page": 86,
+     "audio": "u4-sad-r01.mp3"
+    },
+    {
+     "text": "صَبَاحٌ جَمِيْلٌ يَا صَادِقُ",
+     "page": 86,
+     "audio": "u4-sad-r02.mp3"
+    },
+    {
+     "text": "قَالَتْ مَامَا: تَتَنَاوَلُ صَبَا",
+     "page": 86,
+     "audio": "u4-sad-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ص",
+    "art": "hunter",
+    "audio": "u4-sad-sticker.mp3"
+   }
+  },
+  {
+   "id": "u4-tanween",
+   "book": "reading",
+   "unit": 4,
+   "unitTitle": "الْوَحْدَةُ الرَّابِعَةُ: صِحَّتِي وَبِيْئَتِي",
+   "unitPage": 71,
+   "pages": [
+    87,
+    88
+   ],
+   "title": "ـٍ",
+   "kind": "tanween",
+   "items": [
+    {
+     "value": "مَوْزٍ",
+     "page": 87,
+     "art": "bananas",
+     "audio": "u4-tanween-w01.mp3"
+    },
+    {
+     "value": "زَيْتُوْنٍ",
+     "page": 87,
+     "art": "olives",
+     "audio": "u4-tanween-w02.mp3"
+    },
+    {
+     "value": "حُوْتٍ",
+     "page": 87,
+     "art": "whale",
+     "audio": "u4-tanween-w03.mp3"
+    },
+    {
+     "value": "بَنَاتٍ",
+     "page": 87,
+     "art": "girls",
+     "audio": "u4-tanween-w04.mp3"
+    },
+    {
+     "value": "بِنَشَاطٍ",
+     "page": 87,
+     "art": null,
+     "audio": "u4-tanween-w05.mp3"
+    },
+    {
+     "value": "بِسُرْعَةٍ",
+     "page": 87,
+     "art": null,
+     "audio": "u4-tanween-w06.mp3"
+    }
+   ],
+   "syllables": [],
+   "games": [
+    {
+     "template": "listen",
+     "page": 87,
+     "data": {
+      "letter": "ـٍ",
+      "items": [
+       "مَوْزٍ",
+       "زَيْتُوْنٍ",
+       "حُوْتٍ",
+       "بَنَاتٍ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "balloons",
+     "page": 87,
+     "data": {
+      "choices": [
+       "مَوْزٍ",
+       "زَيْتُوْنٍ",
+       "حُوْتٍ",
+       "بَنَاتٍ",
+       "بِنَشَاطٍ",
+       "بِسُرْعَةٍ"
+      ],
+      "targets": [
+       "مَوْزٍ",
+       "زَيْتُوْنٍ",
+       "حُوْتٍ",
+       "بَنَاتٍ"
+      ],
+      "per": 3
+     },
+     "say": "فَرْقِعِ الْبَالُونَ الَّذِي تَسْمَعُهُ",
+     "audio": "c-balloons.mp3"
+    },
+    {
+     "template": "match",
+     "page": 87,
+     "data": {
+      "pairs": [
+       "مَوْزٍ",
+       "زَيْتُوْنٍ",
+       "حُوْتٍ",
+       "بَنَاتٍ"
+      ],
+      "per": 3
+     },
+     "say": "اِسْحَبِ الْكَلِمَةَ إِلَى صُورَتِهَا",
+     "audio": "c-match.mp3"
+    },
+    {
+     "template": "sort",
+     "page": 87,
+     "data": {
+      "bins": [
+       {
+        "label": "تَنْوِيْنُ الْفَتْحِ"
+       },
+       {
+        "label": "تَنْوِيْنُ الْكَسْرِ"
+       }
+      ],
+      "items": [
+       {
+        "text": "عَلَمًا",
+        "bin": 0
+       },
+       {
+        "text": "بُوْمَةً",
+        "bin": 0
+       },
+       {
+        "text": "تَـمْرًا",
+        "bin": 0
+       },
+       {
+        "text": "مَوْزٍ",
+        "bin": 1
+       },
+       {
+        "text": "زَيْتُوْنٍ",
+        "bin": 1
+       },
+       {
+        "text": "حُوْتٍ",
+        "bin": 1
+       }
+      ]
+     },
+     "say": "ضَعْ كُلَّ كَلِمَةٍ فِي سَلَّتِهَا",
+     "audio": "c-sort.mp3"
+    },
+    {
+     "template": "read",
+     "page": 87,
+     "data": {
+      "sentences": [
+       {
+        "text": "لَعِبْتُ فِي مَلْعَبٍ وَاسِعٍ",
+        "audio": "u4-tanween-r01.mp3"
+       },
+       {
+        "text": "سَافَرْتُ بِقِطَارٍ سَرِيْعٍ",
+        "audio": "u4-tanween-r02.mp3"
+       },
+       {
+        "text": "دَرَسَ سَالِمٌ بِنَشَاطٍ",
+        "audio": "u4-tanween-r03.mp3"
+       },
+       {
+        "text": "سَارَ سَعْدٌ بِسُرْعَةٍ",
+        "audio": "u4-tanween-r04.mp3"
+       },
+       {
+        "text": "فِيْ صَبَاحٍ جميلٍ نَصْحُوْ",
+        "audio": "u4-tanween-r05.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "لَعِبْتُ فِي مَلْعَبٍ وَاسِعٍ",
+     "page": 87,
+     "audio": "u4-tanween-r01.mp3"
+    },
+    {
+     "text": "سَافَرْتُ بِقِطَارٍ سَرِيْعٍ",
+     "page": 87,
+     "audio": "u4-tanween-r02.mp3"
+    },
+    {
+     "text": "دَرَسَ سَالِمٌ بِنَشَاطٍ",
+     "page": 87,
+     "audio": "u4-tanween-r03.mp3"
+    },
+    {
+     "text": "سَارَ سَعْدٌ بِسُرْعَةٍ",
+     "page": 87,
+     "audio": "u4-tanween-r04.mp3"
+    },
+    {
+     "text": "فِيْ صَبَاحٍ جميلٍ نَصْحُوْ",
+     "page": 88,
+     "audio": "u4-tanween-r05.mp3"
+    },
+    {
+     "text": "نَدْرُسُ وَنَلْعَبُ بِسُرُوْرٍ",
+     "page": 88,
+     "audio": "u4-tanween-r06.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ الْكَسْرِ",
+    "art": "bananas",
+    "audio": "u4-tanween-sticker.mp3"
+   }
+  },
+  {
+   "id": "u5-open",
+   "book": "reading",
+   "unit": 5,
+   "unitTitle": "الْوَحْدَةُ الْخَامِسَةُ : هُوَايَاتِي وَأَلْعَابِي",
+   "unitPage": 89,
+   "pages": [
+    89
+   ],
+   "title": "★",
+   "kind": "open",
+   "items": [],
+   "syllables": [],
+   "games": [
+    {
+     "template": "scene",
+     "page": 89,
+     "data": {
+      "scene": {
+       "items": [
+        {
+         "art": "football_goal",
+         "x": 20,
+         "y": 60,
+         "w": 130
+        },
+        {
+         "art": "boy_kicking_ball",
+         "x": 150,
+         "y": 80,
+         "w": 100
+        },
+        {
+         "art": "paintbrush",
+         "x": 250,
+         "y": 170,
+         "w": 60
+        },
+        {
+         "art": "book",
+         "x": 310,
+         "y": 165,
+         "w": 65
+        },
+        {
+         "art": "drum",
+         "x": 270,
+         "y": 70,
+         "w": 80
+        },
+        {
+         "art": "balloon",
+         "x": 340,
+         "y": 20,
+         "w": 50
+        }
+       ],
+       "bg": {}
+      },
+      "prompts": [
+       {
+        "text": "أَصِفُ مَا أُشَاهِدُهُ فِي كُلِّ صُوْرَةَ",
+        "page": 89,
+        "audio": "u5-open-q01.mp3"
+       },
+       {
+        "text": "أَيْنَ يَجْلِسُ الْأَطْفَالُ فِي اللَّوْحَةِ الْأوْلَى؟",
+        "page": 89,
+        "audio": "u5-open-q02.mp3"
+       },
+       {
+        "text": "مَاذَا يُـمْكِنُ أَنْ تَصْنَعَ مِنَ الْوَرَقِ ؟",
+        "page": 89,
+        "audio": "u5-open-q03.mp3"
+       },
+       {
+        "text": "كَوّنْ قِصَّةً مِنَ الصُّورِ الَّتِي أَمَامَكَ",
+        "page": 89,
+        "audio": "u5-open-q04.mp3"
+       }
+      ]
+     },
+     "say": "اِلْمَسِ الصُّورَةَ وَتَحَدَّثْ",
+     "audio": "c-scene.mp3"
+    },
+    {
+     "template": "puzzle",
+     "page": 89,
+     "data": {
+      "scene": {
+       "items": [
+        {
+         "art": "football_goal",
+         "x": 20,
+         "y": 60,
+         "w": 130
+        },
+        {
+         "art": "boy_kicking_ball",
+         "x": 150,
+         "y": 80,
+         "w": 100
+        },
+        {
+         "art": "paintbrush",
+         "x": 250,
+         "y": 170,
+         "w": 60
+        },
+        {
+         "art": "book",
+         "x": 310,
+         "y": 165,
+         "w": 65
+        },
+        {
+         "art": "drum",
+         "x": 270,
+         "y": 70,
+         "w": 80
+        },
+        {
+         "art": "balloon",
+         "x": 340,
+         "y": 20,
+         "w": 50
+        }
+       ],
+       "bg": {}
+      },
+      "pieces": 6
+     },
+     "say": "رَكِّبِ الصُّورَةَ",
+     "audio": "c-puzzle.mp3"
+    }
+   ],
+   "prompts": [
+    {
+     "text": "أَصِفُ مَا أُشَاهِدُهُ فِي كُلِّ صُوْرَةَ",
+     "page": 89,
+     "audio": "u5-open-q01.mp3"
+    },
+    {
+     "text": "أَيْنَ يَجْلِسُ الْأَطْفَالُ فِي اللَّوْحَةِ الْأوْلَى؟",
+     "page": 89,
+     "audio": "u5-open-q02.mp3"
+    },
+    {
+     "text": "مَاذَا يُـمْكِنُ أَنْ تَصْنَعَ مِنَ الْوَرَقِ ؟",
+     "page": 89,
+     "audio": "u5-open-q03.mp3"
+    },
+    {
+     "text": "كَوّنْ قِصَّةً مِنَ الصُّورِ الَّتِي أَمَامَكَ",
+     "page": 89,
+     "audio": "u5-open-q04.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ هُوَايَاتِي وَأَلْعَابِي",
+    "art": "football_goal",
+    "audio": "u5-open-sticker.mp3"
+   }
+  },
+  {
+   "id": "u5-alif",
+   "book": "reading",
+   "unit": 5,
+   "unitTitle": "الْوَحْدَةُ الْخَامِسَةُ : هُوَايَاتِي وَأَلْعَابِي",
+   "unitPage": 89,
+   "pages": [
+    90,
+    91,
+    92
+   ],
+   "title": "أ",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "أَرْنَبٌ",
+     "page": 90,
+     "art": "rabbit",
+     "audio": "u5-alif-w01.mp3"
+    },
+    {
+     "value": "أَسَدٌ",
+     "page": 90,
+     "art": "lion",
+     "audio": "u5-alif-w02.mp3"
+    },
+    {
+     "value": "أُذُنٌ",
+     "page": 90,
+     "art": "ear",
+     "audio": "u5-alif-w03.mp3"
+    },
+    {
+     "value": "أُخْطُبُوْطٌ",
+     "page": 90,
+     "art": "octopus",
+     "audio": "u5-alif-w04.mp3"
+    },
+    {
+     "value": "إِبْرِيْقٌ",
+     "page": 90,
+     "art": "jug",
+     "audio": "u5-alif-w05.mp3"
+    },
+    {
+     "value": "إِوَزَّةٌ",
+     "page": 90,
+     "art": "goose",
+     "audio": "u5-alif-w06.mp3"
+    },
+    {
+     "value": "فَأْرٌ",
+     "page": 90,
+     "art": "mouse",
+     "audio": "u5-alif-w07.mp3"
+    },
+    {
+     "value": "أَزْهَارٌ",
+     "page": 91,
+     "art": "flowers",
+     "audio": "u4-zay-w11.mp3"
+    },
+    {
+     "value": "رَأْسٌ",
+     "page": 91,
+     "art": "boy_head",
+     "audio": "u5-alif-w09.mp3"
+    },
+    {
+     "value": "فَأْسٌ",
+     "page": 91,
+     "art": "axe",
+     "audio": "u5-alif-w10.mp3"
+    },
+    {
+     "value": "إِحْسَانٌ",
+     "page": 91,
+     "art": null,
+     "audio": "u5-alif-w11.mp3"
+    },
+    {
+     "value": "يَقْرَأُ",
+     "page": 91,
+     "art": null,
+     "audio": "u5-alif-w12.mp3"
+    },
+    {
+     "value": "أَزْرَعُ",
+     "page": 91,
+     "art": null,
+     "audio": "u5-alif-w13.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "أَ",
+     "page": 90,
+     "audio": "u5-alif-s01.mp3"
+    },
+    {
+     "value": "أُ",
+     "page": 90,
+     "audio": "u5-alif-s02.mp3"
+    },
+    {
+     "value": "إِ",
+     "page": 90,
+     "audio": "u5-alif-s03.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 90,
+     "data": {
+      "letter": "أ",
+      "items": [
+       "أَرْنَبٌ",
+       "أَسَدٌ",
+       "أُذُنٌ",
+       "أُخْطُبُوْطٌ",
+       "إِبْرِيْقٌ",
+       "إِوَزَّةٌ",
+       "فَأْرٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 92,
+     "data": {
+      "shape": "alif_hamza"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "match",
+     "page": 90,
+     "data": {
+      "pairs": [
+       "أَرْنَبٌ",
+       "أَسَدٌ",
+       "أُذُنٌ",
+       "أُخْطُبُوْطٌ"
+      ],
+      "per": 3
+     },
+     "say": "اِسْحَبِ الْكَلِمَةَ إِلَى صُورَتِهَا",
+     "audio": "c-match.mp3"
+    },
+    {
+     "template": "read",
+     "page": 92,
+     "data": {
+      "sentences": [
+       {
+        "text": "يَلْعَبُ أَحْمَدُ فِي حَدِيْقَتِي",
+        "audio": "u5-alif-r01.mp3"
+       },
+       {
+        "text": "يَقُوْلُ إِحْسَانٌ : أَنَا أَزْرَعُ أَشْجَارًا",
+        "audio": "u5-alif-r02.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "يَلْعَبُ أَحْمَدُ فِي حَدِيْقَتِي",
+     "page": 92,
+     "audio": "u5-alif-r01.mp3"
+    },
+    {
+     "text": "يَقُوْلُ إِحْسَانٌ : أَنَا أَزْرَعُ أَشْجَارًا",
+     "page": 92,
+     "audio": "u5-alif-r02.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ أ",
+    "art": "rabbit",
+    "audio": "u5-alif-sticker.mp3"
+   }
+  },
+  {
+   "id": "u5-dad",
+   "book": "reading",
+   "unit": 5,
+   "unitTitle": "الْوَحْدَةُ الْخَامِسَةُ : هُوَايَاتِي وَأَلْعَابِي",
+   "unitPage": 89,
+   "pages": [
+    93,
+    94,
+    95
+   ],
+   "title": "ض",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "ضَفِيْرَةٌ",
+     "page": 93,
+     "art": "braid",
+     "audio": "u5-dad-w01.mp3"
+    },
+    {
+     "value": "ضُيُوْفٌ",
+     "page": 93,
+     "art": "guests",
+     "audio": "u5-dad-w02.mp3"
+    },
+    {
+     "value": "ضِرْسٌ",
+     "page": 93,
+     "art": "tooth",
+     "audio": "u5-dad-w03.mp3"
+    },
+    {
+     "value": "مُـمَرِّضٌ",
+     "page": 93,
+     "art": "male_nurse",
+     "audio": "u5-dad-w04.mp3"
+    },
+    {
+     "value": "مِضْرَبٌ",
+     "page": 93,
+     "art": "bat",
+     "audio": "u5-dad-w05.mp3"
+    },
+    {
+     "value": "ضَابِطٌ",
+     "page": 93,
+     "art": "officer",
+     "audio": "u5-dad-w06.mp3"
+    },
+    {
+     "value": "وُضُوْءٌ",
+     "page": 93,
+     "art": "ablution",
+     "audio": "u5-dad-w07.mp3"
+    },
+    {
+     "value": "رَضِيْعٌ",
+     "page": 93,
+     "art": "baby",
+     "audio": "u5-dad-w08.mp3"
+    },
+    {
+     "value": "يَضْرِبُ",
+     "page": 94,
+     "art": "boy_kicking_ball",
+     "audio": "u5-dad-w09.mp3"
+    },
+    {
+     "value": "يَضْحَكُ",
+     "page": 94,
+     "art": "laughing_boy",
+     "audio": "u5-dad-w10.mp3"
+    },
+    {
+     "value": "رِيَاضٌ",
+     "page": 94,
+     "art": null,
+     "audio": "u5-dad-w11.mp3"
+    },
+    {
+     "value": "ضُحَىٰ",
+     "page": 94,
+     "art": null,
+     "audio": "u5-dad-w12.mp3"
+    },
+    {
+     "value": "مَرِيْضٌ",
+     "page": 94,
+     "art": null,
+     "audio": "u5-dad-w13.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "ضَـ",
+     "page": 93,
+     "audio": "u5-dad-s01.mp3"
+    },
+    {
+     "value": "ضَا",
+     "page": 93,
+     "audio": "u5-dad-s02.mp3"
+    },
+    {
+     "value": "ضُـ",
+     "page": 93,
+     "audio": "u5-dad-s03.mp3"
+    },
+    {
+     "value": "ضُوْ",
+     "page": 93,
+     "audio": "u5-dad-s04.mp3"
+    },
+    {
+     "value": "ضِـ",
+     "page": 93,
+     "audio": "u5-dad-s05.mp3"
+    },
+    {
+     "value": "ضِيْـ",
+     "page": 93,
+     "audio": "u5-dad-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 93,
+     "data": {
+      "letter": "ض",
+      "items": [
+       "ضَفِيْرَةٌ",
+       "ضُيُوْفٌ",
+       "ضِرْسٌ",
+       "مُـمَرِّضٌ",
+       "مِضْرَبٌ",
+       "ضَابِطٌ",
+       "وُضُوْءٌ",
+       "رَضِيْعٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 95,
+     "data": {
+      "shape": "dad"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "memory",
+     "page": 93,
+     "data": {
+      "pairs": [
+       {
+        "text": "ضَفِيْرَةٌ",
+        "art": "braid"
+       },
+       {
+        "text": "ضُيُوْفٌ",
+        "art": "guests"
+       },
+       {
+        "text": "ضِرْسٌ",
+        "art": "tooth"
+       },
+       {
+        "text": "مُـمَرِّضٌ",
+        "art": "male_nurse"
+       }
+      ]
+     },
+     "say": "اِقْلِبْ بِطَاقَتَيْنِ مُتَشَابِهَتَيْنِ",
+     "audio": "c-memory.mp3"
+    },
+    {
+     "template": "read",
+     "page": 95,
+     "data": {
+      "sentences": [
+       {
+        "text": "ضُحَىٰ تَعْمَلُ فِي مُسْتَشْفَىٰ",
+        "audio": "u5-dad-r01.mp3"
+       },
+       {
+        "text": "رِيَاضٌ يَعْمَلُ فِي مُسْتَشْفَىٰ",
+        "audio": "u5-dad-r02.mp3"
+       },
+       {
+        "text": "ضُحَىٰ تَـحْمِلُ رَضِيْعًا",
+        "audio": "u5-dad-r03.mp3"
+       },
+       {
+        "text": "رِيَاضٌ يُسَاعِدُ مَرِيْضًا",
+        "audio": "u5-dad-r04.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "ضُحَىٰ تَعْمَلُ فِي مُسْتَشْفَىٰ",
+     "page": 95,
+     "audio": "u5-dad-r01.mp3"
+    },
+    {
+     "text": "رِيَاضٌ يَعْمَلُ فِي مُسْتَشْفَىٰ",
+     "page": 95,
+     "audio": "u5-dad-r02.mp3"
+    },
+    {
+     "text": "ضُحَىٰ تَـحْمِلُ رَضِيْعًا",
+     "page": 95,
+     "audio": "u5-dad-r03.mp3"
+    },
+    {
+     "text": "رِيَاضٌ يُسَاعِدُ مَرِيْضًا",
+     "page": 95,
+     "audio": "u5-dad-r04.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ض",
+    "art": "braid",
+    "audio": "u5-dad-sticker.mp3"
+   }
+  },
+  {
+   "id": "u5-kha",
+   "book": "reading",
+   "unit": 5,
+   "unitTitle": "الْوَحْدَةُ الْخَامِسَةُ : هُوَايَاتِي وَأَلْعَابِي",
+   "unitPage": 89,
+   "pages": [
+    96,
+    97,
+    98
+   ],
+   "title": "خ",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "خَشَبٌ",
+     "page": 96,
+     "art": "wood_logs",
+     "audio": "u5-kha-w01.mp3"
+    },
+    {
+     "value": "خُبْزٌ",
+     "page": 96,
+     "art": "khubz",
+     "audio": "u5-kha-w02.mp3"
+    },
+    {
+     "value": "خِيَارٌ",
+     "page": 96,
+     "art": "cucumber",
+     "audio": "u3-ya-w06.mp3"
+    },
+    {
+     "value": "خَوْخٌ",
+     "page": 96,
+     "art": "peach",
+     "audio": "u3-waw-w14.mp3"
+    },
+    {
+     "value": "أُخْطُبُوطٌ",
+     "page": 96,
+     "art": "octopus",
+     "audio": "u5-kha-w05.mp3"
+    },
+    {
+     "value": "خَاتَـمٌ",
+     "page": 96,
+     "art": "ring",
+     "audio": "u5-kha-w06.mp3"
+    },
+    {
+     "value": "صُخُوْرٌ",
+     "page": 96,
+     "art": "rocks",
+     "audio": "u5-kha-w07.mp3"
+    },
+    {
+     "value": "نَخِيْلٌ",
+     "page": 96,
+     "art": "palm_trees",
+     "audio": "u5-kha-w08.mp3"
+    },
+    {
+     "value": "خَسٌّ",
+     "page": 97,
+     "art": "lettuce",
+     "audio": "u5-kha-w09.mp3"
+    },
+    {
+     "value": "خَاتَمٌ",
+     "page": 97,
+     "art": "ring",
+     "audio": "u5-kha-w10.mp3"
+    },
+    {
+     "value": "خُوْذَةٌ",
+     "page": 97,
+     "art": "helmet",
+     "audio": "u5-kha-w11.mp3"
+    },
+    {
+     "value": "صَخْرَةٌ",
+     "page": 97,
+     "art": "rock",
+     "audio": "u5-kha-w12.mp3"
+    },
+    {
+     "value": "نَخْـلَةٌ",
+     "page": 97,
+     "art": "palm_tree",
+     "audio": "u5-kha-w13.mp3"
+    },
+    {
+     "value": "سَاخِنٌ",
+     "page": 97,
+     "art": null,
+     "audio": "u5-kha-w14.mp3"
+    },
+    {
+     "value": "مَطْبَخٌ",
+     "page": 97,
+     "art": "kitchen",
+     "audio": "u3-tta-w13.mp3"
+    },
+    {
+     "value": "خَالَتِي",
+     "page": 97,
+     "art": null,
+     "audio": "u5-kha-w16.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "خَـ",
+     "page": 96,
+     "audio": "u5-kha-s01.mp3"
+    },
+    {
+     "value": "خَا",
+     "page": 96,
+     "audio": "u5-kha-s02.mp3"
+    },
+    {
+     "value": "خُـ",
+     "page": 96,
+     "audio": "u5-kha-s03.mp3"
+    },
+    {
+     "value": "خُوْ",
+     "page": 96,
+     "audio": "u5-kha-s04.mp3"
+    },
+    {
+     "value": "خِـ",
+     "page": 96,
+     "audio": "u5-kha-s05.mp3"
+    },
+    {
+     "value": "خِيْـ",
+     "page": 96,
+     "audio": "u5-kha-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 96,
+     "data": {
+      "letter": "خ",
+      "items": [
+       "خَشَبٌ",
+       "خُبْزٌ",
+       "خِيَارٌ",
+       "خَوْخٌ",
+       "أُخْطُبُوطٌ",
+       "خَاتَـمٌ",
+       "صُخُوْرٌ",
+       "نَخِيْلٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 98,
+     "data": {
+      "shape": "kha"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "train",
+     "page": 96,
+     "data": {
+      "rounds": [
+       {
+        "say": "خَشَبٌ",
+        "options": [
+         {
+          "text": "خُبْزٌ"
+         },
+         {
+          "text": "نَخِيْلٌ"
+         },
+         {
+          "text": "خَشَبٌ"
+         }
+        ],
+        "answer": 2
+       },
+       {
+        "say": "خُبْزٌ",
+        "options": [
+         {
+          "text": "أُخْطُبُوطٌ"
+         },
+         {
+          "text": "خُبْزٌ"
+         },
+         {
+          "text": "نَخْـلَةٌ"
+         }
+        ],
+        "answer": 1
+       },
+       {
+        "say": "خِيَارٌ",
+        "options": [
+         {
+          "text": "نَخِيْلٌ"
+         },
+         {
+          "text": "خِيَارٌ"
+         },
+         {
+          "text": "خَوْخٌ"
+         }
+        ],
+        "answer": 1
+       },
+       {
+        "say": "خَوْخٌ",
+        "options": [
+         {
+          "text": "خَوْخٌ"
+         },
+         {
+          "text": "سَاخِنٌ"
+         },
+         {
+          "text": "مَطْبَخٌ"
+         }
+        ],
+        "answer": 0
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاخْتَرِ الْكَلِمَةَ",
+     "audio": "c-train.mp3"
+    },
+    {
+     "template": "read",
+     "page": 98,
+     "data": {
+      "sentences": [
+       {
+        "text": "تَـحْمِلُ خِتَامُ خُضَارًا وخُبْزًا",
+        "audio": "u5-kha-r01.mp3"
+       },
+       {
+        "text": "خِتَامُ تَطْبُخُ فِي مَطْبَخِ خَالَتِي",
+        "audio": "u5-kha-r02.mp3"
+       },
+       {
+        "text": "أَحْضَرَتْ خُضَارًا، وَخَبَزَتْ خُبْزًا سَاخِنًا",
+        "audio": "u5-kha-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "تَـحْمِلُ خِتَامُ خُضَارًا وخُبْزًا",
+     "page": 98,
+     "audio": "u5-kha-r01.mp3"
+    },
+    {
+     "text": "خِتَامُ تَطْبُخُ فِي مَطْبَخِ خَالَتِي",
+     "page": 98,
+     "audio": "u5-kha-r02.mp3"
+    },
+    {
+     "text": "أَحْضَرَتْ خُضَارًا، وَخَبَزَتْ خُبْزًا سَاخِنًا",
+     "page": 98,
+     "audio": "u5-kha-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ خ",
+    "art": "wood_logs",
+    "audio": "u5-kha-sticker.mp3"
+   }
+  },
+  {
+   "id": "u5-tha",
+   "book": "reading",
+   "unit": 5,
+   "unitTitle": "الْوَحْدَةُ الْخَامِسَةُ : هُوَايَاتِي وَأَلْعَابِي",
+   "unitPage": 89,
+   "pages": [
+    99,
+    100,
+    101
+   ],
+   "title": "ث",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "ثَعْلَبٌ",
+     "page": 99,
+     "art": "fox",
+     "audio": "u3-ayn-w11.mp3"
+    },
+    {
+     "value": "ثُعْبَانٌ",
+     "page": 99,
+     "art": "snake",
+     "audio": "u5-tha-w02.mp3"
+    },
+    {
+     "value": "ثِيَابٌ",
+     "page": 99,
+     "art": "clothes",
+     "audio": "u5-tha-w03.mp3"
+    },
+    {
+     "value": "مُثَلَّثٌ",
+     "page": 99,
+     "art": "triangle",
+     "audio": "u5-tha-w04.mp3"
+    },
+    {
+     "value": "أَثْقَالٌ",
+     "page": 99,
+     "art": "dumbbells",
+     "audio": "u5-tha-w05.mp3"
+    },
+    {
+     "value": "أَثَاثٌ",
+     "page": 99,
+     "art": "furniture",
+     "audio": "u5-tha-w06.mp3"
+    },
+    {
+     "value": "ثُوْمٌ",
+     "page": 99,
+     "art": "garlic",
+     "audio": "u5-tha-w07.mp3"
+    },
+    {
+     "value": "ثِيْرَانٌ",
+     "page": 99,
+     "art": "bulls",
+     "audio": "u5-tha-w08.mp3"
+    },
+    {
+     "value": "ثَلْجٌ",
+     "page": 100,
+     "art": "ice",
+     "audio": "u4-jim-w04.mp3"
+    },
+    {
+     "value": "ثِمَارٌ",
+     "page": 100,
+     "art": "fruit_tree",
+     "audio": "u5-tha-w10.mp3"
+    },
+    {
+     "value": "اثْنَانِ",
+     "page": 100,
+     "art": "number_2",
+     "audio": "u5-tha-w11.mp3"
+    },
+    {
+     "value": "مِثْرَامَةٌ",
+     "page": 100,
+     "art": "meat_grinder",
+     "audio": "u5-tha-w12.mp3"
+    },
+    {
+     "value": "تُرَاثُ",
+     "page": 100,
+     "art": null,
+     "audio": "u5-tha-w13.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "ثَـ",
+     "page": 99,
+     "audio": "u5-tha-s01.mp3"
+    },
+    {
+     "value": "ثَا",
+     "page": 99,
+     "audio": "u5-tha-s02.mp3"
+    },
+    {
+     "value": "ثُـ",
+     "page": 99,
+     "audio": "u5-tha-s03.mp3"
+    },
+    {
+     "value": "ثُوْ",
+     "page": 99,
+     "audio": "u1-mim-x112.mp3"
+    },
+    {
+     "value": "ثِـ",
+     "page": 99,
+     "audio": "u5-tha-s05.mp3"
+    },
+    {
+     "value": "ثِيْـ",
+     "page": 99,
+     "audio": "u5-tha-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 99,
+     "data": {
+      "letter": "ث",
+      "items": [
+       "ثَعْلَبٌ",
+       "ثُعْبَانٌ",
+       "ثِيَابٌ",
+       "مُثَلَّثٌ",
+       "أَثْقَالٌ",
+       "أَثَاثٌ",
+       "ثُوْمٌ",
+       "ثِيْرَانٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 101,
+     "data": {
+      "shape": "tha"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "complete",
+     "page": 100,
+     "data": {
+      "rounds": [
+       {
+        "word": "ثَعْلَبٌ",
+        "start": 0,
+        "end": 2,
+        "options": [
+         "خَ",
+         "ثَ",
+         "زَ"
+        ],
+        "answer": 1,
+        "art": "fox"
+       },
+       {
+        "word": "ثُعْبَانٌ",
+        "start": 0,
+        "end": 2,
+        "options": [
+         "جُ",
+         "خُ",
+         "ثُ"
+        ],
+        "answer": 2,
+        "art": "snake"
+       },
+       {
+        "word": "ثِيَابٌ",
+        "start": 0,
+        "end": 2,
+        "options": [
+         "ضِ",
+         "ثِ",
+         "أِ"
+        ],
+        "answer": 1,
+        "art": "clothes"
+       },
+       {
+        "word": "مُثَلَّثٌ",
+        "start": 2,
+        "end": 4,
+        "options": [
+         "ثَ",
+         "خَ",
+         "ضَ"
+        ],
+        "answer": 0,
+        "art": "triangle"
+       }
+      ]
+     },
+     "say": "ضَعِ الْحَرْفَ النَّاقِصَ",
+     "audio": "c-complete.mp3"
+    },
+    {
+     "template": "read",
+     "page": 101,
+     "data": {
+      "sentences": [
+       {
+        "text": "تَشْتَرِي تُرَاثُ أَثَاثًا",
+        "audio": "u5-tha-r01.mp3"
+       },
+       {
+        "text": "تُرَاثُ تَصْنَعُ تِـمْثَالًا مِنْ وَرَقٍ",
+        "audio": "u5-tha-r02.mp3"
+       },
+       {
+        "text": "لَيْثٌ يَصْنَعُ أَثَاثًا مِنْ خَشَبٍ",
+        "audio": "u5-tha-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "تَشْتَرِي تُرَاثُ أَثَاثًا",
+     "page": 101,
+     "audio": "u5-tha-r01.mp3"
+    },
+    {
+     "text": "تُرَاثُ تَصْنَعُ تِـمْثَالًا مِنْ وَرَقٍ",
+     "page": 101,
+     "audio": "u5-tha-r02.mp3"
+    },
+    {
+     "text": "لَيْثٌ يَصْنَعُ أَثَاثًا مِنْ خَشَبٍ",
+     "page": 101,
+     "audio": "u5-tha-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ث",
+    "art": "fox",
+    "audio": "u5-tha-sticker.mp3"
+   }
+  },
+  {
+   "id": "u5-kaf",
+   "book": "reading",
+   "unit": 5,
+   "unitTitle": "الْوَحْدَةُ الْخَامِسَةُ : هُوَايَاتِي وَأَلْعَابِي",
+   "unitPage": 89,
+   "pages": [
+    102,
+    103,
+    104
+   ],
+   "title": "ك",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "كَلْبٌ",
+     "page": 102,
+     "art": "dog",
+     "audio": "u3-lam-w05.mp3"
+    },
+    {
+     "value": "كُرَةٌ",
+     "page": 102,
+     "art": "ball",
+     "audio": "u5-kaf-w02.mp3"
+    },
+    {
+     "value": "كِتَابٌ",
+     "page": 102,
+     "art": "book",
+     "audio": "u2-tanween-w02.mp3"
+    },
+    {
+     "value": "دِيْكٌ",
+     "page": 102,
+     "art": "rooster",
+     "audio": "u5-kaf-w04.mp3"
+    },
+    {
+     "value": "مَكْتَبَةٌ",
+     "page": 102,
+     "art": "boy_at_library",
+     "audio": "u5-kaf-w05.mp3"
+    },
+    {
+     "value": "بُرْكَانٌ",
+     "page": 102,
+     "art": "volcano",
+     "audio": "u5-kaf-w06.mp3"
+    },
+    {
+     "value": "كُوْبٌ",
+     "page": 102,
+     "art": "mug",
+     "audio": "u5-kaf-w07.mp3"
+    },
+    {
+     "value": "كِيْسٌ",
+     "page": 102,
+     "art": "bag",
+     "audio": "u5-kaf-w08.mp3"
+    },
+    {
+     "value": "رُكْبَةٌ",
+     "page": 103,
+     "art": "knee",
+     "audio": "u5-kaf-w09.mp3"
+    },
+    {
+     "value": "مِكْوَاةٌ",
+     "page": 103,
+     "art": "iron",
+     "audio": "u5-kaf-w10.mp3"
+    },
+    {
+     "value": "كُتُبٌ",
+     "page": 103,
+     "art": null,
+     "audio": "u5-kaf-w11.mp3"
+    },
+    {
+     "value": "حِكَايَةٌ",
+     "page": 103,
+     "art": null,
+     "audio": "u5-kaf-w12.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "كَـ",
+     "page": 102,
+     "audio": "u5-kaf-s01.mp3"
+    },
+    {
+     "value": "كَا",
+     "page": 102,
+     "audio": "u5-kaf-s02.mp3"
+    },
+    {
+     "value": "كُـ",
+     "page": 102,
+     "audio": "u5-kaf-s03.mp3"
+    },
+    {
+     "value": "كُوْ",
+     "page": 102,
+     "audio": "u5-kaf-s04.mp3"
+    },
+    {
+     "value": "كِـ",
+     "page": 102,
+     "audio": "u5-kaf-s05.mp3"
+    },
+    {
+     "value": "كِيْـ",
+     "page": 102,
+     "audio": "u5-kaf-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 102,
+     "data": {
+      "letter": "ك",
+      "items": [
+       "كَلْبٌ",
+       "كُرَةٌ",
+       "كِتَابٌ",
+       "دِيْكٌ",
+       "مَكْتَبَةٌ",
+       "بُرْكَانٌ",
+       "كُوْبٌ",
+       "كِيْسٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 104,
+     "data": {
+      "shape": "kaf"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "balloons",
+     "page": 102,
+     "data": {
+      "choices": [
+       "كَـ",
+       "كَا",
+       "كُـ",
+       "كُوْ",
+       "كِـ",
+       "كِيْـ"
+      ],
+      "targets": [
+       "كَـ",
+       "كُوْ",
+       "كِـ",
+       "كَا"
+      ],
+      "per": 3
+     },
+     "say": "فَرْقِعِ الْبَالُونَ الَّذِي تَسْمَعُهُ",
+     "audio": "c-balloons.mp3"
+    },
+    {
+     "template": "read",
+     "page": 104,
+     "data": {
+      "sentences": [
+       {
+        "text": "تَقْرَأُ مَلَاكُ كِتَابًا",
+        "audio": "u5-kaf-r01.mp3"
+       },
+       {
+        "text": "فِي مَكْتَبَةِ مَلَاكَ كُتُبٌ كَثِيْرَةٌ",
+        "audio": "u5-kaf-r02.mp3"
+       },
+       {
+        "text": "قَرَأْتُ فِي كِتَابٍ حِكَايَةَ",
+        "audio": "u5-kaf-r03.mp3"
+       },
+       {
+        "text": "سِنْدِبَادَ وَبِسَاطٍ يَطِيْرُ",
+        "audio": "u5-kaf-r04.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "تَقْرَأُ مَلَاكُ كِتَابًا",
+     "page": 104,
+     "audio": "u5-kaf-r01.mp3"
+    },
+    {
+     "text": "فِي مَكْتَبَةِ مَلَاكَ كُتُبٌ كَثِيْرَةٌ",
+     "page": 104,
+     "audio": "u5-kaf-r02.mp3"
+    },
+    {
+     "text": "قَرَأْتُ فِي كِتَابٍ حِكَايَةَ",
+     "page": 104,
+     "audio": "u5-kaf-r03.mp3"
+    },
+    {
+     "text": "سِنْدِبَادَ وَبِسَاطٍ يَطِيْرُ",
+     "page": 104,
+     "audio": "u5-kaf-r04.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ك",
+    "art": "dog",
+    "audio": "u5-kaf-sticker.mp3"
+   }
+  },
+  {
+   "id": "u5-shadda",
+   "book": "reading",
+   "unit": 5,
+   "unitTitle": "الْوَحْدَةُ الْخَامِسَةُ : هُوَايَاتِي وَأَلْعَابِي",
+   "unitPage": 89,
+   "pages": [
+    105,
+    106,
+    107
+   ],
+   "title": "ـّ",
+   "kind": "shadda",
+   "items": [
+    {
+     "value": "مُثَلَّثٌ",
+     "page": 105,
+     "art": "triangle",
+     "audio": "u5-tha-w04.mp3"
+    },
+    {
+     "value": "قِطَّةٌ",
+     "page": 105,
+     "art": "cat",
+     "audio": "u5-shadda-w02.mp3"
+    },
+    {
+     "value": "جَدٌّ",
+     "page": 105,
+     "art": "grandfather",
+     "audio": "u5-shadda-w03.mp3"
+    },
+    {
+     "value": "سَبُّوْرَةٌ",
+     "page": 105,
+     "art": "blackboard",
+     "audio": "u5-shadda-w04.mp3"
+    },
+    {
+     "value": "بِطِّيْخٌ",
+     "page": 105,
+     "art": "bittikh",
+     "audio": "u5-shadda-w05.mp3"
+    },
+    {
+     "value": "مُهَرِّجٌ",
+     "page": 105,
+     "art": "clown",
+     "audio": "u5-shadda-w06.mp3"
+    },
+    {
+     "value": "دَبُّوْسٌ",
+     "page": 105,
+     "art": null,
+     "audio": "u5-shadda-w07.mp3"
+    },
+    {
+     "value": "سَيَّارَةٌ",
+     "page": 105,
+     "art": "car",
+     "audio": "u5-shadda-w08.mp3"
+    },
+    {
+     "value": "مِقَصٌّ",
+     "page": 105,
+     "art": "scissors",
+     "audio": "u5-shadda-w09.mp3"
+    },
+    {
+     "value": "دُبٌّ",
+     "page": 105,
+     "art": "bear",
+     "audio": "u5-shadda-w10.mp3"
+    },
+    {
+     "value": "طَيْيَارَةٌ",
+     "page": 106,
+     "art": null,
+     "audio": "u5-shadda-w11.mp3"
+    },
+    {
+     "value": "نَـجْجَارٌ",
+     "page": 106,
+     "art": null,
+     "audio": "u5-shadda-w12.mp3"
+    },
+    {
+     "value": "سَبْبُوْرَةٌ",
+     "page": 106,
+     "art": null,
+     "audio": "u5-shadda-w13.mp3"
+    },
+    {
+     "value": "تُـمَشْشِطُ",
+     "page": 106,
+     "art": null,
+     "audio": "u5-shadda-w14.mp3"
+    },
+    {
+     "value": "يَقُصُّ",
+     "page": 106,
+     "art": null,
+     "audio": "u5-shadda-w15.mp3"
+    },
+    {
+     "value": "تُفَّاحَةٌ",
+     "page": 106,
+     "art": "apple",
+     "audio": "u5-shadda-w16.mp3"
+    },
+    {
+     "value": "وَدَرَّاجَةً",
+     "page": 107,
+     "art": null,
+     "audio": "u5-shadda-w17.mp3"
+    },
+    {
+     "value": "وبِطِّيْخًا",
+     "page": 107,
+     "art": null,
+     "audio": "u5-shadda-w18.mp3"
+    }
+   ],
+   "syllables": [],
+   "games": [
+    {
+     "template": "listen",
+     "page": 105,
+     "data": {
+      "letter": "ـّ",
+      "items": [
+       "مُثَلَّثٌ",
+       "قِطَّةٌ",
+       "جَدٌّ",
+       "سَبُّوْرَةٌ",
+       "بِطِّيْخٌ",
+       "مُهَرِّجٌ",
+       "سَيَّارَةٌ",
+       "مِقَصٌّ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "build",
+     "page": 106,
+     "data": {
+      "pieces": [
+       "مُـ",
+       "ـثَلْـ",
+       "ـلَـ",
+       "ـثٌ",
+       "قِطْـ",
+       "ـطَـ",
+       "ـةٌ"
+      ],
+      "words": [
+       {
+        "word": "مُثَلَّثٌ",
+        "parts": [
+         "مُـ",
+         "ـثَلْـ",
+         "ـلَـ",
+         "ـثٌ"
+        ],
+        "art": "triangle"
+       },
+       {
+        "word": "قِطَّةٌ",
+        "parts": [
+         "قِطْـ",
+         "ـطَـ",
+         "ـةٌ"
+        ],
+        "art": "cat"
+       }
+      ]
+     },
+     "say": "رَكِّبِ الْكَلِمَةَ مِنْ مَقَاطِعِهَا",
+     "audio": "c-build.mp3"
+    },
+    {
+     "template": "balloons",
+     "page": 105,
+     "data": {
+      "choices": [
+       "مُثَلَّثٌ",
+       "قِطَّةٌ",
+       "جَدٌّ",
+       "سَبُّوْرَةٌ",
+       "بِطِّيْخٌ",
+       "مُهَرِّجٌ"
+      ],
+      "targets": [
+       "مُثَلَّثٌ",
+       "قِطَّةٌ",
+       "جَدٌّ",
+       "سَبُّوْرَةٌ"
+      ],
+      "per": 3
+     },
+     "say": "فَرْقِعِ الْبَالُونَ الَّذِي تَسْمَعُهُ",
+     "audio": "c-balloons.mp3"
+    },
+    {
+     "template": "read",
+     "page": 107,
+     "data": {
+      "sentences": [
+       {
+        "text": "يَقُصُّ لَيْثٌ وَرَقًا بِـمِقَصّ",
+        "audio": "u5-shadda-r01.mp3"
+       },
+       {
+        "text": "وَ يَصْنَعُ طَيَّارَةً وَسَيَّارَةً",
+        "audio": "u5-shadda-r02.mp3"
+       },
+       {
+        "text": "وَتَرْسُمُ ضُحَىٰ تُفَّاحَةً ورُمَّانَةً",
+        "audio": "u5-shadda-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "يَقُصُّ لَيْثٌ وَرَقًا بِـمِقَصّ",
+     "page": 107,
+     "audio": "u5-shadda-r01.mp3"
+    },
+    {
+     "text": "وَ يَصْنَعُ طَيَّارَةً وَسَيَّارَةً",
+     "page": 107,
+     "audio": "u5-shadda-r02.mp3"
+    },
+    {
+     "text": "وَتَرْسُمُ ضُحَىٰ تُفَّاحَةً ورُمَّانَةً",
+     "page": 107,
+     "audio": "u5-shadda-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ الشَّدَّةِ",
+    "art": "triangle",
+    "audio": "u5-shadda-sticker.mp3"
+   }
+  },
+  {
+   "id": "u5-nashid",
+   "book": "reading",
+   "unit": 5,
+   "unitTitle": "الْوَحْدَةُ الْخَامِسَةُ : هُوَايَاتِي وَأَلْعَابِي",
+   "unitPage": 89,
+   "pages": [
+    108
+   ],
+   "title": "♪",
+   "kind": "nashid",
+   "items": [],
+   "syllables": [],
+   "games": [],
+   "nashid": {
+    "title": "نُغَنِّي",
+    "poet": "",
+    "page": 108,
+    "audio": "u5-nashid.mp3"
+   },
+   "scene": {
+    "items": [
+     {
+      "art": "football_goal",
+      "x": 20,
+      "y": 60,
+      "w": 130
+     },
+     {
+      "art": "boy_kicking_ball",
+      "x": 150,
+      "y": 80,
+      "w": 100
+     },
+     {
+      "art": "paintbrush",
+      "x": 250,
+      "y": 170,
+      "w": 60
+     },
+     {
+      "art": "book",
+      "x": 310,
+      "y": 165,
+      "w": 65
+     },
+     {
+      "art": "drum",
+      "x": 270,
+      "y": 70,
+      "w": 80
+     },
+     {
+      "art": "balloon",
+      "x": 340,
+      "y": 20,
+      "w": 50
+     }
+    ],
+    "bg": {}
+   }
+  },
+  {
+   "id": "u6-open",
+   "book": "reading",
+   "unit": 6,
+   "unitTitle": "الْوَحْدَةُ السَّادِسَةُ : الْعَالَمُ مِنْ حَوْلِي",
+   "unitPage": 109,
+   "pages": [
+    109
+   ],
+   "title": "★",
+   "kind": "open",
+   "items": [],
+   "syllables": [],
+   "games": [
+    {
+     "template": "scene",
+     "page": 109,
+     "data": {
+      "scene": {
+       "items": [
+        {
+         "art": "stars",
+         "x": 20,
+         "y": 10,
+         "w": 80
+        },
+        {
+         "art": "crescent_moon",
+         "x": 120,
+         "y": 10,
+         "w": 60
+        },
+        {
+         "art": "microscope",
+         "x": 30,
+         "y": 120,
+         "w": 100
+        },
+        {
+         "art": "spyglass",
+         "x": 150,
+         "y": 110,
+         "w": 100
+        },
+        {
+         "art": "rocket",
+         "x": 270,
+         "y": 40,
+         "w": 100
+        },
+        {
+         "art": "hoopoe",
+         "x": 280,
+         "y": 160,
+         "w": 80
+        }
+       ],
+       "bg": {
+        "sky": "#c5d8ff"
+       },
+       "sun": false
+      },
+      "prompts": [
+       {
+        "text": "أَصِفُ مَا أَرَاهُ فِي كُلِّ صُوْرَةٍ",
+        "page": 109,
+        "audio": "u1-open-q01.mp3"
+       },
+       {
+        "text": "مَا الـجِهَازُ الَّذي يَنْظُرُ فِيْه العَالِمُ فِي الصُّوْرَةِ الأُوْلى؟",
+        "page": 109,
+        "audio": "u6-open-q02.mp3"
+       },
+       {
+        "text": "بِـمَ يَخْتَلِفُ عَنِ الجِهَازِ فِي الصُّوْرَةِ الثَّانِيةِ؟",
+        "page": 109,
+        "audio": "u6-open-q03.mp3"
+       },
+       {
+        "text": "أُكَوِّنُ قِصَّةً قَصِيْرَةً مِنَ الصُّوَرِ الثَّلاثِ",
+        "page": 109,
+        "audio": "u1-open-q03.mp3"
+       }
+      ]
+     },
+     "say": "اِلْمَسِ الصُّورَةَ وَتَحَدَّثْ",
+     "audio": "c-scene.mp3"
+    },
+    {
+     "template": "puzzle",
+     "page": 109,
+     "data": {
+      "scene": {
+       "items": [
+        {
+         "art": "stars",
+         "x": 20,
+         "y": 10,
+         "w": 80
+        },
+        {
+         "art": "crescent_moon",
+         "x": 120,
+         "y": 10,
+         "w": 60
+        },
+        {
+         "art": "microscope",
+         "x": 30,
+         "y": 120,
+         "w": 100
+        },
+        {
+         "art": "spyglass",
+         "x": 150,
+         "y": 110,
+         "w": 100
+        },
+        {
+         "art": "rocket",
+         "x": 270,
+         "y": 40,
+         "w": 100
+        },
+        {
+         "art": "hoopoe",
+         "x": 280,
+         "y": 160,
+         "w": 80
+        }
+       ],
+       "bg": {
+        "sky": "#c5d8ff"
+       },
+       "sun": false
+      },
+      "pieces": 6
+     },
+     "say": "رَكِّبِ الصُّورَةَ",
+     "audio": "c-puzzle.mp3"
+    }
+   ],
+   "prompts": [
+    {
+     "text": "أَصِفُ مَا أَرَاهُ فِي كُلِّ صُوْرَةٍ",
+     "page": 109,
+     "audio": "u1-open-q01.mp3"
+    },
+    {
+     "text": "مَا الـجِهَازُ الَّذي يَنْظُرُ فِيْه العَالِمُ فِي الصُّوْرَةِ الأُوْلى؟",
+     "page": 109,
+     "audio": "u6-open-q02.mp3"
+    },
+    {
+     "text": "بِـمَ يَخْتَلِفُ عَنِ الجِهَازِ فِي الصُّوْرَةِ الثَّانِيةِ؟",
+     "page": 109,
+     "audio": "u6-open-q03.mp3"
+    },
+    {
+     "text": "أُكَوِّنُ قِصَّةً قَصِيْرَةً مِنَ الصُّوَرِ الثَّلاثِ",
+     "page": 109,
+     "audio": "u1-open-q03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ الْعَالَمُ مِنْ حَوْلِي",
+    "art": "stars",
+    "audio": "u6-open-sticker.mp3"
+   }
+  },
+  {
+   "id": "u6-ghayn",
+   "book": "reading",
+   "unit": 6,
+   "unitTitle": "الْوَحْدَةُ السَّادِسَةُ : الْعَالَمُ مِنْ حَوْلِي",
+   "unitPage": 109,
+   "pages": [
+    110,
+    111,
+    112,
+    113
+   ],
+   "title": "غ",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "غَزَالٌ",
+     "page": 110,
+     "art": "deer",
+     "audio": "u3-lam-w04.mp3"
+    },
+    {
+     "value": "غُصْنٌ",
+     "page": 110,
+     "art": "branch",
+     "audio": "u6-ghayn-w02.mp3"
+    },
+    {
+     "value": "غِطَاءٌ",
+     "page": 110,
+     "art": "bottle_cap",
+     "audio": "u6-ghayn-w03.mp3"
+    },
+    {
+     "value": "صَمْغٌ",
+     "page": 110,
+     "art": "glue_tube",
+     "audio": "u6-ghayn-w04.mp3"
+    },
+    {
+     "value": "مِغْسَلَةٌ",
+     "page": 110,
+     "art": "boy_washing_at_sink",
+     "audio": "u6-ghayn-w05.mp3"
+    },
+    {
+     "value": "بَبَّغَاءُ",
+     "page": 110,
+     "art": "parrot",
+     "audio": "u6-ghayn-w06.mp3"
+    },
+    {
+     "value": "غُوْرِيلا",
+     "page": 110,
+     "art": "gorilla",
+     "audio": "u6-ghayn-w07.mp3"
+    },
+    {
+     "value": "رَغِيْفٌ",
+     "page": 110,
+     "art": "flatbread",
+     "audio": "u6-ghayn-w08.mp3"
+    },
+    {
+     "value": "غِذَاءٌ",
+     "page": 111,
+     "art": "food_plate",
+     "audio": "u6-ghayn-w09.mp3"
+    },
+    {
+     "value": "غَابَةٌ",
+     "page": 111,
+     "art": "forest",
+     "audio": "u6-ghayn-w10.mp3"
+    },
+    {
+     "value": "غُوْرِيْلا",
+     "page": 111,
+     "art": "gorilla",
+     "audio": "u6-ghayn-w11.mp3"
+    },
+    {
+     "value": "غَسَّانُ",
+     "page": 111,
+     "art": null,
+     "audio": "u6-ghayn-w12.mp3"
+    },
+    {
+     "value": "تَغْرِيْدُ",
+     "page": 111,
+     "art": null,
+     "audio": "u6-ghayn-w13.mp3"
+    },
+    {
+     "value": "غَوَّاصٌ",
+     "page": 111,
+     "art": null,
+     "audio": "u6-ghayn-w14.mp3"
+    },
+    {
+     "value": "غَرِيْبٌ",
+     "page": 112,
+     "art": null,
+     "audio": "u6-ghayn-w15.mp3"
+    },
+    {
+     "value": "صَغِيْرٌ",
+     "page": 112,
+     "art": null,
+     "audio": "u6-ghayn-w16.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "غَـ",
+     "page": 110,
+     "audio": "u6-ghayn-s01.mp3"
+    },
+    {
+     "value": "غَا",
+     "page": 110,
+     "audio": "u6-ghayn-s02.mp3"
+    },
+    {
+     "value": "غُـ",
+     "page": 110,
+     "audio": "u6-ghayn-s03.mp3"
+    },
+    {
+     "value": "غُوْ",
+     "page": 110,
+     "audio": "u6-ghayn-s04.mp3"
+    },
+    {
+     "value": "غِـ",
+     "page": 110,
+     "audio": "u6-ghayn-s05.mp3"
+    },
+    {
+     "value": "غِيْـ",
+     "page": 110,
+     "audio": "u6-ghayn-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 110,
+     "data": {
+      "letter": "غ",
+      "items": [
+       "غَزَالٌ",
+       "غُصْنٌ",
+       "غِطَاءٌ",
+       "صَمْغٌ",
+       "مِغْسَلَةٌ",
+       "بَبَّغَاءُ",
+       "غُوْرِيلا",
+       "رَغِيْفٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 113,
+     "data": {
+      "shape": "ghayn"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "order",
+     "page": 113,
+     "data": {
+      "rounds": [
+       {
+        "items": [
+         {
+          "text": "يُحِبُّ"
+         },
+         {
+          "text": "أنْ"
+         },
+         {
+          "text": "يَغُوْصَ"
+         },
+         {
+          "text": "فِي"
+         },
+         {
+          "text": "أَعْمَاقِ"
+         },
+         {
+          "text": "دِجْلَةَ"
+         }
+        ],
+        "result": "يُحِبُّ أنْ يَغُوْصَ فِي أَعْمَاقِ دِجْلَةَ"
+       }
+      ]
+     },
+     "say": "رَتِّبِ الْكَلِمَاتِ لِتَصْنَعَ جُمْلَةً",
+     "audio": "c-order.mp3"
+    },
+    {
+     "template": "read",
+     "page": 112,
+     "data": {
+      "sentences": [
+       {
+        "text": "تَقْرَأُ ، مُعَلِّمَةٌ ، تَغْرِيدُ ، كَثِيْرًا",
+        "audio": "u6-ghayn-r01.mp3"
+       },
+       {
+        "text": "يُحِبُّ أنْ يَغُوْصَ فِي أَعْمَاقِ دِجْلَةَ",
+        "audio": "u6-ghayn-r02.mp3"
+       },
+       {
+        "text": "غَسَّانُ عَالِمٌ صَغِيْرٌ، يَتَعَلَّمُ أُمُوْرًا جَدِيْدَةً مَعَ بَابَا وَمَامَا، صَوَّرَ غُرَابًا، وَغَزَالًا صَغِيْرًا",
+        "audio": "u6-ghayn-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "تَقْرَأُ ، مُعَلِّمَةٌ ، تَغْرِيدُ ، كَثِيْرًا",
+     "page": 112,
+     "audio": "u6-ghayn-r01.mp3"
+    },
+    {
+     "text": "يُحِبُّ أنْ يَغُوْصَ فِي أَعْمَاقِ دِجْلَةَ",
+     "page": 113,
+     "audio": "u6-ghayn-r02.mp3"
+    },
+    {
+     "text": "غَسَّانُ عَالِمٌ صَغِيْرٌ، يَتَعَلَّمُ أُمُوْرًا جَدِيْدَةً مَعَ بَابَا وَمَامَا، صَوَّرَ غُرَابًا، وَغَزَالًا صَغِيْرًا",
+     "page": 113,
+     "audio": "u6-ghayn-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ غ",
+    "art": "deer",
+    "audio": "u6-ghayn-sticker.mp3"
+   }
+  },
+  {
+   "id": "u6-he",
+   "book": "reading",
+   "unit": 6,
+   "unitTitle": "الْوَحْدَةُ السَّادِسَةُ : الْعَالَمُ مِنْ حَوْلِي",
+   "unitPage": 109,
+   "pages": [
+    114,
+    115,
+    116,
+    117
+   ],
+   "title": "هـ",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "هَدِيَّةٌ",
+     "page": 114,
+     "art": "gift_boxes",
+     "audio": "u6-he-w01.mp3"
+    },
+    {
+     "value": "هُدْهُدٌ",
+     "page": 114,
+     "art": "hoopoe",
+     "audio": "u6-he-w02.mp3"
+    },
+    {
+     "value": "هِلالٌ",
+     "page": 114,
+     "art": "crescent_moon",
+     "audio": "u6-he-w03.mp3"
+    },
+    {
+     "value": "مُنَبِّهٌ",
+     "page": 114,
+     "art": "alarm_clock",
+     "audio": "u6-he-w04.mp3"
+    },
+    {
+     "value": "سَهْمٌ",
+     "page": 114,
+     "art": "arrow",
+     "audio": "u6-he-w05.mp3"
+    },
+    {
+     "value": "هَاتِفٌ",
+     "page": 114,
+     "art": "mobile_phone",
+     "audio": "u6-he-w06.mp3"
+    },
+    {
+     "value": "زُهُوْرٌ",
+     "page": 114,
+     "art": "flower_pot",
+     "audio": "u6-he-w07.mp3"
+    },
+    {
+     "value": "طَاهِي",
+     "page": 114,
+     "art": "cook",
+     "audio": "u6-he-w08.mp3"
+    },
+    {
+     "value": "ذَهَبٌ",
+     "page": 115,
+     "art": "gold_bars",
+     "audio": "u6-he-w09.mp3"
+    },
+    {
+     "value": "سُهُوْلٌ",
+     "page": 115,
+     "art": "plain",
+     "audio": "u6-he-w10.mp3"
+    },
+    {
+     "value": "هَبَطَ",
+     "page": 115,
+     "art": null,
+     "audio": "u6-he-w11.mp3"
+    },
+    {
+     "value": "شَاهَدَ",
+     "page": 115,
+     "art": null,
+     "audio": "u6-he-w12.mp3"
+    },
+    {
+     "value": "هِلَالٌ",
+     "page": 116,
+     "art": "crescent_moon",
+     "audio": "u6-he-w13.mp3"
+    },
+    {
+     "value": "صَهِيْلٌ",
+     "page": 116,
+     "art": null,
+     "audio": "u6-he-w14.mp3"
+    },
+    {
+     "value": "هِيَامُ",
+     "page": 116,
+     "art": null,
+     "audio": "u6-he-w15.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "هَـ",
+     "page": 114,
+     "audio": "u6-he-s01.mp3"
+    },
+    {
+     "value": "هَا",
+     "page": 114,
+     "audio": "u6-he-s02.mp3"
+    },
+    {
+     "value": "هُـ",
+     "page": 114,
+     "audio": "u6-he-s03.mp3"
+    },
+    {
+     "value": "هُوْ",
+     "page": 114,
+     "audio": "u6-he-s04.mp3"
+    },
+    {
+     "value": "هِـ",
+     "page": 114,
+     "audio": "u6-he-s05.mp3"
+    },
+    {
+     "value": "هِيْـ",
+     "page": 114,
+     "audio": "u6-he-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 114,
+     "data": {
+      "letter": "هـ",
+      "items": [
+       "هَدِيَّةٌ",
+       "هُدْهُدٌ",
+       "هِلالٌ",
+       "مُنَبِّهٌ",
+       "سَهْمٌ",
+       "هَاتِفٌ",
+       "زُهُوْرٌ",
+       "طَاهِي"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 117,
+     "data": {
+      "shape": "he"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "order",
+     "page": 117,
+     "data": {
+      "rounds": [
+       {
+        "items": [
+         {
+          "text": "وَيُشَاهِدَ"
+         },
+         {
+          "text": "أَشْجَارًا"
+         },
+         {
+          "text": "تَنْمُوْ"
+         },
+         {
+          "text": "وَزُهُوْرًا"
+         },
+         {
+          "text": "تَتَفَتَّحُ"
+         }
+        ],
+        "result": "وَيُشَاهِدَ أَشْجَارًا تَنْمُوْ وَزُهُوْرًا تَتَفَتَّحُ"
+       }
+      ]
+     },
+     "say": "رَتِّبِ الْكَلِمَاتِ لِتَصْنَعَ جُمْلَةً",
+     "audio": "c-order.mp3"
+    },
+    {
+     "template": "read",
+     "page": 117,
+     "data": {
+      "sentences": [
+       {
+        "text": "وَيُشَاهِدَ أَشْجَارًا تَنْمُوْ وَزُهُوْرًا تَتَفَتَّحُ",
+        "audio": "u6-he-r01.mp3"
+       },
+       {
+        "text": "هُدْهُدٌ يُحِبُّ أَنْ يَطِيْرَ فِي سُهُوْلٍ بَعِيْدَةٍ",
+        "audio": "u6-he-r02.mp3"
+       },
+       {
+        "text": "هَبَطَ هُدْهُدٌ عِنْدَ شُبَّاكِ غُرْفَةِ هَادِي، فَرَأَىٰ حَاسُوْبًا وَمُنَبِّهًا، قَالَ هُدْهُدٌ: إِنَّهَا أَدَوَاتٌ مُفِيْدَةٌ",
+        "audio": "u6-he-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "وَيُشَاهِدَ أَشْجَارًا تَنْمُوْ وَزُهُوْرًا تَتَفَتَّحُ",
+     "page": 117,
+     "audio": "u6-he-r01.mp3"
+    },
+    {
+     "text": "هُدْهُدٌ يُحِبُّ أَنْ يَطِيْرَ فِي سُهُوْلٍ بَعِيْدَةٍ",
+     "page": 117,
+     "audio": "u6-he-r02.mp3"
+    },
+    {
+     "text": "هَبَطَ هُدْهُدٌ عِنْدَ شُبَّاكِ غُرْفَةِ هَادِي، فَرَأَىٰ حَاسُوْبًا وَمُنَبِّهًا، قَالَ هُدْهُدٌ: إِنَّهَا أَدَوَاتٌ مُفِيْدَةٌ",
+     "page": 117,
+     "audio": "u6-he-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ هـ",
+    "art": "gift_boxes",
+    "audio": "u6-he-sticker.mp3"
+   }
+  },
+  {
+   "id": "u6-dhal",
+   "book": "reading",
+   "unit": 6,
+   "unitTitle": "الْوَحْدَةُ السَّادِسَةُ : الْعَالَمُ مِنْ حَوْلِي",
+   "unitPage": 109,
+   "pages": [
+    118,
+    119,
+    120,
+    121
+   ],
+   "title": "ذ",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "ذَيْلٌ",
+     "page": 118,
+     "art": null,
+     "audio": "u6-dhal-w01.mp3"
+    },
+    {
+     "value": "ذُبَابَةٌ",
+     "page": 118,
+     "art": "fly",
+     "audio": "u6-dhal-w02.mp3"
+    },
+    {
+     "value": "ذِرَاعٌ",
+     "page": 118,
+     "art": "arm",
+     "audio": "u6-dhal-w03.mp3"
+    },
+    {
+     "value": "قُنْفُذٌ",
+     "page": 118,
+     "art": "hedgehog",
+     "audio": "u3-qaf-w09.mp3"
+    },
+    {
+     "value": "تَذْكرةٌ",
+     "page": 118,
+     "art": "flight_ticket",
+     "audio": "u6-dhal-w05.mp3"
+    },
+    {
+     "value": "حِذَاءٌ",
+     "page": 118,
+     "art": "shoes",
+     "audio": "u4-hha-w03.mp3"
+    },
+    {
+     "value": "بُذُوْرٌ",
+     "page": 118,
+     "art": "seeds",
+     "audio": "u6-dhal-w07.mp3"
+    },
+    {
+     "value": "مُذِيْعٌ",
+     "page": 118,
+     "art": "tv_presenter",
+     "audio": "u6-dhal-w08.mp3"
+    },
+    {
+     "value": "ذَقْنٌ",
+     "page": 119,
+     "art": "bearded_man",
+     "audio": "u6-dhal-w09.mp3"
+    },
+    {
+     "value": "ذِئْبٌ",
+     "page": 119,
+     "art": "wolf",
+     "audio": "u6-dhal-w10.mp3"
+    },
+    {
+     "value": "مُنْذِرٌ",
+     "page": 119,
+     "art": null,
+     "audio": "u6-dhal-w11.mp3"
+    },
+    {
+     "value": "مَلَاذُ",
+     "page": 119,
+     "art": null,
+     "audio": "u6-dhal-w12.mp3"
+    },
+    {
+     "value": "حَاذِقٌ",
+     "page": 120,
+     "art": null,
+     "audio": "u6-dhal-w13.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "ذَ",
+     "page": 118,
+     "audio": "u6-dhal-s01.mp3"
+    },
+    {
+     "value": "ذَا",
+     "page": 118,
+     "audio": "u6-dhal-s02.mp3"
+    },
+    {
+     "value": "ذُ",
+     "page": 118,
+     "audio": "u6-dhal-s03.mp3"
+    },
+    {
+     "value": "ذُوْ",
+     "page": 118,
+     "audio": "u6-dhal-s04.mp3"
+    },
+    {
+     "value": "ذِ",
+     "page": 118,
+     "audio": "u6-dhal-s05.mp3"
+    },
+    {
+     "value": "ذِيْـ",
+     "page": 118,
+     "audio": "u6-dhal-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 118,
+     "data": {
+      "letter": "ذ",
+      "items": [
+       "ذَيْلٌ",
+       "ذُبَابَةٌ",
+       "ذِرَاعٌ",
+       "قُنْفُذٌ",
+       "تَذْكرةٌ",
+       "حِذَاءٌ",
+       "بُذُوْرٌ",
+       "مُذِيْعٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 121,
+     "data": {
+      "shape": "dhal"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "order",
+     "page": 121,
+     "data": {
+      "rounds": [
+       {
+        "items": [
+         {
+          "text": "يَطْهُو"
+         },
+         {
+          "text": "طَعَامًا"
+         },
+         {
+          "text": "صِحِّيًّا"
+         },
+         {
+          "text": "وَلَذِيْذًا"
+         }
+        ],
+        "result": "يَطْهُو طَعَامًا صِحِّيًّا وَلَذِيْذًا"
+       },
+       {
+        "items": [
+         {
+          "text": "مُنْذِرٌ"
+         },
+         {
+          "text": "طَبَّاخٌ"
+         },
+         {
+          "text": "مَاهِرٌ"
+         }
+        ],
+        "result": "مُنْذِرٌ طَبَّاخٌ مَاهِرٌ"
+       }
+      ]
+     },
+     "say": "رَتِّبِ الْكَلِمَاتِ لِتَصْنَعَ جُمْلَةً",
+     "audio": "c-order.mp3"
+    },
+    {
+     "template": "read",
+     "page": 121,
+     "data": {
+      "sentences": [
+       {
+        "text": "يَطْهُو طَعَامًا صِحِّيًّا وَلَذِيْذًا",
+        "audio": "u6-dhal-r01.mp3"
+       },
+       {
+        "text": "مُنْذِرٌ طَبَّاخٌ مَاهِرٌ",
+        "audio": "u6-dhal-r02.mp3"
+       },
+       {
+        "text": "مَعَاذٌ مُعَلِّمُ رَسْمٍ، يُعَلِّمُ تَلامِيْذَهُ رَسْمَ نَبَاتَاتٍ لَهَا جُذُوعٌ، وجُذُوْرٌ، وبُذُوْرٌ",
+        "audio": "u6-dhal-r03.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "يَطْهُو طَعَامًا صِحِّيًّا وَلَذِيْذًا",
+     "page": 121,
+     "audio": "u6-dhal-r01.mp3"
+    },
+    {
+     "text": "مُنْذِرٌ طَبَّاخٌ مَاهِرٌ",
+     "page": 121,
+     "audio": "u6-dhal-r02.mp3"
+    },
+    {
+     "text": "مَعَاذٌ مُعَلِّمُ رَسْمٍ، يُعَلِّمُ تَلامِيْذَهُ رَسْمَ نَبَاتَاتٍ لَهَا جُذُوعٌ، وجُذُوْرٌ، وبُذُوْرٌ",
+     "page": 121,
+     "audio": "u6-dhal-r03.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ذ",
+    "art": "fly",
+    "audio": "u6-dhal-sticker.mp3"
+   }
+  },
+  {
+   "id": "u6-zza",
+   "book": "reading",
+   "unit": 6,
+   "unitTitle": "الْوَحْدَةُ السَّادِسَةُ : الْعَالَمُ مِنْ حَوْلِي",
+   "unitPage": 109,
+   "pages": [
+    122,
+    123,
+    124,
+    125
+   ],
+   "title": "ظ",
+   "kind": "letter",
+   "items": [
+    {
+     "value": "ظَلَامٌ",
+     "page": 122,
+     "art": "house_at_night",
+     "audio": "u6-zza-w01.mp3"
+    },
+    {
+     "value": "ظُفْرٌ",
+     "page": 122,
+     "art": "fingernail",
+     "audio": "u6-zza-w02.mp3"
+    },
+    {
+     "value": "ظِباءٌ",
+     "page": 122,
+     "art": "gazelles",
+     "audio": "u6-zza-w03.mp3"
+    },
+    {
+     "value": "حَافِظٌ",
+     "page": 122,
+     "art": "boy_reading_quran",
+     "audio": "u6-zza-w04.mp3"
+    },
+    {
+     "value": "عَظْمٌ",
+     "page": 122,
+     "art": "bone",
+     "audio": "u6-zza-w05.mp3"
+    },
+    {
+     "value": "عِظَامٌ",
+     "page": 122,
+     "art": "bones",
+     "audio": "u3-ayn-w03.mp3"
+    },
+    {
+     "value": "نَاظُوْرٌ",
+     "page": 122,
+     "art": "spyglass",
+     "audio": "u6-zza-w07.mp3"
+    },
+    {
+     "value": "حَظِيْرةٌ",
+     "page": 122,
+     "art": "cattle_barn",
+     "audio": "u6-zza-w08.mp3"
+    },
+    {
+     "value": "ظَرْفٌ",
+     "page": 123,
+     "art": "envelope",
+     "audio": "u6-zza-w09.mp3"
+    },
+    {
+     "value": "ظِلٌّ",
+     "page": 123,
+     "art": "shadow",
+     "audio": "u6-zza-w10.mp3"
+    },
+    {
+     "value": "نِظَامٌ",
+     "page": 123,
+     "art": "people_in_a_line",
+     "audio": "u6-zza-w11.mp3"
+    },
+    {
+     "value": "يَسْتَيْقِظُ",
+     "page": 123,
+     "art": null,
+     "audio": "u6-zza-w12.mp3"
+    },
+    {
+     "value": "نَظَّارَةٌ",
+     "page": 123,
+     "art": null,
+     "audio": "u6-zza-w13.mp3"
+    },
+    {
+     "value": "حَظِيْرَةٌ",
+     "page": 124,
+     "art": "cattle_barn",
+     "audio": "u6-zza-w14.mp3"
+    }
+   ],
+   "syllables": [
+    {
+     "value": "ظَ",
+     "page": 122,
+     "audio": "u6-zza-s01.mp3"
+    },
+    {
+     "value": "ظَا",
+     "page": 122,
+     "audio": "u6-zza-s02.mp3"
+    },
+    {
+     "value": "ظُ",
+     "page": 122,
+     "audio": "u6-zza-s03.mp3"
+    },
+    {
+     "value": "ظُوْ",
+     "page": 122,
+     "audio": "u6-zza-s04.mp3"
+    },
+    {
+     "value": "ظِ",
+     "page": 122,
+     "audio": "u6-zza-s05.mp3"
+    },
+    {
+     "value": "ظِيْـ",
+     "page": 122,
+     "audio": "u6-zza-s06.mp3"
+    }
+   ],
+   "games": [
+    {
+     "template": "listen",
+     "page": 122,
+     "data": {
+      "letter": "ظ",
+      "items": [
+       "ظَلَامٌ",
+       "ظُفْرٌ",
+       "ظِباءٌ",
+       "حَافِظٌ",
+       "عَظْمٌ",
+       "عِظَامٌ",
+       "نَاظُوْرٌ",
+       "حَظِيْرةٌ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "trace",
+     "page": 125,
+     "data": {
+      "shape": "zza"
+     },
+     "say": "تَتَبَّعِ الْحَرْفَ بِإِصْبَعِكَ",
+     "audio": "c-trace.mp3"
+    },
+    {
+     "template": "order",
+     "page": 124,
+     "data": {
+      "rounds": [
+       {
+        "items": [
+         {
+          "text": "ظَافِرٌ"
+         },
+         {
+          "text": "،"
+         },
+         {
+          "text": "طِبِّيَّةً"
+         },
+         {
+          "text": "،"
+         },
+         {
+          "text": "نَظَّارَةً،"
+         },
+         {
+          "text": "يَضَعُ"
+         }
+        ],
+        "result": "ظَافِرٌ ، طِبِّيَّةً ، نَظَّارَةً، يَضَعُ"
+       },
+       {
+        "items": [
+         {
+          "text": "عِنْدَها"
+         },
+         {
+          "text": "ظَبْيٌ"
+         },
+         {
+          "text": "وَقِطٌّ"
+         },
+         {
+          "text": "وَسِنْجَابٌ"
+         },
+         {
+          "text": "جَمِيْلٌ"
+         }
+        ],
+        "result": "عِنْدَها ظَبْيٌ وَقِطٌّ وَسِنْجَابٌ جَمِيْلٌ"
+       }
+      ]
+     },
+     "say": "رَتِّبِ الْكَلِمَاتِ لِتَصْنَعَ جُمْلَةً",
+     "audio": "c-order.mp3"
+    },
+    {
+     "template": "read",
+     "page": 124,
+     "data": {
+      "sentences": [
+       {
+        "text": "ظَافِرٌ ، طِبِّيَّةً ، نَظَّارَةً، يَضَعُ",
+        "audio": "u6-zza-r01.mp3"
+       },
+       {
+        "text": "عِنْدَها ظَبْيٌ وَقِطٌّ وَسِنْجَابٌ جَمِيْلٌ",
+        "audio": "u6-zza-r02.mp3"
+       },
+       {
+        "text": "ظَفَارُ تُرَبِّي حَيَوَانَاتٍ مُتَنَوِّعَةً",
+        "audio": "u6-zza-r03.mp3"
+       },
+       {
+        "text": "ظَافِرٌ تِلْمِيْذٌ نَشِيْطٌ، يَنَامُ وَيَسْتَيْقِظُ بَاكِرًا، يَسْتَعْمِلُ نَاظُوْرَهُ؛ لِيَنْظُرَ إِلَى نُـجُوْمٍ بَعِيْدَةٍ",
+        "audio": "u6-zza-r04.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "ظَافِرٌ ، طِبِّيَّةً ، نَظَّارَةً، يَضَعُ",
+     "page": 124,
+     "audio": "u6-zza-r01.mp3"
+    },
+    {
+     "text": "عِنْدَها ظَبْيٌ وَقِطٌّ وَسِنْجَابٌ جَمِيْلٌ",
+     "page": 125,
+     "audio": "u6-zza-r02.mp3"
+    },
+    {
+     "text": "ظَفَارُ تُرَبِّي حَيَوَانَاتٍ مُتَنَوِّعَةً",
+     "page": 125,
+     "audio": "u6-zza-r03.mp3"
+    },
+    {
+     "text": "ظَافِرٌ تِلْمِيْذٌ نَشِيْطٌ، يَنَامُ وَيَسْتَيْقِظُ بَاكِرًا، يَسْتَعْمِلُ نَاظُوْرَهُ؛ لِيَنْظُرَ إِلَى نُـجُوْمٍ بَعِيْدَةٍ",
+     "page": 125,
+     "audio": "u6-zza-r04.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ حَرْفِ ظ",
+    "art": "house_at_night",
+    "audio": "u6-zza-sticker.mp3"
+   }
+  },
+  {
+   "id": "u6-lam",
+   "book": "reading",
+   "unit": 6,
+   "unitTitle": "الْوَحْدَةُ السَّادِسَةُ : الْعَالَمُ مِنْ حَوْلِي",
+   "unitPage": 109,
+   "pages": [
+    126,
+    127
+   ],
+   "title": "الـ",
+   "kind": "lam",
+   "items": [
+    {
+     "value": "الزَّهْرَةُ",
+     "page": 126,
+     "art": null,
+     "audio": "u6-lam-w01.mp3"
+    },
+    {
+     "value": "السَّمَاءُ",
+     "page": 126,
+     "art": null,
+     "audio": "u6-lam-w02.mp3"
+    },
+    {
+     "value": "الرَّبِيْعُ",
+     "page": 126,
+     "art": null,
+     "audio": "u6-lam-w03.mp3"
+    },
+    {
+     "value": "الشِّتَاءُ",
+     "page": 126,
+     "art": null,
+     "audio": "u6-lam-w04.mp3"
+    },
+    {
+     "value": "الصَّيْفُ",
+     "page": 126,
+     "art": null,
+     "audio": "u6-lam-w05.mp3"
+    },
+    {
+     "value": "الْأَرْضُ",
+     "page": 126,
+     "art": null,
+     "audio": "u6-lam-w06.mp3"
+    },
+    {
+     "value": "الْغُيُوْمُ",
+     "page": 126,
+     "art": null,
+     "audio": "u6-lam-w07.mp3"
+    },
+    {
+     "value": "الْـمِرِّيخُ",
+     "page": 126,
+     "art": null,
+     "audio": "u6-lam-w08.mp3"
+    },
+    {
+     "value": "الْفَضَاءُ",
+     "page": 126,
+     "art": null,
+     "audio": "u6-lam-w09.mp3"
+    },
+    {
+     "value": "الْـخَرِيْفُ",
+     "page": 126,
+     "art": null,
+     "audio": "u6-lam-w10.mp3"
+    },
+    {
+     "value": "الْقَلَمُ",
+     "page": 127,
+     "art": null,
+     "audio": "u6-lam-w11.mp3"
+    },
+    {
+     "value": "السَّيَّارَةُ",
+     "page": 127,
+     "art": null,
+     "audio": "u6-lam-w12.mp3"
+    },
+    {
+     "value": "الْبَطَّةُ",
+     "page": 127,
+     "art": null,
+     "audio": "u6-lam-w13.mp3"
+    },
+    {
+     "value": "الدَّفْتَرُ",
+     "page": 127,
+     "art": null,
+     "audio": "u6-lam-w14.mp3"
+    },
+    {
+     "value": "الْكِتَابُ",
+     "page": 127,
+     "art": null,
+     "audio": "u6-lam-w15.mp3"
+    },
+    {
+     "value": "الظَّرفُ",
+     "page": 127,
+     "art": null,
+     "audio": "u6-lam-w16.mp3"
+    }
+   ],
+   "syllables": [],
+   "games": [
+    {
+     "template": "sort",
+     "page": 126,
+     "say": "ضَعْ كُلَّ كَلِمَةٍ فِي سَلَّتِهَا",
+     "data": {
+      "bins": [
+       {
+        "label": "اللَّامُ الشَّمْسِيَّةُ"
+       },
+       {
+        "label": "اللَّامُ الْقَمَرِيَّةُ"
+       }
+      ],
+      "items": [
+       {
+        "text": "الزَّهْرَةُ",
+        "bin": 0
+       },
+       {
+        "text": "السَّمَاءُ",
+        "bin": 0
+       },
+       {
+        "text": "الرَّبِيْعُ",
+        "bin": 0
+       },
+       {
+        "text": "الشِّتَاءُ",
+        "bin": 0
+       },
+       {
+        "text": "الْأَرْضُ",
+        "bin": 1
+       },
+       {
+        "text": "الْغُيُوْمُ",
+        "bin": 1
+       },
+       {
+        "text": "الْـمِرِّيخُ",
+        "bin": 1
+       },
+       {
+        "text": "الْفَضَاءُ",
+        "bin": 1
+       }
+      ]
+     },
+     "audio": "c-sort.mp3"
+    },
+    {
+     "template": "listen",
+     "page": 126,
+     "data": {
+      "letter": "الـ",
+      "items": [
+       "الزَّهْرَةُ",
+       "السَّمَاءُ",
+       "الرَّبِيْعُ",
+       "الشِّتَاءُ",
+       "الصَّيْفُ",
+       "الْأَرْضُ",
+       "الْغُيُوْمُ",
+       "الْـمِرِّيخُ"
+      ]
+     },
+     "say": "اِلْمَسْ كُلَّ صُورَةٍ وَاسْمَعْ",
+     "audio": "c-listen.mp3"
+    },
+    {
+     "template": "read",
+     "page": 127,
+     "data": {
+      "sentences": [
+       {
+        "text": "سَأَلَ الْـمُعَلِّمُ: مَاذَا خَلَقَ اللّٰهُ لَنَا؟ قَالَ عَلِيٌّ: خَلَقَ السَّمَاءَ، وَفِيْهَا الشَّمْسُ، وَالْقَمَرُ، وَالنُّجُوْمُ. وَقَالَتْ زِيْنَةُ: خَلَقَ الْأَرْضَ، فِيْهَا الْـجِبَالُ، والسُّهُوْلُ، والأنْـهَارُ. فَقَالَ التَّلَامِيذُ: شُكْرًا لِلّٰهِ عَلَى نِعَمِهِ",
+        "audio": "u6-lam-r01.mp3"
+       }
+      ]
+     },
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "sentences": [
+    {
+     "text": "سَأَلَ الْـمُعَلِّمُ: مَاذَا خَلَقَ اللّٰهُ لَنَا؟ قَالَ عَلِيٌّ: خَلَقَ السَّمَاءَ، وَفِيْهَا الشَّمْسُ، وَالْقَمَرُ، وَالنُّجُوْمُ. وَقَالَتْ زِيْنَةُ: خَلَقَ الْأَرْضَ، فِيْهَا الْـجِبَالُ، والسُّهُوْلُ، والأنْـهَارُ. فَقَالَ التَّلَامِيذُ: شُكْرًا لِلّٰهِ عَلَى نِعَمِهِ",
+     "page": 127,
+     "audio": "u6-lam-r01.mp3"
+    }
+   ],
+   "sticker": {
+    "name": "مُلْصَقُ القَمَرِيَّةِ",
+    "art": "star",
+    "audio": "u6-lam-sticker.mp3"
+   }
+  },
+  {
+   "id": "u6-nashid",
+   "book": "reading",
+   "unit": 6,
+   "unitTitle": "الْوَحْدَةُ السَّادِسَةُ : الْعَالَمُ مِنْ حَوْلِي",
+   "unitPage": 109,
+   "pages": [
+    128
+   ],
+   "title": "♪",
+   "kind": "nashid",
+   "items": [],
+   "syllables": [],
+   "games": [],
+   "nashid": {
+    "title": "الـحَاسُوْبُ",
+    "poet": "شعر: أحمد سويلم",
+    "page": 128,
+    "audio": "u6-nashid.mp3"
+   },
+   "scene": {
+    "items": [
+     {
+      "art": "stars",
+      "x": 20,
+      "y": 10,
+      "w": 80
+     },
+     {
+      "art": "crescent_moon",
+      "x": 120,
+      "y": 10,
+      "w": 60
+     },
+     {
+      "art": "microscope",
+      "x": 30,
+      "y": 120,
+      "w": 100
+     },
+     {
+      "art": "spyglass",
+      "x": 150,
+      "y": 110,
+      "w": 100
+     },
+     {
+      "art": "rocket",
+      "x": 270,
+      "y": 40,
+      "w": 100
+     },
+     {
+      "art": "hoopoe",
+      "x": 280,
+      "y": 160,
+      "w": 80
+     }
+    ],
+    "bg": {
+     "sky": "#c5d8ff"
+    },
+    "sun": false
    }
   }
  ]

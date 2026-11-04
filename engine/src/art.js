@@ -72,6 +72,16 @@ export const ART = {
   butterfly: () => `<path d="M50 50Q30 20 16 34Q10 52 48 54Z" fill="#ff8fab" ${S}/><path d="M50 50Q70 20 84 34Q90 52 52 54Z" fill="#ffc046" ${S}/><path d="M48 54Q30 80 40 82Q50 78 50 56Z" fill="#9b8cff" ${S}/><path d="M52 54Q70 80 60 82Q50 78 50 56Z" fill="#62d2a2" ${S}/><path d="M50 44V70" ${S}/>`,
 };
 
+// رسوم إجرائية لأنشطة التهيئة: كرة وصندوق في أماكن مختلفة
+const box = (x, y) => `<rect x="${x}" y="${y}" width="44" height="34" rx="4" fill="#d9a066" ${S}/><path d="M${x} ${y + 12}H${x + 44}" ${S}/>`;
+const ball = (x, y, r = 11) => `<circle cx="${x}" cy="${y}" r="${r}" fill="#ff6b6b" ${S}/><path d="M${x - r} ${y}Q${x} ${y - 6} ${x + r} ${y}" fill="none" stroke="#fff" stroke-width="2.5"/>`;
+Object.assign(ART, {
+  pos_above: () => box(28, 58) + ball(50, 44),
+  pos_below: () => `<rect x="20" y="30" width="60" height="8" rx="3" fill="#b07a4a" ${S}/><path d="M26 38V82M74 38V82" ${S}/>` + ball(50, 72),
+  pos_front: () => box(30, 40) + ball(46, 74, 14),
+  pos_behind: () => ball(62, 44, 12) + box(24, 46),
+  star: () => `<path d="M50 10L61 38L91 39L67 57L76 87L50 69L24 87L33 57L9 39L39 38Z" fill="#ffd23f" ${S}/>`,
+});
 export const art = (name, cls = '') => {
   const f = ART[name];
   return `<svg class="art ${cls}" viewBox="0 0 100 100" aria-hidden="true">${f ? f() : `<circle cx="50" cy="50" r="30" fill="#ddd" ${S}/>`}</svg>`;

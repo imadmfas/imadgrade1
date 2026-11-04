@@ -75,7 +75,7 @@ const listen = (stage, game, ctx) => {
   const box = h(`<div class="g-listen"><div class="big-letter pop3d" data-say="${esc(game.data.letter || '')}"><span>${esc(game.data.letter || '')}</span></div><div class="cards"></div></div>`);
   const cards = $('.cards', box); const seen = new Set();
   items.forEach((it) => {
-    const c = h(`<button class="card tap" type="button"><div class="pic">${art(it.art)}</div><div class="word">${ctx.wordHtml(it.value, game.data.letter)}</div><i class="tick">✓</i></button>`);
+    const c = h(`<button class="card tap${it.art ? '' : ' noart'}" type="button">${it.art ? `<div class="pic">${art(it.art)}</div>` : ''}<div class="word">${ctx.wordHtml(it.value, game.data.letter)}</div><i class="tick">✓</i></button>`);
     c.addEventListener('click', () => {
       SFX.pop(); ctx.say(it.value, it.audio); if (!state.reduced) gsap.fromTo(c, { scale: 0.9 }, { scale: 1, duration: 0.5, ease: 'elastic.out(1,0.5)' });
       if (!seen.has(it.value)) { seen.add(it.value); c.classList.add('seen'); if (seen.size === items.length) setTimeout(() => ctx.win(), 900); }
@@ -92,9 +92,39 @@ const listen = (stage, game, ctx) => {
    2) تتبّع الحرف أو الرقم بالإصبع
    الأشكال داخل مربع 100×100، كل خط مسار SVG، والنقاط تُلمس لمساً.
    ====================================================================== */
+const BA = 'M80 30 C 84 48 80 62 64 63 L 34 63 C 24 63 18 58 18 46';
+const JIM = ['M28 34 C 40 28 56 28 70 34', 'M70 34 C 50 40 34 52 34 66 C 34 80 52 86 72 80'];
+const SIN = 'M86 40 C 86 54 78 56 76 44 C 76 56 68 56 66 44 C 68 66 60 78 42 78 C 26 78 20 66 24 54';
+const SAD = 'M58 52 C 60 38 86 36 86 50 C 86 57 74 57 58 55 C 54 70 46 78 32 76 C 20 74 16 62 20 52';
+const TTA = ['M40 16 L 40 62', 'M28 64 C 30 48 60 44 76 54 C 82 62 72 66 28 64'];
+const AYN = 'M64 30 C 54 20 38 28 46 40 C 52 48 64 46 70 44 C 48 52 34 62 36 74 C 38 86 56 88 72 82';
+const FA = 'M68 42 C 58 30 46 40 52 48 C 58 54 68 50 70 44 C 76 58 72 64 52 64 L 26 64 C 18 64 16 56 18 48';
+const QAF = 'M66 38 C 56 26 44 36 50 44 C 56 50 66 46 68 40 C 76 58 72 78 50 80 C 32 82 24 72 26 58';
+const HE = 'M56 28 C 32 40 34 74 54 74 C 74 74 74 44 56 28';
+const WAW = 'M62 46 C 52 34 42 44 50 52 C 58 58 64 52 62 46 C 64 66 56 80 34 86';
+const YA = 'M66 28 C 52 32 48 42 60 50 C 76 58 76 72 54 74 C 40 75 30 70 26 60';
 export const SHAPES = {
-  // حرف الباء المنفصل: الجسم من الطرف الأيمن نزولاً ثم يساراً، ثم النقطة تحته
-  ba: { strokes: ['M80 30 C 84 48 80 62 64 63 L 34 63 C 24 63 18 58 18 46'], dots: [[50, 80]] },
+  ba: { strokes: [BA], dots: [[50, 80]] },
+  ta: { strokes: [BA], dots: [[44, 46], [58, 46]] },
+  tha: { strokes: [BA], dots: [[44, 48], [58, 48], [51, 36]] },
+  nun: { strokes: ['M70 40 C 76 60 66 76 50 76 C 34 76 26 64 30 46'], dots: [[50, 42]] },
+  ya: { strokes: [YA], dots: [[44, 86], [58, 86]] },
+  alif_maqsura: { strokes: [YA], dots: [] },
+  jim: { strokes: JIM, dots: [[54, 62]] }, hha: { strokes: JIM, dots: [] }, kha: { strokes: JIM, dots: [[50, 16]] },
+  dal: { strokes: ['M40 28 C 52 38 62 50 60 64 L 32 64'], dots: [] }, dhal: { strokes: ['M40 30 C 52 40 62 52 60 66 L 32 66'], dots: [[42, 16]] },
+  ra: { strokes: ['M62 30 C 66 50 58 70 32 84'], dots: [] }, zay: { strokes: ['M60 34 C 64 54 56 72 30 86'], dots: [[64, 18]] },
+  sin: { strokes: [SIN], dots: [] }, shin: { strokes: [SIN], dots: [[66, 24], [78, 24], [72, 13]] },
+  sad: { strokes: [SAD], dots: [] }, dad: { strokes: [SAD], dots: [[72, 28]] },
+  tta: { strokes: TTA, dots: [] }, zza: { strokes: TTA, dots: [[60, 38]] },
+  ayn: { strokes: [AYN], dots: [] }, ghayn: { strokes: ['M64 34 C 54 24 38 32 46 44 C 52 52 64 50 70 48 C 48 56 34 64 36 76 C 38 88 56 90 72 84'], dots: [[54, 16]] },
+  fa: { strokes: [FA], dots: [[58, 24]] }, qaf: { strokes: [QAF], dots: [[50, 18], [62, 18]] },
+  kaf: { strokes: ['M74 24 C 76 44 74 62 62 66 L 26 66 C 20 66 18 60 20 54', 'M40 40 C 48 36 54 42 46 46 C 54 46 56 50 50 54'], dots: [] },
+  lam: { strokes: ['M64 16 L 64 58 C 64 76 52 82 40 80 C 28 78 24 68 28 58'], dots: [] },
+  mim: { strokes: ['M56 34 C 42 34 40 50 52 52 C 64 54 68 38 56 34', 'M42 50 L 36 88'], dots: [] },
+  he: { strokes: [HE], dots: [] }, tam: { strokes: [HE], dots: [[46, 16], [62, 16]] },
+  waw: { strokes: [WAW], dots: [] },
+  alif: { strokes: ['M50 16 L 50 84'], dots: [] },
+  alif_hamza: { strokes: ['M50 30 L 50 86', 'M44 12 C 50 6 58 10 52 16 C 58 16 60 20 54 24'], dots: [] },
 };
 const trace = (stage, game, ctx) => {
   const sh = SHAPES[game.data.shape];

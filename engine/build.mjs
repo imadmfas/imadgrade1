@@ -28,6 +28,12 @@ function page(tpl, { js, title = '', color = '', fontRoot, avail, all }) {
     .replace('/*BUNDLE*/', () => js);
 }
 
+// دمج ملفات الرسوم الموجودة في src/art/
+const artFiles = fs.readdirSync('src/art').filter((f) => f.endsWith('.js') && f !== 'index.js').sort();
+fs.writeFileSync('src/art/index.js', `import { ART } from '../art.js';\n` + artFiles.map((f, i) => `import * as A${i} from './${f}';`).join('\n') + `\n` + artFiles.map((f, i) => `Object.values(A${i}).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });`).join('\n') + '\n');
+// قوالب الألعاب الخاصة بكل كتاب في src/ext/*.js (كل ملف يصدّر TEMPLATES)
+const extFiles = fs.readdirSync('src/ext').filter((f) => f.endsWith('.js') && f !== 'index.js').sort();
+fs.writeFileSync('src/ext/index.js', extFiles.map((f, i) => `import * as X${i} from './${f}';`).join('\n') + `\nexport const EXT = Object.assign({}, ${extFiles.map((f, i) => `X${i}.TEMPLATES || {}`).join(', ') || '{}'});\n`);
 const { BOOKS } = await import(pathToFileURL(path.resolve('books/shelf.js')).href);
 const sizes = {};
 // الرف

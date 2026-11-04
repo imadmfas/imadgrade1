@@ -1,7 +1,11 @@
 // تطبيق الكتاب: الغلاف، وخريطة المغامرة، وصفحات الدروس، والملصقات، والشهادة، وركن الوالدين
 import { gsap, $, $$, SFX, Music, Narrator, state, setPref, store, sleep, esc, watchFps, kidProof, onFirstTouch, visits, registerSW } from './core.js';
 import { art, mascot, MASCOT_NAME } from './art.js';
-import { TEMPLATES, TEMPLATE_ICON, burst, popIn } from './games.js';
+import { TEMPLATES as T1, TEMPLATE_ICON, burst, popIn } from './games.js';
+import { TEMPLATES2, nashidPage } from './games2.js';
+import './art/index.js';
+import { EXT } from './ext/index.js';
+const TEMPLATES = { ...T1, ...TEMPLATES2, ...EXT };
 import { BOOK, LESSONS, COMMON, AUDIO } from '__BOOK__';
 import { openAdult, initAdult } from './adult.js';
 
@@ -67,7 +71,7 @@ function initCover() {
 /* ---------- خريطة المغامرة ---------- */
 let mapMascot;
 function unitsOf() { const u = new Map(); LESSONS.forEach((L) => { if (!u.has(L.unit)) u.set(L.unit, { n: L.unit, title: L.unitTitle, lessons: [] }); u.get(L.unit).lessons.push(L); }); return [...u.values()]; }
-function nextLesson() { return LESSONS.find((L) => P(L.id).stars.length < L.games.length) || LESSONS[0]; }
+function nextLesson() { return LESSONS.find((L) => L.games.length && P(L.id).stars.length < L.games.length) || LESSONS[0]; }
 function openMap(fromCover) {
   show('map'); location.hash = 'map';
   const road = $('#road'); road.innerHTML = '';
@@ -94,6 +98,7 @@ function openMap(fromCover) {
     } else {
       const L = n.L, st = P(L.id).stars.length, total = L.games.length;
       const el = document.createElement('button'); el.className = 'node tap' + (st >= total ? ' full' : '') + (L === nxt ? ' next' : ''); el.type = 'button'; el.style.left = x + 'px'; el.style.top = y + 'px';
+      el.className += L.kind === 'nashid' ? ' nashid' : L.kind === 'open' ? ' open' : '';
       el.innerHTML = `<span class="n-title">${esc(L.title)}</span><span class="n-stars">${Array.from({ length: total }, (_, k) => `<i class="${k < st ? 'on' : ''}">★</i>`).join('')}</span>`;
       el.addEventListener('click', () => { SFX.pop(); openLesson(L.id, 0); });
       road.appendChild(el);
@@ -126,22 +131,23 @@ async function goGame(gi, dir = 1, first = false) {
   if (cur.game) { try { cur.game.destroy(); } catch (e) {} cur.game = null; }
   const page = $('#page'), old = page.firstElementChild;
   const fresh = document.createElement('div'); fresh.className = 'sheet';
-  if (gi >= L.games.length) { cur.gi = L.games.length; buildSticker(fresh); $('#lPage').textContent = ''; setTimeout(() => instruct(cur.L.sticker.name, cur.L.sticker.audio), 50); }
+  if (!L.games.length) { cur.gi = 0; nashidPage(fresh, L, { say, digits, hasAudio: (a) => Narrator.avail.has(a) }); $('#lPage').textContent = ''; setTimeout(() => instruct(L.nashid.title, audioOf(L.nashid.title)), 50); }
+  else if (gi >= L.games.length) { cur.gi = L.games.length; buildSticker(fresh); $('#lPage').textContent = ''; setTimeout(() => instruct(cur.L.sticker.name, cur.L.sticker.audio), 50); }
   else { cur.gi = gi; }
   stars();
-  $('#bPrev').disabled = gi <= 0; $('#bNext').disabled = gi >= L.games.length;
+  $('#bPrev').disabled = gi <= 0; $('#bNext').disabled = gi >= L.games.length; if (!L.games.length) { const nx = LESSONS[LESSONS.indexOf(L) + 1]; $('#bNext').disabled = !nx; }
   history.replaceState(null, '', '#' + L.id + (gi ? '/' + gi : ''));
   // قلب صفحة منحنٍ ثم انبثاق الصفحة الجديدة
   if (old && !state.reduced) { SFX.page(); old.classList.add(dir > 0 ? 'turn-out' : 'turn-back'); await sleep(420); }
   page.innerHTML = ''; page.appendChild(fresh);
   if (!state.reduced) fresh.classList.add('pop-up');
-  if (gi < L.games.length) {
+  if (L.games.length && gi < L.games.length) {
     const g = L.games[gi];
     fresh.insertAdjacentHTML('beforeend', `<div class="stage" data-t="${g.template}"></div>`);
     $('#lPage').textContent = 'الصفحة ' + digits(g.page) + ' في الكتاب';
     const stage = $('.stage', fresh);
     const ctx = {
-      lesson: L, item, audioOf, wordHtml, color: BOOK.color,
+      lesson: L, item, audioOf, wordHtml, color: BOOK.color, digits, hasAudio: (a) => Narrator.avail.has(a),
       say, instruct: (t, a) => { lessonMascot.nod(); return instruct(t, a); },
       praise: (extra) => { lessonMascot.hop(); const p = pickOne(COMMON.praise); say(extra ? extra : p, extra ? audioOf(extra) : audioOf(p)).then(() => extra && say(p, audioOf(p))); SFX.good(); },
       encourage: () => { const p = pickOne(COMMON.encourage); setTimeout(() => say(p, audioOf(p)), 350); },
@@ -181,7 +187,7 @@ function buildSticker(el) {
 /* ---------- دفتر الملصقات ---------- */
 function openStickers() {
   show('stickers'); location.hash = 'stickers';
-  $('#stGrid').innerHTML = LESSONS.map((L) => `<button class="st-cell tap ${P(L.id).sticker ? 'got' : ''}" type="button" data-id="${L.id}">${art(L.sticker.art)}<span>${esc(L.title)}</span></button>`).join('');
+  $('#stGrid').innerHTML = LESSONS.filter((L) => L.games.length).map((L) => `<button class="st-cell tap ${P(L.id).sticker ? 'got' : ''}" type="button" data-id="${L.id}">${art(L.sticker.art)}<span>${esc(L.title)}</span></button>`).join('');
   $$('.st-cell').forEach((b) => b.addEventListener('click', () => { const L = LESSONS.find((x) => x.id === b.dataset.id); SFX.sticker(); say(L.sticker.name, L.sticker.audio); }));
   popIn($$('.st-cell'));
 }
@@ -225,7 +231,7 @@ function confetti() {
 function initButtons() {
   $('#bHome').addEventListener('click', () => { SFX.click(); Narrator.stop(); if (cur.game) { try { cur.game.destroy(); } catch (e) {} cur.game = null; } openMap(); });
   $('#bAgain').addEventListener('click', () => { SFX.click(); const g = cur.L && cur.L.games[cur.gi]; if (!g) return; if (cur.ctx && cur.ctx.replay) cur.ctx.replay(); else instruct(g.say, g.audio); });
-  $('#bNext').addEventListener('click', () => { SFX.click(); goGame(cur.gi + 1, 1); });
+  $('#bNext').addEventListener('click', () => { SFX.click(); if (!cur.L.games.length) { const nx = LESSONS[LESSONS.indexOf(cur.L) + 1]; if (nx) openLesson(nx.id, 0); return; } goGame(cur.gi + 1, 1); });
   $('#bPrev').addEventListener('click', () => { SFX.click(); goGame(cur.gi - 1, -1); });
   $('#bShelf').addEventListener('click', () => { SFX.whoosh(); location.href = '../'; });
   $('#bStickers').addEventListener('click', () => { SFX.sticker(); openStickers(); });

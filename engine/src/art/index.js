@@ -1,0 +1,13 @@
+import { ART } from '../art.js';
+import * as A0 from './batch1.js';
+import * as A1 from './batch2.js';
+import * as A2 from './batch3.js';
+import * as A3 from './batch4.js';
+import * as A4 from './batch5.js';
+import * as A5 from './batch6.js';
+Object.values(A0).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
+Object.values(A1).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
+Object.values(A2).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
+Object.values(A3).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
+Object.values(A4).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
+Object.values(A5).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
