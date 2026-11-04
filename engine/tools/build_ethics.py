@@ -34,7 +34,7 @@ SAY = {
     'sort': 'ضَعْ كُلَّ صُورَةٍ فِي سَلَّتِهَا', 'truefalse': 'اِسْمَعْ: صَحٌّ أَمْ خَطَأٌ؟', 'picchoose': 'اِخْتَرِ الصُّورَةَ الْمُنَاسِبَةَ',
     'picmatch': 'صِلْ كُلَّ صُورَةٍ بِمَكَانِهَا', 'similar': 'ضَعِ الْمُتَشَابِهَاتِ مَعًا', 'maze': 'أَوْصِلِ الْقَلَمَ إِلَى صَاحِبِهِ',
     'garden': 'اِزْرَعْ وَرْدَةً لِكُلِّ فِعْلٍ', 'valuetree': 'اِلْمَسْ قِيَمَ الْوَحْدَةِ', 'memory': 'اِقْلِبْ بِطَاقَتَيْنِ مُتَشَابِهَتَيْنِ',
-    'match': 'اِسْحَبِ الْكَلِمَةَ إِلَى صُورَتِهَا', 'buildw': 'رَتِّبِ الْحُرُوفَ لِتُكَوِّنَ كَلِمَةً', 'build': 'رَتِّبِ الْحُرُوفَ لِتُكَوِّنَ كَلِمَةً', 'choose': 'اِسْمَعْ وَاخْتَرِ الْوَجْهَ',
+    'match': 'اِسْحَبِ الْكَلِمَةَ إِلَى صُورَتِهَا', 'buildw': 'رَتِّبِ الْحُرُوفَ لِتُكَوِّنَ كَلِمَةً', 'readpics': 'اِسْمَعْ وَرَدِّدْ مَعِي', 'build': 'رَتِّبِ الْحُرُوفَ لِتُكَوِّنَ كَلِمَةً', 'choose': 'اِسْمَعْ وَاخْتَرِ الْوَجْهَ',
 }
 COMMON = {'praise': ['أَحْسَنْتَ!', 'رَائِعٌ!', 'مُمْتَازٌ!'], 'encourage': ['حَاوِلْ مَرَّةً أُخْرَى', 'هَيَّا مَرَّةً أُخْرَى'], 'star': 'نَجْمَةٌ جَدِيدَةٌ!', 'sticker': 'مُلْصَقٌ جَدِيدٌ لِدَفْتَرِكَ!', 'welcome': 'هَيَّا نَلْعَبُ وَنَتَعَلَّمُ!', 'map': 'اِخْتَرْ دَرْسًا مِنَ الطَّرِيقِ'}
 YES, NO = 'صَحٌّ', 'خَطَأٌ'
@@ -54,7 +54,7 @@ def lesson(lid, unit, title, pages, games, sticker, **kw):
     L = {'id': lid, 'book': 'ethics', 'unit': unit, 'unitTitle': t, 'unitPage': up, 'pages': pages, 'title': title, 'kind': kw.pop('kind', 'lesson'), 'items': kw.pop('items', []), 'syllables': [], 'games': games, 'sticker': sticker}
     L.update(kw); return L
 def g(t, page, data, say=None): return {'template': t, 'page': page, 'say': say or SAY[t], 'data': data}
-def prompts(src): return [{'text': V(q), 'page': src['questions']['page']} for q in src['questions']['items']]
+def prompts(src, extra=None): return [{'text': V(q), 'page': src['questions']['page']} for q in src['questions']['items']] + (extra['sentences'] if extra else [])
 def read_lines(pairs, page): return {'sentences': [{'text': V(p), 'page': page} for p in pairs]}
 def src_lines(*parts):
     # كل جزء كتلة من المصدر فيها page؛ تُحفظ صفحة كل جملة
@@ -86,7 +86,6 @@ LESSONS.append(lesson('u1-greet', 1, V(S['title']), [7, 11], [
     g('sort', 10, {'bins': [{'label': 'عِنْدَ الْحُضُورِ'}, {'label': 'عِنْدَ الْمُغَادَرَةِ'}],
                    'items': [{'text': V(x), 'bin': 0} for x in S['repeat']['items'] if base(V(x)) in ('السلام عليكم', 'صباح الخير', 'مرحبا بك', 'اهلا وسهلا')][:3] + [{'text': V(x), 'bin': 1} for x in S['enrich']['items']]},
       'ضَعْ كُلَّ تَحِيَّةٍ فِي سَلَّتِهَا'),
-    g('puzzle', 8, {'scene': scene('e_s_greet'), 'pieces': 4}),
 ], {'name': 'مُلْصَقُ التَّحِيَّةِ', 'art': 'e_wave'}))
 report['notes'].append('u1-greet: عنوانا السلّتين «عِنْدَ الْحُضُورِ / عِنْدَ الْمُغَادَرَةِ» من قاعدة ص١١ «ألقي التحية عند الحضور والمغادرة»؛ تحيات الحضور من ص٩ وعبارات المغادرة من ص١٠.')
 
@@ -94,18 +93,16 @@ S = LES['u1-tidy']
 A = S['activities']
 st = {s['key']: s for s in S['story']}
 LESSONS.append(lesson('u1-tidy', 1, V(S['title']), [12, 19], [
-    g('scene', 13, {'scene': scene('e_s_mess', ('butterfly', 'star')), 'prompts': prompts(S)}),
-    g('picchoose', 15, {'rounds': [
-        {'say': 'اِخْتَرِ الصُّورَةَ الَّتِي تَدُلُّ عَلَى التَّرْتِيبِ', 'options': [{'art': 'e_room_tidy'}, {'art': 'e_room_messy'}], 'answer': 0, 'page': 15},
-        {'say': 'اِخْتَرِ الصُّورَةَ الَّتِي تَدُلُّ عَلَى التَّرْتِيبِ', 'options': [{'art': 'e_line'}, {'art': 'e_crowd'}], 'answer': 0, 'page': 15},
-        explore_round(S)]}, 'اِخْتَرِ الصُّورَةَ الْمُنَاسِبَةَ'),
+    g('scene', 13, {'scene': scene('e_s_mess', ('butterfly', 'star')), 'prompts': prompts(S) + [{'text': V(S['explore']['q']) + ' ' + ' أَمْ '.join(V(o) for o in S['explore']['options']) + '؟', 'page': S['explore']['page']}]}),
     g('order', 16, story_order(S, ['mess', 'answer', 'zahraa', 'bags'], {'mess': 'e_s_mess', 'answer': 'e_s_answer', 'zahraa': 'e_s_zahraa', 'bags': 'e_s_bags'})),
-    g('similar', 16, {'groups': [{'sample': 'dog', 'items': ['bear', 'cat', 'rabbit', 'lion', 'duck', 'eagle']}, {'sample': 'bananas', 'items': ['burtuqal']}, {'sample': 'book', 'items': ['pencil', 'paper_sheet']}], 'max': 6}),
-    g('picchoose', 17, {'rounds': [{'say': V(c['value']), 'options': [{'art': a} for a in opts], 'answer': 0, 'page': 17} for c, opts in zip(A[3]['content'], [['e_knock', 'e_make_bed', 'e_raise_hand'], ['e_toys_away', 'e_knock', 'e_make_bed'], ['e_make_bed', 'e_toys_away', 'e_raise_hand'], ['e_raise_hand', 'e_knock', 'e_toys_away']])]}, 'اِسْمَعْ وَاخْتَرِ الصُّورَةَ'),
+    g('picchoose', 17, {'rounds': [{'say': V(c['value']), 'options': [{'art': a} for a in opts], 'answer': 0, 'page': 17} for c, opts in zip(A[3]['content'], [['e_knock', 'e_make_bed', 'e_raise_hand'], ['e_toys_away', 'e_knock', 'e_make_bed'], ['e_make_bed', 'e_toys_away', 'e_raise_hand'], ['e_raise_hand', 'e_knock', 'e_toys_away']])] + [
+        {'say': 'اِخْتَرِ الصُّورَةَ الَّتِي تَدُلُّ عَلَى التَّرْتِيبِ', 'options': [{'art': 'e_room_tidy'}, {'art': 'e_room_messy'}], 'answer': 0, 'page': 15},
+        {'say': 'اِخْتَرِ الصُّورَةَ الَّتِي تَدُلُّ عَلَى التَّرْتِيبِ', 'options': [{'art': 'e_line'}, {'art': 'e_crowd'}], 'answer': 0, 'page': 15}]}, 'اِسْمَعْ وَاخْتَرِ الصُّورَةَ'),
     g('buildw', 18, {'pieces': ['د', 'ا', 'ر', 'ز', 'و', 'ق', 'ب'], 'per': 5, 'words': [{'word': V(w['word']), 'parts': list(base(V(w['word']))), 'art': {'house': 'house', 'sailboat': 'sailboat', 'door': 'bab'}[w['picture']]} for w in A[4]['words']]}),
-    g('order', 19, {'rounds': [{'items': [{'art': a} for a in ['e_wake', 'e_brush', 'e_eat', 'e_go_school']]}]}, 'رَتِّبْ أَحْدَاثَ الْقِصَّةِ'),
 ], {'name': 'مُلْصَقُ التَّرْتِيبِ', 'art': 'e_room_tidy'}))
-report['notes'].append('u1-tidy/similar (ص١٦): الكتاب يرتّب صور الحيوانات والفواكه والأدوات المدرسية بعلامات؛ اللعبة تضع كل صورة مع نموذج مجموعتها (رسوم المكتبة الموجودة: الفراولة والخوخ والدفتر لا رسوم لها فاستُعملت صور المجموعة الأخرى).')
+report['notes'].append('u1-tidy: جولتا ص١٥ نشاط ١ (الغرفتان والصفّان) دُمجتا في لعبة صور ص١٧، وسؤال «أفكر وأستكشف» ص١٥ صار سؤالاً يُسمع في صفحة القصة (الدرس أربع ألعاب).')
+report['skipped'].append('ص١٦ نشاط ٣ (رتّب المتشابهات: حيوانات وفواكه وأدوات، صور بلا نص): حُذف ليبقى الدرس أربع ألعاب.')
+report['skipped'].append('ص١٩ «رتّب أحداث هذه القصة» (أستيقظ، أغسل أسناني، أفطر، أذهب إلى المدرسة): الكتاب يترك المربعات فارغة ولا يحسم أسبق الفطور أم غسل الأسنان، والصور بلا نص يُسمع؛ فلم تُبنَ لعبة مُقيَّمة.')
 report['notes'].append('u1-tidy/build (ص١٨): الكتاب يكتب «دار، زورق، باب» بأحرف منفصلة بلا شكل؛ القطع أحرف الكتاب كما هي، والكلمة المركّبة مشكولة.')
 report['skipped'].append('ص١٨ «رتب الأرقام من الأصغر إلى الأكبر» (١–١٠): نشاط رياضيات لم يُبنَ لعبةً؛ الأرقام تُستعمل مشتِّتاتٍ في لعبة العدّ (u2-family).')
 
@@ -116,50 +113,48 @@ honest_rounds = [{'say': V(c['value']), 'show': True, 'options': [{'text': V(o) 
 if len(A[2]['count']) != 3 or A[2]['options'][A[2]['answer']] != '٣': bad.append('u1-honest: عدد أصدقاء لانا يجب أن يكون ٣')
 report['checks'].append('u1-honest ص٢٤: «عدد أصدقاء لانا هو ٣» — محمد وزهراء ويوسف = ٣ (فُحص آلياً).')
 LESSONS.append(lesson('u1-honest', 1, V(S['title']), [20, 25], [
-    g('scene', 21, {'scene': scene('e_s_lana_sad', ('butterfly', 'cloud')), 'prompts': prompts(S)}),
+    g('scene', 21, {'scene': scene('e_s_lana_sad', ('butterfly', 'cloud')), 'prompts': prompts(S, src_lines((S['quote'], 'text'), (S['bubble'], 'text'), (S['learned'], 'items')))}),
     g('order', 23, story_order(S, ['sad', 'advice', 'truth'], {'sad': 'e_s_lana_sad', 'advice': 'e_s_advice', 'truth': 'e_s_truth'})),
-    g('picchoose', 24, {'rounds': [explore_round(S)] + honest_rounds[:4]}, 'اِخْتَرِ الْجَوَابَ الصَّحِيحَ'),
+    g('picchoose', 24, {'rounds': [explore_round(S)] + honest_rounds}, 'اِخْتَرِ الْجَوَابَ الصَّحِيحَ'),
     g('truefalse', 25, tf_rounds(S)),
-    g('read', 20, src_lines((S['quote'], 'text'), (S['bubble'], 'text'), (S['learned'], 'items'))),
 ], {'name': 'مُلْصَقُ الصِّدْقِ', 'art': 'e_s_truth'}))
-report['skipped'].append('ص٢٤ السؤال الخامس «هل تأثرت لانا بكلام أصدقائها؟» لم يدخل (اللعبة خمس جولات).')
+report['notes'].append('u1-honest: الشعار والفقاعة وما تعلمته (ص٢٠، ٢٥) صارت فقاعات تُسمع في صفحة القصة بعد أسئلة الحوار (الدرس أربع ألعاب). سؤال ص٢٤ «هل تأثرت لانا بكلام أصدقائها؟» جوابه «نعم» من القصة ص٢٢ (بعد نصيحتهم قررت قول الصدق).')
 report['skipped'].append('ص٢٤ نشاط إثرائي «اللعبة التي تحبها»: لا جواب واحد فيه، فلم يُبنَ.')
 
 S = LES['u1-trust']
 E = S['enrich']['items']
 LESSONS.append(lesson('u1-trust', 1, V(S['title']), [26, 30], [
-    g('scene', 27, {'scene': scene('e_s_show_book', ('butterfly', 'trees')), 'prompts': prompts(S)}),
+    g('scene', 27, {'scene': scene('e_s_show_book', ('butterfly', 'trees')), 'prompts': prompts(S, src_lines((S['repeat'], 'items')))}),
     g('order', 29, story_order(S, ['window', 'ask', 'cry', 'names'], {'window': 'e_book_window', 'ask': 'e_s_show_book', 'cry': 'e_s_cry', 'names': 'e_s_names'}), 'رَتِّبْ رِحْلَةَ مُحَمَّدٍ'),
     g('picchoose', 29, {'rounds': [
         {'say': 'اِخْتَرِ الصُّورَةَ الْمُنَاسِبَةَ', 'options': [{'art': 'e_give_back'}, {'art': 'e_hide_book'}], 'answer': 0, 'page': 29},
         explore_round(S)] + [{'say': V(x['q']), 'show': True, 'options': opt_text(x['options']), 'answer': x['answer'], 'page': 30} for x in E if x['answer'] is not None]}, 'أُفَكِّرُ وَأَسْتَكْشِفُ'),
     g('maze', 30, {'grid': ['S.#....', '#.#.##.', '..#..#.', '.###.#.', '...#...', '##.#.#.', '.....#E'], 'pen': 'pencil', 'goal': 'e_pencil_boy', 'goalSay': V(S['share']['text'])}),
-    g('read', 29, src_lines((S['repeat'], 'items'), (S['share'], 'text'))),
 ], {'name': 'مُلْصَقُ الْأَمَانَةِ', 'art': 'e_give_back'}))
 report['skipped'].append('ص٣٠ «الأمانة لها علاقة بـ: الإخلاص / الصدق»: الخياران صحيحان فلم يُبنَ جولةً.')
+report['notes'].append('u1-trust: «استمع وأردد» ص٢٩ صار فقاعات تُسمع في صفحة القصة، وعبارة «هيا نتشارك» ص٣٠ تُسمع عند وصول القلم في المتاهة (الدرس أربع ألعاب).')
 
 S = LES['u1-respect']
 H = S['habits']['items']
 LESSONS.append(lesson('u1-respect', 1, V(S['title']), [31, 35], [
-    g('scene', 32, {'scene': scene('e_s_remember', ('butterfly', 'star')), 'prompts': prompts(S)}),
-    g('truefalse', 34, tf_rounds(S, [0, 1, 2, 4, 5])),
+    g('scene', 32, {'scene': scene('e_s_remember', ('butterfly', 'star')), 'prompts': prompts(S, src_lines((S['quote'], 'text')))}),
+    g('truefalse', 34, tf_rounds(S)),
     g('sort', 35, {'bins': [{'label': 'أَقُومُ بِهَا'}, {'label': 'لَا أَقُومُ بِهَا'}], 'items': [{'text': V(x['text']), 'bin': 0 if x['good'] else 1} for x in H if base(V(x['text'])) != 'العب في الصف']}, 'ضَعْ كُلَّ جُمْلَةٍ فِي سَلَّتِهَا'),
     g('picchoose', 34, {'rounds': [explore_round(S)] + [{'say': V(p), 'show': True, 'options': opt_text(S['repeat']['items']), 'answer': i, 'page': 34} for i, p in enumerate(S['repeat']['items'])]}, 'اِسْمَعْ وَاخْتَرِ الْعِبَارَةَ'),
-    g('read', 34, src_lines((S['repeat'], 'items'), (S['quote'], 'text'))),
 ], {'name': 'مُلْصَقُ الِاحْتِرَامِ', 'art': 'e_friends_hug'}))
-report['notes'].append('u1-respect: عنوانا السلّتين «أَقُومُ بِهَا / لَا أَقُومُ بِهَا» من تعليمة ص٣٥؛ الجملة «ألعب في الصف» تُركت لأن اللعبة ستّ بطاقات، وصح/خطأ خمس جمل من ست (حُذفت الرابعة).')
+report['notes'].append('u1-respect: عنوانا السلّتين «أَقُومُ بِهَا / لَا أَقُومُ بِهَا» من تعليمة ص٣٥؛ الجملة «ألعب في الصف» تُركت لأن اللعبة ستّ بطاقات، وصح/خطأ الجمل الست كلها؛ وشعار الدرس ص٣١ فقاعة تُسمع في صفحة القصة، وجمل «استمع وأردد» ص٣٤ خيارات مقروءة في لعبة العبارة.')
 
 R = U1['review']
 LESSONS.append(lesson('u1-review', 1, V(R['title']), [36, 38], [
     g('sort', 36, {'bins': [{'label': 'التَّصَرُّفُ الصَّحِيحُ'}, {'label': 'التَّصَرُّفُ غَيْرُ الصَّحِيحِ'}], 'items': [{'art': a, 'bin': b} for a, b in [('e_say_truth', 0), ('e_tissues', 1), ('e_raise_hand', 0), ('e_kick_cat', 1), ('e_friends_hug', 0), ('e_fight', 1)]]}),
-    g('order', 36, {'rounds': [{'items': [{'art': a} for a in ['e_s_lesson', 'e_s_knock', 'e_s_thanks', 'e_s_remember']]}]}, 'رَتِّبِ الصُّوَرَ'),
-    g('valuetree', 37, {'items': [{'text': V(x)} for x in R['tree']['items']]}),
+    g('valuetree', 37, {'items': [{'text': V(x)} for x in R['tree']['items']], 'motto': {'text': V(R['motto']['text']), 'page': 37}}),
     g('match', 38, {'pairs': [V(x['name']) for x in R['characters']['items']], 'per': 3}, 'صِلْ كُلَّ اسْمٍ بِصُورَتِهِ'),
     g('picchoose', 38, {'rounds': [{'say': V(x['text']), 'options': [{'art': a} for a in opts], 'answer': 0, 'page': 38} for x, opts in zip(R['phrases']['items'], [['e_grandma_boy', 'e_make_bed', 'e_raise_hand'], ['e_make_bed', 'e_share_box', 'e_grandma_boy'], ['e_share_box', 'e_raise_hand', 'e_make_bed'], ['e_raise_hand', 'e_grandma_boy', 'e_share_box']])]}, 'اِسْمَعْ وَاخْتَرِ الصُّورَةَ'),
-    g('read', 37, read_lines([R['motto']['text']], 37)),
 ], {'name': 'مُلْصَقُ الْوَحْدَةِ الْأُولَى', 'art': 'star'}, items=[{'value': V(x['name']), 'art': 'e_' + x['art'], 'page': 38} for x in R['characters']['items']]))
 report['notes'].append('u1-review: لعبة التصنيف (ص٣٦) تضم صورتين من ص٣٥ (الصديقان والشجار) لتصير ستّ صور؛ عنوانا السلّتين من تعليمة ص٣٦.')
 report['merges'].append('u1-review ← صور ص٣٥ (الصديقان متعانقان، الشجار) دُمجت في تصنيف ص٣٦.')
+report['merges'].append('u1-review ← «الصدق طريق الجنة» (ص٣٧ نشاط ٤) يظهر فوق شجرة القيم (ص٣٧ نشاط ٥) ويُسمع.')
+report['skipped'].append('ص٣٦ نشاط ٢ «رتب الصور بحسب الأرقام» (صور قصة نور بلا نص): حُذف ليبقى الدرس أربع ألعاب.')
 
 # ======================= الوحدة الثانية: أنا وأسرتي =======================
 S = LES['u2-feelings']
@@ -167,14 +162,12 @@ A5 = S['activities'][1]['content']
 FACE = {'happy face': 'e_f_happy', 'angry face': 'e_f_angry', 'grimacing face': 'e_f_scared', 'shy face': 'e_f_shy', 'crying sad face': 'e_f_cry', 'scared face': 'e_f_scared', 'sad face': 'e_f_sad'}
 CARD = {'أَنَا سَعِيدٌ': 'e_f_happy', 'أَنَا حَزِينٌ': 'e_f_sad', 'أَنَا غَاضِبٌ': 'e_f_angry', 'أَنَا خَجُولٌ': 'e_f_shy', 'أَنَا خَائِفٌ': 'e_f_scared'}
 cards = [V(c['value']) for c in S['activities'][2]['content']]
-order3 = [['e_f_sad', 'e_f_angry'], ['e_f_happy', 'e_f_shy'], ['e_f_scared', 'e_f_happy'], ['e_f_angry', 'e_f_sad'], ['e_f_shy', 'e_f_scared']]
+order3 = [['e_f_sad', 'e_f_angry'], ['e_f_happy', 'e_f_shy'], ['e_f_scared', 'e_f_happy'], ['e_f_angry', 'e_f_sad'], ['e_f_shy', 'e_f_happy']]
 LESSONS.append(lesson('u2-feelings', 2, V(S['title']), [41, 48], [
     g('scene', 42, {'scene': scene('e_s_cards', ('butterfly', 'trees')), 'prompts': prompts(S)}),
     g('picchoose', 47, {'rounds': [{'say': V(c['value']), 'art': a, 'options': [{'art': FACE[o]} for o in c['options']], 'answer': c['answer'], 'page': 47} for c, a in zip(A5, ['e_boy_angry', 'e_girl_sulky', 'e_girls_happy'])] + [explore_round(S)]}, 'اِخْتَرِ الْوَجْهَ الْمُنَاسِبَ'),
     g('choose', 48, {'rounds': [{'say': t, 'options': [{'art': CARD[t]}] + [{'art': x} for x in o], 'answer': 0} for t, o in zip(cards, order3)]}),
-    g('memory', 48, {'pairs': [{'text': t, 'art': CARD[t]} for t in cards[:4]]}),
     g('read', 46, src_lines((S['repeat'], 'items'), (S['quote'], 'text'))),
-    g('puzzle', 42, {'scene': scene('e_s_cards', ('butterfly', 'trees')), 'pieces': 6}),
 ], {'name': 'مُلْصَقُ الْمَشَاعِرِ', 'art': 'e_f_love'}))
 report['notes'].append('u2-feelings: وجوه ص٤٧ رُسمت بطاقاتِ وجوه؛ الوجه «المكشّر» في الجولة الأولى رُسم وجهاً خائفاً.')
 
@@ -193,27 +186,28 @@ LESSONS.append(lesson('u2-family', 2, V(S['title']), [49, 54], [
     g('scene', 50, {'scene': scene('e_s_draw_tree', ('butterfly', 'trees')), 'prompts': prompts(S)}),
     g('match', 52, {'pairs': [V(c['value']) for c in A1], 'per': 3}),
     g('picchoose', 52, {'rounds': tree_rounds}, 'عُدَّ الْأَغْصَانَ وَاخْتَرْ'),
-    g('memory', 53, {'pairs': [{'text': V(c['value']), 'art': a} for c, a in zip(S['activities'][1]['content'], ['e_father', 'e_mother', 'e_sister', 'e_brother'])]}),
-    g('read', 52, read_lines(S['repeat']['items'], 52)),
+    g('read', 52, {'sentences': read_lines(S['repeat']['items'], 52)['sentences'] + [{'text': ' ، '.join(V(c['value']) for c in S['activities'][1]['content']), 'page': 53}]}),
 ], {'name': 'مُلْصَقُ أُسْرَتِي', 'art': 'e_s_family'}, items=[{'value': V(c['value']), 'art': FAM[c['picture']], 'page': 52} for c in A1]))
 
 S = LES['u2-coop']
 LESSONS.append(lesson('u2-coop', 2, V(S['title']), [55, 60], [
     g('scene', 56, {'scene': scene('e_s_breakfast', ('butterfly', 'flower_pot')), 'prompts': prompts(S)}),
-    g('order', 59, story_order(S, S['order']['items'], {'breakfast': 'e_s_breakfast', 'dishes': 'e_dishes', 'bed': 'e_bed_boy', 'garden': 'e_garden', 'window': 'e_window'})),
-    g('truefalse', 60, tf_rounds(S, [0, 1, 2, 4, 6])),
+    g('truefalse', 60, tf_rounds(S, [0, 1, 2, 3, 4, 6])),
     g('picmatch', 60, {'pairs': [{'from': a, 'to': b, 'say': s} for a, b, s in [('shoes', 'e_shoe_rack', None), ('clothes', 'e_wardrobe', None), ('e_toys', 'e_toybox', V(S['places']['label'])), ('e_rubbish', 'e_bin', None)]], 'per': 4}, 'صِلِ الشَّيْءَ بِمَكَانِهِ'),
-    g('build', 59, {'pieces': ['أ', 'م', 'ي', 'ب', 'خ', 'ت'], 'words': [{'word': V(w['word']), 'parts': list(base(V(w['word'])).replace('ا', 'أ', 1) if base(V(w['word'])).startswith('ا') else base(V(w['word'])))} for w in S['letters']['words'][:3]]}, 'كَوِّنْ مِنَ الْأَحْرُفِ كَلِمَةً'),
-    g('read', 58, read_lines(S['repeat']['items'], 58)),
+    g('readpics', 58, {'sentences': read_lines(S['repeat']['items'], 58)['sentences']
+        + [{'text': V(st['text']), 'page': st['page'], 'art': {'dishes': 'e_dishes', 'bed': 'e_bed_boy', 'garden': 'e_garden', 'window': 'e_window'}[st['key']]} for st in S['story'] if st.get('key') in ('dishes', 'bed', 'garden', 'window')]
+        + [{'text': ' ، '.join(V(w['word']) for w in S['letters']['words']), 'page': S['letters']['page']}]}),
 ], {'name': 'مُلْصَقُ التَّعَاوُنِ', 'art': 'e_dishes'}))
-report['notes'].append('u2-coop/picmatch (ص٦٠): الأشياء بلا أسماء في الكتاب فتتكلم صورة صندوق الألعاب وحدها بعبارتها «صُنْدُوقُ أَلْعَابٍ»؛ وصح/خطأ خمس جمل من ثماني.')
+report['notes'].append('u2-coop/picmatch (ص٦٠): الأشياء بلا أسماء في الكتاب فتتكلم صورة صندوق الألعاب وحدها بعبارتها «صُنْدُوقُ أَلْعَابٍ»؛ وصح/خطأ ست جمل من ثماني.')
+report['notes'].append('u2-coop: نشاط ص٥٩ «رتّب أحداث القصة» صار صفحة استماع غير مُقيَّمة (صور الأعمال الأربعة مع كلام أصحابها ص٥٧)؛ لأن الكتاب لا يحسم ترتيب الأعمال (ترتيب الدوائر في ص٥٧ يخالف ترتيب الفقاعات). وكلمات «كوّن من الأحرف» ص٥٩ (أمي، أبي، أختي، أخي) سطر يُسمع في الصفحة نفسها.')
+report['skipped'].append('ص٥٨ «أفكر وأستكشف» (أنجز يوسف وأسرته… لأنهم تعاونوا معاً) وص٥٨ نشاطا ١ و٢ (تعبير شفهي) وص٥٩ نشاط ٣ (مع من تتعاون؟ بلا جواب واحد): لم تُبنَ؛ الدرس أربع ألعاب.')
 
 S = LES['u2-pride']
 A = S['activities'][0]
 LESSONS.append(lesson('u2-pride', 2, V(S['title']), [61, 65], [
     g('scene', 62, {'scene': scene('e_s_morning', ('butterfly', 'trees')), 'prompts': prompts(S)}),
     g('picchoose', 64, {'rounds': [
-        {'say': 'مَا شُعُورُ سَارَةَ حِينَ لَمْ تَجِدْ أُمَّهَا؟', 'art': 'e_s_morning', 'options': [{'art': 'e_f_angry'}, {'art': 'e_f_sad'}, {'art': 'e_f_scared'}, {'art': 'e_f_happy'}], 'answer': 1, 'page': 64},
+        {'say': 'سَمِّ الشُّعُورَ الَّذِي كَانَتْ تَشْعُرُ بِهِ سَارَةُ عِنْدَمَا اسْتَيْقَظَتْ وَلَمْ تَجِدْ أُمَّهَا فِي الْمَنْزِلِ', 'art': 'e_s_morning', 'options': [{'art': 'e_f_angry'}, {'art': 'e_f_sad'}, {'art': 'e_f_scared'}, {'art': 'e_f_happy'}], 'answer': 1, 'page': 64},
         explore_round(S),
         {'say': V(S['questions']['items'][4]), 'show': True, 'options': [{'art': 'e_nurse'}, {'art': 'e_teacher'}, {'art': 'e_engineer'}], 'answer': 0, 'page': 63}]}, 'اِخْتَرِ الْجَوَابَ الصَّحِيحَ'),
     g('order', 62, {'rounds': [{'items': [{'art': 'e_s_morning', 'text': V(S['story'][0]['text'])}, {'art': 'e_nurse', 'text': V(S['story'][1]['text'])}, {'art': 'e_s_hug_mom', 'text': V(S['story'][2]['text'])}]}]}),
@@ -234,10 +228,11 @@ LESSONS.append(lesson('u2-model', 2, V(S['title']), [66, 71], [
     g('scene', 67, {'scene': scene('e_s_jobs', ('butterfly', 'trees')), 'prompts': prompts(S)}),
     g('picmatch', 70, {'pairs': [{'from': WP[a][0], 'to': WP[a][1], 'say': None} for a, b in S['workplaces']['pairs']], 'per': 3}, 'صِلْ كُلَّ شَخْصٍ بِمَكَانِ عَمَلِهِ'),
     g('picchoose', 68, {'rounds': [{'say': V(s['text']), 'show': True, 'options': [{'art': a} for a in o], 'answer': 0, 'page': 68} for s, o in zip(jobs, order4)] + [explore_round(S)]}, 'اِسْمَعْ وَاخْتَرِ الصُّورَةَ'),
-    g('memory', 66, {'pairs': [{'text': V(v), 'art': a} for v, a in zip(S['vocab']['items'][2:6], ['e_soldier', 'e_engineer', 'e_farmer', 'e_builder'])]}),
-    g('read', 66, {'sentences': src_lines((S['quote'], 'text'))['sentences'] + [{'text': V(x), 'page': S['learned']['page']} for x in S['learned']['items'][1:]]}),
+    g('readpics', 66, {'sentences': src_lines((S['quote'], 'text'))['sentences']
+        + [dict({'text': V(v), 'page': S['vocab']['page']}, **({'art': a} if a else {})) for v, a in zip(S['vocab']['items'], [None, None, 'e_soldier', 'e_engineer', 'e_farmer', 'e_builder'])]
+        + [{'text': V(x), 'page': S['learned']['page']} for x in S['learned']['items'][1:]]}),
 ], {'name': 'مُلْصَقُ قُدْوَتِي', 'art': 'e_s_jobs'}))
-report['notes'].append('u2-model: «مهندس» في المفردات (ص٦٦) رُسم مهندسةً كما في كلام لانا (ص٦٨)، وبطاقة الذاكرة نصها «مُهَنْدِسٌ» من المفردات.')
+report['notes'].append('u2-model: «مهندس» في المفردات (ص٦٦) رُسم مهندسةً كما في كلام لانا (ص٦٨)، ومفردات ص٦٦ تُسمع مع صورها في صفحة «استمع وردد».')
 report['skipped'].append('ص٧٠ نشاط إثرائي «محمد نبينا… قدوتنا»: لم يُعرض (عبارة دينية تخص النبي ﷺ؛ لا صور للأنبياء).')
 
 R = U2['review']
@@ -247,6 +242,17 @@ LESSONS.append(lesson('u2-review', 2, V(R['title']), [72, 75], [
     g('sort', 74, {'bins': [{'label': V(b)} for b in R['behaviour']['bins']], 'items': [{'art': a, 'bin': b} for a, b in [('e_push_water', 1), ('e_help_grandma', 0), ('e_firecracker', 1), ('e_water_plants', 0)]]}),
     g('read', 74, read_lines(R['lamp']['items'], 74)),
 ], {'name': 'مُلْصَقُ الْوَحْدَةِ الثَّانِيَةِ', 'art': 'rose'}))
+
+report['second_reader'] = [
+    'ص١٩ (ترتيب صور الصباح): لا جواب واحد في الكتاب (الفطور وغسل الأسنان) — حُذفت اللعبة المُقيَّمة.',
+    'ص٣٥ (تصنيف العادات: أقوم بها / لا أقوم بها): الجواب واحد من معنى الجمل والدرس — بقيت مُقيَّمة.',
+    'ص٣٦ (التصرف الصحيح/غير الصحيح) وص٣٨ (العبارة تحت الصورة، كل عبارة لصورة واحدة): الجواب واحد من الرسم — بقيتا مُقيَّمتين.',
+    'ص٧٢ (وجوه سعيدة/حزينة) وص٧٤ (سلوك صحيح/غير صحيح): الجواب واحد من الرسم — بقيتا مُقيَّمتين.',
+    'ص٥٩ (ترتيب الأعمال المنزلية): لا يحسمه الكتاب — صار صفحة استماع غير مُقيَّمة.',
+    'ص٤٥ «أنه الحب» → «إِنَّهُ الْحُبُّ» (أول الكلام) صحيح؛ ص٧٣ «أصدقت» بقيت بحروف الكتاب مضبوطةً «أَصَدَقْتَ» (حديقة الأفعال غير مُقيَّمة).',
+    'ص٥٨ «أخوتي» في الكتاب ضُبطت «إِخْوَتِي» (همزة القطع المكسورة)، وص٦١ «افتخر» ضُبطت «أَفْتَخِرُ».',
+]
+report['notes'].append('تقليص الألعاب إلى أربع في كل درس (قراءة ثانية): حُذفت أحجيتا الصورة (ص٨، ص٤٢) ولعبتا الذاكرة في «أنا ومشاعري» و«أعرف أسرتي» (مكررتان لبطاقات ص٤٨ ولعبة صل الكلمة ص٥٢)؛ وكلمات ص٥٣ (أبي، أمي، أختي، أخي، جدي، جدتي، أنا) سطر في صفحة «استمع وأردد».')
 
 # ---------- الصوت والتعليمات ----------
 for les in LESSONS:
@@ -274,6 +280,7 @@ for les in LESSONS:
             if it.get('text'): reg(it['text'], lid, gm['page'])
         for b in d.get('bins', []): reg(b['label'], lid, gm['page'])
         if d.get('goalSay'): reg(d['goalSay'], lid, gm['page'])
+        if d.get('motto'): d['motto']['audio'] = reg(d['motto']['text'], lid, d['motto']['page'])
     if les['sticker'].get('name'): les['sticker']['audio'] = reg(les['sticker']['name'], lid, les['pages'][0], 'sticker')
     if les.get('nashid'): reg(les['nashid']['title'], lid, les['pages'][0], 'ntitle')
 
@@ -287,6 +294,7 @@ def vowelled_enough(t):
     return all(HAR.search(w) or len(ARABIC_LETTER.findall(w)) < 2 for w in t.split())
 for les in LESSONS:
     if les['kind'] != 'nashid' and len(les['games']) < 3: bad.append(les['id'] + ': أقل من ثلاث ألعاب')
+    if len(les['games']) > 4: bad.append(les['id'] + ': أكثر من أربع ألعاب')
     for gm in les['games']:
         if len(gm['say'].split()) > 6: bad.append(f"{les['id']}: تعليمة طويلة {gm['say']}")
         n = len(gm['data'].get('rounds', [])) or len(gm['data'].get('pairs', [])) or 0

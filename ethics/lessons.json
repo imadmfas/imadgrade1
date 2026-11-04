@@ -67,7 +67,7 @@
         "audio": "u1-greet-q02.mp3"
        },
        {
-        "text": "لِمَاذَا بَدَأَ مُحَمَّدٌ بِقَوْلِهِ: صَبَاحُ الْخَيْرِ؟",
+        "text": "لِمَاذَا بَدَأَ مُحَمَّدٌ بِقَوْلِهِ: (صَبَاحُ الْخَيْرِ)؟",
         "page": 9,
         "audio": "u1-greet-q03.mp3"
        },
@@ -226,39 +226,6 @@
       ]
      },
      "audio": "u1-greet-x47.mp3"
-    },
-    {
-     "template": "puzzle",
-     "page": 8,
-     "say": "رَكِّبِ الصُّورَةَ",
-     "data": {
-      "scene": {
-       "items": [
-        {
-         "art": "e_s_greet",
-         "x": 70,
-         "y": 0,
-         "w": 260
-        },
-        {
-         "art": "butterfly",
-         "x": 4,
-         "y": 40,
-         "w": 64
-        },
-        {
-         "art": "trees",
-         "x": 332,
-         "y": 120,
-         "w": 66
-        }
-       ],
-       "bg": {},
-       "sun": false
-      },
-      "pieces": 4
-     },
-     "audio": "c-puzzle.mp3"
     }
    ],
    "sticker": {
@@ -341,60 +308,15 @@
         "text": "كَيْفَ أَنْهَتِ الْمُعَلِّمَةُ كَلَامَهَا؟",
         "page": 15,
         "audio": "u1-tidy-q06.mp3"
+       },
+       {
+        "text": "«لِكَيْ يَكُونَ كُلُّ شَيْءٍ مُرَتَّبًا وَمُنَظَّمًا ابْدَئِي بِنَفْسِكِ» هُوَ قَوْلُ وَالِدَةِ يُوسُفَ أَمْ زَهْرَاءَ؟",
+        "page": 15,
+        "audio": "u1-tidy-q07.mp3"
        }
       ]
      },
      "audio": "c-scene.mp3"
-    },
-    {
-     "template": "picchoose",
-     "page": 15,
-     "say": "اِخْتَرِ الصُّورَةَ الْمُنَاسِبَةَ",
-     "data": {
-      "rounds": [
-       {
-        "say": "اِخْتَرِ الصُّورَةَ الَّتِي تَدُلُّ عَلَى التَّرْتِيبِ",
-        "options": [
-         {
-          "art": "e_room_tidy"
-         },
-         {
-          "art": "e_room_messy"
-         }
-        ],
-        "answer": 0,
-        "page": 15
-       },
-       {
-        "say": "اِخْتَرِ الصُّورَةَ الَّتِي تَدُلُّ عَلَى التَّرْتِيبِ",
-        "options": [
-         {
-          "art": "e_line"
-         },
-         {
-          "art": "e_crowd"
-         }
-        ],
-        "answer": 0,
-        "page": 15
-       },
-       {
-        "say": "«لِكَيْ يَكُونَ كُلُّ شَيْءٍ مُرَتَّبًا وَمُنَظَّمًا ابْدَئِي بِنَفْسِكِ» هُوَ قَوْلُ وَالِدَةِ",
-        "show": true,
-        "options": [
-         {
-          "text": "يُوسُفَ"
-         },
-         {
-          "text": "زَهْرَاءَ"
-         }
-        ],
-        "answer": 1,
-        "page": 15
-       }
-      ]
-     },
-     "audio": "c-picchoose.mp3"
     },
     {
      "template": "order",
@@ -425,41 +347,6 @@
       ]
      },
      "audio": "c-order.mp3"
-    },
-    {
-     "template": "similar",
-     "page": 16,
-     "say": "ضَعِ الْمُتَشَابِهَاتِ مَعًا",
-     "data": {
-      "groups": [
-       {
-        "sample": "dog",
-        "items": [
-         "bear",
-         "cat",
-         "rabbit",
-         "lion",
-         "duck",
-         "eagle"
-        ]
-       },
-       {
-        "sample": "bananas",
-        "items": [
-         "burtuqal"
-        ]
-       },
-       {
-        "sample": "book",
-        "items": [
-         "pencil",
-         "paper_sheet"
-        ]
-       }
-      ],
-      "max": 6
-     },
-     "audio": "c-similar.mp3"
     },
     {
      "template": "picchoose",
@@ -530,10 +417,36 @@
         ],
         "answer": 0,
         "page": 17
+       },
+       {
+        "say": "اِخْتَرِ الصُّورَةَ الَّتِي تَدُلُّ عَلَى التَّرْتِيبِ",
+        "options": [
+         {
+          "art": "e_room_tidy"
+         },
+         {
+          "art": "e_room_messy"
+         }
+        ],
+        "answer": 0,
+        "page": 15
+       },
+       {
+        "say": "اِخْتَرِ الصُّورَةَ الَّتِي تَدُلُّ عَلَى التَّرْتِيبِ",
+        "options": [
+         {
+          "art": "e_line"
+         },
+         {
+          "art": "e_crowd"
+         }
+        ],
+        "answer": 0,
+        "page": 15
        }
       ]
      },
-     "audio": "u1-tidy-x69.mp3"
+     "audio": "u1-tidy-x66.mp3"
     },
     {
      "template": "buildw",
@@ -582,32 +495,6 @@
       ]
      },
      "audio": "c-buildw.mp3"
-    },
-    {
-     "template": "order",
-     "page": 19,
-     "say": "رَتِّبْ أَحْدَاثَ الْقِصَّةِ",
-     "data": {
-      "rounds": [
-       {
-        "items": [
-         {
-          "art": "e_wake"
-         },
-         {
-          "art": "e_brush"
-         },
-         {
-          "art": "e_eat"
-         },
-         {
-          "art": "e_go_school"
-         }
-        ]
-       }
-      ]
-     },
-     "audio": "c-order.mp3"
     }
    ],
    "sticker": {
@@ -700,6 +587,31 @@
         "text": "هَلْ وَافَقَ أَصْدِقَاءُ لَانَا عَلَى قَرَارِهَا؟",
         "page": 23,
         "audio": "u1-honest-q08.mp3"
+       },
+       {
+        "text": "أَنَا صَادِقٌ؛ لِأَنَّ النَّجَاةَ فِي الصِّدْقِ",
+        "page": 20,
+        "audio": "u1-honest-q09.mp3"
+       },
+       {
+        "text": "أَقُولُ الصِّدْقَ",
+        "page": 20,
+        "audio": "u1-honest-q10.mp3"
+       },
+       {
+        "text": "أَنْ أَكُونَ صَادِقًا دَائِمًا؛ لِأَنَّ النَّجَاةَ فِي الصِّدْقِ.",
+        "page": 25,
+        "audio": "u1-honest-q11.mp3"
+       },
+       {
+        "text": "أَنَّ اللَّعِبَ حَقٌّ مِنْ حُقُوقِي.",
+        "page": 25,
+        "audio": "u1-honest-q12.mp3"
+       },
+       {
+        "text": "أَنَّ تَنْظِيمَ وَقْتِي بَيْنَ اللَّعِبِ وَالدِّرَاسَةِ مُهِمٌّ.",
+        "page": 25,
+        "audio": "u1-honest-q13.mp3"
        }
       ]
      },
@@ -806,10 +718,24 @@
         ],
         "answer": 0,
         "page": 24
+       },
+       {
+        "say": "هَلْ تَأَثَّرَتْ لَانَا بِكَلَامِ أَصْدِقَائِهَا؟",
+        "show": true,
+        "options": [
+         {
+          "text": "نَعَمْ"
+         },
+         {
+          "text": "لَا"
+         }
+        ],
+        "answer": 0,
+        "page": 24
        }
       ]
      },
-     "audio": "u1-honest-x97.mp3"
+     "audio": "u1-honest-x100.mp3"
     },
     {
      "template": "truefalse",
@@ -838,41 +764,6 @@
       "no": "خَطَأٌ"
      },
      "audio": "c-truefalse.mp3"
-    },
-    {
-     "template": "read",
-     "page": 20,
-     "say": "اِسْمَعْ وَرَدِّدْ مَعِي",
-     "data": {
-      "sentences": [
-       {
-        "text": "أَنَا صَادِقٌ؛ لِأَنَّ النَّجَاةَ فِي الصِّدْقِ",
-        "page": 20,
-        "audio": "u1-honest-x117.mp3"
-       },
-       {
-        "text": "أَقُولُ الصِّدْقَ",
-        "page": 20,
-        "audio": "u1-honest-x118.mp3"
-       },
-       {
-        "text": "أَنْ أَكُونَ صَادِقًا دَائِمًا؛ لِأَنَّ النَّجَاةَ فِي الصِّدْقِ.",
-        "page": 25,
-        "audio": "u1-honest-x119.mp3"
-       },
-       {
-        "text": "أَنَّ اللَّعِبَ حَقٌّ مِنْ حُقُوقِي.",
-        "page": 25,
-        "audio": "u1-honest-x120.mp3"
-       },
-       {
-        "text": "أَنَّ تَنْظِيمَ وَقْتِي بَيْنَ اللَّعِبِ وَالدِّرَاسَةِ مُهِمٌّ.",
-        "page": 25,
-        "audio": "u1-honest-x121.mp3"
-       }
-      ]
-     },
-     "audio": "c-read.mp3"
     }
    ],
    "sticker": {
@@ -950,6 +841,21 @@
         "text": "فِي نِهَايَةِ الْقِصَّةِ مَاذَا حَدَثَ؟",
         "page": 28,
         "audio": "u1-trust-q05.mp3"
+       },
+       {
+        "text": "أَنَا أَمِينٌ",
+        "page": 29,
+        "audio": "u1-trust-q06.mp3"
+       },
+       {
+        "text": "أُحَافِظُ عَلَى الْأَمَانَةِ",
+        "page": 29,
+        "audio": "u1-trust-q07.mp3"
+       },
+       {
+        "text": "وَأَرْفُضُ الْخِيَانَةَ",
+        "page": 29,
+        "audio": "u1-trust-q08.mp3"
        }
       ]
      },
@@ -983,7 +889,7 @@
        }
       ]
      },
-     "audio": "u1-trust-x129.mp3"
+     "audio": "u1-trust-x133.mp3"
     },
     {
      "template": "picchoose",
@@ -1062,7 +968,7 @@
        }
       ]
      },
-     "audio": "u1-trust-x134.mp3"
+     "audio": "u1-trust-x138.mp3"
     },
     {
      "template": "maze",
@@ -1083,36 +989,6 @@
       "goalSay": "أَنَا أَمِينٌ أُعِيدُ الْأَشْيَاءَ إِلَى أَصْحَابِهَا، وَلَا آخُذُ شَيْئًا مِنْ دُونِ اسْتِئْذَانٍ."
      },
      "audio": "c-maze.mp3"
-    },
-    {
-     "template": "read",
-     "page": 29,
-     "say": "اِسْمَعْ وَرَدِّدْ مَعِي",
-     "data": {
-      "sentences": [
-       {
-        "text": "أَنَا أَمِينٌ",
-        "page": 29,
-        "audio": "u1-trust-x148.mp3"
-       },
-       {
-        "text": "أُحَافِظُ عَلَى الْأَمَانَةِ",
-        "page": 29,
-        "audio": "u1-trust-x149.mp3"
-       },
-       {
-        "text": "وَأَرْفُضُ الْخِيَانَةَ",
-        "page": 29,
-        "audio": "u1-trust-x150.mp3"
-       },
-       {
-        "text": "أَنَا أَمِينٌ أُعِيدُ الْأَشْيَاءَ إِلَى أَصْحَابِهَا، وَلَا آخُذُ شَيْئًا مِنْ دُونِ اسْتِئْذَانٍ.",
-        "page": 30,
-        "audio": "u1-trust-x147.mp3"
-       }
-      ]
-     },
-     "audio": "c-read.mp3"
     }
    ],
    "sticker": {
@@ -1200,6 +1076,11 @@
         "text": "مَا الَّذِي يَجْعَلُ الْآخَرِينَ يَتَذَكَّرُونَ إِنْسَانًا مَهْمَا مَرَّتِ السَّنَوَاتُ؟",
         "page": 34,
         "audio": "u1-respect-q07.mp3"
+       },
+       {
+        "text": "أَنَا أَحْتَرِمُ الْآخَرِينَ؛ لِأَنَّنِي إِنْسَانٌ مُهَذَّبٌ وَمُحْتَرَمٌ",
+        "page": 31,
+        "audio": "u1-respect-q08.mp3"
        }
       ]
      },
@@ -1222,6 +1103,10 @@
        {
         "text": "نُورُ اعْتَذَرَتْ عَنْ مُقَاطَعَةِ الدَّرْسِ.",
         "ok": true
+       },
+       {
+        "text": "نُورُ كَانَتْ تُرِيدُ أَخْذَ كِتَابِهَا مِنْ زَهْرَاءَ.",
+        "ok": false
        },
        {
         "text": "الْمُعَلِّمَةُ لَمْ تَكُنْ تَعْرِفُ نُورَ.",
@@ -1277,7 +1162,7 @@
        }
       ]
      },
-     "audio": "u1-respect-x165.mp3"
+     "audio": "u1-respect-x168.mp3"
     },
     {
      "template": "picchoose",
@@ -1352,37 +1237,7 @@
        }
       ]
      },
-     "audio": "u1-respect-x174.mp3"
-    },
-    {
-     "template": "read",
-     "page": 34,
-     "say": "اِسْمَعْ وَرَدِّدْ مَعِي",
-     "data": {
-      "sentences": [
-       {
-        "text": "أَنَا أَحْتَرِمُ الْآخَرِينَ",
-        "page": 34,
-        "audio": "u1-respect-x178.mp3"
-       },
-       {
-        "text": "أَنَا مُهَذَّبٌ",
-        "page": 34,
-        "audio": "u1-respect-x179.mp3"
-       },
-       {
-        "text": "أَنَا لَطِيفٌ",
-        "page": 34,
-        "audio": "u1-respect-x180.mp3"
-       },
-       {
-        "text": "أَنَا أَحْتَرِمُ الْآخَرِينَ؛ لِأَنَّنِي إِنْسَانٌ مُهَذَّبٌ وَمُحْتَرَمٌ",
-        "page": 31,
-        "audio": "u1-respect-x181.mp3"
-       }
-      ]
-     },
-     "audio": "c-read.mp3"
+     "audio": "u1-respect-x177.mp3"
     }
    ],
    "sticker": {
@@ -1468,32 +1323,6 @@
      "audio": "c-sort.mp3"
     },
     {
-     "template": "order",
-     "page": 36,
-     "say": "رَتِّبِ الصُّوَرَ",
-     "data": {
-      "rounds": [
-       {
-        "items": [
-         {
-          "art": "e_s_lesson"
-         },
-         {
-          "art": "e_s_knock"
-         },
-         {
-          "art": "e_s_thanks"
-         },
-         {
-          "art": "e_s_remember"
-         }
-        ]
-       }
-      ]
-     },
-     "audio": "u1-review-x189.mp3"
-    },
-    {
      "template": "valuetree",
      "page": 37,
      "say": "اِلْمَسْ قِيَمَ الْوَحْدَةِ",
@@ -1508,7 +1337,12 @@
        {
         "text": "الِاحْتِرَامُ"
        }
-      ]
+      ],
+      "motto": {
+       "text": "الصِّدْقُ طَرِيقُ الْجَنَّةِ",
+       "page": 37,
+       "audio": "u1-review-x193.mp3"
+      }
      },
      "audio": "c-valuetree.mp3"
     },
@@ -1524,7 +1358,7 @@
       ],
       "per": 3
      },
-     "audio": "u1-review-x192.mp3"
+     "audio": "u1-review-x194.mp3"
     },
     {
      "template": "picchoose",
@@ -1598,22 +1432,7 @@
        }
       ]
      },
-     "audio": "u1-tidy-x69.mp3"
-    },
-    {
-     "template": "read",
-     "page": 37,
-     "say": "اِسْمَعْ وَرَدِّدْ مَعِي",
-     "data": {
-      "sentences": [
-       {
-        "text": "الصِّدْقُ طَرِيقُ الْجَنَّةِ",
-        "page": 37,
-        "audio": "u1-review-x195.mp3"
-       }
-      ]
-     },
-     "audio": "c-read.mp3"
+     "audio": "u1-tidy-x66.mp3"
     }
    ],
    "sticker": {
@@ -1789,7 +1608,7 @@
        }
       ]
      },
-     "audio": "u2-feelings-x208.mp3"
+     "audio": "u2-feelings-x209.mp3"
     },
     {
      "template": "choose",
@@ -1867,7 +1686,7 @@
           "art": "e_f_shy"
          },
          {
-          "art": "e_f_scared"
+          "art": "e_f_happy"
          }
         ],
         "answer": 0
@@ -1875,32 +1694,6 @@
       ]
      },
      "audio": "c-choose.mp3"
-    },
-    {
-     "template": "memory",
-     "page": 48,
-     "say": "اِقْلِبْ بِطَاقَتَيْنِ مُتَشَابِهَتَيْنِ",
-     "data": {
-      "pairs": [
-       {
-        "text": "أَنَا سَعِيدٌ",
-        "art": "e_f_happy"
-       },
-       {
-        "text": "أَنَا حَزِينٌ",
-        "art": "e_f_sad"
-       },
-       {
-        "text": "أَنَا غَاضِبٌ",
-        "art": "e_f_angry"
-       },
-       {
-        "text": "أَنَا خَجُولٌ",
-        "art": "e_f_shy"
-       }
-      ]
-     },
-     "audio": "c-memory.mp3"
     },
     {
      "template": "read",
@@ -1911,64 +1704,31 @@
        {
         "text": "أَنَا سَعِيدٌ",
         "page": 46,
-        "audio": "u2-feelings-x215.mp3"
+        "audio": "u2-feelings-x216.mp3"
        },
        {
         "text": "أَنَا قَوِيٌّ",
         "page": 46,
-        "audio": "u2-feelings-x220.mp3"
+        "audio": "u2-feelings-x221.mp3"
        },
        {
         "text": "أَنَا أُحِبُّ الْآخَرِينَ",
         "page": 46,
-        "audio": "u2-feelings-x221.mp3"
+        "audio": "u2-feelings-x222.mp3"
        },
        {
         "text": "أَنَا لَا أَغْضَبُ بِسُرْعَةٍ",
         "page": 46,
-        "audio": "u2-feelings-x222.mp3"
+        "audio": "u2-feelings-x223.mp3"
        },
        {
         "text": "بِالْحِوَارِ وَالْإِصْغَاءِ نُعَبِّرُ عَنْ مَشَاعِرِنَا الْمُخْتَلِفَةِ وَنَحُلُّ مُشْكِلَاتِنَا",
         "page": 41,
-        "audio": "u2-feelings-x223.mp3"
+        "audio": "u2-feelings-x224.mp3"
        }
       ]
      },
      "audio": "c-read.mp3"
-    },
-    {
-     "template": "puzzle",
-     "page": 42,
-     "say": "رَكِّبِ الصُّورَةَ",
-     "data": {
-      "scene": {
-       "items": [
-        {
-         "art": "e_s_cards",
-         "x": 70,
-         "y": 0,
-         "w": 260
-        },
-        {
-         "art": "butterfly",
-         "x": 4,
-         "y": 40,
-         "w": 64
-        },
-        {
-         "art": "trees",
-         "x": 332,
-         "y": 120,
-         "w": 66
-        }
-       ],
-       "bg": {},
-       "sun": false
-      },
-      "pieces": 6
-     },
-     "audio": "c-puzzle.mp3"
     }
    ],
    "sticker": {
@@ -2173,33 +1933,7 @@
        }
       ]
      },
-     "audio": "u2-family-x239.mp3"
-    },
-    {
-     "template": "memory",
-     "page": 53,
-     "say": "اِقْلِبْ بِطَاقَتَيْنِ مُتَشَابِهَتَيْنِ",
-     "data": {
-      "pairs": [
-       {
-        "text": "أَبِي",
-        "art": "e_father"
-       },
-       {
-        "text": "أُمِّي",
-        "art": "e_mother"
-       },
-       {
-        "text": "أُخْتِي",
-        "art": "e_sister"
-       },
-       {
-        "text": "أَخِي",
-        "art": "e_brother"
-       }
-      ]
-     },
-     "audio": "c-memory.mp3"
+     "audio": "u2-family-x240.mp3"
     },
     {
      "template": "read",
@@ -2210,22 +1944,27 @@
        {
         "text": "أُحِبُّ أُسْرَتِي",
         "page": 52,
-        "audio": "u2-family-x249.mp3"
+        "audio": "u2-family-x246.mp3"
        },
        {
         "text": "أُسْرَتِي الصَّغِيرَةُ",
         "page": 52,
-        "audio": "u2-family-x250.mp3"
+        "audio": "u2-family-x247.mp3"
        },
        {
         "text": "أُسْرَتِي الْكَبِيرَةُ",
         "page": 52,
-        "audio": "u2-family-x251.mp3"
+        "audio": "u2-family-x248.mp3"
        },
        {
         "text": "أُسْرَتِي الْجَمِيلَةُ",
         "page": 52,
-        "audio": "u2-family-x252.mp3"
+        "audio": "u2-family-x249.mp3"
+       },
+       {
+        "text": "أَبِي ، أُمِّي ، أُخْتِي ، أَخِي ، جَدِّي ، جَدَّتِي ، أَنَا",
+        "page": 53,
+        "audio": "u2-family-x250.mp3"
        }
       ]
      },
@@ -2333,40 +2072,6 @@
      "audio": "c-scene.mp3"
     },
     {
-     "template": "order",
-     "page": 59,
-     "say": "رَتِّبْ أَحْدَاثَ الْقِصَّةِ",
-     "data": {
-      "rounds": [
-       {
-        "items": [
-         {
-          "art": "e_s_breakfast",
-          "text": "إِذَنْ جَهِّزُوا أَنْفُسَكُمْ بَعْدَ الْفُطُورِ لِلذَّهَابِ فِي نُزْهَةٍ إِلَى الْحَدِيقَةِ الْعَامَّةِ."
-         },
-         {
-          "art": "e_dishes",
-          "text": "أَنَا سَأَغْسِلُ الصُّحُونَ."
-         },
-         {
-          "art": "e_bed_boy",
-          "text": "أَنَا سَأُرَتِّبُ غُرَفَ النَّوْمِ."
-         },
-         {
-          "art": "e_garden",
-          "text": "أَنَا سَأَغْسِلُ الْكَرَاجَ، وَأَسْقِي الْحَدِيقَةَ."
-         },
-         {
-          "art": "e_window",
-          "text": "أَنَا سَأُنَظِّفُ زُجَاجَ النَّوَافِذِ."
-         }
-        ]
-       }
-      ]
-     },
-     "audio": "c-order.mp3"
-    },
-    {
      "template": "truefalse",
      "page": 60,
      "say": "اِسْمَعْ: صَحٌّ أَمْ خَطَأٌ؟",
@@ -2382,6 +2087,10 @@
        },
        {
         "text": "اعْتَذَرَتِ الْأُمُّ؛ لِأَنَّ لَدَيْهَا أَعْمَالًا مَنْزِلِيَّةً كَثِيرَةً",
+        "ok": true
+       },
+       {
+        "text": "حَزِنَ الْأَوْلَادُ؛ لِأَنَّ أُمَّهُمُ اعْتَذَرَتْ مِنَ الذَّهَابِ إِلَى النُّزْهَةِ مَعَهُمْ",
         "ok": true
        },
        {
@@ -2427,53 +2136,10 @@
       ],
       "per": 4
      },
-     "audio": "u2-coop-x274.mp3"
+     "audio": "u2-coop-x268.mp3"
     },
     {
-     "template": "build",
-     "page": 59,
-     "say": "كَوِّنْ مِنَ الْأَحْرُفِ كَلِمَةً",
-     "data": {
-      "pieces": [
-       "أ",
-       "م",
-       "ي",
-       "ب",
-       "خ",
-       "ت"
-      ],
-      "words": [
-       {
-        "word": "أُمِّي",
-        "parts": [
-         "أ",
-         "م",
-         "ي"
-        ]
-       },
-       {
-        "word": "أَبِي",
-        "parts": [
-         "أ",
-         "ب",
-         "ي"
-        ]
-       },
-       {
-        "word": "أُخْتِي",
-        "parts": [
-         "أ",
-         "خ",
-         "ت",
-         "ي"
-        ]
-       }
-      ]
-     },
-     "audio": "u2-coop-x276.mp3"
-    },
-    {
-     "template": "read",
+     "template": "readpics",
      "page": 58,
      "say": "اِسْمَعْ وَرَدِّدْ مَعِي",
      "data": {
@@ -2481,27 +2147,56 @@
        {
         "text": "أَنَا أَتَعَاوَنُ مَعَ أُسْرَتِي",
         "page": 58,
-        "audio": "u2-coop-x282.mp3"
+        "audio": "u2-coop-x270.mp3"
        },
        {
         "text": "نَتَعَاوَنُ جَمِيعًا فِي بَيْتِنَا",
         "page": 58,
-        "audio": "u2-coop-x283.mp3"
+        "audio": "u2-coop-x271.mp3"
        },
        {
         "text": "أَبِي وَأُمِّي وَإِخْوَتِي",
         "page": 58,
-        "audio": "u2-coop-x284.mp3"
+        "audio": "u2-coop-x272.mp3"
        },
        {
         "text": "بِالتَّعَاوُنِ يُصْبِحُ بَيْتُنَا أَجْمَلَ",
         "page": 58,
-        "audio": "u2-coop-x285.mp3"
+        "audio": "u2-coop-x273.mp3"
        },
        {
         "text": "بِالتَّعَاوُنِ تُصْبِحُ حَيَاتُنَا أَفْضَلَ",
         "page": 58,
-        "audio": "u2-coop-x286.mp3"
+        "audio": "u2-coop-x274.mp3"
+       },
+       {
+        "text": "أَنَا سَأَغْسِلُ الصُّحُونَ.",
+        "page": 57,
+        "art": "e_dishes",
+        "audio": "u2-coop-x275.mp3"
+       },
+       {
+        "text": "أَنَا سَأُرَتِّبُ غُرَفَ النَّوْمِ.",
+        "page": 57,
+        "art": "e_bed_boy",
+        "audio": "u2-coop-x276.mp3"
+       },
+       {
+        "text": "أَنَا سَأَغْسِلُ الْكَرَاجَ، وَأَسْقِي الْحَدِيقَةَ.",
+        "page": 57,
+        "art": "e_garden",
+        "audio": "u2-coop-x277.mp3"
+       },
+       {
+        "text": "أَنَا سَأُنَظِّفُ زُجَاجَ النَّوَافِذِ.",
+        "page": 57,
+        "art": "e_window",
+        "audio": "u2-coop-x278.mp3"
+       },
+       {
+        "text": "أُمِّي ، أَبِي ، أُخْتِي ، أَخِي",
+        "page": 59,
+        "audio": "u2-coop-x279.mp3"
        }
       ]
      },
@@ -2610,7 +2305,7 @@
      "data": {
       "rounds": [
        {
-        "say": "مَا شُعُورُ سَارَةَ حِينَ لَمْ تَجِدْ أُمَّهَا؟",
+        "say": "سَمِّ الشُّعُورَ الَّذِي كَانَتْ تَشْعُرُ بِهِ سَارَةُ عِنْدَمَا اسْتَيْقَظَتْ وَلَمْ تَجِدْ أُمَّهَا فِي الْمَنْزِلِ",
         "art": "e_s_morning",
         "options": [
          {
@@ -2662,7 +2357,7 @@
        }
       ]
      },
-     "audio": "u1-honest-x97.mp3"
+     "audio": "u1-honest-x100.mp3"
     },
     {
      "template": "order",
@@ -2699,17 +2394,17 @@
        {
         "text": "أَنَا فَخُورٌ بِكُمَا أُمِّي وَأَبِي",
         "page": 63,
-        "audio": "u2-pride-x302.mp3"
+        "audio": "u2-pride-x295.mp3"
        },
        {
         "text": "أَنْتُمَا قُدْوَتِي، وَسِرُّ سَعَادَتِي",
         "page": 63,
-        "audio": "u2-pride-x303.mp3"
+        "audio": "u2-pride-x296.mp3"
        },
        {
         "text": "أُمِّي وَأَبِي أَفْتَخِرُ بِوُجُودِكُمَا",
         "page": 61,
-        "audio": "u2-pride-x304.mp3"
+        "audio": "u2-pride-x297.mp3"
        }
       ]
      },
@@ -2899,7 +2594,7 @@
       ],
       "per": 3
      },
-     "audio": "u2-model-x317.mp3"
+     "audio": "u2-model-x310.mp3"
     },
     {
      "template": "picchoose",
@@ -2991,36 +2686,10 @@
        }
       ]
      },
-     "audio": "u1-tidy-x69.mp3"
+     "audio": "u1-tidy-x66.mp3"
     },
     {
-     "template": "memory",
-     "page": 66,
-     "say": "اِقْلِبْ بِطَاقَتَيْنِ مُتَشَابِهَتَيْنِ",
-     "data": {
-      "pairs": [
-       {
-        "text": "جُنْدِيٌّ",
-        "art": "e_soldier"
-       },
-       {
-        "text": "مُهَنْدِسٌ",
-        "art": "e_engineer"
-       },
-       {
-        "text": "فَلَّاحٌ",
-        "art": "e_farmer"
-       },
-       {
-        "text": "بَنَّاءٌ",
-        "art": "e_builder"
-       }
-      ]
-     },
-     "audio": "c-memory.mp3"
-    },
-    {
-     "template": "read",
+     "template": "readpics",
      "page": 66,
      "say": "اِسْمَعْ وَرَدِّدْ مَعِي",
      "data": {
@@ -3028,27 +2697,61 @@
        {
         "text": "لِتَكُنْ قُدْوَةً حَسَنَةً، وَاجْعَلْ أَخْلَاقَكَ هِيَ الَّتِي تَتَحَدَّثُ عَنْكَ",
         "page": 66,
-        "audio": "u2-model-x329.mp3"
+        "audio": "u2-model-x318.mp3"
+       },
+       {
+        "text": "قُدْوَتِي",
+        "page": 66,
+        "audio": "u2-model-title.mp3"
+       },
+       {
+        "text": "مُخْلِصٌ",
+        "page": 66,
+        "audio": "u2-model-x319.mp3"
+       },
+       {
+        "text": "جُنْدِيٌّ",
+        "page": 66,
+        "art": "e_soldier",
+        "audio": "u2-model-x320.mp3"
+       },
+       {
+        "text": "مُهَنْدِسٌ",
+        "page": 66,
+        "art": "e_engineer",
+        "audio": "u2-model-x321.mp3"
+       },
+       {
+        "text": "فَلَّاحٌ",
+        "page": 66,
+        "art": "e_farmer",
+        "audio": "u2-model-x322.mp3"
+       },
+       {
+        "text": "بَنَّاءٌ",
+        "page": 66,
+        "art": "e_builder",
+        "audio": "u2-model-x323.mp3"
        },
        {
         "text": "تَعَرَّفْتُ إِلَى بَعْضِ الْمِهَنِ الْمُهِمَّةِ فِي الْحَيَاةِ.",
         "page": 71,
-        "audio": "u2-model-x330.mp3"
+        "audio": "u2-model-x324.mp3"
        },
        {
         "text": "عَرَفْتُ مَعْنَى الْقُدْوَةِ.",
         "page": 71,
-        "audio": "u2-model-x331.mp3"
+        "audio": "u2-model-x325.mp3"
        },
        {
         "text": "تَعَرَّفْتُ كَيْفَ أَتَّخِذُ لِي قُدْوَةً أَسِيرُ عَلَى خُطَاهَا.",
         "page": 71,
-        "audio": "u2-model-x332.mp3"
+        "audio": "u2-model-x326.mp3"
        },
        {
         "text": "عَرَفْتُ أَنَّ لِكُلِّ مِهْنَةٍ أَهَمِّيَّتَهَا.",
         "page": 71,
-        "audio": "u2-model-x333.mp3"
+        "audio": "u2-model-x327.mp3"
        }
       ]
      },
@@ -3108,7 +2811,7 @@
        }
       ]
      },
-     "audio": "u2-review-x335.mp3"
+     "audio": "u2-review-x329.mp3"
     },
     {
      "template": "garden",
@@ -3179,27 +2882,27 @@
        {
         "text": "أَنَا تِلْمِيذٌ سَعِيدٌ",
         "page": 74,
-        "audio": "u2-review-x345.mp3"
+        "audio": "u2-review-x339.mp3"
        },
        {
         "text": "أُحِبُّ أُسْرَتِي",
         "page": 74,
-        "audio": "u2-family-x249.mp3"
+        "audio": "u2-family-x246.mp3"
        },
        {
         "text": "وَأَحْتَرِمُ مُعَلِّمِي",
         "page": 74,
-        "audio": "u2-review-x346.mp3"
+        "audio": "u2-review-x340.mp3"
        },
        {
         "text": "وَأَفْتَخِرُ بِمِهْنَةِ أُمِّي وَأَبِي",
         "page": 74,
-        "audio": "u2-review-x347.mp3"
+        "audio": "u2-review-x341.mp3"
        },
        {
         "text": "أُمِّي وَأَبِي قُدْوَتِي",
         "page": 74,
-        "audio": "u2-review-x348.mp3"
+        "audio": "u2-review-x342.mp3"
        }
       ]
      },

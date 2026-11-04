@@ -52,6 +52,8 @@ const CSS = `
 .eth .vt-tree>svg{position:absolute;inset:0;width:100%;height:100%}
 .eth .vt-fruit{position:absolute;width:31%;aspect-ratio:1;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;box-shadow:0 5px 0 rgba(0,0,0,.12);font-size:clamp(28px,4.4vmin,36px);font-weight:700;line-height:1.4;text-align:center;border:5px solid #e5484d;padding:4px}
 .eth .vt-fruit.seen{background:#ffe3e3}
+.eth .vt-motto{background:#fff;border-radius:22px;padding:4px 20px;font-size:clamp(28px,4.6vmin,40px);font-weight:700;line-height:1.8;box-shadow:0 5px 0 rgba(0,0,0,.08);border:4px solid #8ce99a}.eth .vt-motto.seen{background:#ebfbee}
+.eth .rp-list{min-height:0;max-height:100%;justify-content:flex-start}.eth .rp-line{flex:none}.bk-ethics .eth .gd-list.rp-list{align-content:start;grid-auto-rows:max-content}.eth .rp-line{height:auto;min-height:max-content}.eth .rp-line::before{content:"";flex:none;width:0;height:56px}.eth .rp-line .rp-pic{flex:none;width:64px;height:64px;display:flex}.eth .rp-line .rp-pic svg{width:100%;height:100%}.eth .rp-line .gd-t span.on{color:var(--c1);text-decoration:underline}
 @media (max-height:520px) and (orientation:landscape){.eth .vt-tree{width:min(80vw,560px);aspect-ratio:2/1}.eth .vt-fruit{width:auto;aspect-ratio:auto;min-width:64px;min-height:64px;padding:4px 18px;border-radius:40px;white-space:nowrap}}
 @media (orientation:landscape){.eth.lr{flex-direction:row}.eth .pc-pic{width:min(36vw,40vh,250px);height:min(36vw,40vh,250px)}}
 @media (max-height:520px){.eth .tf-btn{height:96px}.eth .pc-q{font-size:28px;line-height:1.5}.eth .tf-card{line-height:1.6;padding:4px 18px}}
@@ -211,14 +213,16 @@ const valuetree = (stage, game, ctx) => {
   const d = game.data; const heard = new Set();
   const spots = [[26, 32], [74, 32], [50, 18], [50, 52], [24, 62], [76, 62]];
   const crown = `<svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M44 98L46 60H54L56 98Z" fill="#a8743f" stroke="#4a3426" stroke-width="1.6"/><path d="M50 4C76 4 98 22 94 46C98 68 76 80 50 74C24 80 2 68 6 46C2 22 24 4 50 4Z" fill="#8ce99a" stroke="#4a3426" stroke-width="1.6"/></svg>`;
-  const box = h(`<div class="eth"><div class="vt-tree">${crown}</div></div>`); stage.appendChild(box); const tree = $('.vt-tree', box);
+  const box = h(`<div class="eth">${d.motto ? `<button class="vt-motto tap" type="button">${esc(d.motto.text)}</button>` : ''}<div class="vt-tree">${crown}</div></div>`); stage.appendChild(box); const tree = $('.vt-tree', box);
+  const all = d.items.length + (d.motto ? 1 : 0);
+  if (d.motto) { const m = $('.vt-motto', box); m.addEventListener('click', () => { ctx.say(d.motto.text, d.motto.audio || ctx.audioOf(d.motto.text)); if (!heard.has('m')) { heard.add('m'); m.classList.add('seen'); SFX.pop(); if (heard.size === all) setTimeout(() => { burst(tree, '#e5484d', 20); ctx.win(); }, 1600); } }); }
   d.items.forEach((s, i) => {
     const [x, y] = spots[i % spots.length];
     const el = h(`<button class="vt-fruit tap" type="button" style="left:${x}%;top:${y}%">${esc(s.text)}</button>`); tree.appendChild(el); gsap.set(el, { xPercent: -50, yPercent: -50 });
-    el.addEventListener('click', () => { ctx.say(s.text, ctx.audioOf(s.text)); if (!state.reduced) gsap.fromTo(el, { scale: 0.85 }, { scale: 1, duration: 0.5, ease: 'elastic.out(1,0.5)' }); if (!heard.has(i)) { heard.add(i); el.classList.add('seen'); SFX.pop(); if (heard.size === d.items.length) setTimeout(() => { burst(tree, '#e5484d', 20); ctx.win(); }, 1600); } });
+    el.addEventListener('click', () => { ctx.say(s.text, ctx.audioOf(s.text)); if (!state.reduced) gsap.fromTo(el, { scale: 0.85 }, { scale: 1, duration: 0.5, ease: 'elastic.out(1,0.5)' }); if (!heard.has(i)) { heard.add(i); el.classList.add('seen'); SFX.pop(); if (heard.size === all) setTimeout(() => { burst(tree, '#e5484d', 20); ctx.win(); }, 1600); } });
   });
-  popIn($$('.vt-fruit', box)); ctx.instruct(game.say, game.audio);
-  return { destroy() {}, auto: async () => { for (const l of $$('.vt-fruit', box)) { l.click(); await sleep(150); } } };
+  popIn($$('.vt-fruit, .vt-motto', box)); ctx.instruct(game.say, game.audio);
+  return { destroy() {}, auto: async () => { for (const l of $$('.vt-fruit, .vt-motto', box)) { l.click(); await sleep(150); } } };
 };
 
 // «رتّب الحروف» بقطع لكل كلمة: قالب build نفسه، لكن تُعرض في كل جولة حروف الكلمة وما يكمّلها من حروف الكتاب حتى d.per قطعة
@@ -232,4 +236,21 @@ const buildw = (stage, game, ctx) => {
   return CORE.build(stage, { ...game, data }, ctx);
 };
 
-export const TEMPLATES = { truefalse, picchoose, picmatch, similar, maze, garden, valuetree, buildw };
+/* 8) اسمع وردّد بالصور: جمل الكتاب، وبعضها مع صورته (كلام الشخصيات، المفردات)؛ يلمس الطفل السطر فيسمعه وتتلوّن كلماته. بلا تقييم. */
+const readpics = (stage, game, ctx) => {
+  const S = game.data.sentences; const heard = new Set();
+  const box = h(`<div class="eth"><div class="gd-list rp-list"></div></div>`); stage.appendChild(box); const list = $('.gd-list', box);
+  S.forEach((s, i) => {
+    const el = h(`<button class="gd-line rp-line tap" type="button">${s.art ? `<span class="rp-pic">${pic(s.art)}</span>` : ''}<span class="gd-t">${s.text.split(/\s+/).map((w) => `<span>${esc(w)}</span>`).join(' ')}</span></button>`); list.appendChild(el);
+    el.addEventListener('click', () => {
+      const sp = $$('.gd-t span', el); $$('.rp-line .gd-t span.on', box).forEach((x) => x.classList.remove('on'));
+      ctx.say(s.text, s.audio || ctx.audioOf(s.text)).then(() => sp.forEach((x) => x.classList.remove('on')));
+      sp.forEach((x, k) => setTimeout(() => { sp.forEach((y) => y.classList.remove('on')); x.classList.add('on'); }, k * 620));
+      if (!heard.has(i)) { heard.add(i); el.classList.add('seen'); if (heard.size === S.length) setTimeout(() => ctx.win(), sp.length * 620 + 600); }
+    });
+  });
+  popIn($$('.gd-line', box)); ctx.instruct(game.say, game.audio);
+  return { destroy() {}, auto: async () => { for (const l of $$('.gd-line', box)) { l.click(); await sleep(150); } } };
+};
+
+export const TEMPLATES = { truefalse, picchoose, picmatch, similar, maze, garden, valuetree, buildw, readpics };
