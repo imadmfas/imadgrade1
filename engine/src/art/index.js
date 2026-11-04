@@ -7,8 +7,9 @@ import * as A4 from './batch5.js';
 import * as A5 from './batch6.js';
 import * as A6 from './english-1.js';
 import * as A7 from './islamic-a.js';
-import * as A8 from './science-a.js';
-import * as A9 from './science-b.js';
+import * as A8 from './math-a.js';
+import * as A9 from './science-a.js';
+import * as A10 from './science-b.js';
 Object.values(A0).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
 Object.values(A1).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
 Object.values(A2).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
@@ -19,3 +20,4 @@ Object.values(A6).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]
 Object.values(A7).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
 Object.values(A8).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
 Object.values(A9).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
+Object.values(A10).forEach((o) => { for (const k in o) if (!ART[k]) ART[k] = o[k]; });
