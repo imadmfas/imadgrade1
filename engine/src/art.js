@@ -66,7 +66,7 @@ export const ART = {
     <circle cx="36" cy="48" r="3" fill="#c9823e"/><circle cx="58" cy="44" r="4" fill="#c9823e"/><circle cx="66" cy="54" r="2.6" fill="#c9823e"/><circle cx="46" cy="56" r="2.2" fill="#c9823e"/>`,
   // زخارف عامة
   palm: () => `<path d="M48 96Q46 70 50 42Q54 70 56 96Z" fill="#a8743f" ${S}/>
-    ${[-60, -25, 10, 45, 80, 200, 160].map((a) => `<path d="M52 40q${Math.cos((a * Math.PI) / 180) * 22} ${Math.sin((a * Math.PI) / 180) * 14 - 8} ${Math.cos((a * Math.PI) / 180) * 40} ${Math.sin((a * Math.PI) / 180) * 26 + 6}q-${Math.cos((a * Math.PI) / 180) * 18} -6 -${Math.cos((a * Math.PI) / 180) * 40} -${Math.sin((a * Math.PI) / 180) * 26 + 6}z" fill="#3fa34d" ${S}/>`).join('')}
+    ${[-60, -25, 10, 45, 80, 200, 160].map((a) => { const c = Math.cos((a * Math.PI) / 180), sn = Math.sin((a * Math.PI) / 180), f = (n) => n.toFixed(2); return `<path d="M52 40 q${f(c * 22)} ${f(sn * 14 - 8)} ${f(c * 40)} ${f(sn * 26 + 6)} q${f(-c * 18)} -6 ${f(-c * 40)} ${f(-(sn * 26 + 6))}z" fill="#3fa34d" ${S}/>`; }).join('')}
     <circle cx="46" cy="46" r="3.4" fill="#e07b2a" ${S}/><circle cx="54" cy="47" r="3.4" fill="#e07b2a" ${S}/>`,
   cloud: () => `<path d="M20 70Q6 70 8 58Q10 46 24 48Q26 30 44 32Q56 18 70 30Q90 28 90 48Q98 56 90 66Q86 72 76 70Z" fill="#fff" ${S}/>`,
   butterfly: () => `<path d="M50 50Q30 20 16 34Q10 52 48 54Z" fill="#ff8fab" ${S}/><path d="M50 50Q70 20 84 34Q90 52 52 54Z" fill="#ffc046" ${S}/><path d="M48 54Q30 80 40 82Q50 78 50 56Z" fill="#9b8cff" ${S}/><path d="M52 54Q70 80 60 82Q50 78 50 56Z" fill="#62d2a2" ${S}/><path d="M50 44V70" ${S}/>`,
