@@ -1,0 +1,163 @@
+{
+ "unit": 4,
+ "title": "Revision",
+ "pages": [
+  38,
+  43
+ ],
+ "lessons": [
+  {
+   "n": 1,
+   "pages": [
+    38
+   ],
+   "kind": "letter",
+   "letter": "u",
+   "words": [
+    {
+     "w": "umbrella",
+     "pic": "en_umbrella"
+    },
+    {
+     "w": "up",
+     "pic": "en_up"
+    }
+   ],
+   "lines": [
+    {
+     "t": "Is it a bus?",
+     "page": 38
+    },
+    {
+     "t": "Yes.",
+     "page": 38
+    }
+   ],
+   "trace": [
+    38
+   ]
+  },
+  {
+   "n": 2,
+   "pages": [
+    39
+   ],
+   "kind": "letter",
+   "letter": "v",
+   "words": [
+    {
+     "w": "van",
+     "pic": "en_van"
+    },
+    {
+     "w": "violin",
+     "pic": "en_violin"
+    }
+   ],
+   "lines": [
+    {
+     "t": "How many vans can you see?",
+     "page": 39
+    }
+   ],
+   "trace": [
+    39
+   ]
+  },
+  {
+   "n": 3,
+   "pages": [
+    40
+   ],
+   "kind": "letter",
+   "letter": "w",
+   "words": [
+    {
+     "w": "window",
+     "pic": "window"
+    },
+    {
+     "w": "watch",
+     "pic": "en_watch"
+    }
+   ],
+   "lines": [
+    {
+     "t": "What can you see?",
+     "page": 40
+    }
+   ],
+   "trace": [
+    40
+   ]
+  },
+  {
+   "n": 4,
+   "pages": [
+    41
+   ],
+   "kind": "letters",
+   "letters": [
+    "x",
+    "y",
+    "z"
+   ],
+   "words": [
+    {
+     "w": "x-ray",
+     "pic": "en_xray"
+    },
+    {
+     "w": "yo-yo",
+     "pic": "en_yoyo"
+    },
+    {
+     "w": "zebra",
+     "pic": "en_zebra"
+    }
+   ],
+   "trace": [
+    41
+   ]
+  },
+  {
+   "n": 0,
+   "pages": [
+    42,
+    43
+   ],
+   "kind": "story",
+   "title": "Happy birthday!",
+   "lines": [
+    {
+     "t": "Happy birthday, Nada!",
+     "page": 42
+    },
+    {
+     "t": "How old are you?",
+     "page": 42
+    },
+    {
+     "t": "I'm 6.",
+     "page": 42
+    },
+    {
+     "t": "Is it a robot?",
+     "page": 42
+    },
+    {
+     "t": "It's a doll!",
+     "page": 42
+    },
+    {
+     "t": "What can you see?",
+     "page": 43
+    },
+    {
+     "t": "Thank you!",
+     "page": 43
+    }
+   ]
+  }
+ ]
+}

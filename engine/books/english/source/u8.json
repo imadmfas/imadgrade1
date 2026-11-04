@@ -1,0 +1,145 @@
+{
+ "unit": 8,
+ "title": "Revision",
+ "pages": [
+  74,
+  79
+ ],
+ "lessons": [
+  {
+   "n": 1,
+   "pages": [
+    74
+   ],
+   "kind": "lines",
+   "title": "Nada's little dog",
+   "lines": [
+    {
+     "t": "Who's this?",
+     "page": 74
+    },
+    {
+     "t": "How old are you, Iman?",
+     "page": 74
+    },
+    {
+     "t": "I'm 5.",
+     "page": 74
+    },
+    {
+     "t": "What is it?",
+     "page": 74
+    },
+    {
+     "t": "It's my little dog.",
+     "page": 74
+    },
+    {
+     "t": "How many can you see?",
+     "page": 74
+    },
+    {
+     "t": "Oh!",
+     "page": 74
+    },
+    {
+     "t": "It's a balloon.",
+     "page": 74
+    },
+    {
+     "t": "It's a toy.",
+     "page": 74
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "pages": [
+    75
+   ],
+   "kind": "picture",
+   "notes": "listen and choose a/b pictures, no text"
+  },
+  {
+   "n": 3,
+   "pages": [
+    76
+   ],
+   "kind": "lines",
+   "lines": [
+    {
+     "t": "I have a pen.",
+     "page": 76
+    },
+    {
+     "t": "I have a pen and a pencil.",
+     "page": 76
+    }
+   ],
+   "sortPics": {
+    "animals": [
+     "tiger",
+     "penguin",
+     "elephant",
+     "monkey",
+     "zebra",
+     "lion",
+     "camel",
+     "goat",
+     "horse"
+    ],
+    "food": [
+     "apple",
+     "orange",
+     "olive",
+     "cake",
+     "tomato",
+     "egg",
+     "lemon",
+     "juice",
+     "pizza"
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "pages": [
+    77
+   ],
+   "kind": "lines",
+   "lines": [
+    {
+     "t": "Goodbye.",
+     "page": 77
+    }
+   ]
+  },
+  {
+   "n": 0,
+   "pages": [
+    78,
+    79
+   ],
+   "kind": "story",
+   "title": "Ahmed's dream",
+   "lines": [
+    {
+     "t": "It's my rocket.",
+     "page": 78
+    },
+    {
+     "t": "No toys!",
+     "page": 79
+    },
+    {
+     "t": "Ahmed!",
+     "page": 79
+    },
+    {
+     "t": "Goodbye!",
+     "page": 79
+    }
+   ]
+  }
+ ]
+}

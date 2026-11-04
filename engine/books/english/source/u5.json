@@ -1,0 +1,274 @@
+{
+ "unit": 5,
+ "title": "At the zoo",
+ "pages": [
+  44,
+  53
+ ],
+ "lessons": [
+  {
+   "n": 1,
+   "pages": [
+    44
+   ],
+   "kind": "vocab",
+   "labels": [
+    {
+     "w": "tiger",
+     "pic": "en_tiger",
+     "page": 44
+    },
+    {
+     "w": "camel",
+     "pic": "en_camel",
+     "page": 44
+    },
+    {
+     "w": "penguin",
+     "pic": "penguin",
+     "page": 44
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "pages": [
+    45
+   ],
+   "kind": "colours",
+   "colours": [
+    "black",
+    "white",
+    "brown",
+    "grey"
+   ]
+  },
+  {
+   "n": 3,
+   "pages": [
+    46
+   ],
+   "kind": "vocab",
+   "labels": [
+    {
+     "w": "funny",
+     "pic": "monkey",
+     "page": 46
+    },
+    {
+     "w": "little",
+     "pic": "en_ant",
+     "page": 46
+    },
+    {
+     "w": "big",
+     "pic": "en_camel",
+     "page": 46
+    },
+    {
+     "w": "long",
+     "pic": "snake",
+     "page": 46
+    }
+   ],
+   "transcript": [
+    {
+     "t": "2 funny monkeys.",
+     "page": 89
+    },
+    {
+     "t": "6 little ants.",
+     "page": 89
+    },
+    {
+     "t": "1 big camel.",
+     "page": 89
+    },
+    {
+     "t": "1 long snake.",
+     "page": 89
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "pages": [
+    47
+   ],
+   "kind": "count",
+   "lines": [
+    {
+     "t": "How many red fish?",
+     "page": 47
+    }
+   ],
+   "answer": 2,
+   "transcript": [
+    {
+     "t": "2 red fish.",
+     "page": 89
+    },
+    {
+     "t": "4 blue fish.",
+     "page": 89
+    },
+    {
+     "t": "2 penguins.",
+     "page": 89
+    },
+    {
+     "t": "3 monkeys.",
+     "page": 89
+    },
+    {
+     "t": "3 lions.",
+     "page": 89
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "pages": [
+    48
+   ],
+   "kind": "vocab",
+   "labels": [
+    {
+     "w": "bus",
+     "pic": "en_bus",
+     "page": 48
+    },
+    {
+     "w": "cat",
+     "pic": "cat",
+     "page": 48
+    },
+    {
+     "w": "ant",
+     "pic": "en_ant",
+     "page": 48
+    },
+    {
+     "w": "dog",
+     "pic": "dog",
+     "page": 48
+    }
+   ],
+   "notes": "labels printed in a different order from pictures (ant bus cat dog)"
+  },
+  {
+   "n": 6,
+   "pages": [
+    49
+   ],
+   "kind": "vocab",
+   "labels": [
+    {
+     "w": "horse",
+     "pic": "horse",
+     "page": 49
+    },
+    {
+     "w": "goat",
+     "pic": "goat",
+     "page": 49
+    },
+    {
+     "w": "egg",
+     "pic": "en_egg",
+     "page": 49
+    },
+    {
+     "w": "fish",
+     "pic": "fish",
+     "page": 49
+    }
+   ],
+   "lines": [
+    {
+     "t": "Where's the blue tiger?",
+     "page": 49
+    },
+    {
+     "t": "In the bag.",
+     "page": 49
+    }
+   ],
+   "notes": "pictures fish egg goat horse"
+  },
+  {
+   "n": 7,
+   "pages": [
+    50
+   ],
+   "kind": "write",
+   "words": [
+    "ant",
+    "bus",
+    "cat",
+    "dog",
+    "egg",
+    "fish",
+    "goat",
+    "horse"
+   ]
+  },
+  {
+   "n": 8,
+   "pages": [
+    51
+   ],
+   "kind": "sentences",
+   "lines": [
+    {
+     "t": "There is a dog in a bus.",
+     "page": 51
+    },
+    {
+     "t": "There is a green fish.",
+     "page": 51
+    },
+    {
+     "t": "There are 3 cats.",
+     "page": 51
+    },
+    {
+     "t": "There is a goat in a bus.",
+     "page": 51
+    },
+    {
+     "t": "There is an ant on a bag.",
+     "page": 51
+    },
+    {
+     "t": "There is a dog and a cat on a horse.",
+     "page": 51
+    }
+   ],
+   "pics": {
+    "a": "ant on a bag",
+    "b": "green fish",
+    "c": "dog in a bus",
+    "d": "dog and cat on a horse",
+    "e": "3 cats",
+    "f": "goat in a bus"
+   }
+  },
+  {
+   "n": 0,
+   "pages": [
+    52,
+    53
+   ],
+   "kind": "project",
+   "title": "P for Project",
+   "text": "Make an animal mask.",
+   "steps": [
+    "Draw",
+    "Colour",
+    "Make",
+    "Play"
+   ]
+  }
+ ]
+}

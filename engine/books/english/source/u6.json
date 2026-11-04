@@ -1,0 +1,269 @@
+{
+ "unit": 6,
+ "title": "My body",
+ "pages": [
+  54,
+  63
+ ],
+ "lessons": [
+  {
+   "n": 1,
+   "pages": [
+    54
+   ],
+   "kind": "lines",
+   "lines": [
+    {
+     "t": "My ears!",
+     "page": 54
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "pages": [
+    55
+   ],
+   "kind": "lines",
+   "lines": [
+    {
+     "t": "My nose.",
+     "page": 55
+    },
+    {
+     "t": "My eyes.",
+     "page": 55
+    }
+   ],
+   "notes": "two clown pictures, spot the difference"
+  },
+  {
+   "n": 3,
+   "pages": [
+    56
+   ],
+   "kind": "vocab",
+   "labels": [
+    {
+     "w": "head",
+     "pic": "en_head",
+     "page": 56
+    },
+    {
+     "w": "toes",
+     "pic": "foot",
+     "page": 56
+    },
+    {
+     "w": "ears",
+     "pic": "ear",
+     "page": 56
+    },
+    {
+     "w": "nose",
+     "pic": "en_nose",
+     "page": 56
+    },
+    {
+     "w": "hands",
+     "pic": "hand",
+     "page": 56
+    },
+    {
+     "w": "eyes",
+     "pic": "en_eyes",
+     "page": 56
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "pages": [
+    57
+   ],
+   "kind": "vocab",
+   "labels": [
+    {
+     "w": "ink",
+     "pic": "en_ink",
+     "page": 57
+    },
+    {
+     "w": "juice",
+     "pic": "en_juice",
+     "page": 57
+    },
+    {
+     "w": "kite",
+     "pic": "en_kite",
+     "page": 57
+    },
+    {
+     "w": "lemon",
+     "pic": "lemon",
+     "page": 57
+    }
+   ],
+   "notes": "pictures kite ink lemon juice; monster parts 1-7"
+  },
+  {
+   "n": 5,
+   "pages": [
+    58
+   ],
+   "kind": "lines",
+   "lines": [
+    {
+     "t": "I have three red ears.",
+     "page": 58
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "pages": [
+    59
+   ],
+   "kind": "vocab",
+   "labels": [
+    {
+     "w": "moon",
+     "pic": "crescent_moon",
+     "page": 59
+    },
+    {
+     "w": "net",
+     "pic": "en_net",
+     "page": 59
+    },
+    {
+     "w": "orange",
+     "pic": "en_orange",
+     "page": 59
+    },
+    {
+     "w": "pizza",
+     "pic": "en_pizza",
+     "page": 59
+    }
+   ],
+   "lines": [
+    {
+     "t": "I am a monster.",
+     "page": 59
+    },
+    {
+     "t": "I have a blue body.",
+     "page": 59
+    },
+    {
+     "t": "I have 2 green heads.",
+     "page": 59
+    },
+    {
+     "t": "I have 3 red arms.",
+     "page": 59
+    },
+    {
+     "t": "I have a yellow leg.",
+     "page": 59
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "pages": [
+    60
+   ],
+   "kind": "lines",
+   "lines": [
+    {
+     "t": "I wash my face.",
+     "page": 60
+    },
+    {
+     "t": "I wash my hands.",
+     "page": 60
+    },
+    {
+     "t": "I wash my feet.",
+     "page": 60
+    },
+    {
+     "t": "I wash my hair.",
+     "page": 60
+    }
+   ],
+   "names": [
+    "Ahmed",
+    "Nada",
+    "Iman",
+    "Hani"
+   ]
+  },
+  {
+   "n": 8,
+   "pages": [
+    61
+   ],
+   "kind": "lines",
+   "lines": [
+    {
+     "t": "What is it? A blue body and pink feet.",
+     "page": 61
+    },
+    {
+     "t": "It's a monkey!",
+     "page": 61
+    },
+    {
+     "t": "Now me. What is it? ...",
+     "page": 61
+    }
+   ]
+  },
+  {
+   "n": 0,
+   "pages": [
+    62,
+    63
+   ],
+   "kind": "story",
+   "title": "At the Zoo",
+   "lines": [
+    {
+     "t": "The lion is big!",
+     "page": 62
+    },
+    {
+     "t": "The rabbits are little.",
+     "page": 62
+    },
+    {
+     "t": "There are 3 goats.",
+     "page": 62
+    },
+    {
+     "t": "Where is the penguin?",
+     "page": 63
+    },
+    {
+     "t": "It's an elephant!",
+     "page": 63
+    },
+    {
+     "t": "An ear!",
+     "page": 63
+    },
+    {
+     "t": "The monkeys are funny!",
+     "page": 63
+    },
+    {
+     "t": "Goodbye.",
+     "page": 63
+    }
+   ]
+  }
+ ]
+}
