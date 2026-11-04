@@ -65,6 +65,8 @@ def G(les, t, page, data, say=None):
 def outside(lid, what): report['outside'].append(f'{lid}: {what}')
 
 letters_so_far = []
+bad_early = []
+pending_lines = []
 def pick_others(pool, k, avoid):
     p = [x for x in pool if x not in avoid]; random.shuffle(p); return p[:k]
 def choose_rounds(targets, pool, k=3, kind='art'):
@@ -87,6 +89,9 @@ for ui in range(1, 9):
         kind, pg = L['kind'], L['pages'][0]
         if kind == 'project':
             report['skipped'].append(f'الوحدة {ui} ص {L["pages"][0]}–{L["pages"][-1]}: مشروع يدوي ({L["text"]}) — لا لعبة.'); continue
+        if kind == 'picture' and L.get('lines'):
+            pending_lines.extend(L['lines'])
+            report['notes'].append(f'الوحدة {ui} ص {pg}: صفحة صور فيها جملة «{L["lines"][0]["t"]}» ضُمّت إلى القصة بعدها.'); continue
         if kind == 'picture':
             report['skipped'].append(f'الوحدة {ui} ص {pg}: نشاط صور بلا نص كافٍ ({L.get("notes", "")}).'); continue
         if kind in ('letter', 'letters'):
@@ -119,9 +124,12 @@ for ui in range(1, 9):
                 G(les, 'count', 30, {'rounds': rr}, SAY['count'])
             elif lid == 'u3-p':
                 toys = ['en_kite', 'car', 'en_plane', 'doll', 'ball']
-                rr = [{'say': 'How many toys?', 'items': [toys[j]] * n, 'options': sorted(set([n] + random.sample([x for x in range(6, 11) if x != n], 2))), 'after': str(n)} for j, n in enumerate((7, 9, 6, 10))]
+                PRINTED = {'en_kite': 8, 'car': 6, 'en_plane': 7, 'doll': 9, 'ball': 10}  # كما طُبعت مجموعات الألعاب ص ٣١
+                rr = [{'say': 'How many toys?', 'items': [t] * PRINTED[t], 'options': sorted(set([PRINTED[t]] + random.sample([x for x in range(6, 11) if x != PRINTED[t]], 2))), 'after': str(PRINTED[t])} for t in toys]
+                for r in rr:
+                    if len(r['items']) != PRINTED[r['items'][0]] or r['after'] != str(len(r['items'])): bad_early.append(f'u3-p: عدد {r["items"][0]} المرسوم لا يطابق الكتاب')
                 G(les, 'count', 31, {'rounds': rr}, SAY['count'])
-                report['notes'].append('u3-p: لعبة العدّ تستعمل الأعداد ٦–١٠ وسؤال «How many toys?» ص ٣١؛ أعداد الألعاب المرسومة من اختيار اللعبة.')
+                report['notes'].append('u3-p: أعداد الألعاب المرسومة كما في صورة ص ٣١: 8 طائرات ورقية، 6 سيارات، 7 طائرات، 9 دمى، 10 كرات؛ وسؤال «How many toys?».')
             elif lid == 'u4-v':
                 rr = [{'say': 'How many vans can you see?', 'items': ['en_van'] * n, 'options': sorted(set([n] + random.sample([x for x in range(1, 11) if x != n], 2))), 'after': str(n)} for n in (3, 5, 8)]
                 G(les, 'count', 39, {'rounds': rr}, SAY['count'])
@@ -150,12 +158,14 @@ for ui in range(1, 9):
                 prevw = [w for w in seen_words if w in ART]
                 mode = ['sound', 'balloons', 'memory', 'choose'][n % 4]
                 if mode == 'sound' and len(letters_so_far) >= 3:
-                    others = [x for x in letters_so_far[:-1]]
+                    others = [x for x in letters_so_far if x not in lts]
                     pool = [w for x in others for w in LETTER_WORDS.get(x, []) if w in ART]
                     rr = []
-                    for w in words[:2] + words[:1]:
+                    pairs = list(zip(lts, words)) if len(lts) >= 3 else [(lts[0], w) for w in words[:2] + words[:1]]
+                    for lt, w in pairs:
+                        if not w.startswith(lt): bad_early.append(f'{lid}: الحرف {lt} لا يطابق {w}')
                         opts = [w] + pick_others(pool, 2, [w]); random.shuffle(opts)
-                        rr.append({'say': lts[0], 'options': [{'art': ART[o], 'text': o} for o in opts], 'answer': opts.index(w)})
+                        rr.append({'say': lt, 'options': [{'art': ART[o], 'text': o} for o in opts], 'answer': opts.index(w)})
                     G(les, 'choose', pg, {'rounds': rr}, SAY['sound']); outside(lid, 'صور الخيارات في «اسمع الحرف» من دروس سابقة.')
                 elif mode in ('balloons', 'sound') and len(letters_so_far) >= 3:
                     ch = letters_so_far[-6:]
@@ -191,6 +201,15 @@ for ui in range(1, 9):
             if L.get('lines'): talk(les, L['lines'], pg)
             les['sticker'] = {'name': cols[0], 'art': COLOUR_ART[cols[0]]}
             continue
+        if kind == 'story' and pending_lines:
+            sl = pending_lines + L['lines']; pending_lines = []
+            les = lesson(f'u{ui}-story', ui, '📖', sorted(set([l['page'] for l in sl] + L['pages'])))
+            talk(les, sl, sl[0]['page'])
+            G(les, 'read', pg, {'sentences': [{'text': AP(l['t'])} for l in sl]}, SAY['read'])
+            les['storyTitle'] = L['title']
+            les['sticker'] = {'name': 'bus', 'art': 'en_bus'}
+            report['notes'].append(f'u{ui}-story: قصة «{L["title"]}» ص {pg}–{L["pages"][-1]} مع جملة ص {sl[0]["page"]}.')
+            continue
         if kind == 'story' and len(L['lines']) < 3:
             les = lesson(f'u{ui}-story', ui, '📖', L['pages'], 'nashid')
             les['nashid'] = {'title': L['title'], 'poet': '', 'page': pg, 'audio': f'u{ui}-story.mp3'}
@@ -219,7 +238,7 @@ for ui in range(1, 9):
             report['inferred'].append('u5-p46: ربط funny/little/big/long بصور القرود والنمل والجمل والأفعى من صور ص ٤٦ وتفريغ المسار ٦٣ ص ٨٩.')
         elif lid == 'u5-p47':
             T = L['transcript']
-            spec = [('How many red fish?', 'en_fish_red', 2, None), (None, 'en_fish_blue', 4, AP(T[1]['t'])), (None, 'penguin', 2, AP(T[2]['t'])), (None, 'monkey', 3, AP(T[3]['t'])), (None, 'lion', 3, AP(T[4]['t']))]
+            spec = [('How many red fish?', 'en_fish_red', 2, AP(T[0]['t'])), (None, 'en_fish_blue', 4, AP(T[1]['t'])), (None, 'penguin', 2, AP(T[2]['t'])), (None, 'monkey', 3, AP(T[3]['t'])), (None, 'lion', 3, AP(T[4]['t']))]
             rr = []
             for q, a, n, after in spec:
                 opts = sorted(set([n] + random.sample([x for x in range(1, 7) if x != n], 2)))
@@ -246,17 +265,19 @@ for ui in range(1, 9):
         elif lid == 'u5-p50':
             def bw(ws):
                 return {'pieces': list(dict.fromkeys(c for w in ws for c in w)), 'words': [{'word': w, 'parts': list(w), 'art': ART[w]} for w in ws]}
-            G(les, 'build', 50, bw(['ant', 'bus', 'cat']), SAY['build'])
-            G(les, 'build', 50, bw(['dog', 'egg', 'goat']), SAY['build'])
-            for w in ['ant', 'bus', 'cat', 'dog', 'egg', 'goat']: item(les, w, 50)
+            W50 = L['words']  # الكلمات الثماني المطبوعة ص ٥٠
+            G(les, 'build', 50, bw(W50[:4]), SAY['build'])
+            G(les, 'build', 50, bw(W50[4:]), SAY['build'])
+            for w in W50: item(les, w, 50)
         elif lid == 'u5-p51':
             pics = {"There is a dog in a bus.": 'en_s_dogbus', 'There is a green fish.': 'en_fish_green', 'There are 3 cats.': 'en_s_3cats', 'There is a goat in a bus.': 'en_s_goatbus', 'There is an ant on a bag.': 'en_s_antbag', 'There is a dog and a cat on a horse.': 'en_s_dogcathorse'}
-            talk(les, lines[:4], 51)
-            rr = []
-            for l in lines[:5]:
-                opts = [pics[l['t']]] + random.sample([v for k, v in pics.items() if k != l['t']], 2); random.shuffle(opts)
-                rr.append({'say': AP(l['t']), 'options': [{'art': o} for o in opts], 'answer': opts.index(pics[l['t']])})
-            G(les, 'choose', 51, {'rounds': rr}, SAY['sentence'])
+            talk(les, lines, 51)
+            for part in (lines[:3], lines[3:]):
+                rr = []
+                for l in part:
+                    opts = [pics[l['t']]] + random.sample([v for k, v in pics.items() if k != l['t']], 2); random.shuffle(opts)
+                    rr.append({'say': AP(l['t']), 'options': [{'art': o} for o in opts], 'answer': opts.index(pics[l['t']])})
+                G(les, 'choose', 51, {'rounds': rr}, SAY['sentence'])
             G(les, 'read', 51, {'sentences': [{'text': AP(l['t'])} for l in lines]}, SAY['read'])
         elif lid == 'u6-p54':
             # ص ٥٤–٥٥ معاً
@@ -316,8 +337,8 @@ for ui in range(1, 9):
                 rr.append({'say': AP(l['t']), 'options': [{'art': o} for o in opts], 'answer': opts.index(pics[l['t']])})
             G(les, 'choose', 70, {'rounds': rr}, SAY['sentence'])
         elif lid == 'u8-p74':
-            talk(les, lines[:5], 74); G(les, 'read', 74, {'sentences': [{'text': AP(l['t'])} for l in lines]}, SAY['read'])
-            les['title'] = '★'
+            talk(les, lines[:5], 74); G(les, 'read', 74, {'sentences': [{'text': AP(L['title'])}] + [{'text': AP(l['t'])} for l in lines]}, SAY['read'])
+            les['title'] = '★'; les['storyTitle'] = AP(L['title'])
         elif lid == 'u8-p76':
             pics = {'I have a pen.': 'en_s_pen', 'I have a pen and a pencil.': 'en_s_penpencil'}
             l77 = next(x for x in U[8]['lessons'] if x['pages'] == [77])['lines']
@@ -382,7 +403,7 @@ BOOK = {'id': 'english', 'title': 'اللُّغَةُ الْإِنْكِلِيز
 reg(BOOK['title'], 'c', 1, 'booktitle')
 
 # ---------- فحوص ----------
-bad = []
+bad = list(bad_early)
 AR = re.compile('[؀-ۿ]'); HAR = re.compile('[ً-ْ]')
 for les in LESSONS:
     if les['kind'] != 'nashid' and len(les['games']) < 2: bad.append(les['id'] + ': أقل من لعبتين')
@@ -424,7 +445,7 @@ for u in U.values():
             for w in L.get(k, []): book_text.add(w['w'] if isinstance(w, dict) else w)
         book_text.update(L.get('colours', [])); book_text.update(L.get('letters', [])); book_text.update(L.get('words', []) if isinstance(L.get('words'), list) and L.get('words') and isinstance(L['words'][0], str) else [])
         if L.get('letter'): book_text.add(L['letter'])
-        if L.get('title'): book_text.add(L['title'])
+        if L.get('title'): book_text.update([L['title'], AP(L['title'])])
         if L.get('kind') == 'write': book_text.update(L['words'])
 book_text.update(['Yes.', 'No.'] + [str(n) for n in range(1, 11)] + [u['title'] for u in U.values()] + [AP(f"I'm {n}.") for n in (3, 4, 5, 6, 7, 8)])
 for t in audio:

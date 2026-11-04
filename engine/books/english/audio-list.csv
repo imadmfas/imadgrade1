@@ -97,7 +97,8 @@ u2-l-l01.mp3,Open.,u2-l,23
 u2-l-l02.mp3,Draw.,u2-l,23
 u2-l-l03.mp3,Close.,u2-l,23
 u2-l-letter-l.mp3,l,u2-l,23
-u2-story-title.mp3,What is it?,u2-story,26
+u2-story-l01.mp3,Who’s in the bus?,u2-story,25
+u2-story-l02.mp3,"Hello, children.",u2-story,26
 u3-unit.mp3,My toys,u3,28
 u3-m-w01.mp3,monkey,u3-m,28
 u3-m-w02.mp3,moon,u3-m,28
@@ -107,22 +108,23 @@ u3-n-w02.mp3,nose,u3-n,29
 u3-n-letter-n.mp3,n,u3-n,29
 u3-o-w02.mp3,olive,u3-o,30
 u3-o-letter-o.mp3,o,u3-o,30
-u3-o-x108.mp3,2,u3-o,30
-u3-o-x109.mp3,1,u3-o,30
-u3-o-x110.mp3,5,u3-o,30
-u3-o-x111.mp3,4,u3-o,30
-u3-o-x112.mp3,3,u3-o,30
+u3-o-x109.mp3,2,u3-o,30
+u3-o-x110.mp3,1,u3-o,30
+u3-o-x111.mp3,5,u3-o,30
+u3-o-x112.mp3,4,u3-o,30
+u3-o-x113.mp3,3,u3-o,30
 u3-p-w01.mp3,plane,u3-p,31
 u3-p-w02.mp3,pizza,u3-p,31
 u3-p-l01.mp3,How many toys?,u3-p,31
 u3-p-letter-p.mp3,p,u3-p,31
-u3-p-x117.mp3,7,u3-p,31
-u3-p-x118.mp3,9,u3-p,31
-u3-p-x119.mp3,10,u3-p,31
-u3-p-x120.mp3,6,u3-p,31
-u3-p-x121.mp3,8,u3-p,31
+u3-p-x118.mp3,8,u3-p,31
+u3-p-x119.mp3,9,u3-p,31
+u3-p-x120.mp3,10,u3-p,31
+u3-p-x121.mp3,6,u3-p,31
+u3-p-x122.mp3,7,u3-p,31
 u3-q-w01.mp3,question,u3-q,32
 u3-q-w02.mp3,queen,u3-q,32
+u3-q-l01.mp3,What is it?,u3-q,32
 u3-q-l02.mp3,It’s a kite.,u3-q,32
 u3-q-letter-q.mp3,q,u3-q,32
 u3-r-w01.mp3,robot,u3-r,33
@@ -135,9 +137,9 @@ u3-r-letter-r.mp3,r,u3-r,33
 u3-s-w01.mp3,snake,u3-s,34
 u3-s-w02.mp3,sun,u3-s,34
 u3-s-letter-s.mp3,s,u3-s,34
-u3-s-x136.mp3,I’m 5.,u3-s,34
-u3-s-x137.mp3,I’m 7.,u3-s,34
-u3-s-x138.mp3,I’m 8.,u3-s,34
+u3-s-x138.mp3,I’m 5.,u3-s,34
+u3-s-x139.mp3,I’m 7.,u3-s,34
+u3-s-x140.mp3,I’m 8.,u3-s,34
 u3-t-w01.mp3,taxi,u3-t,35
 u3-t-w02.mp3,tomato,u3-t,35
 u3-t-letter-t.mp3,t,u3-t,35
@@ -163,7 +165,7 @@ u4-xyz-letter-z.mp3,z,u4-xyz,41
 u4-story-l01.mp3,"Happy birthday, Nada!",u4-story,42
 u4-story-l04.mp3,Is it a robot?,u4-story,42
 u4-story-l05.mp3,It’s a doll!,u4-story,42
-u4-story-x164.mp3,Thank you!,u4-story,42
+u4-story-x166.mp3,Thank you!,u4-story,42
 u4-story-sticker.mp3,Happy birthday!,u4-story,42
 u5-unit.mp3,At the zoo,u5,44
 u5-p44-w01.mp3,tiger,u5-p44,44
@@ -185,16 +187,16 @@ u5-p47-l01.mp3,How many red fish?,u5-p47,47
 u5-p47-l02.mp3,2 red fish.,u5-p47,89
 u5-p47-l03.mp3,4 blue fish.,u5-p47,89
 u5-p47-l04.mp3,2 penguins.,u5-p47,89
-u5-p47-x186.mp3,3 monkeys.,u5-p47,47
-u5-p47-x187.mp3,3 lions.,u5-p47,47
+u5-p47-x188.mp3,3 monkeys.,u5-p47,47
+u5-p47-x189.mp3,3 lions.,u5-p47,47
 u5-p49-l01.mp3,Where’s the blue tiger?,u5-p49,49
 u5-p49-l02.mp3,In the bag.,u5-p49,49
 u5-p51-l01.mp3,There is a dog in a bus.,u5-p51,51
 u5-p51-l02.mp3,There is a green fish.,u5-p51,51
 u5-p51-l03.mp3,There are 3 cats.,u5-p51,51
 u5-p51-l04.mp3,There is a goat in a bus.,u5-p51,51
-u5-p51-x194.mp3,There is an ant on a bag.,u5-p51,51
-u5-p51-x195.mp3,There is a dog and a cat on a horse.,u5-p51,51
+u5-p51-l05.mp3,There is an ant on a bag.,u5-p51,51
+u5-p51-l06.mp3,There is a dog and a cat on a horse.,u5-p51,51
 u6-unit.mp3,My body,u6,54
 u6-p54-w01.mp3,ears,u6-p54,55
 u6-p54-w03.mp3,eyes,u6-p54,55
@@ -204,11 +206,11 @@ u6-p54-l03.mp3,My eyes.,u6-p54,55
 u6-p56-w01.mp3,head,u6-p56,56
 u6-p56-w02.mp3,toes,u6-p56,56
 u6-p56-w05.mp3,hands,u6-p56,56
-u6-p59-x205.mp3,I am a monster.,u6-p59,59
-u6-p59-x206.mp3,I have a blue body.,u6-p59,59
-u6-p59-x207.mp3,I have 2 green heads.,u6-p59,59
-u6-p59-x208.mp3,I have 3 red arms.,u6-p59,59
-u6-p59-x209.mp3,I have a yellow leg.,u6-p59,59
+u6-p59-x207.mp3,I am a monster.,u6-p59,59
+u6-p59-x208.mp3,I have a blue body.,u6-p59,59
+u6-p59-x209.mp3,I have 2 green heads.,u6-p59,59
+u6-p59-x210.mp3,I have 3 red arms.,u6-p59,59
+u6-p59-x211.mp3,I have a yellow leg.,u6-p59,59
 u6-p60-l01.mp3,I wash my face.,u6-p60,60
 u6-p60-l02.mp3,I wash my hands.,u6-p60,60
 u6-p60-l03.mp3,I wash my feet.,u6-p60,60
@@ -216,14 +218,14 @@ u6-p60-l04.mp3,I wash my hair.,u6-p60,60
 u6-p61-l01.mp3,What is it? A blue body and pink feet.,u6-p61,61
 u6-p61-l02.mp3,It’s a monkey!,u6-p61,61
 u6-p61-l03.mp3,Now me. What is it? ...,u6-p61,61
-u6-p61-x217.mp3,I have three red ears.,u6-p61,58
+u6-p61-x219.mp3,I have three red ears.,u6-p61,58
 u6-story-l01.mp3,The lion is big!,u6-story,62
 u6-story-l02.mp3,The rabbits are little.,u6-story,62
 u6-story-l03.mp3,There are 3 goats.,u6-story,62
 u6-story-l04.mp3,Where is the penguin?,u6-story,63
 u6-story-l05.mp3,It’s an elephant!,u6-story,63
 u6-story-l06.mp3,An ear!,u6-story,63
-u6-story-x224.mp3,The monkeys are funny!,u6-story,62
+u6-story-x226.mp3,The monkeys are funny!,u6-story,62
 u6-story-sticker.mp3,At the Zoo,u6-story,62
 u7-unit.mp3,My family,u7,64
 u7-p64-w04.mp3,dad,u7-p64,64
@@ -251,15 +253,16 @@ u7-p70-l04.mp3,I have a yellow jumper.,u7-p70,70
 u7-song-title.mp3,10 Little Elephants,u7-song,71
 u8-p74-l02.mp3,"How old are you, Iman?",u8-p74,74
 u8-p74-l05.mp3,It’s my little dog.,u8-p74,74
-u8-p74-x252.mp3,How many can you see?,u8-p74,74
-u8-p74-x253.mp3,Oh!,u8-p74,74
-u8-p74-x254.mp3,It’s a balloon.,u8-p74,74
-u8-p74-x255.mp3,It’s a toy.,u8-p74,74
+u8-p74-x254.mp3,Nada’s little dog,u8-p74,74
+u8-p74-x255.mp3,How many can you see?,u8-p74,74
+u8-p74-x256.mp3,Oh!,u8-p74,74
+u8-p74-x257.mp3,It’s a balloon.,u8-p74,74
+u8-p74-x258.mp3,It’s a toy.,u8-p74,74
 u8-p74-sticker.mp3,Nada's little dog,u8-p74,74
 u8-p76-l01.mp3,I have a pen.,u8-p76,76
 u8-p76-l02.mp3,I have a pen and a pencil.,u8-p76,76
-u8-p76-x259.mp3,حَيَوَانَاتٌ,u8-p76,76
-u8-p76-x260.mp3,طَعَامٌ,u8-p76,76
+u8-p76-x262.mp3,حَيَوَانَاتٌ,u8-p76,76
+u8-p76-x263.mp3,طَعَامٌ,u8-p76,76
 u8-story-l01.mp3,It’s my rocket.,u8-story,78
 u8-story-l02.mp3,No toys!,u8-story,79
 u8-story-l03.mp3,Ahmed!,u8-story,79

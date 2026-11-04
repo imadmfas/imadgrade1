@@ -1869,42 +1869,71 @@
    "unitTitle": "My school",
    "unitPage": 18,
    "pages": [
+    25,
     26,
     27
    ],
    "title": "📖",
-   "kind": "nashid",
+   "kind": "lesson",
    "items": [],
    "syllables": [],
-   "games": [],
-   "nashid": {
-    "title": "What is it?",
-    "poet": "",
-    "page": 26,
-    "audio": "u2-story.mp3"
-   },
-   "scene": {
-    "items": [
-     {
-      "art": "school",
-      "x": 20,
-      "y": 60,
-      "w": 140
+   "games": [
+    {
+     "template": "talk",
+     "page": 25,
+     "data": {
+      "lines": [
+       {
+        "text": "Who’s in the bus?",
+        "page": 25,
+        "audio": "u2-story-l01.mp3"
+       },
+       {
+        "text": "Hello, children.",
+        "page": 26,
+        "audio": "u2-story-l02.mp3"
+       }
+      ]
      },
-     {
-      "art": "en_robot",
-      "x": 190,
-      "y": 90,
-      "w": 90
+     "say": "اِلْمَسْ كُلَّ فُقَّاعَةٍ وَاسْمَعْ",
+     "audio": "c-talk.mp3"
+    },
+    {
+     "template": "read",
+     "page": 26,
+     "data": {
+      "sentences": [
+       {
+        "text": "Who’s in the bus?",
+        "audio": "u2-story-l01.mp3"
+       },
+       {
+        "text": "Hello, children.",
+        "audio": "u2-story-l02.mp3"
+       }
+      ]
      },
-     {
-      "art": "blackboard",
-      "x": 290,
-      "y": 80,
-      "w": 90
-     }
-    ],
-    "bg": {}
+     "say": "اِسْمَعْ وَاقْرَأْ مَعِي",
+     "audio": "c-read.mp3"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Who’s in the bus?",
+     "page": 25,
+     "audio": "u2-story-l01.mp3"
+    },
+    {
+     "text": "Hello, children.",
+     "page": 26,
+     "audio": "u2-story-l02.mp3"
+    }
+   ],
+   "storyTitle": "What is it?",
+   "sticker": {
+    "name": "bus",
+    "art": "en_bus",
+    "audio": "u1-b-w02.mp3"
    }
   },
   {
@@ -2363,14 +2392,15 @@
          "en_kite",
          "en_kite",
          "en_kite",
+         "en_kite",
          "en_kite"
         ],
         "options": [
-         7,
+         8,
          9,
          10
         ],
-        "after": "7",
+        "after": "8",
         "answer": 0
        },
        {
@@ -2381,28 +2411,7 @@
          "car",
          "car",
          "car",
-         "car",
-         "car",
-         "car",
          "car"
-        ],
-        "options": [
-         6,
-         8,
-         9
-        ],
-        "after": "9",
-        "answer": 2
-       },
-       {
-        "say": "How many toys?",
-        "items": [
-         "en_plane",
-         "en_plane",
-         "en_plane",
-         "en_plane",
-         "en_plane",
-         "en_plane"
         ],
         "options": [
          6,
@@ -2415,7 +2424,25 @@
        {
         "say": "How many toys?",
         "items": [
-         "doll",
+         "en_plane",
+         "en_plane",
+         "en_plane",
+         "en_plane",
+         "en_plane",
+         "en_plane",
+         "en_plane"
+        ],
+        "options": [
+         6,
+         7,
+         9
+        ],
+        "after": "7",
+        "answer": 1
+       },
+       {
+        "say": "How many toys?",
+        "items": [
          "doll",
          "doll",
          "doll",
@@ -2429,6 +2456,28 @@
         "options": [
          6,
          7,
+         9
+        ],
+        "after": "9",
+        "answer": 2
+       },
+       {
+        "say": "How many toys?",
+        "items": [
+         "ball",
+         "ball",
+         "ball",
+         "ball",
+         "ball",
+         "ball",
+         "ball",
+         "ball",
+         "ball",
+         "ball"
+        ],
+        "options": [
+         6,
+         8,
          10
         ],
         "after": "10",
@@ -2512,7 +2561,7 @@
        {
         "text": "What is it?",
         "page": 32,
-        "audio": "u2-story-title.mp3"
+        "audio": "u3-q-l01.mp3"
        },
        {
         "text": "It’s a kite.",
@@ -2552,7 +2601,7 @@
     {
      "text": "What is it?",
      "page": 32,
-     "audio": "u2-story-title.mp3"
+     "audio": "u3-q-l01.mp3"
     },
     {
      "text": "It’s a kite.",
@@ -2788,13 +2837,13 @@
           "text": "4"
          },
          {
-          "text": "5"
+          "text": "7"
          },
          {
-          "text": "6"
+          "text": "5"
          }
         ],
-        "answer": 1
+        "answer": 2
        },
        {
         "say": "I’m 4.",
@@ -2803,10 +2852,10 @@
           "text": "4"
          },
          {
-          "text": "7"
+          "text": "6"
          },
          {
-          "text": "6"
+          "text": "3"
          }
         ],
         "answer": 0
@@ -3572,14 +3621,14 @@
           "text": "ball"
          },
          {
-          "art": "snake",
-          "text": "snake"
+          "art": "rabbit",
+          "text": "rabbit"
          }
         ],
         "answer": 0
        },
        {
-        "say": "x",
+        "say": "y",
         "options": [
          {
           "art": "en_yoyo",
@@ -3597,11 +3646,11 @@
         "answer": 0
        },
        {
-        "say": "x",
+        "say": "z",
         "options": [
          {
-          "art": "en_xray",
-          "text": "x-ray"
+          "art": "en_zebra",
+          "text": "zebra"
          },
          {
           "art": "en_in",
@@ -3712,7 +3761,7 @@
        },
        {
         "text": "Thank you!",
-        "audio": "u4-story-x164.mp3"
+        "audio": "u4-story-x166.mp3"
        }
       ]
      },
@@ -4177,7 +4226,7 @@
          2,
          5
         ],
-        "after": "2",
+        "after": "2 red fish.",
         "say": "How many red fish?",
         "answer": 1
        },
@@ -4550,10 +4599,22 @@
      "audio": "u1-e-w01.mp3"
     },
     {
+     "value": "fish",
+     "page": 50,
+     "art": "fish",
+     "audio": "u1-f-w02.mp3"
+    },
+    {
      "value": "goat",
      "page": 50,
      "art": "goat",
      "audio": "u2-g-w02.mp3"
+    },
+    {
+     "value": "horse",
+     "page": 50,
+     "art": "horse",
+     "audio": "u2-h-w01.mp3"
     }
    ],
    "syllables": [],
@@ -4569,7 +4630,10 @@
        "b",
        "u",
        "s",
-       "c"
+       "c",
+       "d",
+       "o",
+       "g"
       ],
       "words": [
        {
@@ -4598,6 +4662,15 @@
          "t"
         ],
         "art": "cat"
+       },
+       {
+        "word": "dog",
+        "parts": [
+         "d",
+         "o",
+         "g"
+        ],
+        "art": "dog"
        }
       ]
      },
@@ -4609,23 +4682,18 @@
      "page": 50,
      "data": {
       "pieces": [
-       "d",
-       "o",
-       "g",
        "e",
+       "g",
+       "f",
+       "i",
+       "s",
+       "h",
+       "o",
        "a",
-       "t"
+       "t",
+       "r"
       ],
       "words": [
-       {
-        "word": "dog",
-        "parts": [
-         "d",
-         "o",
-         "g"
-        ],
-        "art": "dog"
-       },
        {
         "word": "egg",
         "parts": [
@@ -4636,6 +4704,16 @@
         "art": "en_egg"
        },
        {
+        "word": "fish",
+        "parts": [
+         "f",
+         "i",
+         "s",
+         "h"
+        ],
+        "art": "fish"
+       },
+       {
         "word": "goat",
         "parts": [
          "g",
@@ -4644,6 +4722,17 @@
          "t"
         ],
         "art": "goat"
+       },
+       {
+        "word": "horse",
+        "parts": [
+         "h",
+         "o",
+         "r",
+         "s",
+         "e"
+        ],
+        "art": "horse"
        }
       ]
      },
@@ -4695,6 +4784,16 @@
         "text": "There is a goat in a bus.",
         "page": 51,
         "audio": "u5-p51-l04.mp3"
+       },
+       {
+        "text": "There is an ant on a bag.",
+        "page": 51,
+        "audio": "u5-p51-l05.mp3"
+       },
+       {
+        "text": "There is a dog and a cat on a horse.",
+        "page": 51,
+        "audio": "u5-p51-l06.mp3"
        }
       ]
      },
@@ -4750,7 +4849,17 @@
          }
         ],
         "answer": 1
-       },
+       }
+      ]
+     },
+     "say": "اِسْمَعِ الْجُمْلَةَ وَاخْتَرْ صُورَتَهَا",
+     "audio": "c-sentence.mp3"
+    },
+    {
+     "template": "choose",
+     "page": 51,
+     "data": {
+      "rounds": [
        {
         "say": "There is a goat in a bus.",
         "options": [
@@ -4780,6 +4889,21 @@
          }
         ],
         "answer": 0
+       },
+       {
+        "say": "There is a dog and a cat on a horse.",
+        "options": [
+         {
+          "art": "en_fish_green"
+         },
+         {
+          "art": "en_s_dogcathorse"
+         },
+         {
+          "art": "en_s_goatbus"
+         }
+        ],
+        "answer": 1
        }
       ]
      },
@@ -4809,11 +4933,11 @@
        },
        {
         "text": "There is an ant on a bag.",
-        "audio": "u5-p51-x194.mp3"
+        "audio": "u5-p51-l05.mp3"
        },
        {
         "text": "There is a dog and a cat on a horse.",
-        "audio": "u5-p51-x195.mp3"
+        "audio": "u5-p51-l06.mp3"
        }
       ]
      },
@@ -4841,6 +4965,16 @@
      "text": "There is a goat in a bus.",
      "page": 51,
      "audio": "u5-p51-l04.mp3"
+    },
+    {
+     "text": "There is an ant on a bag.",
+     "page": 51,
+     "audio": "u5-p51-l05.mp3"
+    },
+    {
+     "text": "There is a dog and a cat on a horse.",
+     "page": 51,
+     "audio": "u5-p51-l06.mp3"
     }
    ],
    "sticker": {
@@ -5086,7 +5220,7 @@
           "art": "foot"
          },
          {
-          "art": "en_eyes"
+          "art": "en_nose"
          }
         ],
         "answer": 0
@@ -5098,10 +5232,10 @@
           "art": "hand"
          },
          {
-          "art": "en_head"
+          "art": "en_nose"
          },
          {
-          "art": "foot"
+          "art": "en_head"
          }
         ],
         "answer": 0
@@ -5110,31 +5244,31 @@
         "say": "toes",
         "options": [
          {
-          "art": "foot"
+          "art": "en_head"
          },
          {
-          "art": "en_head"
+          "art": "ear"
+         },
+         {
+          "art": "foot"
+         }
+        ],
+        "answer": 2
+       },
+       {
+        "say": "eyes",
+        "options": [
+         {
+          "art": "en_eyes"
+         },
+         {
+          "art": "en_nose"
          },
          {
           "art": "hand"
          }
         ],
         "answer": 0
-       },
-       {
-        "say": "eyes",
-        "options": [
-         {
-          "art": "foot"
-         },
-         {
-          "art": "en_eyes"
-         },
-         {
-          "art": "hand"
-         }
-        ],
-        "answer": 1
        }
       ]
      },
@@ -5322,23 +5456,23 @@
       "sentences": [
        {
         "text": "I am a monster.",
-        "audio": "u6-p59-x205.mp3"
-       },
-       {
-        "text": "I have a blue body.",
-        "audio": "u6-p59-x206.mp3"
-       },
-       {
-        "text": "I have 2 green heads.",
         "audio": "u6-p59-x207.mp3"
        },
        {
-        "text": "I have 3 red arms.",
+        "text": "I have a blue body.",
         "audio": "u6-p59-x208.mp3"
        },
        {
-        "text": "I have a yellow leg.",
+        "text": "I have 2 green heads.",
         "audio": "u6-p59-x209.mp3"
+       },
+       {
+        "text": "I have 3 red arms.",
+        "audio": "u6-p59-x210.mp3"
+       },
+       {
+        "text": "I have a yellow leg.",
+        "audio": "u6-p59-x211.mp3"
        }
       ]
      },
@@ -5405,10 +5539,10 @@
         "say": "I wash my face.",
         "options": [
          {
-          "art": "en_hair"
+          "art": "foot"
          },
          {
-          "art": "foot"
+          "art": "en_hair"
          },
          {
           "art": "face"
@@ -5420,16 +5554,16 @@
         "say": "I wash my hands.",
         "options": [
          {
+          "art": "hand"
+         },
+         {
           "art": "foot"
          },
          {
-          "art": "face"
-         },
-         {
-          "art": "hand"
+          "art": "en_hair"
          }
         ],
-        "answer": 2
+        "answer": 0
        },
        {
         "say": "I wash my feet.",
@@ -5441,7 +5575,7 @@
           "art": "foot"
          },
          {
-          "art": "face"
+          "art": "en_hair"
          }
         ],
         "answer": 1
@@ -5450,16 +5584,16 @@
         "say": "I wash my hair.",
         "options": [
          {
-          "art": "en_hair"
+          "art": "hand"
          },
          {
-          "art": "hand"
+          "art": "en_hair"
          },
          {
           "art": "foot"
          }
         ],
-        "answer": 0
+        "answer": 1
        }
       ]
      },
@@ -5542,7 +5676,7 @@
       "sentences": [
        {
         "text": "I have three red ears.",
-        "audio": "u6-p61-x217.mp3"
+        "audio": "u6-p61-x219.mp3"
        },
        {
         "text": "What is it? A blue body and pink feet.",
@@ -5671,7 +5805,7 @@
        },
        {
         "text": "The monkeys are funny!",
-        "audio": "u6-story-x224.mp3"
+        "audio": "u6-story-x226.mp3"
        },
        {
         "text": "Goodbye.",
@@ -6122,10 +6256,10 @@
         "say": "I have a green taxi.",
         "options": [
          {
-          "art": "en_car_yellow"
+          "art": "en_car_green"
          },
          {
-          "art": "en_car_green"
+          "art": "en_car_yellow"
          },
          {
           "art": "en_taxi_green"
@@ -6137,31 +6271,31 @@
         "say": "I have a yellow car.",
         "options": [
          {
-          "art": "en_car_yellow"
+          "art": "en_car_green"
          },
          {
           "art": "en_taxi_green"
          },
          {
-          "art": "en_car_green"
+          "art": "en_car_yellow"
          }
         ],
-        "answer": 0
+        "answer": 2
        },
        {
         "say": "I have a green car.",
         "options": [
          {
-          "art": "en_car_green"
+          "art": "en_car_yellow"
          },
          {
-          "art": "en_car_yellow"
+          "art": "en_car_green"
          },
          {
           "art": "en_taxi_green"
          }
         ],
-        "answer": 0
+        "answer": 1
        }
       ]
      },
@@ -6262,7 +6396,7 @@
         "say": "desk",
         "options": [
          {
-          "art": "en_chair"
+          "art": "en_bin"
          },
          {
           "art": "bed"
@@ -6277,25 +6411,10 @@
         "say": "bin",
         "options": [
          {
-          "art": "en_table"
-         },
-         {
           "art": "en_bin"
          },
          {
-          "art": "en_chair"
-         }
-        ],
-        "answer": 1
-       },
-       {
-        "say": "bed",
-        "options": [
-         {
           "art": "bed"
-         },
-         {
-          "art": "en_desk"
          },
          {
           "art": "en_chair"
@@ -6304,19 +6423,34 @@
         "answer": 0
        },
        {
-        "say": "chair",
+        "say": "bed",
         "options": [
          {
           "art": "en_desk"
          },
          {
-          "art": "en_chair"
+          "art": "bed"
          },
          {
-          "art": "en_bin"
+          "art": "en_chair"
          }
         ],
         "answer": 1
+       },
+       {
+        "say": "chair",
+        "options": [
+         {
+          "art": "en_chair"
+         },
+         {
+          "art": "bed"
+         },
+         {
+          "art": "en_desk"
+         }
+        ],
+        "answer": 0
        }
       ]
      },
@@ -6454,16 +6588,16 @@
         "say": "yellow",
         "options": [
          {
+          "art": "en_c_yellow"
+         },
+         {
           "art": "en_c_green"
          },
          {
-          "art": "en_c_blue"
-         },
-         {
-          "art": "en_c_yellow"
+          "art": "en_c_red"
          }
         ],
-        "answer": 2
+        "answer": 0
        },
        {
         "say": "red",
@@ -6484,16 +6618,16 @@
         "say": "green",
         "options": [
          {
-          "art": "en_c_green"
-         },
-         {
           "art": "en_c_red"
          },
          {
-          "art": "en_c_yellow"
+          "art": "en_c_blue"
+         },
+         {
+          "art": "en_c_green"
          }
         ],
-        "answer": 0
+        "answer": 2
        },
        {
         "say": "blue",
@@ -6502,13 +6636,13 @@
           "art": "en_c_red"
          },
          {
-          "art": "en_c_green"
+          "art": "en_c_blue"
          },
          {
-          "art": "en_c_blue"
+          "art": "en_c_yellow"
          }
         ],
-        "answer": 2
+        "answer": 1
        }
       ]
      },
@@ -6575,40 +6709,40 @@
         "say": "I have a green key.",
         "options": [
          {
-          "art": "en_jumper_yellow"
-         },
-         {
           "art": "en_key_green"
-         },
-         {
-          "art": "en_key_red"
-         }
-        ],
-        "answer": 1
-       },
-       {
-        "say": "I have a red key.",
-        "options": [
-         {
-          "art": "en_key_red"
          },
          {
           "art": "en_jumper_blue"
          },
          {
-          "art": "en_key_green"
+          "art": "en_key_red"
          }
         ],
         "answer": 0
        },
        {
-        "say": "I have a blue jumper.",
+        "say": "I have a red key.",
         "options": [
          {
           "art": "en_key_green"
          },
          {
           "art": "en_jumper_yellow"
+         },
+         {
+          "art": "en_key_red"
+         }
+        ],
+        "answer": 2
+       },
+       {
+        "say": "I have a blue jumper.",
+        "options": [
+         {
+          "art": "en_jumper_yellow"
+         },
+         {
+          "art": "en_key_red"
          },
          {
           "art": "en_jumper_blue"
@@ -6623,13 +6757,13 @@
           "art": "en_jumper_blue"
          },
          {
-          "art": "en_key_red"
+          "art": "en_jumper_yellow"
          },
          {
-          "art": "en_jumper_yellow"
+          "art": "en_key_green"
          }
         ],
-        "answer": 2
+        "answer": 1
        }
       ]
      },
@@ -6741,12 +6875,12 @@
        {
         "text": "I’m 5.",
         "page": 74,
-        "audio": "u3-s-x136.mp3"
+        "audio": "u3-s-x138.mp3"
        },
        {
         "text": "What is it?",
         "page": 74,
-        "audio": "u2-story-title.mp3"
+        "audio": "u3-q-l01.mp3"
        },
        {
         "text": "It’s my little dog.",
@@ -6764,6 +6898,10 @@
      "data": {
       "sentences": [
        {
+        "text": "Nada’s little dog",
+        "audio": "u8-p74-x254.mp3"
+       },
+       {
         "text": "Who’s this?",
         "audio": "u1-f-l01.mp3"
        },
@@ -6773,11 +6911,11 @@
        },
        {
         "text": "I’m 5.",
-        "audio": "u3-s-x136.mp3"
+        "audio": "u3-s-x138.mp3"
        },
        {
         "text": "What is it?",
-        "audio": "u2-story-title.mp3"
+        "audio": "u3-q-l01.mp3"
        },
        {
         "text": "It’s my little dog.",
@@ -6785,19 +6923,19 @@
        },
        {
         "text": "How many can you see?",
-        "audio": "u8-p74-x252.mp3"
+        "audio": "u8-p74-x255.mp3"
        },
        {
         "text": "Oh!",
-        "audio": "u8-p74-x253.mp3"
+        "audio": "u8-p74-x256.mp3"
        },
        {
         "text": "It’s a balloon.",
-        "audio": "u8-p74-x254.mp3"
+        "audio": "u8-p74-x257.mp3"
        },
        {
         "text": "It’s a toy.",
-        "audio": "u8-p74-x255.mp3"
+        "audio": "u8-p74-x258.mp3"
        }
       ]
      },
@@ -6819,12 +6957,12 @@
     {
      "text": "I’m 5.",
      "page": 74,
-     "audio": "u3-s-x136.mp3"
+     "audio": "u3-s-x138.mp3"
     },
     {
      "text": "What is it?",
      "page": 74,
-     "audio": "u2-story-title.mp3"
+     "audio": "u3-q-l01.mp3"
     },
     {
      "text": "It’s my little dog.",
@@ -6832,6 +6970,7 @@
      "audio": "u8-p74-l05.mp3"
     }
    ],
+   "storyTitle": "Nada’s little dog",
    "sticker": {
     "name": "Nada's little dog",
     "art": "star",
@@ -6887,25 +7026,25 @@
         "say": "I have a pen.",
         "options": [
          {
-          "art": "en_s_penpencil"
+          "art": "en_s_pen"
          },
          {
-          "art": "en_s_pen"
+          "art": "en_s_penpencil"
          }
         ],
-        "answer": 1
+        "answer": 0
        },
        {
         "say": "I have a pen and a pencil.",
         "options": [
          {
-          "art": "en_s_penpencil"
+          "art": "en_s_pen"
          },
          {
-          "art": "en_s_pen"
+          "art": "en_s_penpencil"
          }
         ],
-        "answer": 0
+        "answer": 1
        },
        {
         "say": "I have a pen.",
