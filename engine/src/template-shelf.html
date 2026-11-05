@@ -36,8 +36,10 @@ footer{z-index:2;font-family:'Noto Naskh Arabic',serif;font-size:14px;color:#7a6
 @media (max-width:600px) and (orientation:portrait){#books .shelf2{position:absolute;left:-14px;right:-14px;top:calc(66.6% - 10px);height:26px;border-radius:8px;background:linear-gradient(#c88a54,#a0663a);box-shadow:0 8px 0 #7d4c28;z-index:-1;display:block}}
 .shelf2{display:none}
 @media (min-aspect-ratio:5/4) and (min-height:501px){#shelf{width:min(1200px,96vw)}#books{grid-template-columns:repeat(6,1fr)}#books::before{display:none}.b-ico{width:min(9vw,110px);height:min(9vw,110px)}.txt-ico{font-size:min(5vw,56px)}.b-title{font-size:clamp(20px,1.9vw,28px)}}
-#bAdult{top:10px;bottom:auto}
-@media (max-height:500px){header{padding-top:4px}#books{grid-template-columns:repeat(6,1fr);gap:16px 12px}#books::before{display:none}.b-title{font-size:20px}.b-ico{width:12vh;height:12vh}#shMascot{width:80px;height:84px}}
+#bAdult{position:absolute;top:10px;bottom:auto}
+@media (max-width:600px) and (orientation:portrait){header{padding-top:84px}#bAdult{top:12px}.txt-ico{font-size:9vw}.b-title{font-size:clamp(22px,6.6vw,28px);word-spacing:100vw;line-height:1.4}}
+@media (max-height:500px){header{padding-top:4px}.txt-ico{font-size:4.6vh}#books{grid-template-columns:repeat(6,1fr);gap:16px 12px}#books::before{display:none}.b-title{font-size:20px}.b-ico{width:12vh;height:12vh}#shMascot{width:80px;height:84px}}
+@supports (font-size:1cqw){.b-ico{container-type:size}.txt-ico{font-size:30cqw!important}}
 </style>
 </head>
 <body>
